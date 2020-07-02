@@ -1,6 +1,7 @@
 # Module_Lib
 module &amp;&amp; lib in common
 
+<<<<<<< HEAD
 -----公共模块及库文件
 
 说明：
@@ -37,3 +38,4 @@ XXX_Module （模块目录）
 
 
 在使用模块及库如发现由bug或要求修改的，先在fig_bug的分支中提出issue，讨论之后可以提交PR到fix_bug分支测试
+=======
