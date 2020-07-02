@@ -1,7 +1,7 @@
 # Module_Lib
 module &amp;&amp; lib in common
 
-<<<<<<< HEAD
+
 -----公共模块及库文件
 
 说明：
