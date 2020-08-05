@@ -18,7 +18,7 @@
 
 
 #include "spi.h"
-
+#include "tim.h"
 
 /**
 * @brief		微妙延时函数
@@ -59,15 +59,10 @@ void spi_ReadWrite_data(uint8_t data)
 		//上升沿采样
 		//SCLK=1;
 		SCK_H;
-		delay_us(5);
+		delay_tim_5us();
 		SCK_L;
-		delay_us(5);
+		delay_tim_5us();
 	
-//		
-		//下降沿改变数据
-		//SCLK=0;
-//		SCK_H;
-//		delay_us(5);
 	}	
 	
 	if(data & (1<<(7-0)))
@@ -81,7 +76,7 @@ void spi_ReadWrite_data(uint8_t data)
 		MOSI_L;
 	}
 	SCK_H;
-//	delay_us(5);
+
 	NSS_H;
 	
 	return;

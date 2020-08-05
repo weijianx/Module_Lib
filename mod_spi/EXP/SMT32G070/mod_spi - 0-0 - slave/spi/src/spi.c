@@ -23,11 +23,11 @@
 * @para			None
 * @retval		None
 */
-void delay_us(uint32_t tim)
-{
-	tim = tim*6;
-	while(tim--);	
-}
+//void delay_us(uint32_t tim)
+//{
+//	tim = tim*6;
+//	while(tim--);	
+//}
 
 /**
 * @brief		时钟前沿采样，时钟后沿输出

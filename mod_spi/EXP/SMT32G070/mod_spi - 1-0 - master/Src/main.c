@@ -24,6 +24,7 @@
 
 #include "spi.h"
 #include "oled.h"
+#include "tim.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -89,6 +90,8 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_TIMx_Init();				//定时器初始化
+  Get_HCLKFreq();
   /* USER CODE BEGIN 2 */
 	OLED_Init();				/// 初始化OLED 
 	OLED_Clear(); 				/// 清除屏幕*

@@ -17,17 +17,18 @@
 */
 
 #include "spi.h"
+#include "tim.h"
 
 /**
 * @brief		微妙延时函数
 * @para			None
 * @retval		None
 */
-void delay_us(uint32_t tim)
-{
-	tim = tim*6;
-	while(tim--);	
-}
+//void delay_us(uint32_t tim)
+//{
+//	tim = tim*6;
+//	while(tim--);	
+//}
 
 /**
 * @brief		时钟前沿采样，时钟后沿输出
@@ -60,10 +61,10 @@ void spi_ReadWrite_data(uint8_t data)
 		//SCLK=1;
 
 		SCK_L;
-		delay_us(5);		
+		delay_tim_5us();		
 	
 		SCK_H;
-		delay_us(5);
+		delay_tim_5us();
 	
 		//下降沿改变数据
 		//SCLK=0;
