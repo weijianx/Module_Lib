@@ -1,7 +1,7 @@
 /**
 * @file         spi.h
 * @brief        模拟SPI的头文件
-* @details      模拟SPI从机引脚的宏定义、psi.c文件函数的声明
+* @details      模拟SPI从机引脚的宏定义、spi.c文件函数的声明
 * @author       韦剑祥
 * @date         2020-08-03
 * @version      V1.0.0

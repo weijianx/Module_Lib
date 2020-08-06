@@ -26,6 +26,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "oled.h"
+#include "tim.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -88,6 +89,8 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  Get_HCLKFreq();
+  MX_TIMx_Init();
   /* USER CODE BEGIN 2 */
 	  OLED_Init();				/// ³õÊ¼»¯OLED 
 	OLED_Clear(); 				/// Çå³ýÆÁÄ»*
