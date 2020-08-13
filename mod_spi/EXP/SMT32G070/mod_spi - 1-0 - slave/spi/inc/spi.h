@@ -10,7 +10,7 @@
 * @par 修改日志:
 * <table>
 * <tr><th>Date        <th>Version  <th>Author    <th>Description
-* <tr><td>2020/05/06  <td>1.0.0    <td>韦剑祥    <td>创建初始版本
+* <tr><td>2020/08/03  <td>1.0.0    <td>韦剑祥    <td>创建初始版本
 * </table>
 *
 **********************************************************************************
@@ -25,11 +25,14 @@
 
 //SPI从机时钟引脚宏定义
 #define 	SCK			HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_3)
+
 //SPI从机输出引脚的宏定义
 #define 	MISO_L		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET)
 #define 	MISO_H		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET)
+
 //SPI从机输入引脚的宏定义
 #define 	MOSI		HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_4)
+
 //SPI从机片选的宏定义
 #define 	NSS			HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_6)
 
@@ -39,6 +42,7 @@
 * @retval		None
 */
 void delay_us(uint32_t nus);
+
 /**
 * @brief		时钟前沿采样，时钟后沿输出
 * @para			data,输出的数据
@@ -46,8 +50,9 @@ void delay_us(uint32_t nus);
 
 */
 void spi_ReadWrite_data(uint8_t data);
+
 /**
-* @brief		时钟前沿采样，时钟后沿输出
+* @brief		接收数据
 * @para			None
 * @retval		rx_data,接收到的数据
 

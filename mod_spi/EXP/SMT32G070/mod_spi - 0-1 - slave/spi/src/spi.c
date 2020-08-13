@@ -75,7 +75,7 @@ void spi_ReadWrite_data(uint8_t data)
 }
 
 /**
-* @brief		时钟前沿输出，时钟后沿采样
+* @brief		接收数据
 * @para			None
 * @retval		rx_data,接收到的数据
 

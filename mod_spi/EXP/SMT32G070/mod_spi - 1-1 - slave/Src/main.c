@@ -28,36 +28,9 @@
 #include "oled.h"
 /* USER CODE END Includes */
 
-/* Private typedef -----------------------------------------------------------*/
-/* USER CODE BEGIN PTD */
 
-/* USER CODE END PTD */
-
-/* Private define ------------------------------------------------------------*/
-/* USER CODE BEGIN PD */
-/* USER CODE END PD */
-
-/* Private macro -------------------------------------------------------------*/
-/* USER CODE BEGIN PM */
-
-/* USER CODE END PM */
-
-/* Private variables ---------------------------------------------------------*/
-
-/* USER CODE BEGIN PV */
-
-/* USER CODE END PV */
-
-/* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
-/* USER CODE BEGIN PFP */
 
-/* USER CODE END PFP */
-
-/* Private user code ---------------------------------------------------------*/
-/* USER CODE BEGIN 0 */
-
-/* USER CODE END 0 */
 
 /**
   * @brief  The application entry point.
@@ -65,48 +38,28 @@ void SystemClock_Config(void);
   */
 int main(void)
 {
-  /* USER CODE BEGIN 1 */
-	uint8_t tx_data = {0x66};
+
+//	uint8_t tx_data = {0x66};
 	uint8_t rx_data=0;
-  /* USER CODE END 1 */
 
-  /* MCU Configuration--------------------------------------------------------*/
+	HAL_Init();
 
-  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-  HAL_Init();
+	SystemClock_Config();
 
-  /* USER CODE BEGIN Init */
+	MX_GPIO_Init();
 
-  /* USER CODE END Init */
-
-  /* Configure the system clock */
-  SystemClock_Config();
-
-  /* USER CODE BEGIN SysInit */
-
-  /* USER CODE END SysInit */
-
-  /* Initialize all configured peripherals */
-  MX_GPIO_Init();
-  /* USER CODE BEGIN 2 */
 	OLED_Init();				/// ³õÊ¼»¯OLED 
 	OLED_Clear(); 				/// Çå³ýÆÁÄ»*
-  /* USER CODE END 2 */
 
-  /* Infinite loop */
-  /* USER CODE BEGIN WHILE */
-  while (1)
-  {
-    /* USER CODE END WHILE */
+	while (1)
+	{
 
-    /* USER CODE BEGIN 3 */
-
-//		spi_ReadWrite_data(tx_data);
+	//		spi_ReadWrite_data(tx_data);
 		rx_data = spi_Read_Data();
 		OLED_ShowNum(80,0,rx_data,3,16);
 		HAL_Delay(200);
-  }
-  /* USER CODE END 3 */
+	}
+
 }
 
 /**

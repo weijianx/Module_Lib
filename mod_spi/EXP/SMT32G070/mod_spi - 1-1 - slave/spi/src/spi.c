@@ -10,7 +10,7 @@
 * @par 修改日志:
 * <table>
 * <tr><th>Date        <th>Version  <th>Author    <th>Description
-* <tr><td>2020/05/06  <td>1.0.0    <td>韦剑祥    <td>创建初始版本
+* <tr><td>2020/08/03  <td>1.0.0    <td>韦剑祥    <td>创建初始版本
 * </table>
 *
 **********************************************************************************
@@ -39,7 +39,6 @@ void delay_us(uint32_t tim)
 */
 void spi_ReadWrite_data(uint8_t data)
 {
-	// CPOL = 0 CPHA = 1 SCLK低电平有效 第一个边沿采样
 	uint8_t i=0;
 
 	GPIO_PinState CS_pin;
@@ -76,7 +75,7 @@ void spi_ReadWrite_data(uint8_t data)
 }
 
 /**
-* @brief		时钟前沿采样，时钟后沿输出
+* @brief		接收数据
 * @para			None
 * @retval		rx_data,接收到的数据
 */

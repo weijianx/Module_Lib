@@ -10,7 +10,7 @@
 * @par 修改日志:
 * <table>
 * <tr><th>Date        <th>Version  <th>Author    <th>Description
-* <tr><td>2020/05/06  <td>1.0.0    <td>韦剑祥    <td>创建初始版本
+* <tr><td>2020/08/03  <td>1.0.0    <td>韦剑祥    <td>创建初始版本
 * </table>
 *
 **********************************************************************************
@@ -32,7 +32,7 @@
 
 /**
 * @brief		时钟前沿采样，时钟后沿输出
-* @para			data,输出的数据
+* @para			data,发送的数据
 * @retval		None
 */
 void spi_ReadWrite_data(uint8_t data)
@@ -42,7 +42,7 @@ void spi_ReadWrite_data(uint8_t data)
 
 	//SCLK=0;
 
-	NSS_L;
+	NSS_L;					//片选拉低发送数据
 	for(i=0; i<8; i++)
 	{
 		//数据发送从高位到低位
@@ -57,17 +57,13 @@ void spi_ReadWrite_data(uint8_t data)
 			MOSI_L;
 		}
 		
-		//上升沿采样
-		//SCLK=1;
-
+		//时钟脉冲的变化
 		SCK_L;
 		delay_tim_5us();		
 	
 		SCK_H;
 		delay_tim_5us();
-	
-		//下降沿改变数据
-		//SCLK=0;
+
 	}	
 	//根据数据的最高位决定数据波形进出的高低
 	if(data & (1<<(7-0)))
@@ -80,15 +76,16 @@ void spi_ReadWrite_data(uint8_t data)
 		//MOSI=0;
 		MOSI_L;
 	}
-	SCK_L;
-//	delay_us(5);
-	NSS_H;
+	
+	SCK_L;			//根据时序图时钟拉低
+
+	NSS_H;			//数据发送完成片选拉高
 	return;
 
 }
 
 /**
-* @brief		时钟前沿采样，时钟后沿输出
+* @brief		接收数据
 * @para			None
 * @retval		rx_data,接收到的数据
 */

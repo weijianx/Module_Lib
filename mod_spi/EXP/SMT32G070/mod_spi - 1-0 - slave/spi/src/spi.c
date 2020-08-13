@@ -1,7 +1,7 @@
 /**
 * @file         spi.c
 * @brief        模拟SPI的应用
-* @details      模拟SPI主机在偶边沿的下降沿发送数据
+* @details      模拟SPI从机在偶边沿的上升沿接收数据
 * @author       韦剑祥
 * @date         2020-08-03
 * @version      V1.0.0
@@ -10,7 +10,7 @@
 * @par 修改日志:
 * <table>
 * <tr><th>Date        <th>Version  <th>Author    <th>Description
-* <tr><td>2020/05/06  <td>1.0.0    <td>韦剑祥    <td>创建初始版本
+* <tr><td>2020/08/03  <td>1.0.0    <td>韦剑祥    <td>创建初始版本
 * </table>
 *
 **********************************************************************************
@@ -75,7 +75,7 @@ void spi_ReadWrite_data(uint8_t data)
 }
 
 /**
-* @brief		时钟前沿采样，时钟后沿输出
+* @brief		接收数据
 * @para			None
 * @retval		rx_data,接收到的数据
 

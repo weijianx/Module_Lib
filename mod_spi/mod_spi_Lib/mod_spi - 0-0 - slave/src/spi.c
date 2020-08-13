@@ -10,7 +10,7 @@
 * @par 修改日志:
 * <table>
 * <tr><th>Date        <th>Version  <th>Author    <th>Description
-* <tr><td>2020/05/06  <td>1.0.0    <td>韦剑祥    <td>创建初始版本
+* <tr><td>2020/08/03  <td>1.0.0    <td>韦剑祥    <td>创建初始版本
 * </table>
 *
 **********************************************************************************
@@ -23,15 +23,15 @@
 * @para			None
 * @retval		None
 */
-void delay_us(uint32_t tim)
-{
-	tim = tim*6;
-	while(tim--);	
-}
+//void delay_us(uint32_t tim)
+//{
+//	tim = tim*6;
+//	while(tim--);	
+//}
 
 /**
 * @brief		时钟前沿采样，时钟后沿输出
-* @para			data,输出的数据
+* @para			data,发送的数据
 * @retval		None
 
 */
@@ -78,9 +78,9 @@ void spi_ReadWrite_data(uint8_t data)
 }
 
 /**
-* @brief		时钟前沿采样，时钟后沿输出
+* @brief		接收数据
+* @para			None
 * @retval		rx_data,接收到的数据
-
 */
 uint8_t spi_Read_Data(void)
 {

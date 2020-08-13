@@ -29,36 +29,9 @@
 #include "tim.h"
 /* USER CODE END Includes */
 
-/* Private typedef -----------------------------------------------------------*/
-/* USER CODE BEGIN PTD */
 
-/* USER CODE END PTD */
-
-/* Private define ------------------------------------------------------------*/
-/* USER CODE BEGIN PD */
-/* USER CODE END PD */
-
-/* Private macro -------------------------------------------------------------*/
-/* USER CODE BEGIN PM */
-
-/* USER CODE END PM */
-
-/* Private variables ---------------------------------------------------------*/
-
-/* USER CODE BEGIN PV */
-
-/* USER CODE END PV */
-
-/* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
-/* USER CODE BEGIN PFP */
 
-/* USER CODE END PFP */
-
-/* Private user code ---------------------------------------------------------*/
-/* USER CODE BEGIN 0 */
-
-/* USER CODE END 0 */
 
 /**
   * @brief  The application entry point.
@@ -66,49 +39,31 @@ void SystemClock_Config(void);
   */
 int main(void)
 {
-  /* USER CODE BEGIN 1 */
+
 	uint8_t tx_data = {0x55};
 //	uint8_t rx_data=0;
-  /* USER CODE END 1 */
+	HAL_Init();
 
-  /* MCU Configuration--------------------------------------------------------*/
 
-  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-  HAL_Init();
+	SystemClock_Config();
 
-  /* USER CODE BEGIN Init */
 
-  /* USER CODE END Init */
+	MX_GPIO_Init();
+	MX_TIMx_Init();				//定时器初始化
+	Get_HCLKFreq();
 
-  /* Configure the system clock */
-  SystemClock_Config();
-
-  /* USER CODE BEGIN SysInit */
-
-  /* USER CODE END SysInit */
-
-  /* Initialize all configured peripherals */
-  MX_GPIO_Init();
-  MX_TIMx_Init();				//定时器初始化
-  Get_HCLKFreq();
-  /* USER CODE BEGIN 2 */
-	  OLED_Init();				/// 初始化OLED 
+	OLED_Init();				/// 初始化OLED 
 	OLED_Clear(); 				/// 清除屏幕
-  /* USER CODE END 2 */
 
-  /* Infinite loop */
-  /* USER CODE BEGIN WHILE */
-  while (1)
-  {
-    /* USER CODE END WHILE */
+	while (1)
+	{
 
-    /* USER CODE BEGIN 3 */
-		spi_ReadWrite_data(tx_data);
-//	  	rx_data =  spi_Read_Data();
-//		OLED_ShowNum(80,0,rx_data,3,16);
+		spi_ReadWrite_data(tx_data);		//发送数据tx_data
+	//	  	rx_data =  spi_Read_Data();
+	//		OLED_ShowNum(80,0,rx_data,3,16);
 		HAL_Delay(5);
-  }
-  /* USER CODE END 3 */
+	}
+
 }
 
 /**
