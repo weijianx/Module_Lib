@@ -1,0 +1,12 @@
+--cpu=Cortex-M23 -g --pd "__MICROLIB SETA 1"
+-I.\RTE\_GD32E230C_EVAL
+-ID:\Keil_v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+-ID:\Keil_v5\Arm\Packs\GigaDevice\GD32E230_DFP\1.0.0\Device\Include
+--pd "__UVISION_VERSION SETA 531"
+--pd "_RTE_ SETA 1"
+--pd "USE_STDPERIPH_DRIVER SETA 1"
+--pd "GD32E230 SETA 1"
+--pd "_RTE_ SETA 1"
+--list .\list\startup_gd32e230.lst
+--xref -o .\output\startup_gd32e230.o
+--depend .\output\startup_gd32e230.d "..\GD32E230_Firmware_Library\CMSIS\GD\GD32E230\Source\ARM\startup_gd32e230.s"

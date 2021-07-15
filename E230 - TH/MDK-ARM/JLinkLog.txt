@@ -1,0 +1,70 @@
+T179C 000:234.059   SEGGER J-Link V6.70e Log File
+T179C 000:234.175   DLL Compiled: Apr 17 2020 17:55:05
+T179C 000:234.185   Logging started @ 2021-07-14 07:52
+T179C 000:234.196 JLINK_SetWarnOutHandler(...)
+T179C 000:234.207 - 0.015ms
+T179C 000:234.219 JLINK_OpenEx(...)
+T179C 000:235.453   Firmware: J-Link V9 compiled Dec 13 2019 11:14:50
+T179C 000:235.625   Decompressing FW timestamp took 135 us
+T179C 000:241.718   Hardware: V9.70
+T179C 000:241.742   S/N: 20781318
+T179C 000:241.755   OEM: SEGGER
+T179C 000:241.768   Feature(s): GDB, RDI, FlashBP, FlashDL, JFlash, RDDI
+T179C 000:242.831   TELNET listener socket opened on port 19021
+T179C 000:242.920   WEBSRV Starting webserver
+T179C 000:243.038   WEBSRV Webserver running on local port 19080
+T179C 000:243.065 - 8.852ms returns "O.K."
+T179C 000:243.089 JLINK_GetEmuCaps()
+T179C 000:243.104 - 0.022ms returns 0xB9FF7BBF
+T179C 000:243.122 JLINK_TIF_GetAvailable(...)
+T179C 000:243.322 - 0.209ms
+T179C 000:243.342 JLINK_SetErrorOutHandler(...)
+T179C 000:243.352 - 0.014ms
+T179C 000:243.370 JLINK_ExecCommand("ProjectFile = "E:\project\product\GD32\GD32E230\E230 - TH\MDK-ARM\JLinkSettings.ini"", ...). 
+T179C 000:250.821   Device "CORTEX-M23" selected.
+T179C 000:251.213 - 7.856ms returns 0x00
+T179C 000:251.242 JLINK_ExecCommand("Device = GD32E230G8", ...). 
+T179C 000:251.403   Device "CORTEX-M23" selected.
+T179C 000:251.691 - 0.433ms returns 0x00
+T179C 000:251.712 JLINK_ExecCommand("DisableConnectionTimeout", ...). 
+T179C 000:251.736 - 0.007ms returns 0x01
+T179C 000:251.748 JLINK_GetHardwareVersion()
+T179C 000:251.757 - 0.013ms returns 0x17AE8
+T179C 000:251.768 JLINK_GetDLLVersion()  returns 67005
+T179C 000:251.785 JLINK_GetFirmwareString(...)
+T179C 000:251.794 - 0.013ms
+T179C 000:251.807 JLINK_GetDLLVersion()  returns 67005
+T179C 000:251.818 JLINK_GetCompileDateTime()
+T179C 000:251.827 - 0.013ms
+T179C 000:251.839 JLINK_GetFirmwareString(...)
+T179C 000:251.847 - 0.013ms
+T179C 000:251.859 JLINK_GetHardwareVersion()
+T179C 000:251.868 - 0.013ms returns 0x17AE8
+T179C 000:251.889 JLINK_TIF_Select(JLINKARM_TIF_SWD)
+T179C 000:252.725 - 0.845ms returns 0x00
+T179C 000:252.753 JLINK_SetSpeed(5000)
+T179C 000:252.861 - 0.118ms
+T179C 000:255.736 JLINK_SetResetType(JLINKARM_RESET_TYPE_NORMAL)
+T179C 000:255.751 - 0.020ms returns JLINKARM_RESET_TYPE_NORMAL
+T179C 000:255.763 JLINK_Reset()
+T179C 000:457.580   RESET (pin 15) high, but should be low. Please check target hardware.
+T179C 000:763.506   RESET (pin 15) high, but should be low. Please check target hardware.
+T179C 001:069.009   RESET (pin 15) high, but should be low. Please check target hardware.
+T179C 001:375.484   RESET (pin 15) high, but should be low. Please check target hardware.
+T179C 001:681.698   RESET (pin 15) high, but should be low. Please check target hardware.
+T179C 001:986.975   RESET (pin 15) high, but should be low. Please check target hardware.
+T179C 002:385.326   RESET (pin 15) high, but should be low. Please check target hardware.
+T179C 002:487.532 JLINK_GetId()
+T179C 002:691.169   RESET (pin 15) high, but should be low. Please check target hardware.
+T179C 003:088.696   RESET (pin 15) high, but should be low. Please check target hardware.
+T179C 003:191.068 - 703.562ms   returns 0x00000000
+T179C 003:191.109 JLINK_GetId()
+T179C 003:393.952   RESET (pin 15) high, but should be low. Please check target hardware.
+T179C 003:793.381   RESET (pin 15) high, but should be low. Please check target hardware.
+T179C 003:897.038 - 705.956ms   returns 0x00000000
+T179C 003:901.223 JLINK_GetFirmwareString(...)
+T179C 003:901.250 - 0.031ms
+T179C 005:654.822 JLINK_Close()
+T179C 005:668.586 - 13.787ms
+T179C 005:668.615   
+T179C 005:668.624   Closed

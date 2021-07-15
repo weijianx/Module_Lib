@@ -1,0 +1,3595 @@
+	.text
+	.syntax unified
+	.eabi_attribute	67, "2.09"	@ Tag_conformance
+	.cpu	cortex-m23
+	.eabi_attribute	6, 16	@ Tag_CPU_arch
+	.eabi_attribute	7, 77	@ Tag_CPU_arch_profile
+	.eabi_attribute	8, 0	@ Tag_ARM_ISA_use
+	.eabi_attribute	9, 3	@ Tag_THUMB_ISA_use
+	.eabi_attribute	34, 0	@ Tag_CPU_unaligned_access
+	.eabi_attribute	17, 1	@ Tag_ABI_PCS_GOT_use
+	.eabi_attribute	20, 2	@ Tag_ABI_FP_denormal
+	.eabi_attribute	21, 0	@ Tag_ABI_FP_exceptions
+	.eabi_attribute	23, 1	@ Tag_ABI_FP_number_model
+	.eabi_attribute	24, 1	@ Tag_ABI_align_needed
+	.eabi_attribute	25, 1	@ Tag_ABI_align_preserved
+	.eabi_attribute	38, 1	@ Tag_ABI_FP_16bit_format
+	.eabi_attribute	18, 2	@ Tag_ABI_PCS_wchar_t
+	.eabi_attribute	26, 1	@ Tag_ABI_enum_size
+	.eabi_attribute	14, 0	@ Tag_ABI_PCS_R9_use
+	.file	"SHT3x.c"
+	.file	1 "E:\\project\\product\\GD32\\GD32E230\\E230 - TH\\MDK-ARM" "../BSP/Inc\\SHT3x.h"
+	.file	2 "E:\\project\\product\\GD32\\GD32E230\\E230 - TH\\MDK-ARM" "../BSP/Src/SHT3x.c"
+	.file	3 "D:\\Keil_v5\\ARM\\ARMCLANG\\Bin\\..\\include" "stdint.h"
+	.section	.text.Check_Status,"ax",%progbits
+	.hidden	Check_Status            @ -- Begin function Check_Status
+	.globl	Check_Status
+	.p2align	2
+	.type	Check_Status,%function
+	.code	16                      @ @Check_Status
+	.thumb_func
+Check_Status:
+.Lfunc_begin0:
+	.loc	2 14 0                  @ ../BSP/Src/SHT3x.c:14:0
+	.fnstart
+	.cfi_sections .debug_frame
+	.cfi_startproc
+@ %bb.0:
+	.pad	#8
+	sub	sp, #8
+	.cfi_def_cfa_offset 8
+	mov	r1, r0
+	mov	r2, sp
+	strb	r0, [r2]
+.Ltmp0:
+	.loc	2 15 9 prologue_end     @ ../BSP/Src/SHT3x.c:15:9
+	ldrb	r0, [r2]
+	.loc	2 15 28 is_stmt 0       @ ../BSP/Src/SHT3x.c:15:28
+	cmp	r0, #33
+	blt	.LBB0_3
+	b	.LBB0_1
+.LBB0_1:
+	.loc	2 0 28                  @ ../BSP/Src/SHT3x.c:0:28
+	mov	r0, sp
+	.loc	2 15 32                 @ ../BSP/Src/SHT3x.c:15:32
+	ldrb	r0, [r0]
+.Ltmp1:
+	.loc	2 15 8                  @ ../BSP/Src/SHT3x.c:15:8
+	cmp	r0, #40
+	bgt	.LBB0_3
+	b	.LBB0_2
+.LBB0_2:
+	.loc	2 0 8                   @ ../BSP/Src/SHT3x.c:0:8
+	mov	r0, sp
+.Ltmp2:
+	.loc	2 17 27 is_stmt 1       @ ../BSP/Src/SHT3x.c:17:27
+	ldrb	r0, [r0]
+	.loc	2 17 17 is_stmt 0       @ ../BSP/Src/SHT3x.c:17:17
+	ldr	r1, __arm_cp.0_0
+	adds	r0, r0, r1
+	subs	r0, #33
+	ldrb	r0, [r0]
+	add	r1, sp, #4
+	.loc	2 17 9                  @ ../BSP/Src/SHT3x.c:17:9
+	strb	r0, [r1]
+	b	.LBB0_4
+.Ltmp3:
+.LBB0_3:
+	.loc	2 0 9                   @ ../BSP/Src/SHT3x.c:0:9
+	add	r0, sp, #4
+	movs	r1, #0
+	.loc	2 19 5 is_stmt 1        @ ../BSP/Src/SHT3x.c:19:5
+	strb	r1, [r0]
+	b	.LBB0_4
+.LBB0_4:
+	.loc	2 0 5 is_stmt 0         @ ../BSP/Src/SHT3x.c:0:5
+	add	r0, sp, #4
+	.loc	2 20 1 is_stmt 1        @ ../BSP/Src/SHT3x.c:20:1
+	ldrb	r0, [r0]
+	add	sp, #8
+	bx	lr
+.Ltmp4:
+	.p2align	2
+@ %bb.5:
+	.loc	2 0 1 is_stmt 0         @ ../BSP/Src/SHT3x.c:0:1
+__arm_cp.0_0:
+	.long	SensorSta
+.Lcpi_end0:
+	.size	__arm_cp.0_0, .Lcpi_end0-__arm_cp.0_0
+.Lfunc_end0:
+	.size	Check_Status, .Lfunc_end0-Check_Status
+	.cfi_endproc
+	.cantunwind
+	.fnend
+                                        @ -- End function
+	.section	.text.Get_Duration,"ax",%progbits
+	.hidden	Get_Duration            @ -- Begin function Get_Duration
+	.globl	Get_Duration
+	.p2align	2
+	.type	Get_Duration,%function
+	.code	16                      @ @Get_Duration
+	.thumb_func
+Get_Duration:
+.Lfunc_begin1:
+	.loc	2 26 0 is_stmt 1        @ ../BSP/Src/SHT3x.c:26:0
+	.fnstart
+	.cfi_startproc
+@ %bb.0:
+	.save	{r4, lr}
+	push	{r4, lr}
+	.cfi_def_cfa_offset 8
+	.cfi_offset lr, -4
+	.cfi_offset r4, -8
+	.pad	#8
+	sub	sp, #8
+	.cfi_def_cfa_offset 16
+	add	r0, sp, #4
+	movs	r1, #0
+.Ltmp5:
+	.loc	2 30 11 prologue_end    @ ../BSP/Src/SHT3x.c:30:11
+	strb	r1, [r0]
+	.loc	2 30 9 is_stmt 0        @ ../BSP/Src/SHT3x.c:30:9
+	b	.LBB1_1
+.LBB1_1:                                @ =>This Inner Loop Header: Depth=1
+	.loc	2 0 9                   @ ../BSP/Src/SHT3x.c:0:9
+	add	r0, sp, #4
+.Ltmp6:
+	.loc	2 30 16                 @ ../BSP/Src/SHT3x.c:30:16
+	ldrb	r0, [r0]
+.Ltmp7:
+	.loc	2 30 5                  @ ../BSP/Src/SHT3x.c:30:5
+	cmp	r0, #0
+	ble	.LBB1_2
+	b	.LBB1_25
+.LBB1_2:                                @   in Loop: Header=BB1_1 Depth=1
+	.loc	2 0 5                   @ ../BSP/Src/SHT3x.c:0:5
+	add	r0, sp, #4
+.Ltmp8:
+	.loc	2 32 21 is_stmt 1       @ ../BSP/Src/SHT3x.c:32:21
+	ldrb	r0, [r0]
+	.loc	2 32 12 is_stmt 0       @ ../BSP/Src/SHT3x.c:32:12
+	lsls	r0, r0, #1
+	ldr	r1, __arm_cp.1_0
+	adds	r2, r1, r0
+	ldrh	r0, [r1, r0]
+	.loc	2 32 26                 @ ../BSP/Src/SHT3x.c:32:26
+	ldrh	r1, [r2, #4]
+.Ltmp9:
+	.loc	2 32 12                 @ ../BSP/Src/SHT3x.c:32:12
+	cmp	r0, r1
+	ble	.LBB1_9
+	b	.LBB1_3
+.LBB1_3:                                @   in Loop: Header=BB1_1 Depth=1
+	.loc	2 0 12                  @ ../BSP/Src/SHT3x.c:0:12
+	add	r0, sp, #4
+.Ltmp10:
+	.loc	2 34 31 is_stmt 1       @ ../BSP/Src/SHT3x.c:34:31
+	ldrb	r0, [r0]
+	.loc	2 34 18 is_stmt 0       @ ../BSP/Src/SHT3x.c:34:18
+	lsls	r0, r0, #2
+	ldr	r1, __arm_cp.1_0
+	adds	r0, r1, r0
+.Ltmp11:
+	.loc	2 34 16                 @ ../BSP/Src/SHT3x.c:34:16
+	ldrb	r0, [r0, #30]
+	lsls	r0, r0, #31
+	cmp	r0, #0
+	bne	.LBB1_7
+	b	.LBB1_4
+.LBB1_4:                                @   in Loop: Header=BB1_1 Depth=1
+.Ltmp12:
+	.loc	2 36 32 is_stmt 1       @ ../BSP/Src/SHT3x.c:36:32
+	ldr	r0, __arm_cp.1_2
+	ldr	r1, [r0]
+	adds	r2, r1, #1
+	str	r2, [r0]
+	add	r0, sp, #4
+	.loc	2 36 55 is_stmt 0       @ ../BSP/Src/SHT3x.c:36:55
+	ldrb	r0, [r0]
+	.loc	2 36 38                 @ ../BSP/Src/SHT3x.c:36:38
+	lsls	r0, r0, #1
+	ldr	r2, __arm_cp.1_0
+	adds	r0, r2, r0
+	ldrh	r0, [r0, #12]
+	.loc	2 36 58                 @ ../BSP/Src/SHT3x.c:36:58
+	subs	r0, r0, #1
+.Ltmp13:
+	.loc	2 36 20                 @ ../BSP/Src/SHT3x.c:36:20
+	cmp	r1, r0
+	blo	.LBB1_6
+	b	.LBB1_5
+.LBB1_5:                                @   in Loop: Header=BB1_1 Depth=1
+.Ltmp14:
+	.loc	2 38 34 is_stmt 1       @ ../BSP/Src/SHT3x.c:38:34
+	ldr	r0, __arm_cp.1_2
+	movs	r1, #0
+	str	r1, [r0]
+	add	r0, sp, #4
+	.loc	2 39 34                 @ ../BSP/Src/SHT3x.c:39:34
+	ldrb	r1, [r0]
+	.loc	2 39 21 is_stmt 0       @ ../BSP/Src/SHT3x.c:39:21
+	ldr	r2, __arm_cp.1_0
+	adds	r2, #28
+	lsls	r1, r1, #2
+	.loc	2 39 37                 @ ../BSP/Src/SHT3x.c:39:37
+	ldr	r3, [r2, r1]
+	movs	r4, #1
+	lsls	r4, r4, #16
+	orrs	r3, r4
+	str	r3, [r2, r1]
+	.loc	2 40 34 is_stmt 1       @ ../BSP/Src/SHT3x.c:40:34
+	ldrb	r0, [r0]
+	.loc	2 40 21 is_stmt 0       @ ../BSP/Src/SHT3x.c:40:21
+	lsls	r0, r0, #2
+	.loc	2 40 37                 @ ../BSP/Src/SHT3x.c:40:37
+	ldr	r1, [r2, r0]
+	ands	r1, r4
+	str	r1, [r2, r0]
+	.loc	2 41 17 is_stmt 1       @ ../BSP/Src/SHT3x.c:41:17
+	b	.LBB1_6
+.Ltmp15:
+.LBB1_6:                                @   in Loop: Header=BB1_1 Depth=1
+	.loc	2 42 13                 @ ../BSP/Src/SHT3x.c:42:13
+	b	.LBB1_8
+.Ltmp16:
+.LBB1_7:                                @   in Loop: Header=BB1_1 Depth=1
+	.loc	2 45 30                 @ ../BSP/Src/SHT3x.c:45:30
+	ldr	r0, __arm_cp.1_2
+	movs	r1, #0
+	str	r1, [r0]
+	add	r0, sp, #4
+	.loc	2 46 30                 @ ../BSP/Src/SHT3x.c:46:30
+	ldrb	r0, [r0]
+	.loc	2 46 17 is_stmt 0       @ ../BSP/Src/SHT3x.c:46:17
+	lsls	r0, r0, #2
+	ldr	r1, __arm_cp.1_0
+	adds	r0, r1, r0
+	.loc	2 46 33                 @ ../BSP/Src/SHT3x.c:46:33
+	ldr	r1, [r0, #16]
+	adds	r1, r1, #1
+	str	r1, [r0, #16]
+	b	.LBB1_8
+.Ltmp17:
+.LBB1_8:                                @   in Loop: Header=BB1_1 Depth=1
+	.loc	2 48 9 is_stmt 1        @ ../BSP/Src/SHT3x.c:48:9
+	b	.LBB1_23
+.Ltmp18:
+.LBB1_9:                                @   in Loop: Header=BB1_1 Depth=1
+	.loc	2 0 9 is_stmt 0         @ ../BSP/Src/SHT3x.c:0:9
+	add	r0, sp, #4
+.Ltmp19:
+	.loc	2 49 26 is_stmt 1       @ ../BSP/Src/SHT3x.c:49:26
+	ldrb	r0, [r0]
+	.loc	2 49 17 is_stmt 0       @ ../BSP/Src/SHT3x.c:49:17
+	lsls	r0, r0, #1
+	ldr	r1, __arm_cp.1_0
+	adds	r2, r1, r0
+	ldrh	r0, [r1, r0]
+	.loc	2 49 31                 @ ../BSP/Src/SHT3x.c:49:31
+	ldrh	r1, [r2, #8]
+.Ltmp20:
+	.loc	2 49 17                 @ ../BSP/Src/SHT3x.c:49:17
+	cmp	r0, r1
+	bge	.LBB1_16
+	b	.LBB1_10
+.LBB1_10:                               @   in Loop: Header=BB1_1 Depth=1
+	.loc	2 0 17                  @ ../BSP/Src/SHT3x.c:0:17
+	add	r0, sp, #4
+.Ltmp21:
+	.loc	2 51 31 is_stmt 1       @ ../BSP/Src/SHT3x.c:51:31
+	ldrb	r0, [r0]
+	.loc	2 51 18 is_stmt 0       @ ../BSP/Src/SHT3x.c:51:18
+	lsls	r0, r0, #2
+	ldr	r1, __arm_cp.1_0
+	adds	r0, r1, r0
+.Ltmp22:
+	.loc	2 51 16                 @ ../BSP/Src/SHT3x.c:51:16
+	ldrb	r0, [r0, #28]
+	lsls	r0, r0, #31
+	cmp	r0, #0
+	bne	.LBB1_14
+	b	.LBB1_11
+.LBB1_11:                               @   in Loop: Header=BB1_1 Depth=1
+.Ltmp23:
+	.loc	2 53 32 is_stmt 1       @ ../BSP/Src/SHT3x.c:53:32
+	ldr	r0, __arm_cp.1_2
+	ldr	r1, [r0]
+	adds	r2, r1, #1
+	str	r2, [r0]
+	add	r0, sp, #4
+	.loc	2 53 55 is_stmt 0       @ ../BSP/Src/SHT3x.c:53:55
+	ldrb	r0, [r0]
+	.loc	2 53 38                 @ ../BSP/Src/SHT3x.c:53:38
+	lsls	r0, r0, #1
+	ldr	r2, __arm_cp.1_0
+	adds	r0, r2, r0
+	ldrh	r0, [r0, #12]
+	.loc	2 53 58                 @ ../BSP/Src/SHT3x.c:53:58
+	subs	r0, r0, #1
+.Ltmp24:
+	.loc	2 53 20                 @ ../BSP/Src/SHT3x.c:53:20
+	cmp	r1, r0
+	blo	.LBB1_13
+	b	.LBB1_12
+.LBB1_12:                               @   in Loop: Header=BB1_1 Depth=1
+.Ltmp25:
+	.loc	2 55 34 is_stmt 1       @ ../BSP/Src/SHT3x.c:55:34
+	ldr	r0, __arm_cp.1_2
+	movs	r1, #0
+	str	r1, [r0]
+	add	r0, sp, #4
+	.loc	2 56 34                 @ ../BSP/Src/SHT3x.c:56:34
+	ldrb	r1, [r0]
+	.loc	2 56 21 is_stmt 0       @ ../BSP/Src/SHT3x.c:56:21
+	ldr	r2, __arm_cp.1_0
+	adds	r2, #28
+	lsls	r1, r1, #2
+	.loc	2 56 37                 @ ../BSP/Src/SHT3x.c:56:37
+	ldr	r3, [r2, r1]
+	movs	r4, #1
+	orrs	r3, r4
+	str	r3, [r2, r1]
+	.loc	2 57 34 is_stmt 1       @ ../BSP/Src/SHT3x.c:57:34
+	ldrb	r0, [r0]
+	.loc	2 57 21 is_stmt 0       @ ../BSP/Src/SHT3x.c:57:21
+	lsls	r0, r0, #2
+	.loc	2 57 37                 @ ../BSP/Src/SHT3x.c:57:37
+	ldr	r1, [r2, r0]
+	ands	r1, r4
+	str	r1, [r2, r0]
+	.loc	2 58 17 is_stmt 1       @ ../BSP/Src/SHT3x.c:58:17
+	b	.LBB1_13
+.Ltmp26:
+.LBB1_13:                               @   in Loop: Header=BB1_1 Depth=1
+	.loc	2 59 13                 @ ../BSP/Src/SHT3x.c:59:13
+	b	.LBB1_15
+.Ltmp27:
+.LBB1_14:                               @   in Loop: Header=BB1_1 Depth=1
+	.loc	2 62 30                 @ ../BSP/Src/SHT3x.c:62:30
+	ldr	r0, __arm_cp.1_2
+	movs	r1, #0
+	str	r1, [r0]
+	add	r0, sp, #4
+	.loc	2 63 30                 @ ../BSP/Src/SHT3x.c:63:30
+	ldrb	r0, [r0]
+	.loc	2 63 17 is_stmt 0       @ ../BSP/Src/SHT3x.c:63:17
+	lsls	r0, r0, #2
+	ldr	r1, __arm_cp.1_0
+	adds	r0, r1, r0
+	.loc	2 63 33                 @ ../BSP/Src/SHT3x.c:63:33
+	ldr	r1, [r0, #16]
+	adds	r1, r1, #1
+	str	r1, [r0, #16]
+	b	.LBB1_15
+.Ltmp28:
+.LBB1_15:                               @   in Loop: Header=BB1_1 Depth=1
+	.loc	2 65 9 is_stmt 1        @ ../BSP/Src/SHT3x.c:65:9
+	b	.LBB1_22
+.Ltmp29:
+.LBB1_16:                               @   in Loop: Header=BB1_1 Depth=1
+	.loc	2 0 9 is_stmt 0         @ ../BSP/Src/SHT3x.c:0:9
+	add	r0, sp, #4
+.Ltmp30:
+	.loc	2 68 29 is_stmt 1       @ ../BSP/Src/SHT3x.c:68:29
+	ldrb	r0, [r0]
+	.loc	2 68 16 is_stmt 0       @ ../BSP/Src/SHT3x.c:68:16
+	lsls	r0, r0, #2
+	ldr	r1, __arm_cp.1_0
+	adds	r0, r1, r0
+	ldr	r0, [r0, #28]
+.Ltmp31:
+	.loc	2 68 16                 @ ../BSP/Src/SHT3x.c:68:16
+	cmp	r0, #0
+	beq	.LBB1_20
+	b	.LBB1_17
+.LBB1_17:                               @   in Loop: Header=BB1_1 Depth=1
+	.loc	2 0 16                  @ ../BSP/Src/SHT3x.c:0:16
+	add	r0, sp, #4
+.Ltmp32:
+	.loc	2 70 30 is_stmt 1       @ ../BSP/Src/SHT3x.c:70:30
+	ldrb	r1, [r0]
+	.loc	2 70 17 is_stmt 0       @ ../BSP/Src/SHT3x.c:70:17
+	lsls	r1, r1, #2
+	ldr	r2, __arm_cp.1_0
+	adds	r1, r2, r1
+	.loc	2 70 33                 @ ../BSP/Src/SHT3x.c:70:33
+	ldr	r3, [r1, #16]
+	adds	r3, r3, #1
+	str	r3, [r1, #16]
+.Ltmp33:
+	.loc	2 71 32 is_stmt 1       @ ../BSP/Src/SHT3x.c:71:32
+	ldr	r1, __arm_cp.1_2
+	ldr	r3, [r1]
+	adds	r4, r3, #1
+	str	r4, [r1]
+	.loc	2 71 55 is_stmt 0       @ ../BSP/Src/SHT3x.c:71:55
+	ldrb	r0, [r0]
+	.loc	2 71 38                 @ ../BSP/Src/SHT3x.c:71:38
+	lsls	r0, r0, #1
+	adds	r0, r2, r0
+	ldrh	r0, [r0, #12]
+	.loc	2 71 58                 @ ../BSP/Src/SHT3x.c:71:58
+	subs	r0, r0, #1
+.Ltmp34:
+	.loc	2 71 20                 @ ../BSP/Src/SHT3x.c:71:20
+	cmp	r3, r0
+	blo	.LBB1_19
+	b	.LBB1_18
+.LBB1_18:                               @   in Loop: Header=BB1_1 Depth=1
+.Ltmp35:
+	.loc	2 73 34 is_stmt 1       @ ../BSP/Src/SHT3x.c:73:34
+	ldr	r0, __arm_cp.1_2
+	movs	r1, #0
+	str	r1, [r0]
+	add	r0, sp, #4
+	.loc	2 74 34                 @ ../BSP/Src/SHT3x.c:74:34
+	ldrb	r2, [r0]
+	.loc	2 74 21 is_stmt 0       @ ../BSP/Src/SHT3x.c:74:21
+	lsls	r2, r2, #2
+	ldr	r3, __arm_cp.1_0
+	adds	r2, r3, r2
+	.loc	2 74 37                 @ ../BSP/Src/SHT3x.c:74:37
+	str	r1, [r2, #28]
+	.loc	2 75 34 is_stmt 1       @ ../BSP/Src/SHT3x.c:75:34
+	ldrb	r0, [r0]
+	.loc	2 75 21 is_stmt 0       @ ../BSP/Src/SHT3x.c:75:21
+	lsls	r0, r0, #2
+	adds	r0, r3, r0
+	.loc	2 75 37                 @ ../BSP/Src/SHT3x.c:75:37
+	str	r1, [r0, #16]
+	.loc	2 76 17 is_stmt 1       @ ../BSP/Src/SHT3x.c:76:17
+	b	.LBB1_19
+.Ltmp36:
+.LBB1_19:                               @   in Loop: Header=BB1_1 Depth=1
+	.loc	2 77 13                 @ ../BSP/Src/SHT3x.c:77:13
+	b	.LBB1_21
+.Ltmp37:
+.LBB1_20:                               @   in Loop: Header=BB1_1 Depth=1
+	.loc	2 80 30                 @ ../BSP/Src/SHT3x.c:80:30
+	ldr	r0, __arm_cp.1_2
+	movs	r1, #0
+	str	r1, [r0]
+	add	r0, sp, #4
+	.loc	2 81 30                 @ ../BSP/Src/SHT3x.c:81:30
+	ldrb	r2, [r0]
+	.loc	2 81 17 is_stmt 0       @ ../BSP/Src/SHT3x.c:81:17
+	lsls	r2, r2, #2
+	ldr	r3, __arm_cp.1_0
+	adds	r2, r3, r2
+	.loc	2 81 33                 @ ../BSP/Src/SHT3x.c:81:33
+	str	r1, [r2, #28]
+	.loc	2 82 30 is_stmt 1       @ ../BSP/Src/SHT3x.c:82:30
+	ldrb	r0, [r0]
+	.loc	2 82 17 is_stmt 0       @ ../BSP/Src/SHT3x.c:82:17
+	lsls	r0, r0, #2
+	adds	r0, r3, r0
+	.loc	2 82 33                 @ ../BSP/Src/SHT3x.c:82:33
+	str	r1, [r0, #16]
+	b	.LBB1_21
+.Ltmp38:
+.LBB1_21:                               @   in Loop: Header=BB1_1 Depth=1
+	.loc	2 0 33                  @ ../BSP/Src/SHT3x.c:0:33
+	b	.LBB1_22
+.LBB1_22:                               @   in Loop: Header=BB1_1 Depth=1
+	b	.LBB1_23
+.LBB1_23:                               @   in Loop: Header=BB1_1 Depth=1
+	.loc	2 85 5 is_stmt 1        @ ../BSP/Src/SHT3x.c:85:5
+	b	.LBB1_24
+.Ltmp39:
+.LBB1_24:                               @   in Loop: Header=BB1_1 Depth=1
+	.loc	2 30 33                 @ ../BSP/Src/SHT3x.c:30:33
+	ldr	r0, [sp, #4]
+	adds	r0, r0, #1
+	add	r1, sp, #4
+	strb	r0, [r1]
+	.loc	2 30 5 is_stmt 0        @ ../BSP/Src/SHT3x.c:30:5
+	b	.LBB1_1
+.Ltmp40:
+.LBB1_25:
+	.loc	2 0 5                   @ ../BSP/Src/SHT3x.c:0:5
+	add	r0, sp, #4
+	movs	r1, #1
+.Ltmp41:
+	.loc	2 88 12 is_stmt 1       @ ../BSP/Src/SHT3x.c:88:12
+	strb	r1, [r0]
+	.loc	2 88 10 is_stmt 0       @ ../BSP/Src/SHT3x.c:88:10
+	b	.LBB1_26
+.LBB1_26:                               @ =>This Inner Loop Header: Depth=1
+	.loc	2 0 10                  @ ../BSP/Src/SHT3x.c:0:10
+	add	r0, sp, #4
+.Ltmp42:
+	.loc	2 88 26                 @ ../BSP/Src/SHT3x.c:88:26
+	ldrb	r0, [r0]
+.Ltmp43:
+	.loc	2 88 6                  @ ../BSP/Src/SHT3x.c:88:6
+	cmp	r0, #1
+	ble	.LBB1_27
+	b	.LBB1_50
+.LBB1_27:                               @   in Loop: Header=BB1_26 Depth=1
+.Ltmp44:
+	.loc	2 90 12 is_stmt 1       @ ../BSP/Src/SHT3x.c:90:12
+	ldr	r0, [sp, #4]
+	.loc	2 90 14 is_stmt 0       @ ../BSP/Src/SHT3x.c:90:14
+	subs	r0, r0, #1
+	mov	r1, sp
+	.loc	2 90 10                 @ ../BSP/Src/SHT3x.c:90:10
+	strb	r0, [r1]
+.Ltmp45:
+	.loc	2 91 19 is_stmt 1       @ ../BSP/Src/SHT3x.c:91:19
+	ldrb	r0, [r1]
+	.loc	2 91 10 is_stmt 0       @ ../BSP/Src/SHT3x.c:91:10
+	lsls	r0, r0, #1
+	ldr	r1, __arm_cp.1_0
+	adds	r0, r1, r0
+	ldrh	r0, [r0, #2]
+	add	r2, sp, #4
+	.loc	2 91 41                 @ ../BSP/Src/SHT3x.c:91:41
+	ldrb	r2, [r2]
+	.loc	2 91 25                 @ ../BSP/Src/SHT3x.c:91:25
+	lsls	r2, r2, #1
+	adds	r1, r1, r2
+	ldrh	r1, [r1, #4]
+.Ltmp46:
+	.loc	2 91 10                 @ ../BSP/Src/SHT3x.c:91:10
+	cmp	r0, r1
+	ble	.LBB1_34
+	b	.LBB1_28
+.LBB1_28:                               @   in Loop: Header=BB1_26 Depth=1
+	.loc	2 0 10                  @ ../BSP/Src/SHT3x.c:0:10
+	add	r0, sp, #4
+.Ltmp47:
+	.loc	2 93 31 is_stmt 1       @ ../BSP/Src/SHT3x.c:93:31
+	ldrb	r0, [r0]
+	.loc	2 93 18 is_stmt 0       @ ../BSP/Src/SHT3x.c:93:18
+	lsls	r0, r0, #2
+	ldr	r1, __arm_cp.1_0
+	adds	r0, r1, r0
+.Ltmp48:
+	.loc	2 93 16                 @ ../BSP/Src/SHT3x.c:93:16
+	ldrb	r0, [r0, #30]
+	lsls	r0, r0, #31
+	cmp	r0, #0
+	bne	.LBB1_32
+	b	.LBB1_29
+.LBB1_29:                               @   in Loop: Header=BB1_26 Depth=1
+.Ltmp49:
+	.loc	2 95 32 is_stmt 1       @ ../BSP/Src/SHT3x.c:95:32
+	ldr	r0, __arm_cp.1_1
+	ldr	r1, [r0]
+	adds	r2, r1, #1
+	str	r2, [r0]
+	add	r0, sp, #4
+	.loc	2 95 55 is_stmt 0       @ ../BSP/Src/SHT3x.c:95:55
+	ldrb	r0, [r0]
+	.loc	2 95 38                 @ ../BSP/Src/SHT3x.c:95:38
+	lsls	r0, r0, #1
+	ldr	r2, __arm_cp.1_0
+	adds	r0, r2, r0
+	ldrh	r0, [r0, #12]
+	.loc	2 95 58                 @ ../BSP/Src/SHT3x.c:95:58
+	subs	r0, r0, #1
+.Ltmp50:
+	.loc	2 95 20                 @ ../BSP/Src/SHT3x.c:95:20
+	cmp	r1, r0
+	blo	.LBB1_31
+	b	.LBB1_30
+.LBB1_30:                               @   in Loop: Header=BB1_26 Depth=1
+.Ltmp51:
+	.loc	2 97 34 is_stmt 1       @ ../BSP/Src/SHT3x.c:97:34
+	ldr	r0, __arm_cp.1_1
+	movs	r1, #0
+	str	r1, [r0]
+	add	r0, sp, #4
+	.loc	2 98 34                 @ ../BSP/Src/SHT3x.c:98:34
+	ldrb	r1, [r0]
+	.loc	2 98 21 is_stmt 0       @ ../BSP/Src/SHT3x.c:98:21
+	ldr	r2, __arm_cp.1_0
+	adds	r2, #28
+	lsls	r1, r1, #2
+	.loc	2 98 37                 @ ../BSP/Src/SHT3x.c:98:37
+	ldr	r3, [r2, r1]
+	movs	r4, #1
+	lsls	r4, r4, #16
+	orrs	r3, r4
+	str	r3, [r2, r1]
+	.loc	2 99 34 is_stmt 1       @ ../BSP/Src/SHT3x.c:99:34
+	ldrb	r0, [r0]
+	.loc	2 99 21 is_stmt 0       @ ../BSP/Src/SHT3x.c:99:21
+	lsls	r0, r0, #2
+	.loc	2 99 37                 @ ../BSP/Src/SHT3x.c:99:37
+	ldr	r1, [r2, r0]
+	ands	r1, r4
+	str	r1, [r2, r0]
+	.loc	2 100 17 is_stmt 1      @ ../BSP/Src/SHT3x.c:100:17
+	b	.LBB1_31
+.Ltmp52:
+.LBB1_31:                               @   in Loop: Header=BB1_26 Depth=1
+	.loc	2 101 13                @ ../BSP/Src/SHT3x.c:101:13
+	b	.LBB1_33
+.Ltmp53:
+.LBB1_32:                               @   in Loop: Header=BB1_26 Depth=1
+	.loc	2 104 30                @ ../BSP/Src/SHT3x.c:104:30
+	ldr	r0, __arm_cp.1_1
+	movs	r1, #0
+	str	r1, [r0]
+	add	r0, sp, #4
+	.loc	2 105 30                @ ../BSP/Src/SHT3x.c:105:30
+	ldrb	r0, [r0]
+	.loc	2 105 17 is_stmt 0      @ ../BSP/Src/SHT3x.c:105:17
+	lsls	r0, r0, #2
+	ldr	r1, __arm_cp.1_0
+	adds	r0, r1, r0
+	.loc	2 105 33                @ ../BSP/Src/SHT3x.c:105:33
+	ldr	r1, [r0, #16]
+	adds	r1, r1, #1
+	str	r1, [r0, #16]
+	b	.LBB1_33
+.Ltmp54:
+.LBB1_33:                               @   in Loop: Header=BB1_26 Depth=1
+	.loc	2 107 9 is_stmt 1       @ ../BSP/Src/SHT3x.c:107:9
+	b	.LBB1_48
+.Ltmp55:
+.LBB1_34:                               @   in Loop: Header=BB1_26 Depth=1
+	.loc	2 0 9 is_stmt 0         @ ../BSP/Src/SHT3x.c:0:9
+	mov	r0, sp
+.Ltmp56:
+	.loc	2 108 26 is_stmt 1      @ ../BSP/Src/SHT3x.c:108:26
+	ldrb	r0, [r0]
+	.loc	2 108 17 is_stmt 0      @ ../BSP/Src/SHT3x.c:108:17
+	lsls	r0, r0, #1
+	ldr	r1, __arm_cp.1_0
+	adds	r0, r1, r0
+	ldrh	r0, [r0, #2]
+	add	r2, sp, #4
+	.loc	2 108 48                @ ../BSP/Src/SHT3x.c:108:48
+	ldrb	r2, [r2]
+	.loc	2 108 32                @ ../BSP/Src/SHT3x.c:108:32
+	lsls	r2, r2, #1
+	adds	r1, r1, r2
+	ldrh	r1, [r1, #8]
+.Ltmp57:
+	.loc	2 108 17                @ ../BSP/Src/SHT3x.c:108:17
+	cmp	r0, r1
+	bge	.LBB1_41
+	b	.LBB1_35
+.LBB1_35:                               @   in Loop: Header=BB1_26 Depth=1
+	.loc	2 0 17                  @ ../BSP/Src/SHT3x.c:0:17
+	add	r0, sp, #4
+.Ltmp58:
+	.loc	2 110 31 is_stmt 1      @ ../BSP/Src/SHT3x.c:110:31
+	ldrb	r0, [r0]
+	.loc	2 110 18 is_stmt 0      @ ../BSP/Src/SHT3x.c:110:18
+	lsls	r0, r0, #2
+	ldr	r1, __arm_cp.1_0
+	adds	r0, r1, r0
+.Ltmp59:
+	.loc	2 110 16                @ ../BSP/Src/SHT3x.c:110:16
+	ldrb	r0, [r0, #28]
+	lsls	r0, r0, #31
+	cmp	r0, #0
+	bne	.LBB1_39
+	b	.LBB1_36
+.LBB1_36:                               @   in Loop: Header=BB1_26 Depth=1
+.Ltmp60:
+	.loc	2 112 32 is_stmt 1      @ ../BSP/Src/SHT3x.c:112:32
+	ldr	r0, __arm_cp.1_1
+	ldr	r1, [r0]
+	adds	r2, r1, #1
+	str	r2, [r0]
+	add	r0, sp, #4
+	.loc	2 112 55 is_stmt 0      @ ../BSP/Src/SHT3x.c:112:55
+	ldrb	r0, [r0]
+	.loc	2 112 38                @ ../BSP/Src/SHT3x.c:112:38
+	lsls	r0, r0, #1
+	ldr	r2, __arm_cp.1_0
+	adds	r0, r2, r0
+	ldrh	r0, [r0, #12]
+	.loc	2 112 58                @ ../BSP/Src/SHT3x.c:112:58
+	subs	r0, r0, #1
+.Ltmp61:
+	.loc	2 112 20                @ ../BSP/Src/SHT3x.c:112:20
+	cmp	r1, r0
+	blo	.LBB1_38
+	b	.LBB1_37
+.LBB1_37:                               @   in Loop: Header=BB1_26 Depth=1
+.Ltmp62:
+	.loc	2 114 34 is_stmt 1      @ ../BSP/Src/SHT3x.c:114:34
+	ldr	r0, __arm_cp.1_1
+	movs	r1, #0
+	str	r1, [r0]
+	add	r0, sp, #4
+	.loc	2 115 34                @ ../BSP/Src/SHT3x.c:115:34
+	ldrb	r1, [r0]
+	.loc	2 115 21 is_stmt 0      @ ../BSP/Src/SHT3x.c:115:21
+	ldr	r2, __arm_cp.1_0
+	adds	r2, #28
+	lsls	r1, r1, #2
+	.loc	2 115 37                @ ../BSP/Src/SHT3x.c:115:37
+	ldr	r3, [r2, r1]
+	movs	r4, #1
+	orrs	r3, r4
+	str	r3, [r2, r1]
+	.loc	2 116 34 is_stmt 1      @ ../BSP/Src/SHT3x.c:116:34
+	ldrb	r0, [r0]
+	.loc	2 116 21 is_stmt 0      @ ../BSP/Src/SHT3x.c:116:21
+	lsls	r0, r0, #2
+	.loc	2 116 37                @ ../BSP/Src/SHT3x.c:116:37
+	ldr	r1, [r2, r0]
+	ands	r1, r4
+	str	r1, [r2, r0]
+	.loc	2 117 17 is_stmt 1      @ ../BSP/Src/SHT3x.c:117:17
+	b	.LBB1_38
+.Ltmp63:
+.LBB1_38:                               @   in Loop: Header=BB1_26 Depth=1
+	.loc	2 118 13                @ ../BSP/Src/SHT3x.c:118:13
+	b	.LBB1_40
+.Ltmp64:
+.LBB1_39:                               @   in Loop: Header=BB1_26 Depth=1
+	.loc	2 121 30                @ ../BSP/Src/SHT3x.c:121:30
+	ldr	r0, __arm_cp.1_1
+	movs	r1, #0
+	str	r1, [r0]
+	add	r0, sp, #4
+	.loc	2 122 30                @ ../BSP/Src/SHT3x.c:122:30
+	ldrb	r0, [r0]
+	.loc	2 122 17 is_stmt 0      @ ../BSP/Src/SHT3x.c:122:17
+	lsls	r0, r0, #2
+	ldr	r1, __arm_cp.1_0
+	adds	r0, r1, r0
+	.loc	2 122 33                @ ../BSP/Src/SHT3x.c:122:33
+	ldr	r1, [r0, #16]
+	adds	r1, r1, #1
+	str	r1, [r0, #16]
+	b	.LBB1_40
+.Ltmp65:
+.LBB1_40:                               @   in Loop: Header=BB1_26 Depth=1
+	.loc	2 124 9 is_stmt 1       @ ../BSP/Src/SHT3x.c:124:9
+	b	.LBB1_47
+.Ltmp66:
+.LBB1_41:                               @   in Loop: Header=BB1_26 Depth=1
+	.loc	2 0 9 is_stmt 0         @ ../BSP/Src/SHT3x.c:0:9
+	add	r0, sp, #4
+.Ltmp67:
+	.loc	2 127 29 is_stmt 1      @ ../BSP/Src/SHT3x.c:127:29
+	ldrb	r0, [r0]
+	.loc	2 127 16 is_stmt 0      @ ../BSP/Src/SHT3x.c:127:16
+	lsls	r0, r0, #2
+	ldr	r1, __arm_cp.1_0
+	adds	r0, r1, r0
+	ldr	r0, [r0, #28]
+.Ltmp68:
+	.loc	2 127 16                @ ../BSP/Src/SHT3x.c:127:16
+	cmp	r0, #0
+	beq	.LBB1_45
+	b	.LBB1_42
+.LBB1_42:                               @   in Loop: Header=BB1_26 Depth=1
+	.loc	2 0 16                  @ ../BSP/Src/SHT3x.c:0:16
+	add	r0, sp, #4
+.Ltmp69:
+	.loc	2 129 30 is_stmt 1      @ ../BSP/Src/SHT3x.c:129:30
+	ldrb	r1, [r0]
+	.loc	2 129 17 is_stmt 0      @ ../BSP/Src/SHT3x.c:129:17
+	lsls	r1, r1, #2
+	ldr	r2, __arm_cp.1_0
+	adds	r1, r2, r1
+	.loc	2 129 33                @ ../BSP/Src/SHT3x.c:129:33
+	ldr	r3, [r1, #16]
+	adds	r3, r3, #1
+	str	r3, [r1, #16]
+.Ltmp70:
+	.loc	2 130 32 is_stmt 1      @ ../BSP/Src/SHT3x.c:130:32
+	ldr	r1, __arm_cp.1_1
+	ldr	r3, [r1]
+	adds	r4, r3, #1
+	str	r4, [r1]
+	.loc	2 130 55 is_stmt 0      @ ../BSP/Src/SHT3x.c:130:55
+	ldrb	r0, [r0]
+	.loc	2 130 38                @ ../BSP/Src/SHT3x.c:130:38
+	lsls	r0, r0, #1
+	adds	r0, r2, r0
+	ldrh	r0, [r0, #12]
+	.loc	2 130 58                @ ../BSP/Src/SHT3x.c:130:58
+	subs	r0, r0, #1
+.Ltmp71:
+	.loc	2 130 20                @ ../BSP/Src/SHT3x.c:130:20
+	cmp	r3, r0
+	blo	.LBB1_44
+	b	.LBB1_43
+.LBB1_43:                               @   in Loop: Header=BB1_26 Depth=1
+.Ltmp72:
+	.loc	2 132 34 is_stmt 1      @ ../BSP/Src/SHT3x.c:132:34
+	ldr	r0, __arm_cp.1_1
+	movs	r1, #0
+	str	r1, [r0]
+	add	r0, sp, #4
+	.loc	2 133 34                @ ../BSP/Src/SHT3x.c:133:34
+	ldrb	r2, [r0]
+	.loc	2 133 21 is_stmt 0      @ ../BSP/Src/SHT3x.c:133:21
+	lsls	r2, r2, #2
+	ldr	r3, __arm_cp.1_0
+	adds	r2, r3, r2
+	.loc	2 133 37                @ ../BSP/Src/SHT3x.c:133:37
+	str	r1, [r2, #28]
+	.loc	2 134 34 is_stmt 1      @ ../BSP/Src/SHT3x.c:134:34
+	ldrb	r0, [r0]
+	.loc	2 134 21 is_stmt 0      @ ../BSP/Src/SHT3x.c:134:21
+	lsls	r0, r0, #2
+	adds	r0, r3, r0
+	.loc	2 134 37                @ ../BSP/Src/SHT3x.c:134:37
+	str	r1, [r0, #16]
+	.loc	2 135 17 is_stmt 1      @ ../BSP/Src/SHT3x.c:135:17
+	b	.LBB1_44
+.Ltmp73:
+.LBB1_44:                               @   in Loop: Header=BB1_26 Depth=1
+	.loc	2 136 13                @ ../BSP/Src/SHT3x.c:136:13
+	b	.LBB1_46
+.Ltmp74:
+.LBB1_45:                               @   in Loop: Header=BB1_26 Depth=1
+	.loc	2 139 30                @ ../BSP/Src/SHT3x.c:139:30
+	ldr	r0, __arm_cp.1_1
+	movs	r1, #0
+	str	r1, [r0]
+	add	r0, sp, #4
+	.loc	2 140 30                @ ../BSP/Src/SHT3x.c:140:30
+	ldrb	r2, [r0]
+	.loc	2 140 17 is_stmt 0      @ ../BSP/Src/SHT3x.c:140:17
+	lsls	r2, r2, #2
+	ldr	r3, __arm_cp.1_0
+	adds	r2, r3, r2
+	.loc	2 140 33                @ ../BSP/Src/SHT3x.c:140:33
+	str	r1, [r2, #28]
+	.loc	2 141 30 is_stmt 1      @ ../BSP/Src/SHT3x.c:141:30
+	ldrb	r0, [r0]
+	.loc	2 141 17 is_stmt 0      @ ../BSP/Src/SHT3x.c:141:17
+	lsls	r0, r0, #2
+	adds	r0, r3, r0
+	.loc	2 141 33                @ ../BSP/Src/SHT3x.c:141:33
+	str	r1, [r0, #16]
+	b	.LBB1_46
+.Ltmp75:
+.LBB1_46:                               @   in Loop: Header=BB1_26 Depth=1
+	.loc	2 0 33                  @ ../BSP/Src/SHT3x.c:0:33
+	b	.LBB1_47
+.LBB1_47:                               @   in Loop: Header=BB1_26 Depth=1
+	b	.LBB1_48
+.LBB1_48:                               @   in Loop: Header=BB1_26 Depth=1
+	.loc	2 146 5 is_stmt 1       @ ../BSP/Src/SHT3x.c:146:5
+	b	.LBB1_49
+.Ltmp76:
+.LBB1_49:                               @   in Loop: Header=BB1_26 Depth=1
+	.loc	2 88 47                 @ ../BSP/Src/SHT3x.c:88:47
+	ldr	r0, [sp, #4]
+	adds	r0, r0, #1
+	add	r1, sp, #4
+	strb	r0, [r1]
+	.loc	2 88 6 is_stmt 0        @ ../BSP/Src/SHT3x.c:88:6
+	b	.LBB1_26
+.Ltmp77:
+.LBB1_50:
+	.loc	2 147 1 is_stmt 1       @ ../BSP/Src/SHT3x.c:147:1
+	add	sp, #8
+	pop	{r4, pc}
+.Ltmp78:
+	.p2align	2
+@ %bb.51:
+	.loc	2 0 1 is_stmt 0         @ ../BSP/Src/SHT3x.c:0:1
+__arm_cp.1_0:
+	.long	T_H
+.Lcpi_end1:
+	.size	__arm_cp.1_0, .Lcpi_end1-__arm_cp.1_0
+__arm_cp.1_1:
+	.long	Get_Duration.TemCountCnt2
+.Lcpi_end2:
+	.size	__arm_cp.1_1, .Lcpi_end2-__arm_cp.1_1
+__arm_cp.1_2:
+	.long	Get_Duration.TemCountCnt1
+.Lcpi_end3:
+	.size	__arm_cp.1_2, .Lcpi_end3-__arm_cp.1_2
+.Lfunc_end1:
+	.size	Get_Duration, .Lfunc_end1-Get_Duration
+	.cfi_endproc
+	.cantunwind
+	.fnend
+                                        @ -- End function
+	.section	.text.SHT3_Init,"ax",%progbits
+	.hidden	SHT3_Init               @ -- Begin function SHT3_Init
+	.globl	SHT3_Init
+	.p2align	2
+	.type	SHT3_Init,%function
+	.code	16                      @ @SHT3_Init
+	.thumb_func
+SHT3_Init:
+.Lfunc_begin2:
+	.loc	2 152 0 is_stmt 1       @ ../BSP/Src/SHT3x.c:152:0
+	.fnstart
+	.cfi_startproc
+@ %bb.0:
+	.save	{r4, r5, r7, lr}
+	push	{r4, r5, r7, lr}
+	.cfi_def_cfa_offset 16
+	.cfi_offset lr, -4
+	.cfi_offset r7, -8
+	.cfi_offset r5, -12
+	.cfi_offset r4, -16
+	.pad	#16
+	sub	sp, #16
+	.cfi_def_cfa_offset 32
+	add	r0, sp, #12
+	movs	r1, #0
+.Ltmp79:
+	.loc	2 154 11 prologue_end   @ ../BSP/Src/SHT3x.c:154:11
+	strb	r1, [r0]
+	.loc	2 154 9 is_stmt 0       @ ../BSP/Src/SHT3x.c:154:9
+	b	.LBB2_1
+.LBB2_1:                                @ =>This Loop Header: Depth=1
+                                        @     Child Loop BB2_3 Depth 2
+	.loc	2 0 9                   @ ../BSP/Src/SHT3x.c:0:9
+	add	r0, sp, #12
+.Ltmp80:
+	.loc	2 154 16                @ ../BSP/Src/SHT3x.c:154:16
+	ldrb	r0, [r0]
+.Ltmp81:
+	.loc	2 154 5                 @ ../BSP/Src/SHT3x.c:154:5
+	cmp	r0, #0
+	bgt	.LBB2_8
+	b	.LBB2_2
+.LBB2_2:                                @   in Loop: Header=BB2_1 Depth=1
+	.loc	2 0 5                   @ ../BSP/Src/SHT3x.c:0:5
+	add	r0, sp, #8
+	movs	r1, #0
+.Ltmp82:
+	.loc	2 156 15 is_stmt 1      @ ../BSP/Src/SHT3x.c:156:15
+	strb	r1, [r0]
+	.loc	2 156 13 is_stmt 0      @ ../BSP/Src/SHT3x.c:156:13
+	b	.LBB2_3
+.LBB2_3:                                @   Parent Loop BB2_1 Depth=1
+                                        @ =>  This Inner Loop Header: Depth=2
+	.loc	2 0 13                  @ ../BSP/Src/SHT3x.c:0:13
+	add	r0, sp, #8
+.Ltmp83:
+	.loc	2 156 20                @ ../BSP/Src/SHT3x.c:156:20
+	ldrb	r0, [r0]
+.Ltmp84:
+	.loc	2 156 9                 @ ../BSP/Src/SHT3x.c:156:9
+	cmp	r0, #9
+	bgt	.LBB2_6
+	b	.LBB2_4
+.LBB2_4:                                @   in Loop: Header=BB2_3 Depth=2
+	.loc	2 0 9                   @ ../BSP/Src/SHT3x.c:0:9
+	add	r0, sp, #12
+.Ltmp85:
+	.loc	2 158 21 is_stmt 1      @ ../BSP/Src/SHT3x.c:158:21
+	ldrb	r1, [r0]
+	movs	r2, #40
+	.loc	2 158 13 is_stmt 0      @ ../BSP/Src/SHT3x.c:158:13
+	mov	r3, r2
+	muls	r3, r1, r3
+	ldr	r1, __arm_cp.2_2
+	adds	r1, r1, r3
+	add	r3, sp, #8
+	.loc	2 158 24                @ ../BSP/Src/SHT3x.c:158:24
+	ldrb	r4, [r3]
+	.loc	2 158 13                @ ../BSP/Src/SHT3x.c:158:13
+	lsls	r4, r4, #2
+	ldr	r5, __arm_cp.2_3
+	.loc	2 158 27                @ ../BSP/Src/SHT3x.c:158:27
+	str	r5, [r1, r4]
+	.loc	2 159 21 is_stmt 1      @ ../BSP/Src/SHT3x.c:159:21
+	ldrb	r0, [r0]
+	.loc	2 159 13 is_stmt 0      @ ../BSP/Src/SHT3x.c:159:13
+	muls	r2, r0, r2
+	ldr	r0, __arm_cp.2_4
+	adds	r0, r0, r2
+	.loc	2 159 24                @ ../BSP/Src/SHT3x.c:159:24
+	ldrb	r1, [r3]
+	.loc	2 159 13                @ ../BSP/Src/SHT3x.c:159:13
+	lsls	r1, r1, #2
+	ldr	r2, __arm_cp.2_5
+	.loc	2 159 27                @ ../BSP/Src/SHT3x.c:159:27
+	str	r2, [r0, r1]
+	.loc	2 160 9 is_stmt 1       @ ../BSP/Src/SHT3x.c:160:9
+	b	.LBB2_5
+.Ltmp86:
+.LBB2_5:                                @   in Loop: Header=BB2_3 Depth=2
+	.loc	2 156 37                @ ../BSP/Src/SHT3x.c:156:37
+	ldr	r0, [sp, #8]
+	adds	r0, r0, #1
+	add	r1, sp, #8
+	strb	r0, [r1]
+	.loc	2 156 9 is_stmt 0       @ ../BSP/Src/SHT3x.c:156:9
+	b	.LBB2_3
+.Ltmp87:
+.LBB2_6:                                @   in Loop: Header=BB2_1 Depth=1
+	.loc	2 161 5 is_stmt 1       @ ../BSP/Src/SHT3x.c:161:5
+	b	.LBB2_7
+.Ltmp88:
+.LBB2_7:                                @   in Loop: Header=BB2_1 Depth=1
+	.loc	2 154 33                @ ../BSP/Src/SHT3x.c:154:33
+	ldr	r0, [sp, #12]
+	adds	r0, r0, #1
+	add	r1, sp, #12
+	strb	r0, [r1]
+	.loc	2 154 5 is_stmt 0       @ ../BSP/Src/SHT3x.c:154:5
+	b	.LBB2_1
+.Ltmp89:
+.LBB2_8:
+	.loc	2 0 5                   @ ../BSP/Src/SHT3x.c:0:5
+	add	r0, sp, #12
+	movs	r1, #0
+.Ltmp90:
+	.loc	2 162 11 is_stmt 1      @ ../BSP/Src/SHT3x.c:162:11
+	strb	r1, [r0]
+	.loc	2 162 9 is_stmt 0       @ ../BSP/Src/SHT3x.c:162:9
+	b	.LBB2_9
+.LBB2_9:                                @ =>This Inner Loop Header: Depth=1
+	.loc	2 0 9                   @ ../BSP/Src/SHT3x.c:0:9
+	add	r0, sp, #12
+.Ltmp91:
+	.loc	2 162 16                @ ../BSP/Src/SHT3x.c:162:16
+	ldrb	r0, [r0]
+.Ltmp92:
+	.loc	2 162 5                 @ ../BSP/Src/SHT3x.c:162:5
+	cmp	r0, #0
+	bgt	.LBB2_15
+	b	.LBB2_10
+.LBB2_10:                               @   in Loop: Header=BB2_9 Depth=1
+	.loc	2 0 5                   @ ../BSP/Src/SHT3x.c:0:5
+	add	r0, sp, #12
+.Ltmp93:
+	.loc	2 164 32 is_stmt 1      @ ../BSP/Src/SHT3x.c:164:32
+	ldrb	r0, [r0]
+	ldr	r1, __arm_cp.2_0
+	.loc	2 164 15 is_stmt 0      @ ../BSP/Src/SHT3x.c:164:15
+	bl	Set_Sht3_Periodi
+	add	r1, sp, #4
+	.loc	2 164 13                @ ../BSP/Src/SHT3x.c:164:13
+	strb	r0, [r1]
+.Ltmp94:
+	.loc	2 165 12 is_stmt 1      @ ../BSP/Src/SHT3x.c:165:12
+	ldrb	r0, [r1]
+.Ltmp95:
+	.loc	2 165 12 is_stmt 0      @ ../BSP/Src/SHT3x.c:165:12
+	cmp	r0, #0
+	beq	.LBB2_12
+	b	.LBB2_11
+.LBB2_11:                               @   in Loop: Header=BB2_9 Depth=1
+	.loc	2 0 12                  @ ../BSP/Src/SHT3x.c:0:12
+	add	r0, sp, #12
+.Ltmp96:
+	.loc	2 167 51 is_stmt 1      @ ../BSP/Src/SHT3x.c:167:51
+	ldrb	r1, [r0]
+	.loc	2 167 41 is_stmt 0      @ ../BSP/Src/SHT3x.c:167:41
+	ldr	r2, __arm_cp.2_1
+	movs	r3, #0
+	.loc	2 167 54                @ ../BSP/Src/SHT3x.c:167:54
+	strb	r3, [r2, r1]
+	.loc	2 167 23                @ ../BSP/Src/SHT3x.c:167:23
+	ldrb	r0, [r0]
+	.loc	2 167 25                @ ../BSP/Src/SHT3x.c:167:25
+	adds	r0, r0, r2
+	.loc	2 167 39                @ ../BSP/Src/SHT3x.c:167:39
+	strb	r3, [r0, #1]
+	.loc	2 168 9 is_stmt 1       @ ../BSP/Src/SHT3x.c:168:9
+	b	.LBB2_13
+.Ltmp97:
+.LBB2_12:                               @   in Loop: Header=BB2_9 Depth=1
+	.loc	2 0 9 is_stmt 0         @ ../BSP/Src/SHT3x.c:0:9
+	add	r0, sp, #12
+.Ltmp98:
+	.loc	2 171 51 is_stmt 1      @ ../BSP/Src/SHT3x.c:171:51
+	ldrb	r1, [r0]
+	.loc	2 171 41 is_stmt 0      @ ../BSP/Src/SHT3x.c:171:41
+	ldr	r2, __arm_cp.2_1
+	movs	r3, #1
+	.loc	2 171 54                @ ../BSP/Src/SHT3x.c:171:54
+	strb	r3, [r2, r1]
+	.loc	2 171 23                @ ../BSP/Src/SHT3x.c:171:23
+	ldrb	r0, [r0]
+	.loc	2 171 25                @ ../BSP/Src/SHT3x.c:171:25
+	adds	r0, r0, r2
+	.loc	2 171 39                @ ../BSP/Src/SHT3x.c:171:39
+	strb	r3, [r0, #1]
+	b	.LBB2_13
+.Ltmp99:
+.LBB2_13:                               @   in Loop: Header=BB2_9 Depth=1
+	.loc	2 173 5 is_stmt 1       @ ../BSP/Src/SHT3x.c:173:5
+	b	.LBB2_14
+.Ltmp100:
+.LBB2_14:                               @   in Loop: Header=BB2_9 Depth=1
+	.loc	2 162 33                @ ../BSP/Src/SHT3x.c:162:33
+	ldr	r0, [sp, #12]
+	adds	r0, r0, #1
+	add	r1, sp, #12
+	strb	r0, [r1]
+	.loc	2 162 5 is_stmt 0       @ ../BSP/Src/SHT3x.c:162:5
+	b	.LBB2_9
+.Ltmp101:
+.LBB2_15:
+	.loc	2 174 1 is_stmt 1       @ ../BSP/Src/SHT3x.c:174:1
+	add	sp, #16
+	pop	{r4, r5, r7, pc}
+.Ltmp102:
+	.p2align	2
+@ %bb.16:
+	.loc	2 0 1 is_stmt 0         @ ../BSP/Src/SHT3x.c:0:1
+__arm_cp.2_0:
+	.long	9001                    @ 0x2329
+.Lcpi_end4:
+	.size	__arm_cp.2_0, .Lcpi_end4-__arm_cp.2_0
+__arm_cp.2_1:
+	.long	SensorSta
+.Lcpi_end5:
+	.size	__arm_cp.2_1, .Lcpi_end5-__arm_cp.2_1
+__arm_cp.2_2:
+	.long	gTemBuf
+.Lcpi_end6:
+	.size	__arm_cp.2_2, .Lcpi_end6-__arm_cp.2_2
+__arm_cp.2_3:
+	.long	1103626240              @ 0x41c80000
+.Lcpi_end7:
+	.size	__arm_cp.2_3, .Lcpi_end7-__arm_cp.2_3
+__arm_cp.2_4:
+	.long	gHumBuf
+.Lcpi_end8:
+	.size	__arm_cp.2_4, .Lcpi_end8-__arm_cp.2_4
+__arm_cp.2_5:
+	.long	1112014848              @ 0x42480000
+.Lcpi_end9:
+	.size	__arm_cp.2_5, .Lcpi_end9-__arm_cp.2_5
+.Lfunc_end2:
+	.size	SHT3_Init, .Lfunc_end2-SHT3_Init
+	.cfi_endproc
+	.cantunwind
+	.fnend
+                                        @ -- End function
+	.section	.text.Set_Sht3_Periodi,"ax",%progbits
+	.hidden	Set_Sht3_Periodi        @ -- Begin function Set_Sht3_Periodi
+	.globl	Set_Sht3_Periodi
+	.p2align	2
+	.type	Set_Sht3_Periodi,%function
+	.code	16                      @ @Set_Sht3_Periodi
+	.thumb_func
+Set_Sht3_Periodi:
+.Lfunc_begin3:
+	.loc	2 254 0 is_stmt 1       @ ../BSP/Src/SHT3x.c:254:0
+	.fnstart
+	.cfi_startproc
+@ %bb.0:
+	.save	{r4, lr}
+	push	{r4, lr}
+	.cfi_def_cfa_offset 8
+	.cfi_offset lr, -4
+	.cfi_offset r4, -8
+	.pad	#24
+	sub	sp, #24
+	.cfi_def_cfa_offset 32
+	mov	r2, r1
+	mov	r3, r0
+	add	r4, sp, #20
+	strb	r0, [r4]
+	add	r0, sp, #16
+	strh	r1, [r0]
+.Ltmp103:
+	.loc	2 256 21 prologue_end   @ ../BSP/Src/SHT3x.c:256:21
+	ldrb	r0, [r4]
+	.loc	2 256 5 is_stmt 0       @ ../BSP/Src/SHT3x.c:256:5
+	str	r2, [sp, #8]            @ 4-byte Spill
+	str	r3, [sp, #4]            @ 4-byte Spill
+	bl	Get_Channal_Pin
+	movs	r0, #136
+	ldr	r1, __arm_cp.3_0
+	.loc	2 257 15 is_stmt 1      @ ../BSP/Src/SHT3x.c:257:15
+	bl	SHT3x_WriteData
+	add	r1, sp, #12
+	.loc	2 257 13 is_stmt 0      @ ../BSP/Src/SHT3x.c:257:13
+	strb	r0, [r1]
+	.loc	2 258 12 is_stmt 1      @ ../BSP/Src/SHT3x.c:258:12
+	ldrb	r0, [r1]
+	.loc	2 258 5 is_stmt 0       @ ../BSP/Src/SHT3x.c:258:5
+	add	sp, #24
+	pop	{r4, pc}
+.Ltmp104:
+	.p2align	2
+@ %bb.1:
+	.loc	2 0 5                   @ ../BSP/Src/SHT3x.c:0:5
+__arm_cp.3_0:
+	.long	9001                    @ 0x2329
+.Lcpi_end10:
+	.size	__arm_cp.3_0, .Lcpi_end10-__arm_cp.3_0
+.Lfunc_end3:
+	.size	Set_Sht3_Periodi, .Lfunc_end3-Set_Sht3_Periodi
+	.cfi_endproc
+	.cantunwind
+	.fnend
+                                        @ -- End function
+	.section	.text.SHT3x_WriteData,"ax",%progbits
+	.hidden	SHT3x_WriteData         @ -- Begin function SHT3x_WriteData
+	.globl	SHT3x_WriteData
+	.p2align	1
+	.type	SHT3x_WriteData,%function
+	.code	16                      @ @SHT3x_WriteData
+	.thumb_func
+SHT3x_WriteData:
+.Lfunc_begin4:
+	.loc	2 191 0 is_stmt 1       @ ../BSP/Src/SHT3x.c:191:0
+	.fnstart
+	.cfi_startproc
+@ %bb.0:
+	.save	{r4, r5, r7, lr}
+	push	{r4, r5, r7, lr}
+	.cfi_def_cfa_offset 16
+	.cfi_offset lr, -4
+	.cfi_offset r7, -8
+	.cfi_offset r5, -12
+	.cfi_offset r4, -16
+	.pad	#32
+	sub	sp, #32
+	.cfi_def_cfa_offset 48
+	mov	r2, r1
+	mov	r3, r0
+	add	r4, sp, #28
+	strb	r0, [r4]
+	add	r0, sp, #24
+	strh	r1, [r0]
+	add	r1, sp, #20
+	movs	r5, #0
+.Ltmp105:
+	.loc	2 192 13 prologue_end   @ ../BSP/Src/SHT3x.c:192:13
+	strb	r5, [r1]
+	.loc	2 195 5                 @ ../BSP/Src/SHT3x.c:195:5
+	str	r2, [sp, #16]           @ 4-byte Spill
+	str	r3, [sp, #12]           @ 4-byte Spill
+	str	r4, [sp, #8]            @ 4-byte Spill
+	str	r0, [sp, #4]            @ 4-byte Spill
+	str	r1, [sp]                @ 4-byte Spill
+	bl	TH_IIC_Start
+	.loc	2 196 22                @ ../BSP/Src/SHT3x.c:196:22
+	ldr	r0, [sp, #8]            @ 4-byte Reload
+	ldrb	r0, [r0]
+	.loc	2 196 5 is_stmt 0       @ ../BSP/Src/SHT3x.c:196:5
+	bl	TH_IIC_Send_Byte
+	.loc	2 197 12 is_stmt 1      @ ../BSP/Src/SHT3x.c:197:12
+	bl	TH_IIC_Wait_Ack
+	.loc	2 197 9 is_stmt 0       @ ../BSP/Src/SHT3x.c:197:9
+	ldr	r1, [sp, #20]
+	adds	r0, r1, r0
+	ldr	r1, [sp]                @ 4-byte Reload
+	strb	r0, [r1]
+	.loc	2 198 23 is_stmt 1      @ ../BSP/Src/SHT3x.c:198:23
+	ldr	r0, [sp, #4]            @ 4-byte Reload
+	ldrb	r0, [r0, #1]
+	.loc	2 198 5 is_stmt 0       @ ../BSP/Src/SHT3x.c:198:5
+	bl	TH_IIC_Send_Byte
+	.loc	2 199 12 is_stmt 1      @ ../BSP/Src/SHT3x.c:199:12
+	bl	TH_IIC_Wait_Ack
+	.loc	2 199 9 is_stmt 0       @ ../BSP/Src/SHT3x.c:199:9
+	ldr	r1, [sp, #20]
+	adds	r0, r1, r0
+	ldr	r1, [sp]                @ 4-byte Reload
+	strb	r0, [r1]
+	.loc	2 200 22 is_stmt 1      @ ../BSP/Src/SHT3x.c:200:22
+	ldr	r0, [sp, #4]            @ 4-byte Reload
+	ldrb	r0, [r0]
+	.loc	2 200 5 is_stmt 0       @ ../BSP/Src/SHT3x.c:200:5
+	bl	TH_IIC_Send_Byte
+	.loc	2 201 12 is_stmt 1      @ ../BSP/Src/SHT3x.c:201:12
+	bl	TH_IIC_Wait_Ack
+	.loc	2 201 9 is_stmt 0       @ ../BSP/Src/SHT3x.c:201:9
+	ldr	r1, [sp, #20]
+	adds	r0, r1, r0
+	ldr	r1, [sp]                @ 4-byte Reload
+	strb	r0, [r1]
+	.loc	2 202 5 is_stmt 1       @ ../BSP/Src/SHT3x.c:202:5
+	bl	TH_IIC_Stop
+	.loc	2 204 12                @ ../BSP/Src/SHT3x.c:204:12
+	ldr	r0, [sp]                @ 4-byte Reload
+	ldrb	r0, [r0]
+	.loc	2 204 5 is_stmt 0       @ ../BSP/Src/SHT3x.c:204:5
+	add	sp, #32
+	pop	{r4, r5, r7, pc}
+.Ltmp106:
+.Lfunc_end4:
+	.size	SHT3x_WriteData, .Lfunc_end4-SHT3x_WriteData
+	.cfi_endproc
+	.cantunwind
+	.fnend
+                                        @ -- End function
+	.section	.text.SHT3x_ReadData,"ax",%progbits
+	.hidden	SHT3x_ReadData          @ -- Begin function SHT3x_ReadData
+	.globl	SHT3x_ReadData
+	.p2align	1
+	.type	SHT3x_ReadData,%function
+	.code	16                      @ @SHT3x_ReadData
+	.thumb_func
+SHT3x_ReadData:
+.Lfunc_begin5:
+	.loc	2 224 0 is_stmt 1       @ ../BSP/Src/SHT3x.c:224:0
+	.fnstart
+	.cfi_startproc
+@ %bb.0:
+	.save	{r4, r5, r6, r7, lr}
+	push	{r4, r5, r6, r7, lr}
+	.cfi_def_cfa_offset 20
+	.cfi_offset lr, -4
+	.cfi_offset r7, -8
+	.cfi_offset r6, -12
+	.cfi_offset r5, -16
+	.cfi_offset r4, -20
+	.pad	#52
+	sub	sp, #52
+	.cfi_def_cfa_offset 72
+	mov	r4, r3
+	mov	r5, r1
+	mov	r6, r0
+	add	r7, sp, #48
+	strb	r0, [r7]
+	add	r0, sp, #44
+	strh	r1, [r0]
+	str	r2, [sp, #40]
+	add	r1, sp, #36
+	strb	r3, [r1]
+	add	r1, sp, #28
+	movs	r2, #0
+.Ltmp107:
+	.loc	2 226 13 prologue_end   @ ../BSP/Src/SHT3x.c:226:13
+	strb	r2, [r1]
+	.loc	2 229 5                 @ ../BSP/Src/SHT3x.c:229:5
+	str	r4, [sp, #24]           @ 4-byte Spill
+	str	r5, [sp, #20]           @ 4-byte Spill
+	str	r6, [sp, #16]           @ 4-byte Spill
+	str	r7, [sp, #12]           @ 4-byte Spill
+	str	r0, [sp, #8]            @ 4-byte Spill
+	str	r1, [sp, #4]            @ 4-byte Spill
+	str	r2, [sp]                @ 4-byte Spill
+	bl	TH_IIC_Start
+	.loc	2 230 22                @ ../BSP/Src/SHT3x.c:230:22
+	ldr	r0, [sp, #12]           @ 4-byte Reload
+	ldrb	r0, [r0]
+	.loc	2 230 5 is_stmt 0       @ ../BSP/Src/SHT3x.c:230:5
+	bl	TH_IIC_Send_Byte
+	.loc	2 231 12 is_stmt 1      @ ../BSP/Src/SHT3x.c:231:12
+	bl	TH_IIC_Wait_Ack
+	.loc	2 231 9 is_stmt 0       @ ../BSP/Src/SHT3x.c:231:9
+	ldr	r1, [sp, #28]
+	adds	r0, r1, r0
+	ldr	r1, [sp, #4]            @ 4-byte Reload
+	strb	r0, [r1]
+	.loc	2 232 23 is_stmt 1      @ ../BSP/Src/SHT3x.c:232:23
+	ldr	r0, [sp, #8]            @ 4-byte Reload
+	ldrb	r0, [r0, #1]
+	.loc	2 232 5 is_stmt 0       @ ../BSP/Src/SHT3x.c:232:5
+	bl	TH_IIC_Send_Byte
+	.loc	2 233 12 is_stmt 1      @ ../BSP/Src/SHT3x.c:233:12
+	bl	TH_IIC_Wait_Ack
+	.loc	2 233 9 is_stmt 0       @ ../BSP/Src/SHT3x.c:233:9
+	ldr	r1, [sp, #28]
+	adds	r0, r1, r0
+	ldr	r1, [sp, #4]            @ 4-byte Reload
+	strb	r0, [r1]
+	.loc	2 234 22 is_stmt 1      @ ../BSP/Src/SHT3x.c:234:22
+	ldr	r0, [sp, #8]            @ 4-byte Reload
+	ldrb	r0, [r0]
+	.loc	2 234 5 is_stmt 0       @ ../BSP/Src/SHT3x.c:234:5
+	bl	TH_IIC_Send_Byte
+	.loc	2 235 12 is_stmt 1      @ ../BSP/Src/SHT3x.c:235:12
+	bl	TH_IIC_Wait_Ack
+	.loc	2 235 9 is_stmt 0       @ ../BSP/Src/SHT3x.c:235:9
+	ldr	r1, [sp, #28]
+	adds	r0, r1, r0
+	ldr	r1, [sp, #4]            @ 4-byte Reload
+	strb	r0, [r1]
+	.loc	2 238 5 is_stmt 1       @ ../BSP/Src/SHT3x.c:238:5
+	bl	TH_IIC_Start
+	.loc	2 239 22                @ ../BSP/Src/SHT3x.c:239:22
+	ldr	r0, [sp, #48]
+	.loc	2 239 33 is_stmt 0      @ ../BSP/Src/SHT3x.c:239:33
+	adds	r0, r0, #1
+	.loc	2 239 5                 @ ../BSP/Src/SHT3x.c:239:5
+	uxtb	r0, r0
+	bl	TH_IIC_Send_Byte
+	.loc	2 240 12 is_stmt 1      @ ../BSP/Src/SHT3x.c:240:12
+	bl	TH_IIC_Wait_Ack
+	.loc	2 240 9 is_stmt 0       @ ../BSP/Src/SHT3x.c:240:9
+	ldr	r1, [sp, #28]
+	adds	r0, r1, r0
+	ldr	r1, [sp, #4]            @ 4-byte Reload
+	strb	r0, [r1]
+	add	r0, sp, #32
+.Ltmp108:
+	.loc	2 242 11 is_stmt 1      @ ../BSP/Src/SHT3x.c:242:11
+	ldr	r2, [sp]                @ 4-byte Reload
+	strb	r2, [r0]
+	.loc	2 242 9 is_stmt 0       @ ../BSP/Src/SHT3x.c:242:9
+	b	.LBB5_1
+.LBB5_1:                                @ =>This Inner Loop Header: Depth=1
+	.loc	2 0 9                   @ ../BSP/Src/SHT3x.c:0:9
+	add	r0, sp, #32
+.Ltmp109:
+	.loc	2 242 16                @ ../BSP/Src/SHT3x.c:242:16
+	ldrb	r0, [r0]
+	add	r1, sp, #36
+	.loc	2 242 20                @ ../BSP/Src/SHT3x.c:242:20
+	ldrb	r1, [r1]
+	.loc	2 242 28                @ ../BSP/Src/SHT3x.c:242:28
+	subs	r1, r1, #1
+.Ltmp110:
+	.loc	2 242 5                 @ ../BSP/Src/SHT3x.c:242:5
+	cmp	r0, r1
+	bge	.LBB5_4
+	b	.LBB5_2
+.LBB5_2:                                @   in Loop: Header=BB5_1 Depth=1
+	.loc	2 0 5                   @ ../BSP/Src/SHT3x.c:0:5
+	movs	r0, #1
+.Ltmp111:
+	.loc	2 244 27 is_stmt 1      @ ../BSP/Src/SHT3x.c:244:27
+	bl	TH_IIC_Read_Byte
+	.loc	2 244 11 is_stmt 0      @ ../BSP/Src/SHT3x.c:244:11
+	ldr	r1, [sp, #40]
+	add	r2, sp, #32
+	.loc	2 244 22                @ ../BSP/Src/SHT3x.c:244:22
+	ldrb	r2, [r2]
+	.loc	2 244 25                @ ../BSP/Src/SHT3x.c:244:25
+	strb	r0, [r1, r2]
+	.loc	2 245 5 is_stmt 1       @ ../BSP/Src/SHT3x.c:245:5
+	b	.LBB5_3
+.Ltmp112:
+.LBB5_3:                                @   in Loop: Header=BB5_1 Depth=1
+	.loc	2 242 34                @ ../BSP/Src/SHT3x.c:242:34
+	ldr	r0, [sp, #32]
+	adds	r0, r0, #1
+	add	r1, sp, #32
+	strb	r0, [r1]
+	.loc	2 242 5 is_stmt 0       @ ../BSP/Src/SHT3x.c:242:5
+	b	.LBB5_1
+.Ltmp113:
+.LBB5_4:
+	.loc	2 0 5                   @ ../BSP/Src/SHT3x.c:0:5
+	movs	r0, #0
+	.loc	2 246 24 is_stmt 1      @ ../BSP/Src/SHT3x.c:246:24
+	bl	TH_IIC_Read_Byte
+	.loc	2 246 7 is_stmt 0       @ ../BSP/Src/SHT3x.c:246:7
+	ldr	r1, [sp, #40]
+	add	r2, sp, #32
+	.loc	2 246 18                @ ../BSP/Src/SHT3x.c:246:18
+	ldrb	r2, [r2]
+	.loc	2 246 22                @ ../BSP/Src/SHT3x.c:246:22
+	strb	r0, [r1, r2]
+	.loc	2 247 5 is_stmt 1       @ ../BSP/Src/SHT3x.c:247:5
+	bl	TH_IIC_Stop
+	add	r0, sp, #28
+	.loc	2 249 12                @ ../BSP/Src/SHT3x.c:249:12
+	ldrb	r0, [r0]
+	.loc	2 249 5 is_stmt 0       @ ../BSP/Src/SHT3x.c:249:5
+	add	sp, #52
+	pop	{r4, r5, r6, r7, pc}
+.Ltmp114:
+.Lfunc_end5:
+	.size	SHT3x_ReadData, .Lfunc_end5-SHT3x_ReadData
+	.cfi_endproc
+	.cantunwind
+	.fnend
+                                        @ -- End function
+	.section	.text.Read_Sht3_TH,"ax",%progbits
+	.hidden	Read_Sht3_TH            @ -- Begin function Read_Sht3_TH
+	.globl	Read_Sht3_TH
+	.p2align	1
+	.type	Read_Sht3_TH,%function
+	.code	16                      @ @Read_Sht3_TH
+	.thumb_func
+Read_Sht3_TH:
+.Lfunc_begin6:
+	.loc	2 263 0 is_stmt 1       @ ../BSP/Src/SHT3x.c:263:0
+	.fnstart
+	.cfi_startproc
+@ %bb.0:
+	.save	{r4, r5, r6, r7, lr}
+	push	{r4, r5, r6, r7, lr}
+	.cfi_def_cfa_offset 20
+	.cfi_offset lr, -4
+	.cfi_offset r7, -8
+	.cfi_offset r6, -12
+	.cfi_offset r5, -16
+	.cfi_offset r4, -20
+	.pad	#44
+	sub	sp, #44
+	.cfi_def_cfa_offset 64
+	mov	r4, r3
+	mov	r5, r1
+	mov	r6, r0
+	add	r7, sp, #40
+	strb	r0, [r7]
+	add	r0, sp, #36
+	strh	r1, [r0]
+	str	r2, [sp, #32]
+	add	r1, sp, #28
+	strh	r3, [r1]
+.Ltmp115:
+	.loc	2 265 21 prologue_end   @ ../BSP/Src/SHT3x.c:265:21
+	ldrb	r2, [r7]
+	.loc	2 265 5 is_stmt 0       @ ../BSP/Src/SHT3x.c:265:5
+	str	r0, [sp, #20]           @ 4-byte Spill
+	mov	r0, r2
+	str	r4, [sp, #16]           @ 4-byte Spill
+	str	r5, [sp, #12]           @ 4-byte Spill
+	str	r6, [sp, #8]            @ 4-byte Spill
+	str	r1, [sp, #4]            @ 4-byte Spill
+	bl	Get_Channal_Pin
+	.loc	2 266 42 is_stmt 1      @ ../BSP/Src/SHT3x.c:266:42
+	ldr	r0, [sp, #20]           @ 4-byte Reload
+	ldrh	r1, [r0]
+	.loc	2 266 52 is_stmt 0      @ ../BSP/Src/SHT3x.c:266:52
+	ldr	r2, [sp, #32]
+	.loc	2 266 62                @ ../BSP/Src/SHT3x.c:266:62
+	ldr	r3, [sp, #4]            @ 4-byte Reload
+	ldrb	r3, [r3]
+	movs	r0, #136
+	.loc	2 266 15                @ ../BSP/Src/SHT3x.c:266:15
+	bl	SHT3x_ReadData
+	add	r1, sp, #24
+	.loc	2 266 13                @ ../BSP/Src/SHT3x.c:266:13
+	strb	r0, [r1]
+	.loc	2 267 12 is_stmt 1      @ ../BSP/Src/SHT3x.c:267:12
+	ldrb	r0, [r1]
+	.loc	2 267 5 is_stmt 0       @ ../BSP/Src/SHT3x.c:267:5
+	add	sp, #44
+	pop	{r4, r5, r6, r7, pc}
+.Ltmp116:
+.Lfunc_end6:
+	.size	Read_Sht3_TH, .Lfunc_end6-Read_Sht3_TH
+	.cfi_endproc
+	.cantunwind
+	.fnend
+                                        @ -- End function
+	.section	.text.TH_Filter,"ax",%progbits
+	.hidden	TH_Filter               @ -- Begin function TH_Filter
+	.globl	TH_Filter
+	.p2align	2
+	.type	TH_Filter,%function
+	.code	16                      @ @TH_Filter
+	.thumb_func
+TH_Filter:
+.Lfunc_begin7:
+	.loc	2 287 0 is_stmt 1       @ ../BSP/Src/SHT3x.c:287:0
+	.fnstart
+	.cfi_startproc
+@ %bb.0:
+	.save	{r4, r5, r6, r7, lr}
+	push	{r4, r5, r6, r7, lr}
+	.cfi_def_cfa_offset 20
+	.cfi_offset lr, -4
+	.cfi_offset r7, -8
+	.cfi_offset r6, -12
+	.cfi_offset r5, -16
+	.cfi_offset r4, -20
+	.pad	#84
+	sub	sp, #84
+	.cfi_def_cfa_offset 104
+	ldr	r4, [sp, #104]
+	mov	r5, r3
+	mov	r6, r2
+	mov	r7, r0
+	str	r0, [sp, #76]
+	str	r1, [sp, #72]
+	add	r0, sp, #68
+	strh	r2, [r0]
+	add	r1, sp, #64
+	strh	r3, [r1]
+	add	r1, sp, #60
+	strh	r4, [r1]
+	movs	r1, #0
+.Ltmp117:
+	.loc	2 290 11 prologue_end   @ ../BSP/Src/SHT3x.c:290:11
+	str	r1, [sp, #44]
+.Ltmp118:
+	.loc	2 293 8                 @ ../BSP/Src/SHT3x.c:293:8
+	ldrh	r0, [r0]
+.Ltmp119:
+	.loc	2 293 8 is_stmt 0       @ ../BSP/Src/SHT3x.c:293:8
+	cmp	r0, #10
+	beq	.LBB7_2
+	b	.LBB7_1
+.LBB7_1:
+	.loc	2 0 8                   @ ../BSP/Src/SHT3x.c:0:8
+	ldr	r0, __arm_cp.7_1
+.Ltmp120:
+	.loc	2 294 9 is_stmt 1       @ ../BSP/Src/SHT3x.c:294:9
+	str	r0, [sp, #80]
+	b	.LBB7_33
+.Ltmp121:
+.LBB7_2:
+	.loc	2 0 9 is_stmt 0         @ ../BSP/Src/SHT3x.c:0:9
+	add	r0, sp, #64
+.Ltmp122:
+	.loc	2 295 8 is_stmt 1       @ ../BSP/Src/SHT3x.c:295:8
+	ldrh	r0, [r0]
+	add	r1, sp, #60
+	.loc	2 295 21 is_stmt 0      @ ../BSP/Src/SHT3x.c:295:21
+	ldrh	r1, [r1]
+	.loc	2 295 19                @ ../BSP/Src/SHT3x.c:295:19
+	adds	r0, r0, r1
+	add	r1, sp, #68
+	.loc	2 295 35                @ ../BSP/Src/SHT3x.c:295:35
+	ldrh	r1, [r1]
+.Ltmp123:
+	.loc	2 295 8                 @ ../BSP/Src/SHT3x.c:295:8
+	cmp	r0, r1
+	blt	.LBB7_4
+	b	.LBB7_3
+.LBB7_3:
+	.loc	2 0 8                   @ ../BSP/Src/SHT3x.c:0:8
+	ldr	r0, __arm_cp.7_0
+.Ltmp124:
+	.loc	2 296 9 is_stmt 1       @ ../BSP/Src/SHT3x.c:296:9
+	str	r0, [sp, #80]
+	b	.LBB7_33
+.Ltmp125:
+.LBB7_4:
+	.loc	2 0 9 is_stmt 0         @ ../BSP/Src/SHT3x.c:0:9
+	movs	r0, #0
+.Ltmp126:
+	.loc	2 298 11 is_stmt 1      @ ../BSP/Src/SHT3x.c:298:11
+	str	r0, [sp, #56]
+	.loc	2 298 9 is_stmt 0       @ ../BSP/Src/SHT3x.c:298:9
+	b	.LBB7_5
+.LBB7_5:                                @ =>This Inner Loop Header: Depth=1
+.Ltmp127:
+	.loc	2 298 16                @ ../BSP/Src/SHT3x.c:298:16
+	ldr	r0, [sp, #56]
+	add	r1, sp, #68
+	.loc	2 298 20                @ ../BSP/Src/SHT3x.c:298:20
+	ldrh	r1, [r1]
+	.loc	2 298 30                @ ../BSP/Src/SHT3x.c:298:30
+	subs	r1, r1, #1
+.Ltmp128:
+	.loc	2 298 5                 @ ../BSP/Src/SHT3x.c:298:5
+	cmp	r0, r1
+	bge	.LBB7_8
+	b	.LBB7_6
+.LBB7_6:                                @   in Loop: Header=BB7_5 Depth=1
+.Ltmp129:
+	.loc	2 300 24 is_stmt 1      @ ../BSP/Src/SHT3x.c:300:24
+	ldr	r0, [sp, #72]
+	.loc	2 300 34 is_stmt 0      @ ../BSP/Src/SHT3x.c:300:34
+	ldr	r1, [sp, #56]
+	.loc	2 300 36                @ ../BSP/Src/SHT3x.c:300:36
+	lsls	r1, r1, #2
+	.loc	2 300 9                 @ ../BSP/Src/SHT3x.c:300:9
+	adds	r2, r0, r1
+	.loc	2 300 24                @ ../BSP/Src/SHT3x.c:300:24
+	ldr	r2, [r2, #4]
+	.loc	2 300 22                @ ../BSP/Src/SHT3x.c:300:22
+	str	r2, [r0, r1]
+	.loc	2 301 5 is_stmt 1       @ ../BSP/Src/SHT3x.c:301:5
+	b	.LBB7_7
+.Ltmp130:
+.LBB7_7:                                @   in Loop: Header=BB7_5 Depth=1
+	.loc	2 298 38                @ ../BSP/Src/SHT3x.c:298:38
+	ldr	r0, [sp, #56]
+	adds	r0, r0, #1
+	str	r0, [sp, #56]
+	.loc	2 298 5 is_stmt 0       @ ../BSP/Src/SHT3x.c:298:5
+	b	.LBB7_5
+.Ltmp131:
+.LBB7_8:
+	.loc	2 302 20 is_stmt 1      @ ../BSP/Src/SHT3x.c:302:20
+	ldr	r0, [sp, #76]
+	.loc	2 302 5 is_stmt 0       @ ../BSP/Src/SHT3x.c:302:5
+	ldr	r1, [sp, #72]
+	.loc	2 302 15                @ ../BSP/Src/SHT3x.c:302:15
+	ldr	r2, [sp, #56]
+	.loc	2 302 5                 @ ../BSP/Src/SHT3x.c:302:5
+	lsls	r2, r2, #2
+	.loc	2 302 18                @ ../BSP/Src/SHT3x.c:302:18
+	str	r0, [r1, r2]
+	.loc	2 304 25 is_stmt 1      @ ../BSP/Src/SHT3x.c:304:25
+	ldr	r0, [sp, #72]
+	add	r1, sp, #4
+	.loc	2 304 5 is_stmt 0       @ ../BSP/Src/SHT3x.c:304:5
+	ldm	r0!, {r2, r3, r4}
+	stm	r1!, {r2, r3, r4}
+	ldm	r0!, {r2, r3, r4}
+	stm	r1!, {r2, r3, r4}
+	ldm	r0!, {r2, r3, r4, r5}
+	stm	r1!, {r2, r3, r4, r5}
+	movs	r0, #0
+.Ltmp132:
+	.loc	2 306 12 is_stmt 1      @ ../BSP/Src/SHT3x.c:306:12
+	str	r0, [sp, #56]
+	.loc	2 306 10 is_stmt 0      @ ../BSP/Src/SHT3x.c:306:10
+	b	.LBB7_9
+.LBB7_9:                                @ =>This Loop Header: Depth=1
+                                        @     Child Loop BB7_11 Depth 2
+.Ltmp133:
+	.loc	2 306 17                @ ../BSP/Src/SHT3x.c:306:17
+	ldr	r0, [sp, #56]
+	add	r1, sp, #60
+	.loc	2 306 21                @ ../BSP/Src/SHT3x.c:306:21
+	ldrh	r1, [r1]
+.Ltmp134:
+	.loc	2 306 5                 @ ../BSP/Src/SHT3x.c:306:5
+	cmp	r0, r1
+	bge	.LBB7_18
+	b	.LBB7_10
+.LBB7_10:                               @   in Loop: Header=BB7_9 Depth=1
+	.loc	2 0 5                   @ ../BSP/Src/SHT3x.c:0:5
+	movs	r0, #0
+.Ltmp135:
+	.loc	2 308 16 is_stmt 1      @ ../BSP/Src/SHT3x.c:308:16
+	str	r0, [sp, #52]
+	.loc	2 308 14 is_stmt 0      @ ../BSP/Src/SHT3x.c:308:14
+	b	.LBB7_11
+.LBB7_11:                               @   Parent Loop BB7_9 Depth=1
+                                        @ =>  This Inner Loop Header: Depth=2
+.Ltmp136:
+	.loc	2 308 21                @ ../BSP/Src/SHT3x.c:308:21
+	ldr	r0, [sp, #52]
+	add	r1, sp, #68
+	.loc	2 308 25                @ ../BSP/Src/SHT3x.c:308:25
+	ldrh	r1, [r1]
+	.loc	2 308 41                @ ../BSP/Src/SHT3x.c:308:41
+	ldr	r2, [sp, #56]
+	.loc	2 308 39                @ ../BSP/Src/SHT3x.c:308:39
+	mvns	r2, r2
+	adds	r1, r2, r1
+.Ltmp137:
+	.loc	2 308 9                 @ ../BSP/Src/SHT3x.c:308:9
+	cmp	r0, r1
+	bge	.LBB7_16
+	b	.LBB7_12
+.LBB7_12:                               @   in Loop: Header=BB7_11 Depth=2
+.Ltmp138:
+	.loc	2 310 28 is_stmt 1      @ ../BSP/Src/SHT3x.c:310:28
+	ldr	r0, [sp, #52]
+	.loc	2 310 16 is_stmt 0      @ ../BSP/Src/SHT3x.c:310:16
+	lsls	r0, r0, #2
+	add	r1, sp, #4
+	adds	r2, r1, r0
+	ldr	r0, [r1, r0]
+	.loc	2 310 33                @ ../BSP/Src/SHT3x.c:310:33
+	ldr	r1, [r2, #4]
+	.loc	2 310 31                @ ../BSP/Src/SHT3x.c:310:31
+	bl	__aeabi_fcmple
+.Ltmp139:
+	.loc	2 310 16                @ ../BSP/Src/SHT3x.c:310:16
+	cmp	r0, #0
+	bne	.LBB7_14
+	b	.LBB7_13
+.LBB7_13:                               @   in Loop: Header=BB7_11 Depth=2
+.Ltmp140:
+	.loc	2 312 43 is_stmt 1      @ ../BSP/Src/SHT3x.c:312:43
+	ldr	r0, [sp, #52]
+	.loc	2 312 31 is_stmt 0      @ ../BSP/Src/SHT3x.c:312:31
+	lsls	r0, r0, #2
+	add	r1, sp, #4
+	ldr	r0, [r1, r0]
+	.loc	2 312 29                @ ../BSP/Src/SHT3x.c:312:29
+	str	r0, [sp, #48]
+	.loc	2 313 46 is_stmt 1      @ ../BSP/Src/SHT3x.c:313:46
+	ldr	r0, [sp, #52]
+	.loc	2 313 48 is_stmt 0      @ ../BSP/Src/SHT3x.c:313:48
+	lsls	r0, r0, #2
+	.loc	2 313 17                @ ../BSP/Src/SHT3x.c:313:17
+	adds	r2, r1, r0
+	.loc	2 313 34                @ ../BSP/Src/SHT3x.c:313:34
+	ldr	r2, [r2, #4]
+	.loc	2 313 32                @ ../BSP/Src/SHT3x.c:313:32
+	str	r2, [r1, r0]
+	.loc	2 314 38 is_stmt 1      @ ../BSP/Src/SHT3x.c:314:38
+	ldr	r0, [sp, #48]
+	.loc	2 314 29 is_stmt 0      @ ../BSP/Src/SHT3x.c:314:29
+	ldr	r2, [sp, #52]
+	.loc	2 314 31                @ ../BSP/Src/SHT3x.c:314:31
+	lsls	r2, r2, #2
+	.loc	2 314 17                @ ../BSP/Src/SHT3x.c:314:17
+	adds	r1, r2, r1
+	.loc	2 314 36                @ ../BSP/Src/SHT3x.c:314:36
+	str	r0, [r1, #4]
+	.loc	2 315 13 is_stmt 1      @ ../BSP/Src/SHT3x.c:315:13
+	b	.LBB7_14
+.Ltmp141:
+.LBB7_14:                               @   in Loop: Header=BB7_11 Depth=2
+	.loc	2 316 9                 @ ../BSP/Src/SHT3x.c:316:9
+	b	.LBB7_15
+.Ltmp142:
+.LBB7_15:                               @   in Loop: Header=BB7_11 Depth=2
+	.loc	2 308 46                @ ../BSP/Src/SHT3x.c:308:46
+	ldr	r0, [sp, #52]
+	adds	r0, r0, #1
+	str	r0, [sp, #52]
+	.loc	2 308 9 is_stmt 0       @ ../BSP/Src/SHT3x.c:308:9
+	b	.LBB7_11
+.Ltmp143:
+.LBB7_16:                               @   in Loop: Header=BB7_9 Depth=1
+	.loc	2 317 5 is_stmt 1       @ ../BSP/Src/SHT3x.c:317:5
+	b	.LBB7_17
+.Ltmp144:
+.LBB7_17:                               @   in Loop: Header=BB7_9 Depth=1
+	.loc	2 306 35                @ ../BSP/Src/SHT3x.c:306:35
+	ldr	r0, [sp, #56]
+	adds	r0, r0, #1
+	str	r0, [sp, #56]
+	.loc	2 306 5 is_stmt 0       @ ../BSP/Src/SHT3x.c:306:5
+	b	.LBB7_9
+.Ltmp145:
+.LBB7_18:
+	.loc	2 0 5                   @ ../BSP/Src/SHT3x.c:0:5
+	movs	r0, #0
+.Ltmp146:
+	.loc	2 319 11 is_stmt 1      @ ../BSP/Src/SHT3x.c:319:11
+	str	r0, [sp, #56]
+	.loc	2 319 9 is_stmt 0       @ ../BSP/Src/SHT3x.c:319:9
+	b	.LBB7_19
+.LBB7_19:                               @ =>This Loop Header: Depth=1
+                                        @     Child Loop BB7_21 Depth 2
+.Ltmp147:
+	.loc	2 319 16                @ ../BSP/Src/SHT3x.c:319:16
+	ldr	r0, [sp, #56]
+	add	r1, sp, #64
+	.loc	2 319 20                @ ../BSP/Src/SHT3x.c:319:20
+	ldrh	r1, [r1]
+.Ltmp148:
+	.loc	2 319 5                 @ ../BSP/Src/SHT3x.c:319:5
+	cmp	r0, r1
+	bge	.LBB7_28
+	b	.LBB7_20
+.LBB7_20:                               @   in Loop: Header=BB7_19 Depth=1
+	.loc	2 0 5                   @ ../BSP/Src/SHT3x.c:0:5
+	add	r0, sp, #68
+.Ltmp149:
+	.loc	2 321 17 is_stmt 1      @ ../BSP/Src/SHT3x.c:321:17
+	ldrh	r0, [r0]
+	add	r1, sp, #60
+	.loc	2 321 29 is_stmt 0      @ ../BSP/Src/SHT3x.c:321:29
+	ldrh	r1, [r1]
+	.loc	2 321 40                @ ../BSP/Src/SHT3x.c:321:40
+	mvns	r1, r1
+	adds	r0, r1, r0
+	.loc	2 321 15                @ ../BSP/Src/SHT3x.c:321:15
+	str	r0, [sp, #52]
+	.loc	2 321 13                @ ../BSP/Src/SHT3x.c:321:13
+	b	.LBB7_21
+.LBB7_21:                               @   Parent Loop BB7_19 Depth=1
+                                        @ =>  This Inner Loop Header: Depth=2
+.Ltmp150:
+	.loc	2 321 46                @ ../BSP/Src/SHT3x.c:321:46
+	ldr	r0, [sp, #52]
+	.loc	2 321 50                @ ../BSP/Src/SHT3x.c:321:50
+	ldr	r1, [sp, #56]
+.Ltmp151:
+	.loc	2 321 9                 @ ../BSP/Src/SHT3x.c:321:9
+	cmp	r0, r1
+	ble	.LBB7_26
+	b	.LBB7_22
+.LBB7_22:                               @   in Loop: Header=BB7_21 Depth=2
+.Ltmp152:
+	.loc	2 323 28 is_stmt 1      @ ../BSP/Src/SHT3x.c:323:28
+	ldr	r0, [sp, #52]
+	.loc	2 323 30 is_stmt 0      @ ../BSP/Src/SHT3x.c:323:30
+	lsls	r0, r0, #2
+	add	r1, sp, #4
+	.loc	2 323 37                @ ../BSP/Src/SHT3x.c:323:37
+	adds	r2, r1, r0
+	.loc	2 323 16                @ ../BSP/Src/SHT3x.c:323:16
+	subs	r2, r2, #4
+	ldr	r2, [r2]
+	.loc	2 323 37                @ ../BSP/Src/SHT3x.c:323:37
+	ldr	r1, [r1, r0]
+	.loc	2 323 35                @ ../BSP/Src/SHT3x.c:323:35
+	mov	r0, r2
+	bl	__aeabi_fcmple
+.Ltmp153:
+	.loc	2 323 16                @ ../BSP/Src/SHT3x.c:323:16
+	cmp	r0, #0
+	bne	.LBB7_24
+	b	.LBB7_23
+.LBB7_23:                               @   in Loop: Header=BB7_21 Depth=2
+.Ltmp154:
+	.loc	2 325 43 is_stmt 1      @ ../BSP/Src/SHT3x.c:325:43
+	ldr	r0, [sp, #52]
+	.loc	2 325 45 is_stmt 0      @ ../BSP/Src/SHT3x.c:325:45
+	lsls	r0, r0, #2
+	add	r1, sp, #4
+	.loc	2 325 31                @ ../BSP/Src/SHT3x.c:325:31
+	adds	r0, r0, r1
+	subs	r0, r0, #4
+	ldr	r0, [r0]
+	.loc	2 325 29                @ ../BSP/Src/SHT3x.c:325:29
+	str	r0, [sp, #48]
+	.loc	2 326 50 is_stmt 1      @ ../BSP/Src/SHT3x.c:326:50
+	ldr	r0, [sp, #52]
+	.loc	2 326 38 is_stmt 0      @ ../BSP/Src/SHT3x.c:326:38
+	lsls	r0, r0, #2
+	adds	r2, r1, r0
+	ldr	r0, [r1, r0]
+	.loc	2 326 17                @ ../BSP/Src/SHT3x.c:326:17
+	subs	r2, r2, #4
+	.loc	2 326 36                @ ../BSP/Src/SHT3x.c:326:36
+	str	r0, [r2]
+	.loc	2 327 34 is_stmt 1      @ ../BSP/Src/SHT3x.c:327:34
+	ldr	r0, [sp, #48]
+	.loc	2 327 29 is_stmt 0      @ ../BSP/Src/SHT3x.c:327:29
+	ldr	r2, [sp, #52]
+	.loc	2 327 17                @ ../BSP/Src/SHT3x.c:327:17
+	lsls	r2, r2, #2
+	.loc	2 327 32                @ ../BSP/Src/SHT3x.c:327:32
+	str	r0, [r1, r2]
+	.loc	2 328 13 is_stmt 1      @ ../BSP/Src/SHT3x.c:328:13
+	b	.LBB7_24
+.Ltmp155:
+.LBB7_24:                               @   in Loop: Header=BB7_21 Depth=2
+	.loc	2 329 9                 @ ../BSP/Src/SHT3x.c:329:9
+	b	.LBB7_25
+.Ltmp156:
+.LBB7_25:                               @   in Loop: Header=BB7_21 Depth=2
+	.loc	2 321 55                @ ../BSP/Src/SHT3x.c:321:55
+	ldr	r0, [sp, #52]
+	subs	r0, r0, #1
+	str	r0, [sp, #52]
+	.loc	2 321 9 is_stmt 0       @ ../BSP/Src/SHT3x.c:321:9
+	b	.LBB7_21
+.Ltmp157:
+.LBB7_26:                               @   in Loop: Header=BB7_19 Depth=1
+	.loc	2 330 5 is_stmt 1       @ ../BSP/Src/SHT3x.c:330:5
+	b	.LBB7_27
+.Ltmp158:
+.LBB7_27:                               @   in Loop: Header=BB7_19 Depth=1
+	.loc	2 319 34                @ ../BSP/Src/SHT3x.c:319:34
+	ldr	r0, [sp, #56]
+	adds	r0, r0, #1
+	str	r0, [sp, #56]
+	.loc	2 319 5 is_stmt 0       @ ../BSP/Src/SHT3x.c:319:5
+	b	.LBB7_19
+.Ltmp159:
+.LBB7_28:
+	.loc	2 0 5                   @ ../BSP/Src/SHT3x.c:0:5
+	add	r0, sp, #64
+.Ltmp160:
+	.loc	2 332 13 is_stmt 1      @ ../BSP/Src/SHT3x.c:332:13
+	ldrh	r0, [r0]
+	.loc	2 332 11 is_stmt 0      @ ../BSP/Src/SHT3x.c:332:11
+	str	r0, [sp, #56]
+	.loc	2 332 9                 @ ../BSP/Src/SHT3x.c:332:9
+	b	.LBB7_29
+.LBB7_29:                               @ =>This Inner Loop Header: Depth=1
+.Ltmp161:
+	.loc	2 332 25                @ ../BSP/Src/SHT3x.c:332:25
+	ldr	r0, [sp, #56]
+	add	r1, sp, #68
+	.loc	2 332 29                @ ../BSP/Src/SHT3x.c:332:29
+	ldrh	r1, [r1]
+	add	r2, sp, #60
+	.loc	2 332 41                @ ../BSP/Src/SHT3x.c:332:41
+	ldrh	r2, [r2]
+	.loc	2 332 39                @ ../BSP/Src/SHT3x.c:332:39
+	subs	r1, r1, r2
+.Ltmp162:
+	.loc	2 332 5                 @ ../BSP/Src/SHT3x.c:332:5
+	cmp	r0, r1
+	bge	.LBB7_32
+	b	.LBB7_30
+.LBB7_30:                               @   in Loop: Header=BB7_29 Depth=1
+.Ltmp163:
+	.loc	2 333 35 is_stmt 1      @ ../BSP/Src/SHT3x.c:333:35
+	ldr	r0, [sp, #56]
+	.loc	2 333 23 is_stmt 0      @ ../BSP/Src/SHT3x.c:333:23
+	lsls	r0, r0, #2
+	add	r1, sp, #4
+	ldr	r1, [r1, r0]
+	.loc	2 333 20                @ ../BSP/Src/SHT3x.c:333:20
+	ldr	r0, [sp, #44]
+	bl	__aeabi_fadd
+	str	r0, [sp, #44]
+	.loc	2 333 9                 @ ../BSP/Src/SHT3x.c:333:9
+	b	.LBB7_31
+.LBB7_31:                               @   in Loop: Header=BB7_29 Depth=1
+	.loc	2 332 55 is_stmt 1      @ ../BSP/Src/SHT3x.c:332:55
+	ldr	r0, [sp, #56]
+	adds	r0, r0, #1
+	str	r0, [sp, #56]
+	.loc	2 332 5 is_stmt 0       @ ../BSP/Src/SHT3x.c:332:5
+	b	.LBB7_29
+.Ltmp164:
+.LBB7_32:
+	.loc	2 0 5                   @ ../BSP/Src/SHT3x.c:0:5
+	add	r0, sp, #68
+	.loc	2 335 20 is_stmt 1      @ ../BSP/Src/SHT3x.c:335:20
+	ldrh	r0, [r0]
+	add	r1, sp, #64
+	.loc	2 335 33 is_stmt 0      @ ../BSP/Src/SHT3x.c:335:33
+	ldrh	r1, [r1]
+	add	r2, sp, #60
+	.loc	2 335 46                @ ../BSP/Src/SHT3x.c:335:46
+	ldrh	r2, [r2]
+	.loc	2 335 44                @ ../BSP/Src/SHT3x.c:335:44
+	adds	r1, r1, r2
+	.loc	2 335 30                @ ../BSP/Src/SHT3x.c:335:30
+	subs	r0, r0, r1
+	.loc	2 335 19                @ ../BSP/Src/SHT3x.c:335:19
+	bl	__aeabi_i2f
+	.loc	2 335 16                @ ../BSP/Src/SHT3x.c:335:16
+	ldr	r1, [sp, #44]
+	str	r0, [sp]                @ 4-byte Spill
+	mov	r0, r1
+	ldr	r1, [sp]                @ 4-byte Reload
+	bl	__aeabi_fdiv
+	str	r0, [sp, #44]
+	add	r0, sp, #4
+	movs	r1, #40
+	.loc	2 337 5 is_stmt 1       @ ../BSP/Src/SHT3x.c:337:5
+	bl	__aeabi_memclr4
+	.loc	2 339 12                @ ../BSP/Src/SHT3x.c:339:12
+	ldr	r0, [sp, #44]
+	.loc	2 339 5 is_stmt 0       @ ../BSP/Src/SHT3x.c:339:5
+	str	r0, [sp, #80]
+	b	.LBB7_33
+.LBB7_33:
+	.loc	2 341 1 is_stmt 1       @ ../BSP/Src/SHT3x.c:341:1
+	ldr	r0, [sp, #80]
+	add	sp, #84
+	pop	{r4, r5, r6, r7, pc}
+.Ltmp165:
+	.p2align	2
+@ %bb.34:
+	.loc	2 0 1 is_stmt 0         @ ../BSP/Src/SHT3x.c:0:1
+__arm_cp.7_0:
+	.long	1147011072              @ 0x445e0000
+.Lcpi_end11:
+	.size	__arm_cp.7_0, .Lcpi_end11-__arm_cp.7_0
+__arm_cp.7_1:
+	.long	1148829696              @ 0x4479c000
+.Lcpi_end12:
+	.size	__arm_cp.7_1, .Lcpi_end12-__arm_cp.7_1
+.Lfunc_end7:
+	.size	TH_Filter, .Lfunc_end7-TH_Filter
+	.cfi_endproc
+	.cantunwind
+	.fnend
+                                        @ -- End function
+	.section	.text.ReadTH,"ax",%progbits
+	.hidden	ReadTH                  @ -- Begin function ReadTH
+	.globl	ReadTH
+	.p2align	2
+	.type	ReadTH,%function
+	.code	16                      @ @ReadTH
+	.thumb_func
+ReadTH:
+.Lfunc_begin8:
+	.loc	2 345 0 is_stmt 1       @ ../BSP/Src/SHT3x.c:345:0
+	.fnstart
+	.cfi_startproc
+@ %bb.0:
+	.save	{r4, r5, r6, lr}
+	push	{r4, r5, r6, lr}
+	.cfi_def_cfa_offset 16
+	.cfi_offset lr, -4
+	.cfi_offset r6, -8
+	.cfi_offset r5, -12
+	.cfi_offset r4, -16
+	.pad	#88
+	sub	sp, #88
+	.cfi_def_cfa_offset 104
+.Ltmp166:
+	.loc	2 355 5 prologue_end    @ ../BSP/Src/SHT3x.c:355:5
+	b	.LBB8_1
+.LBB8_1:
+	.loc	2 0 5 is_stmt 0         @ ../BSP/Src/SHT3x.c:0:5
+	add	r0, sp, #84
+	movs	r1, #0
+.Ltmp167:
+	.loc	2 360 19 is_stmt 1      @ ../BSP/Src/SHT3x.c:360:19
+	strb	r1, [r0]
+	.loc	2 360 17 is_stmt 0      @ ../BSP/Src/SHT3x.c:360:17
+	b	.LBB8_2
+.LBB8_2:                                @ =>This Inner Loop Header: Depth=1
+	.loc	2 0 17                  @ ../BSP/Src/SHT3x.c:0:17
+	add	r0, sp, #84
+.Ltmp168:
+	.loc	2 360 24                @ ../BSP/Src/SHT3x.c:360:24
+	ldrb	r0, [r0]
+.Ltmp169:
+	.loc	2 360 13                @ ../BSP/Src/SHT3x.c:360:13
+	cmp	r0, #0
+	ble	.LBB8_3
+	b	.LBB8_8
+.LBB8_3:                                @   in Loop: Header=BB8_2 Depth=1
+	.loc	2 0 13                  @ ../BSP/Src/SHT3x.c:0:13
+	add	r0, sp, #84
+.Ltmp170:
+	.loc	2 362 39 is_stmt 1      @ ../BSP/Src/SHT3x.c:362:39
+	ldrb	r0, [r0]
+	movw	r1, #57344
+	add	r2, sp, #72
+	movs	r3, #6
+	.loc	2 362 26 is_stmt 0      @ ../BSP/Src/SHT3x.c:362:26
+	bl	Read_Sht3_TH
+	add	r1, sp, #80
+	.loc	2 362 24                @ ../BSP/Src/SHT3x.c:362:24
+	strb	r0, [r1]
+.Ltmp171:
+	.loc	2 364 20 is_stmt 1      @ ../BSP/Src/SHT3x.c:364:20
+	ldrb	r0, [r1]
+.Ltmp172:
+	.loc	2 364 20 is_stmt 0      @ ../BSP/Src/SHT3x.c:364:20
+	cmp	r0, #0
+	beq	.LBB8_5
+	b	.LBB8_4
+.LBB8_4:                                @   in Loop: Header=BB8_2 Depth=1
+	.loc	2 0 20                  @ ../BSP/Src/SHT3x.c:0:20
+	add	r0, sp, #84
+.Ltmp173:
+	.loc	2 366 31 is_stmt 1      @ ../BSP/Src/SHT3x.c:366:31
+	ldrb	r1, [r0]
+	.loc	2 366 21 is_stmt 0      @ ../BSP/Src/SHT3x.c:366:21
+	ldr	r2, __arm_cp.8_0
+	movs	r3, #0
+	.loc	2 366 34                @ ../BSP/Src/SHT3x.c:366:34
+	strb	r3, [r2, r1]
+	.loc	2 367 59 is_stmt 1      @ ../BSP/Src/SHT3x.c:367:59
+	ldrb	r0, [r0]
+	.loc	2 367 49 is_stmt 0      @ ../BSP/Src/SHT3x.c:367:49
+	adds	r1, r2, r0
+	ldrb	r0, [r2, r0]
+	.loc	2 367 47                @ ../BSP/Src/SHT3x.c:367:47
+	strb	r0, [r1, #1]
+	.loc	2 368 17 is_stmt 1      @ ../BSP/Src/SHT3x.c:368:17
+	b	.LBB8_6
+.Ltmp174:
+.LBB8_5:                                @   in Loop: Header=BB8_2 Depth=1
+	.loc	2 0 17 is_stmt 0        @ ../BSP/Src/SHT3x.c:0:17
+	add	r0, sp, #84
+.Ltmp175:
+	.loc	2 371 31 is_stmt 1      @ ../BSP/Src/SHT3x.c:371:31
+	ldrb	r1, [r0]
+	.loc	2 371 21 is_stmt 0      @ ../BSP/Src/SHT3x.c:371:21
+	ldr	r2, __arm_cp.8_0
+	movs	r3, #1
+	.loc	2 371 34                @ ../BSP/Src/SHT3x.c:371:34
+	strb	r3, [r2, r1]
+	.loc	2 372 59 is_stmt 1      @ ../BSP/Src/SHT3x.c:372:59
+	ldrb	r1, [r0]
+	.loc	2 372 49 is_stmt 0      @ ../BSP/Src/SHT3x.c:372:49
+	adds	r3, r2, r1
+	ldrb	r1, [r2, r1]
+	.loc	2 372 47                @ ../BSP/Src/SHT3x.c:372:47
+	strb	r1, [r3, #1]
+	.loc	2 374 31 is_stmt 1      @ ../BSP/Src/SHT3x.c:374:31
+	ldr	r1, [sp, #72]
+	.loc	2 374 54 is_stmt 0      @ ../BSP/Src/SHT3x.c:374:54
+	lsls	r1, r1, #8
+	add	r2, sp, #72
+	.loc	2 374 62                @ ../BSP/Src/SHT3x.c:374:62
+	ldrb	r3, [r2, #1]
+	.loc	2 374 60                @ ../BSP/Src/SHT3x.c:374:60
+	adds	r1, r1, r3
+	add	r3, sp, #68
+	.loc	2 374 28                @ ../BSP/Src/SHT3x.c:374:28
+	strh	r1, [r3]
+	.loc	2 375 31 is_stmt 1      @ ../BSP/Src/SHT3x.c:375:31
+	ldrb	r1, [r2, #3]
+	.loc	2 375 54 is_stmt 0      @ ../BSP/Src/SHT3x.c:375:54
+	lsls	r1, r1, #8
+	.loc	2 375 62                @ ../BSP/Src/SHT3x.c:375:62
+	ldrb	r2, [r2, #4]
+	.loc	2 375 60                @ ../BSP/Src/SHT3x.c:375:60
+	adds	r1, r1, r2
+	.loc	2 375 28                @ ../BSP/Src/SHT3x.c:375:28
+	strh	r1, [r3, #2]
+	.loc	2 376 49 is_stmt 1      @ ../BSP/Src/SHT3x.c:376:49
+	ldrh	r1, [r3]
+	str	r0, [sp, #56]           @ 4-byte Spill
+	mov	r0, r1
+	str	r3, [sp, #52]           @ 4-byte Spill
+	bl	__aeabi_i2f
+	ldr	r1, __arm_cp.8_1
+	.loc	2 376 47 is_stmt 0      @ ../BSP/Src/SHT3x.c:376:47
+	bl	__aeabi_fmul
+	ldr	r1, __arm_cp.8_2
+	.loc	2 376 56                @ ../BSP/Src/SHT3x.c:376:56
+	str	r1, [sp, #48]           @ 4-byte Spill
+	bl	__aeabi_fdiv
+	ldr	r1, __arm_cp.8_3
+	.loc	2 376 38                @ ../BSP/Src/SHT3x.c:376:38
+	bl	__aeabi_fadd
+	.loc	2 376 26                @ ../BSP/Src/SHT3x.c:376:26
+	ldr	r1, [sp, #56]           @ 4-byte Reload
+	ldrb	r2, [r1]
+	.loc	2 376 21                @ ../BSP/Src/SHT3x.c:376:21
+	lsls	r2, r2, #2
+	add	r3, sp, #64
+	.loc	2 376 29                @ ../BSP/Src/SHT3x.c:376:29
+	str	r0, [r3, r2]
+	.loc	2 377 40 is_stmt 1      @ ../BSP/Src/SHT3x.c:377:40
+	ldr	r0, [sp, #52]           @ 4-byte Reload
+	ldrh	r0, [r0, #2]
+	str	r3, [sp, #44]           @ 4-byte Spill
+	bl	__aeabi_i2f
+	ldr	r1, __arm_cp.8_4
+	.loc	2 377 38 is_stmt 0      @ ../BSP/Src/SHT3x.c:377:38
+	bl	__aeabi_fmul
+	.loc	2 377 47                @ ../BSP/Src/SHT3x.c:377:47
+	ldr	r1, [sp, #48]           @ 4-byte Reload
+	bl	__aeabi_fdiv
+	.loc	2 377 26                @ ../BSP/Src/SHT3x.c:377:26
+	ldr	r1, [sp, #56]           @ 4-byte Reload
+	ldrb	r2, [r1]
+	.loc	2 377 21                @ ../BSP/Src/SHT3x.c:377:21
+	lsls	r2, r2, #2
+	add	r3, sp, #60
+	.loc	2 377 29                @ ../BSP/Src/SHT3x.c:377:29
+	str	r0, [r3, r2]
+	.loc	2 378 46 is_stmt 1      @ ../BSP/Src/SHT3x.c:378:46
+	ldrb	r0, [r1]
+	.loc	2 378 41 is_stmt 0      @ ../BSP/Src/SHT3x.c:378:41
+	lsls	r2, r0, #2
+	movs	r4, #40
+	.loc	2 378 50                @ ../BSP/Src/SHT3x.c:378:50
+	mov	r5, r4
+	muls	r5, r0, r5
+	ldr	r0, __arm_cp.8_5
+	adds	r1, r0, r5
+	.loc	2 378 31                @ ../BSP/Src/SHT3x.c:378:31
+	ldr	r0, [sp, #44]           @ 4-byte Reload
+	ldr	r0, [r0, r2]
+	movs	r2, #3
+	str	r2, [sp]
+	movs	r5, #10
+	str	r2, [sp, #40]           @ 4-byte Spill
+	mov	r2, r5
+	ldr	r6, [sp, #40]           @ 4-byte Reload
+	str	r3, [sp, #36]           @ 4-byte Spill
+	mov	r3, r6
+	str	r4, [sp, #32]           @ 4-byte Spill
+	str	r5, [sp, #28]           @ 4-byte Spill
+	bl	TH_Filter
+	.loc	2 378 26                @ ../BSP/Src/SHT3x.c:378:26
+	ldr	r1, [sp, #56]           @ 4-byte Reload
+	ldrb	r2, [r1]
+	.loc	2 378 21                @ ../BSP/Src/SHT3x.c:378:21
+	lsls	r2, r2, #2
+	.loc	2 378 29                @ ../BSP/Src/SHT3x.c:378:29
+	ldr	r3, [sp, #44]           @ 4-byte Reload
+	str	r0, [r3, r2]
+	.loc	2 379 46 is_stmt 1      @ ../BSP/Src/SHT3x.c:379:46
+	ldrb	r0, [r1]
+	.loc	2 379 41 is_stmt 0      @ ../BSP/Src/SHT3x.c:379:41
+	lsls	r2, r0, #2
+	.loc	2 379 50                @ ../BSP/Src/SHT3x.c:379:50
+	ldr	r4, [sp, #32]           @ 4-byte Reload
+	muls	r4, r0, r4
+	ldr	r0, __arm_cp.8_6
+	adds	r1, r0, r4
+	.loc	2 379 31                @ ../BSP/Src/SHT3x.c:379:31
+	ldr	r0, [sp, #36]           @ 4-byte Reload
+	ldr	r0, [r0, r2]
+	ldr	r2, [sp, #40]           @ 4-byte Reload
+	str	r2, [sp]
+	ldr	r2, [sp, #28]           @ 4-byte Reload
+	ldr	r3, [sp, #40]           @ 4-byte Reload
+	bl	TH_Filter
+	.loc	2 379 26                @ ../BSP/Src/SHT3x.c:379:26
+	ldr	r1, [sp, #56]           @ 4-byte Reload
+	ldrb	r2, [r1]
+	.loc	2 379 21                @ ../BSP/Src/SHT3x.c:379:21
+	lsls	r2, r2, #2
+	.loc	2 379 29                @ ../BSP/Src/SHT3x.c:379:29
+	ldr	r3, [sp, #36]           @ 4-byte Reload
+	str	r0, [r3, r2]
+	.loc	2 380 52 is_stmt 1      @ ../BSP/Src/SHT3x.c:380:52
+	ldrb	r0, [r1]
+	.loc	2 380 47 is_stmt 0      @ ../BSP/Src/SHT3x.c:380:47
+	lsls	r2, r0, #2
+	ldr	r4, [sp, #44]           @ 4-byte Reload
+	ldr	r2, [r4, r2]
+	ldr	r1, __arm_cp.8_7
+	.loc	2 380 55                @ ../BSP/Src/SHT3x.c:380:55
+	str	r0, [sp, #24]           @ 4-byte Spill
+	mov	r0, r2
+	bl	__aeabi_fadd
+	ldr	r1, __arm_cp.8_8
+	.loc	2 380 65                @ ../BSP/Src/SHT3x.c:380:65
+	str	r1, [sp, #20]           @ 4-byte Spill
+	bl	__aeabi_fmul
+	movs	r1, #63
+	lsls	r1, r1, #24
+	.loc	2 380 73                @ ../BSP/Src/SHT3x.c:380:73
+	str	r1, [sp, #16]           @ 4-byte Spill
+	bl	__aeabi_fadd
+	.loc	2 380 35                @ ../BSP/Src/SHT3x.c:380:35
+	bl	__aeabi_f2iz
+	.loc	2 380 21                @ ../BSP/Src/SHT3x.c:380:21
+	ldr	r1, [sp, #24]           @ 4-byte Reload
+	lsls	r2, r1, #1
+	ldr	r3, __arm_cp.8_9
+	.loc	2 380 33                @ ../BSP/Src/SHT3x.c:380:33
+	strh	r0, [r3, r2]
+	.loc	2 381 51 is_stmt 1      @ ../BSP/Src/SHT3x.c:381:51
+	ldr	r0, [sp, #56]           @ 4-byte Reload
+	ldrb	r2, [r0]
+	.loc	2 381 46 is_stmt 0      @ ../BSP/Src/SHT3x.c:381:46
+	lsls	r4, r2, #2
+	ldr	r5, [sp, #36]           @ 4-byte Reload
+	ldr	r0, [r5, r4]
+	.loc	2 381 54                @ ../BSP/Src/SHT3x.c:381:54
+	ldr	r1, [sp, #20]           @ 4-byte Reload
+	str	r3, [sp, #12]           @ 4-byte Spill
+	str	r2, [sp, #8]            @ 4-byte Spill
+	bl	__aeabi_fmul
+	.loc	2 381 62                @ ../BSP/Src/SHT3x.c:381:62
+	ldr	r1, [sp, #16]           @ 4-byte Reload
+	bl	__aeabi_fadd
+	.loc	2 381 35                @ ../BSP/Src/SHT3x.c:381:35
+	bl	__aeabi_f2iz
+	.loc	2 381 21                @ ../BSP/Src/SHT3x.c:381:21
+	ldr	r1, [sp, #8]            @ 4-byte Reload
+	lsls	r2, r1, #1
+	ldr	r3, [sp, #12]           @ 4-byte Reload
+	adds	r2, r3, r2
+	.loc	2 381 33                @ ../BSP/Src/SHT3x.c:381:33
+	strh	r0, [r2, #2]
+	b	.LBB8_6
+.Ltmp176:
+.LBB8_6:                                @   in Loop: Header=BB8_2 Depth=1
+	.loc	2 383 13 is_stmt 1      @ ../BSP/Src/SHT3x.c:383:13
+	b	.LBB8_7
+.Ltmp177:
+.LBB8_7:                                @   in Loop: Header=BB8_2 Depth=1
+	.loc	2 360 41                @ ../BSP/Src/SHT3x.c:360:41
+	ldr	r0, [sp, #84]
+	adds	r0, r0, #1
+	add	r1, sp, #84
+	strb	r0, [r1]
+	.loc	2 360 13 is_stmt 0      @ ../BSP/Src/SHT3x.c:360:13
+	b	.LBB8_2
+.Ltmp178:
+.LBB8_8:
+	.loc	2 384 13 is_stmt 1      @ ../BSP/Src/SHT3x.c:384:13
+	bl	Get_Duration
+	.loc	2 385 13                @ ../BSP/Src/SHT3x.c:385:13
+	b	.LBB8_9
+.Ltmp179:
+.LBB8_9:
+	.loc	2 389 1                 @ ../BSP/Src/SHT3x.c:389:1
+	add	sp, #88
+	pop	{r4, r5, r6, pc}
+.Ltmp180:
+	.p2align	2
+@ %bb.10:
+	.loc	2 0 1 is_stmt 0         @ ../BSP/Src/SHT3x.c:0:1
+__arm_cp.8_0:
+	.long	SensorSta
+.Lcpi_end13:
+	.size	__arm_cp.8_0, .Lcpi_end13-__arm_cp.8_0
+__arm_cp.8_1:
+	.long	1127153664              @ 0x432f0000
+.Lcpi_end14:
+	.size	__arm_cp.8_1, .Lcpi_end14-__arm_cp.8_1
+__arm_cp.8_2:
+	.long	1199570688              @ 0x477fff00
+.Lcpi_end15:
+	.size	__arm_cp.8_2, .Lcpi_end15-__arm_cp.8_2
+__arm_cp.8_3:
+	.long	3258187776              @ 0xc2340000
+.Lcpi_end16:
+	.size	__arm_cp.8_3, .Lcpi_end16-__arm_cp.8_3
+__arm_cp.8_4:
+	.long	1120403456              @ 0x42c80000
+.Lcpi_end17:
+	.size	__arm_cp.8_4, .Lcpi_end17-__arm_cp.8_4
+__arm_cp.8_5:
+	.long	gTemBuf
+.Lcpi_end18:
+	.size	__arm_cp.8_5, .Lcpi_end18-__arm_cp.8_5
+__arm_cp.8_6:
+	.long	gHumBuf
+.Lcpi_end19:
+	.size	__arm_cp.8_6, .Lcpi_end19-__arm_cp.8_6
+__arm_cp.8_7:
+	.long	1133022413              @ 0x43888ccd
+.Lcpi_end20:
+	.size	__arm_cp.8_7, .Lcpi_end20-__arm_cp.8_7
+__arm_cp.8_8:
+	.long	1092616192              @ 0x41200000
+.Lcpi_end21:
+	.size	__arm_cp.8_8, .Lcpi_end21-__arm_cp.8_8
+__arm_cp.8_9:
+	.long	T_H
+.Lcpi_end22:
+	.size	__arm_cp.8_9, .Lcpi_end22-__arm_cp.8_9
+.Lfunc_end8:
+	.size	ReadTH, .Lfunc_end8-ReadTH
+	.cfi_endproc
+	.cantunwind
+	.fnend
+                                        @ -- End function
+	.hidden	SensorSta               @ @SensorSta
+	.type	SensorSta,%object
+	.section	.bss.SensorSta,"aw",%nobits
+	.globl	SensorSta
+SensorSta:
+.LSensorSta$local:
+	.zero	2
+	.size	SensorSta, 2
+
+	.type	Get_Duration.TemCountCnt1,%object @ @Get_Duration.TemCountCnt1
+	.section	.bss.Get_Duration.TemCountCnt1,"aw",%nobits
+	.p2align	2
+Get_Duration.TemCountCnt1:
+	.long	0                       @ 0x0
+	.size	Get_Duration.TemCountCnt1, 4
+
+	.type	Get_Duration.TemCountCnt2,%object @ @Get_Duration.TemCountCnt2
+	.section	.bss.Get_Duration.TemCountCnt2,"aw",%nobits
+	.p2align	2
+Get_Duration.TemCountCnt2:
+	.long	0                       @ 0x0
+	.size	Get_Duration.TemCountCnt2, 4
+
+	.hidden	T_H                     @ @T_H
+	.type	T_H,%object
+	.section	.bss.T_H,"aw",%nobits
+	.globl	T_H
+	.p2align	2
+T_H:
+.LT_H$local:
+	.zero	36
+	.size	T_H, 36
+
+	.hidden	gTemBuf                 @ @gTemBuf
+	.type	gTemBuf,%object
+	.section	.bss.gTemBuf,"aw",%nobits
+	.globl	gTemBuf
+	.p2align	2
+gTemBuf:
+.LgTemBuf$local:
+	.zero	40
+	.size	gTemBuf, 40
+
+	.hidden	gHumBuf                 @ @gHumBuf
+	.type	gHumBuf,%object
+	.section	.bss.gHumBuf,"aw",%nobits
+	.globl	gHumBuf
+	.p2align	2
+gHumBuf:
+.LgHumBuf$local:
+	.zero	40
+	.size	gHumBuf, 40
+
+	.section	.debug_str,"MS",%progbits,1
+.Linfo_string0:
+	.asciz	"Component: ARM Compiler 6.14 Tool: armclang [5db06c00]" @ string offset=0
+.Linfo_string1:
+	.asciz	"../BSP/Src\\SHT3x.c"   @ string offset=55
+.Linfo_string2:
+	.asciz	"E:\\project\\product\\GD32\\GD32E230\\E230 - TH\\MDK-ARM" @ string offset=74
+.Linfo_string3:
+	.asciz	"SensorSta"             @ string offset=125
+.Linfo_string4:
+	.asciz	"unsigned char"         @ string offset=135
+.Linfo_string5:
+	.asciz	"NExist"                @ string offset=149
+.Linfo_string6:
+	.asciz	"Exist"                 @ string offset=156
+.Linfo_string7:
+	.asciz	"SensorSta_Typedef"     @ string offset=162
+.Linfo_string8:
+	.asciz	"__ARRAY_SIZE_TYPE__"   @ string offset=180
+.Linfo_string9:
+	.asciz	"TemCountCnt1"          @ string offset=200
+.Linfo_string10:
+	.asciz	"unsigned int"          @ string offset=213
+.Linfo_string11:
+	.asciz	"uint32_t"              @ string offset=226
+.Linfo_string12:
+	.asciz	"TemCountCnt2"          @ string offset=235
+.Linfo_string13:
+	.asciz	"gTemBuf"               @ string offset=248
+.Linfo_string14:
+	.asciz	"float"                 @ string offset=256
+.Linfo_string15:
+	.asciz	"gHumBuf"               @ string offset=262
+.Linfo_string16:
+	.asciz	"T_H"                   @ string offset=270
+.Linfo_string17:
+	.asciz	"Temp"                  @ string offset=274
+.Linfo_string18:
+	.asciz	"unsigned short"        @ string offset=279
+.Linfo_string19:
+	.asciz	"uint16_t"              @ string offset=294
+.Linfo_string20:
+	.asciz	"Humi"                  @ string offset=303
+.Linfo_string21:
+	.asciz	"UpThreshold"           @ string offset=308
+.Linfo_string22:
+	.asciz	"DoThreshold"           @ string offset=320
+.Linfo_string23:
+	.asciz	"DurThreshold"          @ string offset=332
+.Linfo_string24:
+	.asciz	"Duration"              @ string offset=345
+.Linfo_string25:
+	.asciz	"Upload_persist"        @ string offset=354
+.Linfo_string26:
+	.asciz	"uint8_t"               @ string offset=369
+.Linfo_string27:
+	.asciz	"dev_num"               @ string offset=377
+.Linfo_string28:
+	.asciz	"AlarmSta"              @ string offset=385
+.Linfo_string29:
+	.asciz	"SHT3_Typedef"          @ string offset=394
+.Linfo_string30:
+	.asciz	"Check_Status"          @ string offset=407
+.Linfo_string31:
+	.asciz	"Get_Duration"          @ string offset=420
+.Linfo_string32:
+	.asciz	"SHT3_Init"             @ string offset=433
+.Linfo_string33:
+	.asciz	"Set_Sht3_Periodi"      @ string offset=443
+.Linfo_string34:
+	.asciz	"SHT3x_WriteData"       @ string offset=460
+.Linfo_string35:
+	.asciz	"SHT3x_ReadData"        @ string offset=476
+.Linfo_string36:
+	.asciz	"Read_Sht3_TH"          @ string offset=491
+.Linfo_string37:
+	.asciz	"TH_Filter"             @ string offset=504
+.Linfo_string38:
+	.asciz	"ReadTH"                @ string offset=514
+.Linfo_string39:
+	.asciz	"SlaveAddr"             @ string offset=521
+.Linfo_string40:
+	.asciz	"i"                     @ string offset=531
+.Linfo_string41:
+	.asciz	"k"                     @ string offset=533
+.Linfo_string42:
+	.asciz	"j"                     @ string offset=535
+.Linfo_string43:
+	.asciz	"sta"                   @ string offset=537
+.Linfo_string44:
+	.asciz	"sChannal"              @ string offset=541
+.Linfo_string45:
+	.asciz	"sPeriodi"              @ string offset=550
+.Linfo_string46:
+	.asciz	"sStatus"               @ string offset=559
+.Linfo_string47:
+	.asciz	"DriverAddr"            @ string offset=567
+.Linfo_string48:
+	.asciz	"Command"               @ string offset=578
+.Linfo_string49:
+	.asciz	"DataBuff"              @ string offset=586
+.Linfo_string50:
+	.asciz	"DataLen"               @ string offset=595
+.Linfo_string51:
+	.asciz	"sReadCmd"              @ string offset=603
+.Linfo_string52:
+	.asciz	"sReadBuf"              @ string offset=612
+.Linfo_string53:
+	.asciz	"sReadLen"              @ string offset=621
+.Linfo_string54:
+	.asciz	"NewData"               @ string offset=630
+.Linfo_string55:
+	.asciz	"FilterBuf"             @ string offset=638
+.Linfo_string56:
+	.asciz	"FilterNum"             @ string offset=648
+.Linfo_string57:
+	.asciz	"DelHeadNum"            @ string offset=658
+.Linfo_string58:
+	.asciz	"DelTailNum"            @ string offset=669
+.Linfo_string59:
+	.asciz	"int"                   @ string offset=680
+.Linfo_string60:
+	.asciz	"filter_temp"           @ string offset=684
+.Linfo_string61:
+	.asciz	"filter_sum"            @ string offset=696
+.Linfo_string62:
+	.asciz	"FilterArray"           @ string offset=707
+.Linfo_string63:
+	.asciz	"status"                @ string offset=719
+.Linfo_string64:
+	.asciz	"sDataBuff"             @ string offset=726
+.Linfo_string65:
+	.asciz	"sTH"                   @ string offset=736
+.Linfo_string66:
+	.asciz	"sTem"                  @ string offset=740
+.Linfo_string67:
+	.asciz	"sHum"                  @ string offset=745
+	.section	.debug_abbrev,"",%progbits
+	.byte	1                       @ Abbreviation Code
+	.byte	17                      @ DW_TAG_compile_unit
+	.byte	1                       @ DW_CHILDREN_yes
+	.byte	37                      @ DW_AT_producer
+	.byte	14                      @ DW_FORM_strp
+	.byte	19                      @ DW_AT_language
+	.byte	5                       @ DW_FORM_data2
+	.byte	3                       @ DW_AT_name
+	.byte	14                      @ DW_FORM_strp
+	.byte	16                      @ DW_AT_stmt_list
+	.byte	6                       @ DW_FORM_data4
+	.byte	27                      @ DW_AT_comp_dir
+	.byte	14                      @ DW_FORM_strp
+	.byte	17                      @ DW_AT_low_pc
+	.byte	1                       @ DW_FORM_addr
+	.byte	85                      @ DW_AT_ranges
+	.byte	6                       @ DW_FORM_data4
+	.byte	0                       @ EOM(1)
+	.byte	0                       @ EOM(2)
+	.byte	2                       @ Abbreviation Code
+	.byte	52                      @ DW_TAG_variable
+	.byte	0                       @ DW_CHILDREN_no
+	.byte	3                       @ DW_AT_name
+	.byte	14                      @ DW_FORM_strp
+	.byte	73                      @ DW_AT_type
+	.byte	19                      @ DW_FORM_ref4
+	.byte	63                      @ DW_AT_external
+	.byte	12                      @ DW_FORM_flag
+	.byte	58                      @ DW_AT_decl_file
+	.byte	11                      @ DW_FORM_data1
+	.byte	59                      @ DW_AT_decl_line
+	.byte	11                      @ DW_FORM_data1
+	.byte	2                       @ DW_AT_location
+	.byte	10                      @ DW_FORM_block1
+	.byte	0                       @ EOM(1)
+	.byte	0                       @ EOM(2)
+	.byte	3                       @ Abbreviation Code
+	.byte	1                       @ DW_TAG_array_type
+	.byte	1                       @ DW_CHILDREN_yes
+	.byte	73                      @ DW_AT_type
+	.byte	19                      @ DW_FORM_ref4
+	.byte	0                       @ EOM(1)
+	.byte	0                       @ EOM(2)
+	.byte	4                       @ Abbreviation Code
+	.byte	33                      @ DW_TAG_subrange_type
+	.byte	0                       @ DW_CHILDREN_no
+	.byte	73                      @ DW_AT_type
+	.byte	19                      @ DW_FORM_ref4
+	.byte	55                      @ DW_AT_count
+	.byte	11                      @ DW_FORM_data1
+	.byte	0                       @ EOM(1)
+	.byte	0                       @ EOM(2)
+	.byte	5                       @ Abbreviation Code
+	.byte	22                      @ DW_TAG_typedef
+	.byte	0                       @ DW_CHILDREN_no
+	.byte	73                      @ DW_AT_type
+	.byte	19                      @ DW_FORM_ref4
+	.byte	3                       @ DW_AT_name
+	.byte	14                      @ DW_FORM_strp
+	.byte	58                      @ DW_AT_decl_file
+	.byte	11                      @ DW_FORM_data1
+	.byte	59                      @ DW_AT_decl_line
+	.byte	11                      @ DW_FORM_data1
+	.byte	0                       @ EOM(1)
+	.byte	0                       @ EOM(2)
+	.byte	6                       @ Abbreviation Code
+	.byte	4                       @ DW_TAG_enumeration_type
+	.byte	1                       @ DW_CHILDREN_yes
+	.byte	73                      @ DW_AT_type
+	.byte	19                      @ DW_FORM_ref4
+	.byte	11                      @ DW_AT_byte_size
+	.byte	11                      @ DW_FORM_data1
+	.byte	58                      @ DW_AT_decl_file
+	.byte	11                      @ DW_FORM_data1
+	.byte	59                      @ DW_AT_decl_line
+	.byte	11                      @ DW_FORM_data1
+	.byte	0                       @ EOM(1)
+	.byte	0                       @ EOM(2)
+	.byte	7                       @ Abbreviation Code
+	.byte	40                      @ DW_TAG_enumerator
+	.byte	0                       @ DW_CHILDREN_no
+	.byte	3                       @ DW_AT_name
+	.byte	14                      @ DW_FORM_strp
+	.byte	28                      @ DW_AT_const_value
+	.byte	15                      @ DW_FORM_udata
+	.byte	0                       @ EOM(1)
+	.byte	0                       @ EOM(2)
+	.byte	8                       @ Abbreviation Code
+	.byte	36                      @ DW_TAG_base_type
+	.byte	0                       @ DW_CHILDREN_no
+	.byte	3                       @ DW_AT_name
+	.byte	14                      @ DW_FORM_strp
+	.byte	62                      @ DW_AT_encoding
+	.byte	11                      @ DW_FORM_data1
+	.byte	11                      @ DW_AT_byte_size
+	.byte	11                      @ DW_FORM_data1
+	.byte	0                       @ EOM(1)
+	.byte	0                       @ EOM(2)
+	.byte	9                       @ Abbreviation Code
+	.byte	36                      @ DW_TAG_base_type
+	.byte	0                       @ DW_CHILDREN_no
+	.byte	3                       @ DW_AT_name
+	.byte	14                      @ DW_FORM_strp
+	.byte	11                      @ DW_AT_byte_size
+	.byte	11                      @ DW_FORM_data1
+	.byte	62                      @ DW_AT_encoding
+	.byte	11                      @ DW_FORM_data1
+	.byte	0                       @ EOM(1)
+	.byte	0                       @ EOM(2)
+	.byte	10                      @ Abbreviation Code
+	.byte	46                      @ DW_TAG_subprogram
+	.byte	1                       @ DW_CHILDREN_yes
+	.byte	17                      @ DW_AT_low_pc
+	.byte	1                       @ DW_FORM_addr
+	.byte	18                      @ DW_AT_high_pc
+	.byte	1                       @ DW_FORM_addr
+	.byte	64                      @ DW_AT_frame_base
+	.byte	10                      @ DW_FORM_block1
+	.byte	3                       @ DW_AT_name
+	.byte	14                      @ DW_FORM_strp
+	.byte	58                      @ DW_AT_decl_file
+	.byte	11                      @ DW_FORM_data1
+	.byte	59                      @ DW_AT_decl_line
+	.byte	11                      @ DW_FORM_data1
+	.byte	39                      @ DW_AT_prototyped
+	.byte	12                      @ DW_FORM_flag
+	.byte	63                      @ DW_AT_external
+	.byte	12                      @ DW_FORM_flag
+	.byte	0                       @ EOM(1)
+	.byte	0                       @ EOM(2)
+	.byte	11                      @ Abbreviation Code
+	.byte	52                      @ DW_TAG_variable
+	.byte	0                       @ DW_CHILDREN_no
+	.byte	3                       @ DW_AT_name
+	.byte	14                      @ DW_FORM_strp
+	.byte	73                      @ DW_AT_type
+	.byte	19                      @ DW_FORM_ref4
+	.byte	58                      @ DW_AT_decl_file
+	.byte	11                      @ DW_FORM_data1
+	.byte	59                      @ DW_AT_decl_line
+	.byte	11                      @ DW_FORM_data1
+	.byte	2                       @ DW_AT_location
+	.byte	10                      @ DW_FORM_block1
+	.byte	0                       @ EOM(1)
+	.byte	0                       @ EOM(2)
+	.byte	12                      @ Abbreviation Code
+	.byte	52                      @ DW_TAG_variable
+	.byte	0                       @ DW_CHILDREN_no
+	.byte	2                       @ DW_AT_location
+	.byte	10                      @ DW_FORM_block1
+	.byte	3                       @ DW_AT_name
+	.byte	14                      @ DW_FORM_strp
+	.byte	58                      @ DW_AT_decl_file
+	.byte	11                      @ DW_FORM_data1
+	.byte	59                      @ DW_AT_decl_line
+	.byte	11                      @ DW_FORM_data1
+	.byte	73                      @ DW_AT_type
+	.byte	19                      @ DW_FORM_ref4
+	.byte	0                       @ EOM(1)
+	.byte	0                       @ EOM(2)
+	.byte	13                      @ Abbreviation Code
+	.byte	19                      @ DW_TAG_structure_type
+	.byte	1                       @ DW_CHILDREN_yes
+	.byte	11                      @ DW_AT_byte_size
+	.byte	11                      @ DW_FORM_data1
+	.byte	58                      @ DW_AT_decl_file
+	.byte	11                      @ DW_FORM_data1
+	.byte	59                      @ DW_AT_decl_line
+	.byte	11                      @ DW_FORM_data1
+	.byte	0                       @ EOM(1)
+	.byte	0                       @ EOM(2)
+	.byte	14                      @ Abbreviation Code
+	.byte	13                      @ DW_TAG_member
+	.byte	0                       @ DW_CHILDREN_no
+	.byte	3                       @ DW_AT_name
+	.byte	14                      @ DW_FORM_strp
+	.byte	73                      @ DW_AT_type
+	.byte	19                      @ DW_FORM_ref4
+	.byte	58                      @ DW_AT_decl_file
+	.byte	11                      @ DW_FORM_data1
+	.byte	59                      @ DW_AT_decl_line
+	.byte	11                      @ DW_FORM_data1
+	.byte	56                      @ DW_AT_data_member_location
+	.byte	11                      @ DW_FORM_data1
+	.byte	0                       @ EOM(1)
+	.byte	0                       @ EOM(2)
+	.byte	15                      @ Abbreviation Code
+	.byte	46                      @ DW_TAG_subprogram
+	.byte	1                       @ DW_CHILDREN_yes
+	.byte	17                      @ DW_AT_low_pc
+	.byte	1                       @ DW_FORM_addr
+	.byte	18                      @ DW_AT_high_pc
+	.byte	1                       @ DW_FORM_addr
+	.byte	64                      @ DW_AT_frame_base
+	.byte	10                      @ DW_FORM_block1
+	.byte	3                       @ DW_AT_name
+	.byte	14                      @ DW_FORM_strp
+	.byte	58                      @ DW_AT_decl_file
+	.byte	11                      @ DW_FORM_data1
+	.byte	59                      @ DW_AT_decl_line
+	.byte	11                      @ DW_FORM_data1
+	.byte	39                      @ DW_AT_prototyped
+	.byte	12                      @ DW_FORM_flag
+	.byte	73                      @ DW_AT_type
+	.byte	19                      @ DW_FORM_ref4
+	.byte	63                      @ DW_AT_external
+	.byte	12                      @ DW_FORM_flag
+	.byte	0                       @ EOM(1)
+	.byte	0                       @ EOM(2)
+	.byte	16                      @ Abbreviation Code
+	.byte	5                       @ DW_TAG_formal_parameter
+	.byte	0                       @ DW_CHILDREN_no
+	.byte	2                       @ DW_AT_location
+	.byte	10                      @ DW_FORM_block1
+	.byte	3                       @ DW_AT_name
+	.byte	14                      @ DW_FORM_strp
+	.byte	58                      @ DW_AT_decl_file
+	.byte	11                      @ DW_FORM_data1
+	.byte	59                      @ DW_AT_decl_line
+	.byte	11                      @ DW_FORM_data1
+	.byte	73                      @ DW_AT_type
+	.byte	19                      @ DW_FORM_ref4
+	.byte	0                       @ EOM(1)
+	.byte	0                       @ EOM(2)
+	.byte	17                      @ Abbreviation Code
+	.byte	46                      @ DW_TAG_subprogram
+	.byte	1                       @ DW_CHILDREN_yes
+	.byte	17                      @ DW_AT_low_pc
+	.byte	1                       @ DW_FORM_addr
+	.byte	18                      @ DW_AT_high_pc
+	.byte	1                       @ DW_FORM_addr
+	.byte	64                      @ DW_AT_frame_base
+	.byte	10                      @ DW_FORM_block1
+	.byte	3                       @ DW_AT_name
+	.byte	14                      @ DW_FORM_strp
+	.byte	58                      @ DW_AT_decl_file
+	.byte	11                      @ DW_FORM_data1
+	.byte	59                      @ DW_AT_decl_line
+	.byte	5                       @ DW_FORM_data2
+	.byte	39                      @ DW_AT_prototyped
+	.byte	12                      @ DW_FORM_flag
+	.byte	73                      @ DW_AT_type
+	.byte	19                      @ DW_FORM_ref4
+	.byte	63                      @ DW_AT_external
+	.byte	12                      @ DW_FORM_flag
+	.byte	0                       @ EOM(1)
+	.byte	0                       @ EOM(2)
+	.byte	18                      @ Abbreviation Code
+	.byte	5                       @ DW_TAG_formal_parameter
+	.byte	0                       @ DW_CHILDREN_no
+	.byte	2                       @ DW_AT_location
+	.byte	10                      @ DW_FORM_block1
+	.byte	3                       @ DW_AT_name
+	.byte	14                      @ DW_FORM_strp
+	.byte	58                      @ DW_AT_decl_file
+	.byte	11                      @ DW_FORM_data1
+	.byte	59                      @ DW_AT_decl_line
+	.byte	5                       @ DW_FORM_data2
+	.byte	73                      @ DW_AT_type
+	.byte	19                      @ DW_FORM_ref4
+	.byte	0                       @ EOM(1)
+	.byte	0                       @ EOM(2)
+	.byte	19                      @ Abbreviation Code
+	.byte	52                      @ DW_TAG_variable
+	.byte	0                       @ DW_CHILDREN_no
+	.byte	2                       @ DW_AT_location
+	.byte	10                      @ DW_FORM_block1
+	.byte	3                       @ DW_AT_name
+	.byte	14                      @ DW_FORM_strp
+	.byte	58                      @ DW_AT_decl_file
+	.byte	11                      @ DW_FORM_data1
+	.byte	59                      @ DW_AT_decl_line
+	.byte	5                       @ DW_FORM_data2
+	.byte	73                      @ DW_AT_type
+	.byte	19                      @ DW_FORM_ref4
+	.byte	0                       @ EOM(1)
+	.byte	0                       @ EOM(2)
+	.byte	20                      @ Abbreviation Code
+	.byte	46                      @ DW_TAG_subprogram
+	.byte	1                       @ DW_CHILDREN_yes
+	.byte	17                      @ DW_AT_low_pc
+	.byte	1                       @ DW_FORM_addr
+	.byte	18                      @ DW_AT_high_pc
+	.byte	1                       @ DW_FORM_addr
+	.byte	64                      @ DW_AT_frame_base
+	.byte	10                      @ DW_FORM_block1
+	.byte	3                       @ DW_AT_name
+	.byte	14                      @ DW_FORM_strp
+	.byte	58                      @ DW_AT_decl_file
+	.byte	11                      @ DW_FORM_data1
+	.byte	59                      @ DW_AT_decl_line
+	.byte	5                       @ DW_FORM_data2
+	.byte	39                      @ DW_AT_prototyped
+	.byte	12                      @ DW_FORM_flag
+	.byte	63                      @ DW_AT_external
+	.byte	12                      @ DW_FORM_flag
+	.byte	0                       @ EOM(1)
+	.byte	0                       @ EOM(2)
+	.byte	21                      @ Abbreviation Code
+	.byte	15                      @ DW_TAG_pointer_type
+	.byte	0                       @ DW_CHILDREN_no
+	.byte	73                      @ DW_AT_type
+	.byte	19                      @ DW_FORM_ref4
+	.byte	0                       @ EOM(1)
+	.byte	0                       @ EOM(2)
+	.byte	0                       @ EOM(3)
+	.section	.debug_info,"",%progbits
+.Lcu_begin0:
+	.long	.Ldebug_info_end0-.Ldebug_info_start0 @ Length of Unit
+.Ldebug_info_start0:
+	.short	3                       @ DWARF version number
+	.long	.debug_abbrev           @ Offset Into Abbrev. Section
+	.byte	4                       @ Address Size (in bytes)
+	.byte	1                       @ Abbrev [1] 0xb:0x4f8 DW_TAG_compile_unit
+	.long	.Linfo_string0          @ DW_AT_producer
+	.short	12                      @ DW_AT_language
+	.long	.Linfo_string1          @ DW_AT_name
+	.long	.Lline_table_start0     @ DW_AT_stmt_list
+	.long	.Linfo_string2          @ DW_AT_comp_dir
+	.long	0                       @ DW_AT_low_pc
+	.long	.Ldebug_ranges0         @ DW_AT_ranges
+	.byte	2                       @ Abbrev [2] 0x26:0x12 DW_TAG_variable
+	.long	.Linfo_string3          @ DW_AT_name
+	.long	56                      @ DW_AT_type
+	.byte	1                       @ DW_AT_external
+	.byte	2                       @ DW_AT_decl_file
+	.byte	8                       @ DW_AT_decl_line
+	.byte	5                       @ DW_AT_location
+	.byte	3
+	.long	SensorSta
+	.byte	3                       @ Abbrev [3] 0x38:0xc DW_TAG_array_type
+	.long	68                      @ DW_AT_type
+	.byte	4                       @ Abbrev [4] 0x3d:0x6 DW_TAG_subrange_type
+	.long	107                     @ DW_AT_type
+	.byte	2                       @ DW_AT_count
+	.byte	0                       @ End Of Children Mark
+	.byte	5                       @ Abbrev [5] 0x44:0xb DW_TAG_typedef
+	.long	79                      @ DW_AT_type
+	.long	.Linfo_string7          @ DW_AT_name
+	.byte	1                       @ DW_AT_decl_file
+	.byte	62                      @ DW_AT_decl_line
+	.byte	6                       @ Abbrev [6] 0x4f:0x15 DW_TAG_enumeration_type
+	.long	100                     @ DW_AT_type
+	.byte	1                       @ DW_AT_byte_size
+	.byte	1                       @ DW_AT_decl_file
+	.byte	62                      @ DW_AT_decl_line
+	.byte	7                       @ Abbrev [7] 0x57:0x6 DW_TAG_enumerator
+	.long	.Linfo_string5          @ DW_AT_name
+	.byte	0                       @ DW_AT_const_value
+	.byte	7                       @ Abbrev [7] 0x5d:0x6 DW_TAG_enumerator
+	.long	.Linfo_string6          @ DW_AT_name
+	.byte	1                       @ DW_AT_const_value
+	.byte	0                       @ End Of Children Mark
+	.byte	8                       @ Abbrev [8] 0x64:0x7 DW_TAG_base_type
+	.long	.Linfo_string4          @ DW_AT_name
+	.byte	8                       @ DW_AT_encoding
+	.byte	1                       @ DW_AT_byte_size
+	.byte	9                       @ Abbrev [9] 0x6b:0x7 DW_TAG_base_type
+	.long	.Linfo_string8          @ DW_AT_name
+	.byte	8                       @ DW_AT_byte_size
+	.byte	7                       @ DW_AT_encoding
+	.byte	10                      @ Abbrev [10] 0x72:0x52 DW_TAG_subprogram
+	.long	.Lfunc_begin1           @ DW_AT_low_pc
+	.long	.Lfunc_end1             @ DW_AT_high_pc
+	.byte	1                       @ DW_AT_frame_base
+	.byte	93
+	.long	.Linfo_string31         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	25                      @ DW_AT_decl_line
+	.byte	1                       @ DW_AT_prototyped
+	.byte	1                       @ DW_AT_external
+	.byte	11                      @ Abbrev [11] 0x85:0x11 DW_TAG_variable
+	.long	.Linfo_string9          @ DW_AT_name
+	.long	196                     @ DW_AT_type
+	.byte	2                       @ DW_AT_decl_file
+	.byte	27                      @ DW_AT_decl_line
+	.byte	5                       @ DW_AT_location
+	.byte	3
+	.long	Get_Duration.TemCountCnt1
+	.byte	11                      @ Abbrev [11] 0x96:0x11 DW_TAG_variable
+	.long	.Linfo_string12         @ DW_AT_name
+	.long	196                     @ DW_AT_type
+	.byte	2                       @ DW_AT_decl_file
+	.byte	27                      @ DW_AT_decl_line
+	.byte	5                       @ DW_AT_location
+	.byte	3
+	.long	Get_Duration.TemCountCnt2
+	.byte	12                      @ Abbrev [12] 0xa7:0xe DW_TAG_variable
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	4
+	.long	.Linfo_string40         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	28                      @ DW_AT_decl_line
+	.long	483                     @ DW_AT_type
+	.byte	12                      @ Abbrev [12] 0xb5:0xe DW_TAG_variable
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	0
+	.long	.Linfo_string41         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	28                      @ DW_AT_decl_line
+	.long	483                     @ DW_AT_type
+	.byte	0                       @ End Of Children Mark
+	.byte	5                       @ Abbrev [5] 0xc4:0xb DW_TAG_typedef
+	.long	207                     @ DW_AT_type
+	.long	.Linfo_string11         @ DW_AT_name
+	.byte	3                       @ DW_AT_decl_file
+	.byte	64                      @ DW_AT_decl_line
+	.byte	8                       @ Abbrev [8] 0xcf:0x7 DW_TAG_base_type
+	.long	.Linfo_string10         @ DW_AT_name
+	.byte	7                       @ DW_AT_encoding
+	.byte	4                       @ DW_AT_byte_size
+	.byte	2                       @ Abbrev [2] 0xd6:0x12 DW_TAG_variable
+	.long	.Linfo_string13         @ DW_AT_name
+	.long	232                     @ DW_AT_type
+	.byte	1                       @ DW_AT_external
+	.byte	2                       @ DW_AT_decl_file
+	.byte	6                       @ DW_AT_decl_line
+	.byte	5                       @ DW_AT_location
+	.byte	3
+	.long	gTemBuf
+	.byte	3                       @ Abbrev [3] 0xe8:0x12 DW_TAG_array_type
+	.long	250                     @ DW_AT_type
+	.byte	4                       @ Abbrev [4] 0xed:0x6 DW_TAG_subrange_type
+	.long	107                     @ DW_AT_type
+	.byte	1                       @ DW_AT_count
+	.byte	4                       @ Abbrev [4] 0xf3:0x6 DW_TAG_subrange_type
+	.long	107                     @ DW_AT_type
+	.byte	10                      @ DW_AT_count
+	.byte	0                       @ End Of Children Mark
+	.byte	8                       @ Abbrev [8] 0xfa:0x7 DW_TAG_base_type
+	.long	.Linfo_string14         @ DW_AT_name
+	.byte	4                       @ DW_AT_encoding
+	.byte	4                       @ DW_AT_byte_size
+	.byte	2                       @ Abbrev [2] 0x101:0x12 DW_TAG_variable
+	.long	.Linfo_string15         @ DW_AT_name
+	.long	232                     @ DW_AT_type
+	.byte	1                       @ DW_AT_external
+	.byte	2                       @ DW_AT_decl_file
+	.byte	7                       @ DW_AT_decl_line
+	.byte	5                       @ DW_AT_location
+	.byte	3
+	.long	gHumBuf
+	.byte	2                       @ Abbrev [2] 0x113:0x12 DW_TAG_variable
+	.long	.Linfo_string16         @ DW_AT_name
+	.long	293                     @ DW_AT_type
+	.byte	1                       @ DW_AT_external
+	.byte	2                       @ DW_AT_decl_file
+	.byte	9                       @ DW_AT_decl_line
+	.byte	5                       @ DW_AT_location
+	.byte	3
+	.long	T_H
+	.byte	5                       @ Abbrev [5] 0x125:0xb DW_TAG_typedef
+	.long	304                     @ DW_AT_type
+	.long	.Linfo_string29         @ DW_AT_name
+	.byte	1                       @ DW_AT_decl_file
+	.byte	78                      @ DW_AT_decl_line
+	.byte	13                      @ Abbrev [13] 0x130:0x71 DW_TAG_structure_type
+	.byte	36                      @ DW_AT_byte_size
+	.byte	1                       @ DW_AT_decl_file
+	.byte	65                      @ DW_AT_decl_line
+	.byte	14                      @ Abbrev [14] 0x134:0xc DW_TAG_member
+	.long	.Linfo_string17         @ DW_AT_name
+	.long	417                     @ DW_AT_type
+	.byte	1                       @ DW_AT_decl_file
+	.byte	67                      @ DW_AT_decl_line
+	.byte	0                       @ DW_AT_data_member_location
+	.byte	14                      @ Abbrev [14] 0x140:0xc DW_TAG_member
+	.long	.Linfo_string20         @ DW_AT_name
+	.long	417                     @ DW_AT_type
+	.byte	1                       @ DW_AT_decl_file
+	.byte	68                      @ DW_AT_decl_line
+	.byte	2                       @ DW_AT_data_member_location
+	.byte	14                      @ Abbrev [14] 0x14c:0xc DW_TAG_member
+	.long	.Linfo_string21         @ DW_AT_name
+	.long	447                     @ DW_AT_type
+	.byte	1                       @ DW_AT_decl_file
+	.byte	69                      @ DW_AT_decl_line
+	.byte	4                       @ DW_AT_data_member_location
+	.byte	14                      @ Abbrev [14] 0x158:0xc DW_TAG_member
+	.long	.Linfo_string22         @ DW_AT_name
+	.long	447                     @ DW_AT_type
+	.byte	1                       @ DW_AT_decl_file
+	.byte	70                      @ DW_AT_decl_line
+	.byte	8                       @ DW_AT_data_member_location
+	.byte	14                      @ Abbrev [14] 0x164:0xc DW_TAG_member
+	.long	.Linfo_string23         @ DW_AT_name
+	.long	447                     @ DW_AT_type
+	.byte	1                       @ DW_AT_decl_file
+	.byte	71                      @ DW_AT_decl_line
+	.byte	12                      @ DW_AT_data_member_location
+	.byte	14                      @ Abbrev [14] 0x170:0xc DW_TAG_member
+	.long	.Linfo_string24         @ DW_AT_name
+	.long	459                     @ DW_AT_type
+	.byte	1                       @ DW_AT_decl_file
+	.byte	72                      @ DW_AT_decl_line
+	.byte	16                      @ DW_AT_data_member_location
+	.byte	14                      @ Abbrev [14] 0x17c:0xc DW_TAG_member
+	.long	.Linfo_string25         @ DW_AT_name
+	.long	471                     @ DW_AT_type
+	.byte	1                       @ DW_AT_decl_file
+	.byte	75                      @ DW_AT_decl_line
+	.byte	24                      @ DW_AT_data_member_location
+	.byte	14                      @ Abbrev [14] 0x188:0xc DW_TAG_member
+	.long	.Linfo_string27         @ DW_AT_name
+	.long	483                     @ DW_AT_type
+	.byte	1                       @ DW_AT_decl_file
+	.byte	76                      @ DW_AT_decl_line
+	.byte	26                      @ DW_AT_data_member_location
+	.byte	14                      @ Abbrev [14] 0x194:0xc DW_TAG_member
+	.long	.Linfo_string28         @ DW_AT_name
+	.long	459                     @ DW_AT_type
+	.byte	1                       @ DW_AT_decl_file
+	.byte	77                      @ DW_AT_decl_line
+	.byte	28                      @ DW_AT_data_member_location
+	.byte	0                       @ End Of Children Mark
+	.byte	3                       @ Abbrev [3] 0x1a1:0xc DW_TAG_array_type
+	.long	429                     @ DW_AT_type
+	.byte	4                       @ Abbrev [4] 0x1a6:0x6 DW_TAG_subrange_type
+	.long	107                     @ DW_AT_type
+	.byte	1                       @ DW_AT_count
+	.byte	0                       @ End Of Children Mark
+	.byte	5                       @ Abbrev [5] 0x1ad:0xb DW_TAG_typedef
+	.long	440                     @ DW_AT_type
+	.long	.Linfo_string19         @ DW_AT_name
+	.byte	3                       @ DW_AT_decl_file
+	.byte	63                      @ DW_AT_decl_line
+	.byte	8                       @ Abbrev [8] 0x1b8:0x7 DW_TAG_base_type
+	.long	.Linfo_string18         @ DW_AT_name
+	.byte	7                       @ DW_AT_encoding
+	.byte	2                       @ DW_AT_byte_size
+	.byte	3                       @ Abbrev [3] 0x1bf:0xc DW_TAG_array_type
+	.long	429                     @ DW_AT_type
+	.byte	4                       @ Abbrev [4] 0x1c4:0x6 DW_TAG_subrange_type
+	.long	107                     @ DW_AT_type
+	.byte	2                       @ DW_AT_count
+	.byte	0                       @ End Of Children Mark
+	.byte	3                       @ Abbrev [3] 0x1cb:0xc DW_TAG_array_type
+	.long	196                     @ DW_AT_type
+	.byte	4                       @ Abbrev [4] 0x1d0:0x6 DW_TAG_subrange_type
+	.long	107                     @ DW_AT_type
+	.byte	2                       @ DW_AT_count
+	.byte	0                       @ End Of Children Mark
+	.byte	3                       @ Abbrev [3] 0x1d7:0xc DW_TAG_array_type
+	.long	483                     @ DW_AT_type
+	.byte	4                       @ Abbrev [4] 0x1dc:0x6 DW_TAG_subrange_type
+	.long	107                     @ DW_AT_type
+	.byte	2                       @ DW_AT_count
+	.byte	0                       @ End Of Children Mark
+	.byte	5                       @ Abbrev [5] 0x1e3:0xb DW_TAG_typedef
+	.long	100                     @ DW_AT_type
+	.long	.Linfo_string26         @ DW_AT_name
+	.byte	3                       @ DW_AT_decl_file
+	.byte	62                      @ DW_AT_decl_line
+	.byte	15                      @ Abbrev [15] 0x1ee:0x26 DW_TAG_subprogram
+	.long	.Lfunc_begin0           @ DW_AT_low_pc
+	.long	.Lfunc_end0             @ DW_AT_high_pc
+	.byte	1                       @ DW_AT_frame_base
+	.byte	93
+	.long	.Linfo_string30         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	13                      @ DW_AT_decl_line
+	.byte	1                       @ DW_AT_prototyped
+	.long	68                      @ DW_AT_type
+	.byte	1                       @ DW_AT_external
+	.byte	16                      @ Abbrev [16] 0x205:0xe DW_TAG_formal_parameter
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	0
+	.long	.Linfo_string39         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	13                      @ DW_AT_decl_line
+	.long	483                     @ DW_AT_type
+	.byte	0                       @ End Of Children Mark
+	.byte	10                      @ Abbrev [10] 0x214:0x3e DW_TAG_subprogram
+	.long	.Lfunc_begin2           @ DW_AT_low_pc
+	.long	.Lfunc_end2             @ DW_AT_high_pc
+	.byte	1                       @ DW_AT_frame_base
+	.byte	93
+	.long	.Linfo_string32         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	151                     @ DW_AT_decl_line
+	.byte	1                       @ DW_AT_prototyped
+	.byte	1                       @ DW_AT_external
+	.byte	12                      @ Abbrev [12] 0x227:0xe DW_TAG_variable
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	12
+	.long	.Linfo_string40         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	153                     @ DW_AT_decl_line
+	.long	483                     @ DW_AT_type
+	.byte	12                      @ Abbrev [12] 0x235:0xe DW_TAG_variable
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	8
+	.long	.Linfo_string42         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	153                     @ DW_AT_decl_line
+	.long	483                     @ DW_AT_type
+	.byte	12                      @ Abbrev [12] 0x243:0xe DW_TAG_variable
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	4
+	.long	.Linfo_string43         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	153                     @ DW_AT_decl_line
+	.long	483                     @ DW_AT_type
+	.byte	0                       @ End Of Children Mark
+	.byte	15                      @ Abbrev [15] 0x252:0x42 DW_TAG_subprogram
+	.long	.Lfunc_begin3           @ DW_AT_low_pc
+	.long	.Lfunc_end3             @ DW_AT_high_pc
+	.byte	1                       @ DW_AT_frame_base
+	.byte	93
+	.long	.Linfo_string33         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	253                     @ DW_AT_decl_line
+	.byte	1                       @ DW_AT_prototyped
+	.long	483                     @ DW_AT_type
+	.byte	1                       @ DW_AT_external
+	.byte	16                      @ Abbrev [16] 0x269:0xe DW_TAG_formal_parameter
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	20
+	.long	.Linfo_string44         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	253                     @ DW_AT_decl_line
+	.long	483                     @ DW_AT_type
+	.byte	16                      @ Abbrev [16] 0x277:0xe DW_TAG_formal_parameter
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	16
+	.long	.Linfo_string45         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	253                     @ DW_AT_decl_line
+	.long	429                     @ DW_AT_type
+	.byte	12                      @ Abbrev [12] 0x285:0xe DW_TAG_variable
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	12
+	.long	.Linfo_string46         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	255                     @ DW_AT_decl_line
+	.long	483                     @ DW_AT_type
+	.byte	0                       @ End Of Children Mark
+	.byte	15                      @ Abbrev [15] 0x294:0x42 DW_TAG_subprogram
+	.long	.Lfunc_begin4           @ DW_AT_low_pc
+	.long	.Lfunc_end4             @ DW_AT_high_pc
+	.byte	1                       @ DW_AT_frame_base
+	.byte	93
+	.long	.Linfo_string34         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	190                     @ DW_AT_decl_line
+	.byte	1                       @ DW_AT_prototyped
+	.long	483                     @ DW_AT_type
+	.byte	1                       @ DW_AT_external
+	.byte	16                      @ Abbrev [16] 0x2ab:0xe DW_TAG_formal_parameter
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	28
+	.long	.Linfo_string47         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	190                     @ DW_AT_decl_line
+	.long	483                     @ DW_AT_type
+	.byte	16                      @ Abbrev [16] 0x2b9:0xe DW_TAG_formal_parameter
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	24
+	.long	.Linfo_string48         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	190                     @ DW_AT_decl_line
+	.long	429                     @ DW_AT_type
+	.byte	12                      @ Abbrev [12] 0x2c7:0xe DW_TAG_variable
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	20
+	.long	.Linfo_string43         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	192                     @ DW_AT_decl_line
+	.long	483                     @ DW_AT_type
+	.byte	0                       @ End Of Children Mark
+	.byte	15                      @ Abbrev [15] 0x2d6:0x6c DW_TAG_subprogram
+	.long	.Lfunc_begin5           @ DW_AT_low_pc
+	.long	.Lfunc_end5             @ DW_AT_high_pc
+	.byte	1                       @ DW_AT_frame_base
+	.byte	93
+	.long	.Linfo_string35         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	223                     @ DW_AT_decl_line
+	.byte	1                       @ DW_AT_prototyped
+	.long	483                     @ DW_AT_type
+	.byte	1                       @ DW_AT_external
+	.byte	16                      @ Abbrev [16] 0x2ed:0xe DW_TAG_formal_parameter
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	48
+	.long	.Linfo_string47         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	223                     @ DW_AT_decl_line
+	.long	483                     @ DW_AT_type
+	.byte	16                      @ Abbrev [16] 0x2fb:0xe DW_TAG_formal_parameter
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	44
+	.long	.Linfo_string48         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	223                     @ DW_AT_decl_line
+	.long	429                     @ DW_AT_type
+	.byte	16                      @ Abbrev [16] 0x309:0xe DW_TAG_formal_parameter
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	40
+	.long	.Linfo_string49         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	223                     @ DW_AT_decl_line
+	.long	1229                    @ DW_AT_type
+	.byte	16                      @ Abbrev [16] 0x317:0xe DW_TAG_formal_parameter
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	36
+	.long	.Linfo_string50         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	223                     @ DW_AT_decl_line
+	.long	483                     @ DW_AT_type
+	.byte	12                      @ Abbrev [12] 0x325:0xe DW_TAG_variable
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	32
+	.long	.Linfo_string40         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	225                     @ DW_AT_decl_line
+	.long	483                     @ DW_AT_type
+	.byte	12                      @ Abbrev [12] 0x333:0xe DW_TAG_variable
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	28
+	.long	.Linfo_string43         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	226                     @ DW_AT_decl_line
+	.long	483                     @ DW_AT_type
+	.byte	0                       @ End Of Children Mark
+	.byte	17                      @ Abbrev [17] 0x342:0x64 DW_TAG_subprogram
+	.long	.Lfunc_begin6           @ DW_AT_low_pc
+	.long	.Lfunc_end6             @ DW_AT_high_pc
+	.byte	1                       @ DW_AT_frame_base
+	.byte	93
+	.long	.Linfo_string36         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.short	262                     @ DW_AT_decl_line
+	.byte	1                       @ DW_AT_prototyped
+	.long	483                     @ DW_AT_type
+	.byte	1                       @ DW_AT_external
+	.byte	18                      @ Abbrev [18] 0x35a:0xf DW_TAG_formal_parameter
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	40
+	.long	.Linfo_string44         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.short	262                     @ DW_AT_decl_line
+	.long	483                     @ DW_AT_type
+	.byte	18                      @ Abbrev [18] 0x369:0xf DW_TAG_formal_parameter
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	36
+	.long	.Linfo_string51         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.short	262                     @ DW_AT_decl_line
+	.long	429                     @ DW_AT_type
+	.byte	18                      @ Abbrev [18] 0x378:0xf DW_TAG_formal_parameter
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	32
+	.long	.Linfo_string52         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.short	262                     @ DW_AT_decl_line
+	.long	1229                    @ DW_AT_type
+	.byte	18                      @ Abbrev [18] 0x387:0xf DW_TAG_formal_parameter
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	28
+	.long	.Linfo_string53         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.short	262                     @ DW_AT_decl_line
+	.long	429                     @ DW_AT_type
+	.byte	19                      @ Abbrev [19] 0x396:0xf DW_TAG_variable
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	24
+	.long	.Linfo_string46         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.short	264                     @ DW_AT_decl_line
+	.long	483                     @ DW_AT_type
+	.byte	0                       @ End Of Children Mark
+	.byte	17                      @ Abbrev [17] 0x3a6:0xb3 DW_TAG_subprogram
+	.long	.Lfunc_begin7           @ DW_AT_low_pc
+	.long	.Lfunc_end7             @ DW_AT_high_pc
+	.byte	1                       @ DW_AT_frame_base
+	.byte	93
+	.long	.Linfo_string37         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.short	286                     @ DW_AT_decl_line
+	.byte	1                       @ DW_AT_prototyped
+	.long	250                     @ DW_AT_type
+	.byte	1                       @ DW_AT_external
+	.byte	18                      @ Abbrev [18] 0x3be:0x10 DW_TAG_formal_parameter
+	.byte	3                       @ DW_AT_location
+	.byte	145
+	.asciz	"\314"
+	.long	.Linfo_string54         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.short	286                     @ DW_AT_decl_line
+	.long	250                     @ DW_AT_type
+	.byte	18                      @ Abbrev [18] 0x3ce:0x10 DW_TAG_formal_parameter
+	.byte	3                       @ DW_AT_location
+	.byte	145
+	.asciz	"\310"
+	.long	.Linfo_string55         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.short	286                     @ DW_AT_decl_line
+	.long	1234                    @ DW_AT_type
+	.byte	18                      @ Abbrev [18] 0x3de:0x10 DW_TAG_formal_parameter
+	.byte	3                       @ DW_AT_location
+	.byte	145
+	.asciz	"\304"
+	.long	.Linfo_string56         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.short	286                     @ DW_AT_decl_line
+	.long	429                     @ DW_AT_type
+	.byte	18                      @ Abbrev [18] 0x3ee:0x10 DW_TAG_formal_parameter
+	.byte	3                       @ DW_AT_location
+	.byte	145
+	.asciz	"\300"
+	.long	.Linfo_string57         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.short	286                     @ DW_AT_decl_line
+	.long	429                     @ DW_AT_type
+	.byte	18                      @ Abbrev [18] 0x3fe:0xf DW_TAG_formal_parameter
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	60
+	.long	.Linfo_string58         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.short	286                     @ DW_AT_decl_line
+	.long	429                     @ DW_AT_type
+	.byte	19                      @ Abbrev [19] 0x40d:0xf DW_TAG_variable
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	56
+	.long	.Linfo_string40         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.short	288                     @ DW_AT_decl_line
+	.long	1239                    @ DW_AT_type
+	.byte	19                      @ Abbrev [19] 0x41c:0xf DW_TAG_variable
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	52
+	.long	.Linfo_string42         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.short	288                     @ DW_AT_decl_line
+	.long	1239                    @ DW_AT_type
+	.byte	19                      @ Abbrev [19] 0x42b:0xf DW_TAG_variable
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	48
+	.long	.Linfo_string60         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.short	289                     @ DW_AT_decl_line
+	.long	250                     @ DW_AT_type
+	.byte	19                      @ Abbrev [19] 0x43a:0xf DW_TAG_variable
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	44
+	.long	.Linfo_string61         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.short	290                     @ DW_AT_decl_line
+	.long	250                     @ DW_AT_type
+	.byte	19                      @ Abbrev [19] 0x449:0xf DW_TAG_variable
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	4
+	.long	.Linfo_string62         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.short	291                     @ DW_AT_decl_line
+	.long	1246                    @ DW_AT_type
+	.byte	0                       @ End Of Children Mark
+	.byte	20                      @ Abbrev [20] 0x459:0x74 DW_TAG_subprogram
+	.long	.Lfunc_begin8           @ DW_AT_low_pc
+	.long	.Lfunc_end8             @ DW_AT_high_pc
+	.byte	1                       @ DW_AT_frame_base
+	.byte	93
+	.long	.Linfo_string38         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.short	344                     @ DW_AT_decl_line
+	.byte	1                       @ DW_AT_prototyped
+	.byte	1                       @ DW_AT_external
+	.byte	19                      @ Abbrev [19] 0x46d:0x10 DW_TAG_variable
+	.byte	3                       @ DW_AT_location
+	.byte	145
+	.asciz	"\324"
+	.long	.Linfo_string40         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.short	347                     @ DW_AT_decl_line
+	.long	483                     @ DW_AT_type
+	.byte	19                      @ Abbrev [19] 0x47d:0x10 DW_TAG_variable
+	.byte	3                       @ DW_AT_location
+	.byte	145
+	.asciz	"\320"
+	.long	.Linfo_string63         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.short	348                     @ DW_AT_decl_line
+	.long	483                     @ DW_AT_type
+	.byte	19                      @ Abbrev [19] 0x48d:0x10 DW_TAG_variable
+	.byte	3                       @ DW_AT_location
+	.byte	145
+	.asciz	"\310"
+	.long	.Linfo_string64         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.short	349                     @ DW_AT_decl_line
+	.long	1258                    @ DW_AT_type
+	.byte	19                      @ Abbrev [19] 0x49d:0x10 DW_TAG_variable
+	.byte	3                       @ DW_AT_location
+	.byte	145
+	.asciz	"\304"
+	.long	.Linfo_string65         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.short	350                     @ DW_AT_decl_line
+	.long	447                     @ DW_AT_type
+	.byte	19                      @ Abbrev [19] 0x4ad:0x10 DW_TAG_variable
+	.byte	3                       @ DW_AT_location
+	.byte	145
+	.asciz	"\300"
+	.long	.Linfo_string66         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.short	351                     @ DW_AT_decl_line
+	.long	1270                    @ DW_AT_type
+	.byte	19                      @ Abbrev [19] 0x4bd:0xf DW_TAG_variable
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	60
+	.long	.Linfo_string67         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.short	351                     @ DW_AT_decl_line
+	.long	1270                    @ DW_AT_type
+	.byte	0                       @ End Of Children Mark
+	.byte	21                      @ Abbrev [21] 0x4cd:0x5 DW_TAG_pointer_type
+	.long	483                     @ DW_AT_type
+	.byte	21                      @ Abbrev [21] 0x4d2:0x5 DW_TAG_pointer_type
+	.long	250                     @ DW_AT_type
+	.byte	8                       @ Abbrev [8] 0x4d7:0x7 DW_TAG_base_type
+	.long	.Linfo_string59         @ DW_AT_name
+	.byte	5                       @ DW_AT_encoding
+	.byte	4                       @ DW_AT_byte_size
+	.byte	3                       @ Abbrev [3] 0x4de:0xc DW_TAG_array_type
+	.long	250                     @ DW_AT_type
+	.byte	4                       @ Abbrev [4] 0x4e3:0x6 DW_TAG_subrange_type
+	.long	107                     @ DW_AT_type
+	.byte	10                      @ DW_AT_count
+	.byte	0                       @ End Of Children Mark
+	.byte	3                       @ Abbrev [3] 0x4ea:0xc DW_TAG_array_type
+	.long	483                     @ DW_AT_type
+	.byte	4                       @ Abbrev [4] 0x4ef:0x6 DW_TAG_subrange_type
+	.long	107                     @ DW_AT_type
+	.byte	6                       @ DW_AT_count
+	.byte	0                       @ End Of Children Mark
+	.byte	3                       @ Abbrev [3] 0x4f6:0xc DW_TAG_array_type
+	.long	250                     @ DW_AT_type
+	.byte	4                       @ Abbrev [4] 0x4fb:0x6 DW_TAG_subrange_type
+	.long	107                     @ DW_AT_type
+	.byte	1                       @ DW_AT_count
+	.byte	0                       @ End Of Children Mark
+	.byte	0                       @ End Of Children Mark
+.Ldebug_info_end0:
+	.section	.debug_ranges,"",%progbits
+.Ldebug_ranges0:
+	.long	.Lfunc_begin0
+	.long	.Lfunc_end0
+	.long	.Lfunc_begin1
+	.long	.Lfunc_end1
+	.long	.Lfunc_begin2
+	.long	.Lfunc_end2
+	.long	.Lfunc_begin3
+	.long	.Lfunc_end3
+	.long	.Lfunc_begin4
+	.long	.Lfunc_end4
+	.long	.Lfunc_begin5
+	.long	.Lfunc_end5
+	.long	.Lfunc_begin6
+	.long	.Lfunc_end6
+	.long	.Lfunc_begin7
+	.long	.Lfunc_end7
+	.long	.Lfunc_begin8
+	.long	.Lfunc_end8
+	.long	0
+	.long	0
+	.ident	"Component: ARM Compiler 6.14 Tool: armclang [5db06c00]"
+	.section	".note.GNU-stack","",%progbits
+	.eabi_attribute	30, 6	@ Tag_ABI_optimization_goals
+	.ARM_attribute	16, 1	@ Tag_AV_eba
+	.section	.debug_line,"",%progbits
+.Lline_table_start0:
