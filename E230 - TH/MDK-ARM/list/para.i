@@ -3084,7 +3084,7 @@ extern __attribute__((nothrow)) void _membitmovehb(void * , const void * , int ,
 extern __attribute__((nothrow)) void _membitmovewl(void * , const void * , int , int , size_t ) __attribute__((__nonnull__(1,2)));
 extern __attribute__((nothrow)) void _membitmovewb(void * , const void * , int , int , size_t ) __attribute__((__nonnull__(1,2)));
 # 45 "../BSP/Inc\\flash.h" 2
-# 89 "../BSP/Inc\\flash.h"
+# 88 "../BSP/Inc\\flash.h"
 uint8_t Flash_Read_OneByte(uint32_t RWAddr);
 
 void flash_read_multi(uint32_t readAdder, uint8_t *readBuf, uint16_t readLen);
@@ -3266,10 +3266,11 @@ uint8_t Read_Sht3_TH(uint8_t sChannal, uint16_t sReadCmd, uint8_t *sReadBuf, uin
 # 5 "../APP/Src/para.c" 2
 
 UserTypeDef UserPara;
-uint8_t Cur_Param[((((((((((((0x00 + 0x01) + 0x01) + 0x01) + 0x01) + 0x02) + 0x02) + 0x02) + 0x02) + 0x02) + 0x02) + 0x01) + 0x02)];
+uint8_t Cur_Param[((((((((((((0x00 + 0x02) + 0x01) + 0x01) + 0x01) + 0x02) + 0x02) + 0x02) + 0x02) + 0x02) + 0x02) + 0x01) + 0x04)];
 
-static uint8_t User_Default_Param[((((((((((((0x00 + 0x01) + 0x01) + 0x01) + 0x01) + 0x02) + 0x02) + 0x02) + 0x02) + 0x02) + 0x02) + 0x01) + 0x02)] =
+static uint8_t User_Default_Param[((((((((((((0x00 + 0x02) + 0x01) + 0x01) + 0x01) + 0x02) + 0x02) + 0x02) + 0x02) + 0x02) + 0x02) + 0x01) + 0x04)] =
 {
+ 0x00,
     0x02,
     0x21,
  0x26,
@@ -3288,30 +3289,30 @@ extern SHT3_Typedef T_H;
 void ReadPara(void)
 {
     uint8_t ParaInitFlag;
-    flash_read_MultiBytes(0x00, &ParaInitFlag, 1);
-   if(ParaInitFlag != User_Default_Param[0])
+    flash_read_MultiBytes(0x00 +1, &ParaInitFlag, 1);
+   if(ParaInitFlag != User_Default_Param[1])
     {
-        Flash_Write_MultiBytes(0x00, User_Default_Param, ((((((((((((0x00 + 0x01) + 0x01) + 0x01) + 0x01) + 0x02) + 0x02) + 0x02) + 0x02) + 0x02) + 0x02) + 0x01) + 0x02));
+        Flash_Write_MultiBytes(0x00, User_Default_Param, ((((((((((((0x00 + 0x02) + 0x01) + 0x01) + 0x01) + 0x02) + 0x02) + 0x02) + 0x02) + 0x02) + 0x02) + 0x01) + 0x04));
     }
-    flash_read_MultiBytes(0x00, Cur_Param, ((((((((((((0x00 + 0x01) + 0x01) + 0x01) + 0x01) + 0x02) + 0x02) + 0x02) + 0x02) + 0x02) + 0x02) + 0x01) + 0x02));
-    UserPara.SlaveAddr_Temp = Cur_Param[1];
-    UserPara.SlaveAddr_Humi = Cur_Param[2];
- UserPara.Baudrate = Cur_Param[3];
+    flash_read_MultiBytes(0x00, Cur_Param, ((((((((((((0x00 + 0x02) + 0x01) + 0x01) + 0x01) + 0x02) + 0x02) + 0x02) + 0x02) + 0x02) + 0x02) + 0x01) + 0x04));
+    UserPara.SlaveAddr_Temp = Cur_Param[2];
+    UserPara.SlaveAddr_Humi = Cur_Param[3];
+ UserPara.Baudrate = Cur_Param[4];
 
 
 
 
-    T_H.UpThreshold[0] = ((uint16_t)Cur_Param[5] << 8) +Cur_Param[4];
-    T_H.DoThreshold[0] = ((uint16_t)Cur_Param[7] << 8) +Cur_Param[6];
+    T_H.UpThreshold[0] = ((uint16_t)Cur_Param[6] << 8) +Cur_Param[5];
+    T_H.DoThreshold[0] = ((uint16_t)Cur_Param[8] << 8) +Cur_Param[7];
 
-    T_H.DurThreshold[0] = ((uint16_t)Cur_Param[9] << 8) +Cur_Param[8];
-    T_H.DurThreshold[1] = ((uint16_t)Cur_Param[11] << 8) +Cur_Param[10];
+    T_H.DurThreshold[0] = ((uint16_t)Cur_Param[10] << 8) +Cur_Param[9];
+    T_H.DurThreshold[1] = ((uint16_t)Cur_Param[12] << 8) +Cur_Param[11];
 
-    T_H.UpThreshold[1] = ((uint16_t)Cur_Param[13] << 8) +Cur_Param[12];
-    T_H.DoThreshold[1] = ((uint16_t)Cur_Param[15] << 8) +Cur_Param[14];
+    T_H.UpThreshold[1] = ((uint16_t)Cur_Param[14] << 8) +Cur_Param[13];
+    T_H.DoThreshold[1] = ((uint16_t)Cur_Param[16] << 8) +Cur_Param[15];
 
-    T_H.Upload_persist[0] = Cur_Param[16];
-    T_H.Upload_persist[1] = Cur_Param[17];
+    T_H.Upload_persist[0] = Cur_Param[17];
+    T_H.Upload_persist[1] = Cur_Param[18];
 
 
 }

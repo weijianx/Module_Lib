@@ -18,8 +18,8 @@
 	.eabi_attribute	26, 1	@ Tag_ABI_enum_size
 	.eabi_attribute	14, 0	@ Tag_ABI_PCS_R9_use
 	.file	"gd32e230_syscfg.c"
-	.file	1 "E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include\\gd32e230_rcu.h"
-	.file	2 "E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" "../GD32E230_Firmware_Library/CMSIS/GD/GD32E230/Include\\gd32e230.h"
+	.file	1 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include\\gd32e230_rcu.h"
+	.file	2 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/CMSIS/GD/GD32E230/Include\\gd32e230.h"
 	.file	3 "D:\\Keil_v5\\ARM\\ARMCLANG\\Bin\\..\\include" "stdint.h"
 	.section	.text.syscfg_deinit,"ax",%progbits
 	.hidden	syscfg_deinit           @ -- Begin function syscfg_deinit
@@ -30,7 +30,7 @@
 	.thumb_func
 syscfg_deinit:
 .Lfunc_begin0:
-	.file	4 "E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source/gd32e230_syscfg.c"
+	.file	4 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source/gd32e230_syscfg.c"
 	.loc	4 46 0                  @ ../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source/gd32e230_syscfg.c:46:0
 	.fnstart
 	.cfi_sections .debug_frame
@@ -609,103 +609,103 @@ __arm_cp.9_0:
 .Linfo_string1:
 	.asciz	"../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source\\gd32e230_syscfg.c" @ string offset=55
 .Linfo_string2:
-	.asciz	"E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" @ string offset=138
+	.asciz	"E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" @ string offset=138
 .Linfo_string3:
-	.asciz	"unsigned short"        @ string offset=190
+	.asciz	"unsigned short"        @ string offset=180
 .Linfo_string4:
-	.asciz	"RCU_GPIOARST"          @ string offset=205
+	.asciz	"RCU_GPIOARST"          @ string offset=195
 .Linfo_string5:
-	.asciz	"RCU_GPIOBRST"          @ string offset=218
+	.asciz	"RCU_GPIOBRST"          @ string offset=208
 .Linfo_string6:
-	.asciz	"RCU_GPIOCRST"          @ string offset=231
+	.asciz	"RCU_GPIOCRST"          @ string offset=221
 .Linfo_string7:
-	.asciz	"RCU_GPIOFRST"          @ string offset=244
+	.asciz	"RCU_GPIOFRST"          @ string offset=234
 .Linfo_string8:
-	.asciz	"RCU_CFGCMPRST"         @ string offset=257
+	.asciz	"RCU_CFGCMPRST"         @ string offset=247
 .Linfo_string9:
-	.asciz	"RCU_ADCRST"            @ string offset=271
+	.asciz	"RCU_ADCRST"            @ string offset=261
 .Linfo_string10:
-	.asciz	"RCU_TIMER0RST"         @ string offset=282
+	.asciz	"RCU_TIMER0RST"         @ string offset=272
 .Linfo_string11:
-	.asciz	"RCU_SPI0RST"           @ string offset=296
+	.asciz	"RCU_SPI0RST"           @ string offset=286
 .Linfo_string12:
-	.asciz	"RCU_USART0RST"         @ string offset=308
+	.asciz	"RCU_USART0RST"         @ string offset=298
 .Linfo_string13:
-	.asciz	"RCU_TIMER14RST"        @ string offset=322
+	.asciz	"RCU_TIMER14RST"        @ string offset=312
 .Linfo_string14:
-	.asciz	"RCU_TIMER15RST"        @ string offset=337
+	.asciz	"RCU_TIMER15RST"        @ string offset=327
 .Linfo_string15:
-	.asciz	"RCU_TIMER16RST"        @ string offset=352
+	.asciz	"RCU_TIMER16RST"        @ string offset=342
 .Linfo_string16:
-	.asciz	"RCU_TIMER2RST"         @ string offset=367
+	.asciz	"RCU_TIMER2RST"         @ string offset=357
 .Linfo_string17:
-	.asciz	"RCU_TIMER5RST"         @ string offset=381
+	.asciz	"RCU_TIMER5RST"         @ string offset=371
 .Linfo_string18:
-	.asciz	"RCU_TIMER13RST"        @ string offset=395
+	.asciz	"RCU_TIMER13RST"        @ string offset=385
 .Linfo_string19:
-	.asciz	"RCU_WWDGTRST"          @ string offset=410
+	.asciz	"RCU_WWDGTRST"          @ string offset=400
 .Linfo_string20:
-	.asciz	"RCU_SPI1RST"           @ string offset=423
+	.asciz	"RCU_SPI1RST"           @ string offset=413
 .Linfo_string21:
-	.asciz	"RCU_USART1RST"         @ string offset=435
+	.asciz	"RCU_USART1RST"         @ string offset=425
 .Linfo_string22:
-	.asciz	"RCU_I2C0RST"           @ string offset=449
+	.asciz	"RCU_I2C0RST"           @ string offset=439
 .Linfo_string23:
-	.asciz	"RCU_I2C1RST"           @ string offset=461
+	.asciz	"RCU_I2C1RST"           @ string offset=451
 .Linfo_string24:
-	.asciz	"RCU_PMURST"            @ string offset=473
+	.asciz	"RCU_PMURST"            @ string offset=463
 .Linfo_string25:
-	.asciz	"unsigned char"         @ string offset=484
+	.asciz	"unsigned char"         @ string offset=474
 .Linfo_string26:
-	.asciz	"RESET"                 @ string offset=498
+	.asciz	"RESET"                 @ string offset=488
 .Linfo_string27:
-	.asciz	"SET"                   @ string offset=504
+	.asciz	"SET"                   @ string offset=494
 .Linfo_string28:
-	.asciz	"unsigned int"          @ string offset=508
+	.asciz	"unsigned int"          @ string offset=498
 .Linfo_string29:
-	.asciz	"uint32_t"              @ string offset=521
+	.asciz	"uint32_t"              @ string offset=511
 .Linfo_string30:
-	.asciz	"uint8_t"               @ string offset=530
+	.asciz	"uint8_t"               @ string offset=520
 .Linfo_string31:
-	.asciz	"syscfg_deinit"         @ string offset=538
+	.asciz	"syscfg_deinit"         @ string offset=528
 .Linfo_string32:
-	.asciz	"syscfg_dma_remap_enable" @ string offset=552
+	.asciz	"syscfg_dma_remap_enable" @ string offset=542
 .Linfo_string33:
-	.asciz	"syscfg_dma_remap_disable" @ string offset=576
+	.asciz	"syscfg_dma_remap_disable" @ string offset=566
 .Linfo_string34:
-	.asciz	"syscfg_high_current_enable" @ string offset=601
+	.asciz	"syscfg_high_current_enable" @ string offset=591
 .Linfo_string35:
-	.asciz	"syscfg_high_current_disable" @ string offset=628
+	.asciz	"syscfg_high_current_disable" @ string offset=618
 .Linfo_string36:
-	.asciz	"syscfg_exti_line_config" @ string offset=656
+	.asciz	"syscfg_exti_line_config" @ string offset=646
 .Linfo_string37:
-	.asciz	"syscfg_lock_config"    @ string offset=680
+	.asciz	"syscfg_lock_config"    @ string offset=670
 .Linfo_string38:
-	.asciz	"irq_latency_set"       @ string offset=699
+	.asciz	"irq_latency_set"       @ string offset=689
 .Linfo_string39:
-	.asciz	"syscfg_flag_get"       @ string offset=715
+	.asciz	"syscfg_flag_get"       @ string offset=705
 .Linfo_string40:
-	.asciz	"FlagStatus"            @ string offset=731
+	.asciz	"FlagStatus"            @ string offset=721
 .Linfo_string41:
-	.asciz	"syscfg_flag_clear"     @ string offset=742
+	.asciz	"syscfg_flag_clear"     @ string offset=732
 .Linfo_string42:
-	.asciz	"syscfg_dma_remap"      @ string offset=760
+	.asciz	"syscfg_dma_remap"      @ string offset=750
 .Linfo_string43:
-	.asciz	"exti_port"             @ string offset=777
+	.asciz	"exti_port"             @ string offset=767
 .Linfo_string44:
-	.asciz	"exti_pin"              @ string offset=787
+	.asciz	"exti_pin"              @ string offset=777
 .Linfo_string45:
-	.asciz	"clear_exti_mask"       @ string offset=796
+	.asciz	"clear_exti_mask"       @ string offset=786
 .Linfo_string46:
-	.asciz	"config_exti_mask"      @ string offset=812
+	.asciz	"config_exti_mask"      @ string offset=802
 .Linfo_string47:
-	.asciz	"syscfg_lock"           @ string offset=829
+	.asciz	"syscfg_lock"           @ string offset=819
 .Linfo_string48:
-	.asciz	"irq_latency"           @ string offset=841
+	.asciz	"irq_latency"           @ string offset=831
 .Linfo_string49:
-	.asciz	"reg"                   @ string offset=853
+	.asciz	"reg"                   @ string offset=843
 .Linfo_string50:
-	.asciz	"syscfg_flag"           @ string offset=857
+	.asciz	"syscfg_flag"           @ string offset=847
 	.section	.debug_abbrev,"",%progbits
 	.byte	1                       @ Abbreviation Code
 	.byte	17                      @ DW_TAG_compile_unit

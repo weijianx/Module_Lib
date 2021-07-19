@@ -19,8 +19,8 @@
 	.eabi_attribute	14, 0	@ Tag_ABI_PCS_R9_use
 	.file	"flash.c"
 	.file	1 "D:\\Keil_v5\\ARM\\ARMCLANG\\Bin\\..\\include" "stdint.h"
-	.file	2 "E:\\project\\product\\GD32\\GD32E230\\E230 - TH\\MDK-ARM" "../BSP/Src/flash.c"
-	.file	3 "E:\\project\\product\\GD32\\GD32E230\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include\\gd32e230_fmc.h"
+	.file	2 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../BSP/Src/flash.c"
+	.file	3 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include\\gd32e230_fmc.h"
 	.section	.text.Flash_Read_OneByte,"ax",%progbits
 	.hidden	Flash_Read_OneByte      @ -- Begin function Flash_Read_OneByte
 	.globl	Flash_Read_OneByte
@@ -89,7 +89,7 @@ flash_read_multi:
 	movs	r1, #0
 .Ltmp2:
 	.loc	2 60 7 prologue_end     @ ../BSP/Src/flash.c:60:7
-	strb	r1, [r0]
+	strh	r1, [r0]
 	.loc	2 60 6 is_stmt 0        @ ../BSP/Src/flash.c:60:6
 	b	.LBB1_1
 .LBB1_1:                                @ =>This Inner Loop Header: Depth=1
@@ -97,14 +97,14 @@ flash_read_multi:
 	mov	r0, sp
 .Ltmp3:
 	.loc	2 60 11                 @ ../BSP/Src/flash.c:60:11
-	ldrb	r0, [r0]
+	ldrh	r0, [r0]
 	add	r1, sp, #4
 	.loc	2 60 13                 @ ../BSP/Src/flash.c:60:13
 	ldrh	r1, [r1]
 .Ltmp4:
 	.loc	2 60 2                  @ ../BSP/Src/flash.c:60:2
 	cmp	r0, r1
-	bge	.LBB1_6
+	bge	.LBB1_4
 	b	.LBB1_2
 .LBB1_2:                                @   in Loop: Header=BB1_1 Depth=1
 .Ltmp5:
@@ -119,53 +119,35 @@ flash_read_multi:
 	ldr	r1, [sp, #8]
 	mov	r2, sp
 	.loc	2 62 15                 @ ../BSP/Src/flash.c:62:15
-	ldrb	r3, [r2]
+	ldrh	r2, [r2]
 	.loc	2 62 18                 @ ../BSP/Src/flash.c:62:18
-	strb	r0, [r1, r3]
+	strb	r0, [r1, r2]
 	.loc	2 63 12 is_stmt 1       @ ../BSP/Src/flash.c:63:12
 	ldr	r0, [sp, #12]
 	adds	r0, r0, #1
 	str	r0, [sp, #12]
-.Ltmp6:
-	.loc	2 64 8                  @ ../BSP/Src/flash.c:64:8
-	ldr	r0, [sp, #8]
-	.loc	2 64 18 is_stmt 0       @ ../BSP/Src/flash.c:64:18
-	ldrb	r1, [r2]
-	.loc	2 64 6                  @ ../BSP/Src/flash.c:64:6
-	ldrb	r0, [r0, r1]
-.Ltmp7:
-	.loc	2 64 6                  @ ../BSP/Src/flash.c:64:6
-	cmp	r0, #0
-	bne	.LBB1_4
-	b	.LBB1_3
-.LBB1_3:
-.Ltmp8:
-	.loc	2 65 4 is_stmt 1        @ ../BSP/Src/flash.c:65:4
-	b	.LBB1_6
-.Ltmp9:
-.LBB1_4:                                @   in Loop: Header=BB1_1 Depth=1
 	.loc	2 66 2                  @ ../BSP/Src/flash.c:66:2
-	b	.LBB1_5
-.Ltmp10:
-.LBB1_5:                                @   in Loop: Header=BB1_1 Depth=1
+	b	.LBB1_3
+.Ltmp6:
+.LBB1_3:                                @   in Loop: Header=BB1_1 Depth=1
 	.loc	2 60 23                 @ ../BSP/Src/flash.c:60:23
 	ldr	r0, [sp]
 	adds	r0, r0, #1
 	mov	r1, sp
-	strb	r0, [r1]
+	strh	r0, [r1]
 	.loc	2 60 2 is_stmt 0        @ ../BSP/Src/flash.c:60:2
 	b	.LBB1_1
-.Ltmp11:
-.LBB1_6:
+.Ltmp7:
+.LBB1_4:
 	.loc	2 67 1 is_stmt 1        @ ../BSP/Src/flash.c:67:1
 	add	sp, #16
 	pop	{r7, pc}
-.Ltmp12:
+.Ltmp8:
 	.p2align	2
-@ %bb.7:
+@ %bb.5:
 	.loc	2 0 1 is_stmt 0         @ ../BSP/Src/flash.c:0:1
 __arm_cp.1_0:
-	.long	134281232               @ 0x800f810
+	.long	134230016               @ 0x8003000
 .Lcpi_end0:
 	.size	__arm_cp.1_0, .Lcpi_end0-__arm_cp.1_0
 .Lfunc_end1:
@@ -195,7 +177,7 @@ flash_read_MultiBytes:
 	str	r1, [sp, #12]
 	add	r0, sp, #8
 	strh	r2, [r0]
-.Ltmp13:
+.Ltmp9:
 	.loc	2 73 36 prologue_end    @ ../BSP/Src/flash.c:73:36
 	ldr	r0, [sp, #16]
 	ldr	r1, __arm_cp.2_0
@@ -204,25 +186,25 @@ flash_read_MultiBytes:
 	.loc	2 73 14                 @ ../BSP/Src/flash.c:73:14
 	str	r0, [sp]
 	movs	r0, #0
-.Ltmp14:
+.Ltmp10:
 	.loc	2 77 9 is_stmt 1        @ ../BSP/Src/flash.c:77:9
 	str	r0, [sp, #4]
 	.loc	2 77 7 is_stmt 0        @ ../BSP/Src/flash.c:77:7
 	b	.LBB2_1
 .LBB2_1:                                @ =>This Inner Loop Header: Depth=1
-.Ltmp15:
+.Ltmp11:
 	.loc	2 77 14                 @ ../BSP/Src/flash.c:77:14
 	ldr	r0, [sp, #4]
 	add	r1, sp, #8
 	.loc	2 77 18                 @ ../BSP/Src/flash.c:77:18
 	ldrh	r1, [r1]
-.Ltmp16:
+.Ltmp12:
 	.loc	2 77 2                  @ ../BSP/Src/flash.c:77:2
 	cmp	r0, r1
 	bhs	.LBB2_4
 	b	.LBB2_2
 .LBB2_2:                                @   in Loop: Header=BB2_1 Depth=1
-.Ltmp17:
+.Ltmp13:
 	.loc	2 78 21 is_stmt 1       @ ../BSP/Src/flash.c:78:21
 	ldr	r0, [sp]
 	adds	r1, r0, #1
@@ -237,7 +219,7 @@ flash_read_MultiBytes:
 	strb	r0, [r1]
 	.loc	2 79 2 is_stmt 1        @ ../BSP/Src/flash.c:79:2
 	b	.LBB2_3
-.Ltmp18:
+.Ltmp14:
 .LBB2_3:                                @   in Loop: Header=BB2_1 Depth=1
 	.loc	2 77 24                 @ ../BSP/Src/flash.c:77:24
 	ldr	r0, [sp, #4]
@@ -245,19 +227,19 @@ flash_read_MultiBytes:
 	str	r0, [sp, #4]
 	.loc	2 77 2 is_stmt 0        @ ../BSP/Src/flash.c:77:2
 	b	.LBB2_1
-.Ltmp19:
+.Ltmp15:
 .LBB2_4:
 	.loc	2 0 2                   @ ../BSP/Src/flash.c:0:2
 	movs	r0, #0
 	.loc	2 82 5 is_stmt 1        @ ../BSP/Src/flash.c:82:5
 	add	sp, #20
 	bx	lr
-.Ltmp20:
+.Ltmp16:
 	.p2align	2
 @ %bb.5:
 	.loc	2 0 5 is_stmt 0         @ ../BSP/Src/flash.c:0:5
 __arm_cp.2_0:
-	.long	134281232               @ 0x800f810
+	.long	134230016               @ 0x8003000
 .Lcpi_end1:
 	.size	__arm_cp.2_0, .Lcpi_end1-__arm_cp.2_0
 .Lfunc_end2:
@@ -283,7 +265,7 @@ flash_read32_MultiBytes:
 	sub	sp, #8
 	.cfi_def_cfa_offset 8
 	str	r0, [sp, #4]
-.Ltmp21:
+.Ltmp17:
 	.loc	2 88 26 prologue_end    @ ../BSP/Src/flash.c:88:26
 	ldr	r0, [sp, #4]
 	.loc	2 88 8 is_stmt 0        @ ../BSP/Src/flash.c:88:8
@@ -295,7 +277,7 @@ flash_read32_MultiBytes:
 	.loc	2 89 5 is_stmt 0        @ ../BSP/Src/flash.c:89:5
 	add	sp, #8
 	bx	lr
-.Ltmp22:
+.Ltmp18:
 .Lfunc_end3:
 	.size	flash_read32_MultiBytes, .Lfunc_end3-flash_read32_MultiBytes
 	.cfi_endproc
@@ -327,7 +309,7 @@ Flash_Write_OneByte:
 	str	r0, [sp, #32]
 	add	r0, sp, #28
 	strb	r1, [r0]
-.Ltmp23:
+.Ltmp19:
 	.loc	2 103 14 prologue_end   @ ../BSP/Src/flash.c:103:14
 	ldr	r0, __arm_cp.4_0
 	str	r0, [sp, #16]
@@ -365,7 +347,7 @@ Flash_Write_OneByte:
 	movs	r0, #60
 	.loc	2 110 5                 @ ../BSP/Src/flash.c:110:5
 	bl	fmc_flag_clear
-.Ltmp24:
+.Ltmp20:
 	.loc	2 112 8                 @ ../BSP/Src/flash.c:112:8
 	ldr	r0, [sp, #16]
 	.loc	2 112 12 is_stmt 0      @ ../BSP/Src/flash.c:112:12
@@ -375,25 +357,25 @@ Flash_Write_OneByte:
 	ands	r1, r2
 	.loc	2 112 8                 @ ../BSP/Src/flash.c:112:8
 	ldrb	r0, [r0, r1]
-.Ltmp25:
+.Ltmp21:
 	.loc	2 112 8                 @ ../BSP/Src/flash.c:112:8
 	cmp	r0, #255
 	beq	.LBB4_2
 	b	.LBB4_1
 .LBB4_1:
-.Ltmp26:
+.Ltmp22:
 	.loc	2 114 18 is_stmt 1      @ ../BSP/Src/flash.c:114:18
 	ldr	r0, [sp, #32]
 	.loc	2 114 3 is_stmt 0       @ ../BSP/Src/flash.c:114:3
 	bl	fmc_page_erase
 	.loc	2 115 5 is_stmt 1       @ ../BSP/Src/flash.c:115:5
 	b	.LBB4_2
-.Ltmp27:
+.Ltmp23:
 .LBB4_2:
 	.loc	2 0 5 is_stmt 0         @ ../BSP/Src/flash.c:0:5
 	add	r0, sp, #20
 	movs	r1, #0
-.Ltmp28:
+.Ltmp24:
 	.loc	2 117 11 is_stmt 1      @ ../BSP/Src/flash.c:117:11
 	strh	r1, [r0]
 	.loc	2 117 9 is_stmt 0       @ ../BSP/Src/flash.c:117:9
@@ -401,17 +383,17 @@ Flash_Write_OneByte:
 .LBB4_3:                                @ =>This Inner Loop Header: Depth=1
 	.loc	2 0 9                   @ ../BSP/Src/flash.c:0:9
 	add	r0, sp, #20
-.Ltmp29:
+.Ltmp25:
 	.loc	2 117 16                @ ../BSP/Src/flash.c:117:16
 	ldrh	r0, [r0]
 	ldr	r1, __arm_cp.4_2
-.Ltmp30:
+.Ltmp26:
 	.loc	2 117 5                 @ ../BSP/Src/flash.c:117:5
 	cmp	r0, r1
 	bgt	.LBB4_5
 	b	.LBB4_4
 .LBB4_4:                                @   in Loop: Header=BB4_3 Depth=1
-.Ltmp31:
+.Ltmp27:
 	.loc	2 119 21 is_stmt 1      @ ../BSP/Src/flash.c:119:21
 	ldr	r0, [sp, #24]
 	add	r1, sp, #20
@@ -434,14 +416,14 @@ Flash_Write_OneByte:
 	adds	r1, r1, #4
 	ldr	r2, [sp]                @ 4-byte Reload
 	strh	r1, [r2]
-.Ltmp32:
+.Ltmp28:
 	.loc	2 117 5                 @ ../BSP/Src/flash.c:117:5
 	b	.LBB4_3
-.Ltmp33:
+.Ltmp29:
 .LBB4_5:
 	.loc	2 123 5                 @ ../BSP/Src/flash.c:123:5
 	bl	fmc_lock
-.Ltmp34:
+.Ltmp30:
 	.loc	2 124 24                @ ../BSP/Src/flash.c:124:24
 	ldr	r0, [sp, #32]
 	.loc	2 124 7 is_stmt 0       @ ../BSP/Src/flash.c:124:7
@@ -449,7 +431,7 @@ Flash_Write_OneByte:
 	add	r1, sp, #28
 	.loc	2 124 36                @ ../BSP/Src/flash.c:124:36
 	ldrb	r1, [r1]
-.Ltmp35:
+.Ltmp31:
 	.loc	2 124 6                 @ ../BSP/Src/flash.c:124:6
 	cmp	r0, r1
 	beq	.LBB4_7
@@ -458,11 +440,11 @@ Flash_Write_OneByte:
 	.loc	2 0 6                   @ ../BSP/Src/flash.c:0:6
 	add	r0, sp, #36
 	movs	r1, #0
-.Ltmp36:
+.Ltmp32:
 	.loc	2 125 3 is_stmt 1       @ ../BSP/Src/flash.c:125:3
 	strb	r1, [r0]
 	b	.LBB4_8
-.Ltmp37:
+.Ltmp33:
 .LBB4_7:
 	.loc	2 0 3 is_stmt 0         @ ../BSP/Src/flash.c:0:3
 	add	r0, sp, #36
@@ -477,7 +459,7 @@ Flash_Write_OneByte:
 	ldrb	r0, [r0]
 	add	sp, #40
 	pop	{r4, pc}
-.Ltmp38:
+.Ltmp34:
 	.p2align	2
 @ %bb.9:
 	.loc	2 0 1 is_stmt 0         @ ../BSP/Src/flash.c:0:1
@@ -525,7 +507,7 @@ Flash_Write_MultiBytes:
 	str	r1, [sp, #44]
 	add	r0, sp, #40
 	strh	r2, [r0]
-.Ltmp39:
+.Ltmp35:
 	.loc	2 142 14 prologue_end   @ ../BSP/Src/flash.c:142:14
 	ldr	r1, __arm_cp.5_0
 	str	r1, [sp, #28]
@@ -558,18 +540,18 @@ Flash_Write_MultiBytes:
 	add	r2, sp, #12
 	.loc	2 153 9                 @ ../BSP/Src/flash.c:153:9
 	strh	r1, [r2]
-.Ltmp40:
+.Ltmp36:
 	.loc	2 154 5 is_stmt 1       @ ../BSP/Src/flash.c:154:5
 	ldrh	r0, [r0]
 	.loc	2 154 13 is_stmt 0      @ ../BSP/Src/flash.c:154:13
 	ldrh	r1, [r2]
-.Ltmp41:
+.Ltmp37:
 	.loc	2 154 5                 @ ../BSP/Src/flash.c:154:5
 	cmp	r0, r1
 	bge	.LBB5_2
 	b	.LBB5_1
 .LBB5_1:
-.Ltmp42:
+.Ltmp38:
 	.loc	2 156 12 is_stmt 1      @ ../BSP/Src/flash.c:156:12
 	ldr	r0, [sp, #40]
 	add	r1, sp, #12
@@ -577,7 +559,7 @@ Flash_Write_MultiBytes:
 	strh	r0, [r1]
 	.loc	2 157 2 is_stmt 1       @ ../BSP/Src/flash.c:157:2
 	b	.LBB5_2
-.Ltmp43:
+.Ltmp39:
 .LBB5_2:
 	.loc	2 159 22                @ ../BSP/Src/flash.c:159:22
 	ldr	r0, [sp, #36]
@@ -587,25 +569,25 @@ Flash_Write_MultiBytes:
 	.loc	2 159 5                 @ ../BSP/Src/flash.c:159:5
 	bl	flash_read_multi
 	movs	r0, #0
-.Ltmp44:
+.Ltmp40:
 	.loc	2 161 8 is_stmt 1       @ ../BSP/Src/flash.c:161:8
 	str	r0, [sp, #32]
 	.loc	2 161 7 is_stmt 0       @ ../BSP/Src/flash.c:161:7
 	b	.LBB5_3
 .LBB5_3:                                @ =>This Inner Loop Header: Depth=1
-.Ltmp45:
+.Ltmp41:
 	.loc	2 161 11                @ ../BSP/Src/flash.c:161:11
 	ldr	r0, [sp, #32]
 	add	r1, sp, #12
 	.loc	2 161 13                @ ../BSP/Src/flash.c:161:13
 	ldrh	r1, [r1]
-.Ltmp46:
+.Ltmp42:
 	.loc	2 161 3                 @ ../BSP/Src/flash.c:161:3
 	cmp	r0, r1
 	bhs	.LBB5_6
 	b	.LBB5_4
 .LBB5_4:                                @   in Loop: Header=BB5_3 Depth=1
-.Ltmp47:
+.Ltmp43:
 	.loc	2 163 17 is_stmt 1      @ ../BSP/Src/flash.c:163:17
 	ldr	r0, [sp, #44]
 	.loc	2 163 24 is_stmt 0      @ ../BSP/Src/flash.c:163:24
@@ -623,7 +605,7 @@ Flash_Write_MultiBytes:
 	strb	r0, [r2, r1]
 	.loc	2 164 3 is_stmt 1       @ ../BSP/Src/flash.c:164:3
 	b	.LBB5_5
-.Ltmp48:
+.Ltmp44:
 .LBB5_5:                                @   in Loop: Header=BB5_3 Depth=1
 	.loc	2 161 21                @ ../BSP/Src/flash.c:161:21
 	ldr	r0, [sp, #32]
@@ -631,7 +613,7 @@ Flash_Write_MultiBytes:
 	str	r0, [sp, #32]
 	.loc	2 161 3 is_stmt 0       @ ../BSP/Src/flash.c:161:3
 	b	.LBB5_3
-.Ltmp49:
+.Ltmp45:
 .LBB5_6:
 	.loc	2 167 3 is_stmt 1       @ ../BSP/Src/flash.c:167:3
 	bl	fmc_unlock
@@ -646,23 +628,23 @@ Flash_Write_MultiBytes:
 	.loc	2 169 3                 @ ../BSP/Src/flash.c:169:3
 	bl	fmc_page_erase
 	movs	r1, #0
-.Ltmp50:
+.Ltmp46:
 	.loc	2 171 9 is_stmt 1       @ ../BSP/Src/flash.c:171:9
 	str	r1, [sp, #32]
 	.loc	2 171 7 is_stmt 0       @ ../BSP/Src/flash.c:171:7
 	b	.LBB5_7
 .LBB5_7:                                @ =>This Inner Loop Header: Depth=1
-.Ltmp51:
+.Ltmp47:
 	.loc	2 171 14                @ ../BSP/Src/flash.c:171:14
 	ldr	r0, [sp, #32]
-.Ltmp52:
+.Ltmp48:
 	.loc	2 171 3                 @ ../BSP/Src/flash.c:171:3
 	lsrs	r0, r0, #10
 	cmp	r0, #0
 	bne	.LBB5_9
 	b	.LBB5_8
 .LBB5_8:                                @   in Loop: Header=BB5_7 Depth=1
-.Ltmp53:
+.Ltmp49:
 	.loc	2 173 36 is_stmt 1      @ ../BSP/Src/flash.c:173:36
 	ldr	r0, [sp, #36]
 	.loc	2 173 45 is_stmt 0      @ ../BSP/Src/flash.c:173:45
@@ -684,14 +666,14 @@ Flash_Write_MultiBytes:
 	ldr	r1, [sp, #32]
 	adds	r1, r1, #4
 	str	r1, [sp, #32]
-.Ltmp54:
+.Ltmp50:
 	.loc	2 171 3                 @ ../BSP/Src/flash.c:171:3
 	b	.LBB5_7
-.Ltmp55:
+.Ltmp51:
 .LBB5_9:
 	.loc	2 176 3                 @ ../BSP/Src/flash.c:176:3
 	bl	fmc_lock
-.Ltmp56:
+.Ltmp52:
 	.loc	2 181 24                @ ../BSP/Src/flash.c:181:24
 	ldr	r0, [sp, #48]
 	.loc	2 181 7 is_stmt 0       @ ../BSP/Src/flash.c:181:7
@@ -699,7 +681,7 @@ Flash_Write_MultiBytes:
 	.loc	2 181 36                @ ../BSP/Src/flash.c:181:36
 	ldr	r1, [sp, #44]
 	ldrb	r1, [r1]
-.Ltmp57:
+.Ltmp53:
 	.loc	2 181 6                 @ ../BSP/Src/flash.c:181:6
 	cmp	r0, r1
 	beq	.LBB5_11
@@ -708,24 +690,24 @@ Flash_Write_MultiBytes:
 	.loc	2 0 6                   @ ../BSP/Src/flash.c:0:6
 	add	r0, sp, #52
 	movs	r1, #0
-.Ltmp58:
+.Ltmp54:
 	.loc	2 182 3 is_stmt 1       @ ../BSP/Src/flash.c:182:3
 	strb	r1, [r0]
 	b	.LBB5_14
-.Ltmp59:
+.Ltmp55:
 .LBB5_11:
 	.loc	2 0 3 is_stmt 0         @ ../BSP/Src/flash.c:0:3
 	add	r0, sp, #16
-.Ltmp60:
+.Ltmp56:
 	.loc	2 183 5 is_stmt 1       @ ../BSP/Src/flash.c:183:5
 	ldrh	r0, [r0]
-.Ltmp61:
+.Ltmp57:
 	.loc	2 183 5 is_stmt 0       @ ../BSP/Src/flash.c:183:5
 	cmp	r0, #0
 	beq	.LBB5_13
 	b	.LBB5_12
 .LBB5_12:
-.Ltmp62:
+.Ltmp58:
 	.loc	2 185 26 is_stmt 1      @ ../BSP/Src/flash.c:185:26
 	ldr	r0, [sp, #20]
 	.loc	2 185 35 is_stmt 0      @ ../BSP/Src/flash.c:185:35
@@ -749,7 +731,7 @@ Flash_Write_MultiBytes:
 	strh	r1, [r2]
 	.loc	2 188 2                 @ ../BSP/Src/flash.c:188:2
 	b	.LBB5_13
-.Ltmp63:
+.Ltmp59:
 .LBB5_13:
 	.loc	2 0 2 is_stmt 0         @ ../BSP/Src/flash.c:0:2
 	add	r0, sp, #52
@@ -764,7 +746,7 @@ Flash_Write_MultiBytes:
 	ldrb	r0, [r0]
 	add	sp, #56
 	pop	{r7, pc}
-.Ltmp64:
+.Ltmp60:
 	.p2align	2
 @ %bb.15:
 	.loc	2 0 1 is_stmt 0         @ ../BSP/Src/flash.c:0:1
@@ -781,7 +763,7 @@ __arm_cp.5_2:
 .Lcpi_end7:
 	.size	__arm_cp.5_2, .Lcpi_end7-__arm_cp.5_2
 __arm_cp.5_3:
-	.long	134281232               @ 0x800f810
+	.long	134230016               @ 0x8003000
 .Lcpi_end8:
 	.size	__arm_cp.5_3, .Lcpi_end8-__arm_cp.5_3
 .Lfunc_end5:
@@ -813,7 +795,7 @@ Flash_Write_32Bytes:
 	.cfi_def_cfa_offset 24
 	str	r0, [sp, #12]
 	str	r1, [sp, #8]
-.Ltmp65:
+.Ltmp61:
 	.loc	2 197 2 prologue_end    @ ../BSP/Src/flash.c:197:2
 	bl	fmc_unlock
 	movs	r0, #60
@@ -838,7 +820,7 @@ Flash_Write_32Bytes:
 	mov	r0, r1
 	add	sp, #16
 	pop	{r7, pc}
-.Ltmp66:
+.Ltmp62:
 .Lfunc_end6:
 	.size	Flash_Write_32Bytes, .Lfunc_end6-Flash_Write_32Bytes
 	.cfi_endproc
@@ -871,7 +853,7 @@ flash_write_word:
 	str	r1, [sp, #16]
 	add	r0, sp, #12
 	strh	r2, [r0]
-.Ltmp67:
+.Ltmp63:
 	.loc	2 213 27 prologue_end   @ ../BSP/Src/flash.c:213:27
 	ldr	r0, [sp, #20]
 	.loc	2 213 11 is_stmt 0      @ ../BSP/Src/flash.c:213:11
@@ -884,7 +866,7 @@ flash_write_word:
 	bl	fmc_flag_clear
 	add	r0, sp, #8
 	movs	r1, #0
-.Ltmp68:
+.Ltmp64:
 	.loc	2 218 7                 @ ../BSP/Src/flash.c:218:7
 	strb	r1, [r0]
 	.loc	2 218 6 is_stmt 0       @ ../BSP/Src/flash.c:218:6
@@ -892,19 +874,19 @@ flash_write_word:
 .LBB7_1:                                @ =>This Inner Loop Header: Depth=1
 	.loc	2 0 6                   @ ../BSP/Src/flash.c:0:6
 	add	r0, sp, #8
-.Ltmp69:
+.Ltmp65:
 	.loc	2 218 11                @ ../BSP/Src/flash.c:218:11
 	ldrb	r0, [r0]
 	add	r1, sp, #12
 	.loc	2 218 13                @ ../BSP/Src/flash.c:218:13
 	ldrh	r1, [r1]
-.Ltmp70:
+.Ltmp66:
 	.loc	2 218 2                 @ ../BSP/Src/flash.c:218:2
 	cmp	r0, r1
 	bge	.LBB7_4
 	b	.LBB7_2
 .LBB7_2:                                @   in Loop: Header=BB7_1 Depth=1
-.Ltmp71:
+.Ltmp67:
 	.loc	2 220 20 is_stmt 1      @ ../BSP/Src/flash.c:220:20
 	ldr	r0, [sp, #4]
 	add	r1, sp, #8
@@ -921,7 +903,7 @@ flash_write_word:
 	bl	fmc_word_program
 	.loc	2 222 2 is_stmt 1       @ ../BSP/Src/flash.c:222:2
 	b	.LBB7_3
-.Ltmp72:
+.Ltmp68:
 .LBB7_3:                                @   in Loop: Header=BB7_1 Depth=1
 	.loc	2 218 22                @ ../BSP/Src/flash.c:218:22
 	ldr	r0, [sp, #8]
@@ -930,7 +912,7 @@ flash_write_word:
 	strb	r0, [r1]
 	.loc	2 218 2 is_stmt 0       @ ../BSP/Src/flash.c:218:2
 	b	.LBB7_1
-.Ltmp73:
+.Ltmp69:
 .LBB7_4:
 	.loc	2 223 2 is_stmt 1       @ ../BSP/Src/flash.c:223:2
 	bl	fmc_lock
@@ -938,7 +920,7 @@ flash_write_word:
 	.loc	2 225 2                 @ ../BSP/Src/flash.c:225:2
 	add	sp, #24
 	pop	{r7, pc}
-.Ltmp74:
+.Ltmp70:
 .Lfunc_end7:
 	.size	flash_write_word, .Lfunc_end7-flash_write_word
 	.cfi_endproc
@@ -970,10 +952,10 @@ GDFLASHOP_EraseSpecifiedFlashPages:
 	str	r0, [sp, #8]
 	add	r0, sp, #4
 	strh	r1, [r0]
-.Ltmp75:
+.Ltmp71:
 	.loc	2 240 10 prologue_end   @ ../BSP/Src/flash.c:240:10
 	ldrh	r0, [r0]
-.Ltmp76:
+.Ltmp72:
 	.loc	2 240 9 is_stmt 0       @ ../BSP/Src/flash.c:240:9
 	cmp	r0, #0
 	bne	.LBB8_2
@@ -982,11 +964,11 @@ GDFLASHOP_EraseSpecifiedFlashPages:
 	.loc	2 0 9                   @ ../BSP/Src/flash.c:0:9
 	add	r0, sp, #12
 	movs	r1, #0
-.Ltmp77:
+.Ltmp73:
 	.loc	2 241 9 is_stmt 1       @ ../BSP/Src/flash.c:241:9
 	strb	r1, [r0]
 	b	.LBB8_10
-.Ltmp78:
+.Ltmp74:
 .LBB8_2:
 	.loc	2 243 9                 @ ../BSP/Src/flash.c:243:9
 	ldr	r0, [sp, #8]
@@ -998,7 +980,7 @@ GDFLASHOP_EraseSpecifiedFlashPages:
 	.loc	2 243 19                @ ../BSP/Src/flash.c:243:19
 	adds	r0, r0, r1
 	ldr	r1, __arm_cp.8_0
-.Ltmp79:
+.Ltmp75:
 	.loc	2 243 9                 @ ../BSP/Src/flash.c:243:9
 	cmp	r0, r1
 	blo	.LBB8_4
@@ -1007,11 +989,11 @@ GDFLASHOP_EraseSpecifiedFlashPages:
 	.loc	2 0 9                   @ ../BSP/Src/flash.c:0:9
 	add	r0, sp, #12
 	movs	r1, #0
-.Ltmp80:
+.Ltmp76:
 	.loc	2 244 9 is_stmt 1       @ ../BSP/Src/flash.c:244:9
 	strb	r1, [r0]
 	b	.LBB8_10
-.Ltmp81:
+.Ltmp77:
 .LBB8_4:
 	.loc	2 247 5                 @ ../BSP/Src/flash.c:247:5
 	bl	fmc_unlock
@@ -1038,12 +1020,12 @@ GDFLASHOP_EraseSpecifiedFlashPages:
 	beq	.LBB8_9
 	b	.LBB8_6
 .LBB8_6:                                @   in Loop: Header=BB8_5 Depth=1
-.Ltmp82:
+.Ltmp78:
 	.loc	2 257 29 is_stmt 1      @ ../BSP/Src/flash.c:257:29
 	ldr	r0, [sp, #8]
 	.loc	2 257 13 is_stmt 0      @ ../BSP/Src/flash.c:257:13
 	bl	fmc_page_erase
-.Ltmp83:
+.Ltmp79:
 	.loc	2 257 13                @ ../BSP/Src/flash.c:257:13
 	cmp	r0, #0
 	beq	.LBB8_8
@@ -1052,18 +1034,18 @@ GDFLASHOP_EraseSpecifiedFlashPages:
 	.loc	2 0 13                  @ ../BSP/Src/flash.c:0:13
 	add	r0, sp, #12
 	movs	r1, #0
-.Ltmp84:
+.Ltmp80:
 	.loc	2 258 13 is_stmt 1      @ ../BSP/Src/flash.c:258:13
 	strb	r1, [r0]
 	b	.LBB8_10
-.Ltmp85:
+.Ltmp81:
 .LBB8_8:                                @   in Loop: Header=BB8_5 Depth=1
 	.loc	2 259 19                @ ../BSP/Src/flash.c:259:19
 	ldr	r0, [sp, #8]
 	movw	r1, #1024
 	adds	r0, r0, r1
 	str	r0, [sp, #8]
-.Ltmp86:
+.Ltmp82:
 	.loc	2 252 5                 @ ../BSP/Src/flash.c:252:5
 	b	.LBB8_5
 .LBB8_9:
@@ -1092,7 +1074,7 @@ GDFLASHOP_EraseSpecifiedFlashPages:
 	ldrb	r0, [r0]
 	add	sp, #16
 	pop	{r7, pc}
-.Ltmp87:
+.Ltmp83:
 	.p2align	2
 @ %bb.11:
 	.loc	2 0 1 is_stmt 0         @ ../BSP/Src/flash.c:0:1
@@ -1132,7 +1114,7 @@ GDFLASHOP_WriteData2SpecifiedFlash:
 	str	r1, [sp, #8]
 	add	r0, sp, #4
 	strh	r2, [r0]
-.Ltmp88:
+.Ltmp84:
 	.loc	2 281 7 prologue_end    @ ../BSP/Src/flash.c:281:7
 	ldr	r0, [sp, #8]
 	.loc	2 281 21 is_stmt 0      @ ../BSP/Src/flash.c:281:21
@@ -1144,7 +1126,7 @@ GDFLASHOP_WriteData2SpecifiedFlash:
 	add	r0, sp, #4
 	.loc	2 281 26                @ ../BSP/Src/flash.c:281:26
 	ldrh	r0, [r0]
-.Ltmp89:
+.Ltmp85:
 	.loc	2 281 6                 @ ../BSP/Src/flash.c:281:6
 	cmp	r0, #0
 	bne	.LBB9_3
@@ -1153,11 +1135,11 @@ GDFLASHOP_WriteData2SpecifiedFlash:
 	.loc	2 0 6                   @ ../BSP/Src/flash.c:0:6
 	add	r0, sp, #16
 	movs	r1, #0
-.Ltmp90:
+.Ltmp86:
 	.loc	2 282 9 is_stmt 1       @ ../BSP/Src/flash.c:282:9
 	strb	r1, [r0]
 	b	.LBB9_11
-.Ltmp91:
+.Ltmp87:
 .LBB9_3:
 	.loc	2 284 9                 @ ../BSP/Src/flash.c:284:9
 	ldr	r0, [sp, #12]
@@ -1169,7 +1151,7 @@ GDFLASHOP_WriteData2SpecifiedFlash:
 	.loc	2 284 19                @ ../BSP/Src/flash.c:284:19
 	adds	r0, r0, r1
 	ldr	r1, __arm_cp.9_0
-.Ltmp92:
+.Ltmp88:
 	.loc	2 284 9                 @ ../BSP/Src/flash.c:284:9
 	cmp	r0, r1
 	blo	.LBB9_5
@@ -1178,11 +1160,11 @@ GDFLASHOP_WriteData2SpecifiedFlash:
 	.loc	2 0 9                   @ ../BSP/Src/flash.c:0:9
 	add	r0, sp, #16
 	movs	r1, #0
-.Ltmp93:
+.Ltmp89:
 	.loc	2 285 9 is_stmt 1       @ ../BSP/Src/flash.c:285:9
 	strb	r1, [r0]
 	b	.LBB9_11
-.Ltmp94:
+.Ltmp90:
 .LBB9_5:
 	.loc	2 287 6                 @ ../BSP/Src/flash.c:287:6
 	bl	fmc_unlock
@@ -1207,7 +1189,7 @@ GDFLASHOP_WriteData2SpecifiedFlash:
 	beq	.LBB9_10
 	b	.LBB9_7
 .LBB9_7:                                @   in Loop: Header=BB9_6 Depth=1
-.Ltmp95:
+.Ltmp91:
 	.loc	2 291 32 is_stmt 1      @ ../BSP/Src/flash.c:291:32
 	ldr	r0, [sp, #12]
 	.loc	2 291 44 is_stmt 0      @ ../BSP/Src/flash.c:291:44
@@ -1216,7 +1198,7 @@ GDFLASHOP_WriteData2SpecifiedFlash:
 	ldr	r1, [r1]
 	.loc	2 291 14                @ ../BSP/Src/flash.c:291:14
 	bl	fmc_word_program
-.Ltmp96:
+.Ltmp92:
 	.loc	2 291 14                @ ../BSP/Src/flash.c:291:14
 	cmp	r0, #0
 	beq	.LBB9_9
@@ -1225,11 +1207,11 @@ GDFLASHOP_WriteData2SpecifiedFlash:
 	.loc	2 0 14                  @ ../BSP/Src/flash.c:0:14
 	add	r0, sp, #16
 	movs	r1, #0
-.Ltmp97:
+.Ltmp93:
 	.loc	2 292 13 is_stmt 1      @ ../BSP/Src/flash.c:292:13
 	strb	r1, [r0]
 	b	.LBB9_11
-.Ltmp98:
+.Ltmp94:
 .LBB9_9:                                @   in Loop: Header=BB9_6 Depth=1
 	.loc	2 294 14                @ ../BSP/Src/flash.c:294:14
 	ldr	r0, [sp, #8]
@@ -1239,7 +1221,7 @@ GDFLASHOP_WriteData2SpecifiedFlash:
 	ldr	r0, [sp, #12]
 	adds	r0, r0, #4
 	str	r0, [sp, #12]
-.Ltmp99:
+.Ltmp95:
 	.loc	2 289 5                 @ ../BSP/Src/flash.c:289:5
 	b	.LBB9_6
 .LBB9_10:
@@ -1261,7 +1243,7 @@ GDFLASHOP_WriteData2SpecifiedFlash:
 	ldrb	r0, [r0]
 	add	sp, #24
 	pop	{r7, pc}
-.Ltmp100:
+.Ltmp96:
 	.p2align	2
 @ %bb.12:
 	.loc	2 0 1 is_stmt 0         @ ../BSP/Src/flash.c:0:1
@@ -1295,7 +1277,7 @@ GDFLASHOP_ReadDataFromChipFlash:
 	str	r1, [sp, #12]
 	str	r2, [sp, #8]
 	str	r3, [sp, #4]
-.Ltmp101:
+.Ltmp97:
 	.loc	2 314 11 prologue_end   @ ../BSP/Src/flash.c:314:11
 	ldr	r0, [sp, #16]
 	.loc	2 314 18 is_stmt 0      @ ../BSP/Src/flash.c:314:18
@@ -1307,7 +1289,7 @@ GDFLASHOP_ReadDataFromChipFlash:
 	ldr	r0, [sp, #8]
 	.loc	2 314 34                @ ../BSP/Src/flash.c:314:34
 	ldr	r1, [sp, #4]
-.Ltmp102:
+.Ltmp98:
 	.loc	2 314 9                 @ ../BSP/Src/flash.c:314:9
 	cmp	r0, r1
 	bhs	.LBB10_3
@@ -1316,16 +1298,16 @@ GDFLASHOP_ReadDataFromChipFlash:
 	.loc	2 0 9                   @ ../BSP/Src/flash.c:0:9
 	add	r0, sp, #20
 	movs	r1, #0
-.Ltmp103:
+.Ltmp99:
 	.loc	2 315 9 is_stmt 1       @ ../BSP/Src/flash.c:315:9
 	strb	r1, [r0]
 	b	.LBB10_9
-.Ltmp104:
+.Ltmp100:
 .LBB10_3:
 	.loc	2 317 9                 @ ../BSP/Src/flash.c:317:9
 	ldr	r0, [sp, #12]
 	ldr	r1, __arm_cp.10_0
-.Ltmp105:
+.Ltmp101:
 	.loc	2 317 9 is_stmt 0       @ ../BSP/Src/flash.c:317:9
 	cmp	r0, r1
 	bhi	.LBB10_5
@@ -1334,11 +1316,11 @@ GDFLASHOP_ReadDataFromChipFlash:
 	.loc	2 0 9                   @ ../BSP/Src/flash.c:0:9
 	add	r0, sp, #20
 	movs	r1, #0
-.Ltmp106:
+.Ltmp102:
 	.loc	2 318 9 is_stmt 1       @ ../BSP/Src/flash.c:318:9
 	strb	r1, [r0]
 	b	.LBB10_9
-.Ltmp107:
+.Ltmp103:
 .LBB10_5:
 	.loc	2 320 5                 @ ../BSP/Src/flash.c:320:5
 	b	.LBB10_6
@@ -1352,7 +1334,7 @@ GDFLASHOP_ReadDataFromChipFlash:
 	beq	.LBB10_8
 	b	.LBB10_7
 .LBB10_7:                               @   in Loop: Header=BB10_6 Depth=1
-.Ltmp108:
+.Ltmp104:
 	.loc	2 322 27 is_stmt 1      @ ../BSP/Src/flash.c:322:27
 	ldr	r0, [sp, #12]
 	.loc	2 322 15 is_stmt 0      @ ../BSP/Src/flash.c:322:15
@@ -1398,7 +1380,7 @@ GDFLASHOP_ReadDataFromChipFlash:
 	ldr	r0, [sp, #12]
 	adds	r0, r0, #4
 	str	r0, [sp, #12]
-.Ltmp109:
+.Ltmp105:
 	.loc	2 320 5                 @ ../BSP/Src/flash.c:320:5
 	b	.LBB10_6
 .LBB10_8:
@@ -1415,7 +1397,7 @@ GDFLASHOP_ReadDataFromChipFlash:
 	ldrb	r0, [r0]
 	add	sp, #24
 	bx	lr
-.Ltmp110:
+.Ltmp106:
 	.p2align	2
 @ %bb.10:
 	.loc	2 0 1 is_stmt 0         @ ../BSP/Src/flash.c:0:1
@@ -1452,129 +1434,129 @@ bak:
 .Linfo_string1:
 	.asciz	"../BSP/Src\\flash.c"   @ string offset=55
 .Linfo_string2:
-	.asciz	"E:\\project\\product\\GD32\\GD32E230\\E230 - TH\\MDK-ARM" @ string offset=74
+	.asciz	"E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" @ string offset=74
 .Linfo_string3:
-	.asciz	"bak"                   @ string offset=125
+	.asciz	"bak"                   @ string offset=116
 .Linfo_string4:
-	.asciz	"unsigned int"          @ string offset=129
+	.asciz	"unsigned int"          @ string offset=120
 .Linfo_string5:
-	.asciz	"uint32_t"              @ string offset=142
+	.asciz	"uint32_t"              @ string offset=133
 .Linfo_string6:
-	.asciz	"__ARRAY_SIZE_TYPE__"   @ string offset=151
+	.asciz	"__ARRAY_SIZE_TYPE__"   @ string offset=142
 .Linfo_string7:
-	.asciz	"Flash_Buf"             @ string offset=171
+	.asciz	"Flash_Buf"             @ string offset=162
 .Linfo_string8:
-	.asciz	"unsigned char"         @ string offset=181
+	.asciz	"unsigned char"         @ string offset=172
 .Linfo_string9:
-	.asciz	"FMC_READY"             @ string offset=195
+	.asciz	"FMC_READY"             @ string offset=186
 .Linfo_string10:
-	.asciz	"FMC_BUSY"              @ string offset=205
+	.asciz	"FMC_BUSY"              @ string offset=196
 .Linfo_string11:
-	.asciz	"FMC_PGERR"             @ string offset=214
+	.asciz	"FMC_PGERR"             @ string offset=205
 .Linfo_string12:
-	.asciz	"FMC_PGAERR"            @ string offset=224
+	.asciz	"FMC_PGAERR"            @ string offset=215
 .Linfo_string13:
-	.asciz	"FMC_WPERR"             @ string offset=235
+	.asciz	"FMC_WPERR"             @ string offset=226
 .Linfo_string14:
-	.asciz	"FMC_TOERR"             @ string offset=245
+	.asciz	"FMC_TOERR"             @ string offset=236
 .Linfo_string15:
-	.asciz	"FMC_OB_HSPC"           @ string offset=255
+	.asciz	"FMC_OB_HSPC"           @ string offset=246
 .Linfo_string16:
-	.asciz	"uint8_t"               @ string offset=267
+	.asciz	"uint8_t"               @ string offset=258
 .Linfo_string17:
-	.asciz	"Flash_Read_OneByte"    @ string offset=275
+	.asciz	"Flash_Read_OneByte"    @ string offset=266
 .Linfo_string18:
-	.asciz	"flash_read_multi"      @ string offset=294
+	.asciz	"flash_read_multi"      @ string offset=285
 .Linfo_string19:
-	.asciz	"flash_read_MultiBytes" @ string offset=311
+	.asciz	"flash_read_MultiBytes" @ string offset=302
 .Linfo_string20:
-	.asciz	"flash_read32_MultiBytes" @ string offset=333
+	.asciz	"flash_read32_MultiBytes" @ string offset=324
 .Linfo_string21:
-	.asciz	"Flash_Write_OneByte"   @ string offset=357
+	.asciz	"Flash_Write_OneByte"   @ string offset=348
 .Linfo_string22:
-	.asciz	"Flash_Write_MultiBytes" @ string offset=377
+	.asciz	"Flash_Write_MultiBytes" @ string offset=368
 .Linfo_string23:
-	.asciz	"Flash_Write_32Bytes"   @ string offset=400
+	.asciz	"Flash_Write_32Bytes"   @ string offset=391
 .Linfo_string24:
-	.asciz	"flash_write_word"      @ string offset=420
+	.asciz	"flash_write_word"      @ string offset=411
 .Linfo_string25:
-	.asciz	"GDFLASHOP_EraseSpecifiedFlashPages" @ string offset=437
+	.asciz	"GDFLASHOP_EraseSpecifiedFlashPages" @ string offset=428
 .Linfo_string26:
-	.asciz	"_Bool"                 @ string offset=472
+	.asciz	"_Bool"                 @ string offset=463
 .Linfo_string27:
-	.asciz	"GDFLASHOP_WriteData2SpecifiedFlash" @ string offset=478
+	.asciz	"GDFLASHOP_WriteData2SpecifiedFlash" @ string offset=469
 .Linfo_string28:
-	.asciz	"GDFLASHOP_ReadDataFromChipFlash" @ string offset=513
+	.asciz	"GDFLASHOP_ReadDataFromChipFlash" @ string offset=504
 .Linfo_string29:
-	.asciz	"RWAddr"                @ string offset=545
+	.asciz	"RWAddr"                @ string offset=536
 .Linfo_string30:
-	.asciz	"RdData"                @ string offset=552
+	.asciz	"RdData"                @ string offset=543
 .Linfo_string31:
-	.asciz	"readAdder"             @ string offset=559
+	.asciz	"readAdder"             @ string offset=550
 .Linfo_string32:
-	.asciz	"readBuf"               @ string offset=569
+	.asciz	"readBuf"               @ string offset=560
 .Linfo_string33:
-	.asciz	"readLen"               @ string offset=577
+	.asciz	"readLen"               @ string offset=568
 .Linfo_string34:
-	.asciz	"unsigned short"        @ string offset=585
+	.asciz	"unsigned short"        @ string offset=576
 .Linfo_string35:
-	.asciz	"uint16_t"              @ string offset=600
+	.asciz	"uint16_t"              @ string offset=591
 .Linfo_string36:
-	.asciz	"i"                     @ string offset=609
+	.asciz	"i"                     @ string offset=600
 .Linfo_string37:
-	.asciz	"read_addr"             @ string offset=611
+	.asciz	"read_addr"             @ string offset=602
 .Linfo_string38:
-	.asciz	"pBuf"                  @ string offset=621
+	.asciz	"pBuf"                  @ string offset=612
 .Linfo_string39:
-	.asciz	"len"                   @ string offset=626
+	.asciz	"len"                   @ string offset=617
 .Linfo_string40:
-	.asciz	"pSource"               @ string offset=630
+	.asciz	"pSource"               @ string offset=621
 .Linfo_string41:
-	.asciz	"buf"                   @ string offset=638
+	.asciz	"buf"                   @ string offset=629
 .Linfo_string42:
-	.asciz	"WrData"                @ string offset=642
+	.asciz	"WrData"                @ string offset=633
 .Linfo_string43:
-	.asciz	"WrAddr"                @ string offset=649
+	.asciz	"WrAddr"                @ string offset=640
 .Linfo_string44:
-	.asciz	"pWrbuf"                @ string offset=656
+	.asciz	"pWrbuf"                @ string offset=647
 .Linfo_string45:
-	.asciz	"Wrlen"                 @ string offset=663
+	.asciz	"Wrlen"                 @ string offset=654
 .Linfo_string46:
-	.asciz	"buf_WrAddr"            @ string offset=669
+	.asciz	"buf_WrAddr"            @ string offset=660
 .Linfo_string47:
-	.asciz	"RWAddr1"               @ string offset=680
+	.asciz	"RWAddr1"               @ string offset=671
 .Linfo_string48:
-	.asciz	"Wrlen1"                @ string offset=688
+	.asciz	"Wrlen1"                @ string offset=679
 .Linfo_string49:
-	.asciz	"remain"                @ string offset=695
+	.asciz	"remain"                @ string offset=686
 .Linfo_string50:
-	.asciz	"off"                   @ string offset=702
+	.asciz	"off"                   @ string offset=693
 .Linfo_string51:
-	.asciz	"data"                  @ string offset=706
+	.asciz	"data"                  @ string offset=697
 .Linfo_string52:
-	.asciz	"write_addr"            @ string offset=711
+	.asciz	"write_addr"            @ string offset=702
 .Linfo_string53:
-	.asciz	"wreLen"                @ string offset=722
+	.asciz	"wreLen"                @ string offset=713
 .Linfo_string54:
-	.asciz	"start_wr_addr"         @ string offset=729
+	.asciz	"start_wr_addr"         @ string offset=720
 .Linfo_string55:
-	.asciz	"startaddr"             @ string offset=743
+	.asciz	"startaddr"             @ string offset=734
 .Linfo_string56:
-	.asciz	"npages"                @ string offset=753
+	.asciz	"npages"                @ string offset=744
 .Linfo_string57:
-	.asciz	"psrc"                  @ string offset=760
+	.asciz	"psrc"                  @ string offset=751
 .Linfo_string58:
-	.asciz	"wdlen"                 @ string offset=765
+	.asciz	"wdlen"                 @ string offset=756
 .Linfo_string59:
-	.asciz	"pdest"                 @ string offset=771
+	.asciz	"pdest"                 @ string offset=762
 .Linfo_string60:
-	.asciz	"op_addr"               @ string offset=777
+	.asciz	"op_addr"               @ string offset=768
 .Linfo_string61:
-	.asciz	"dwbufsize"             @ string offset=785
+	.asciz	"dwbufsize"             @ string offset=776
 .Linfo_string62:
-	.asciz	"dwlen"                 @ string offset=795
+	.asciz	"dwlen"                 @ string offset=786
 .Linfo_string63:
-	.asciz	"val"                   @ string offset=801
+	.asciz	"val"                   @ string offset=792
 	.section	.debug_abbrev,"",%progbits
 	.byte	1                       @ Abbreviation Code
 	.byte	17                      @ DW_TAG_compile_unit
@@ -2032,7 +2014,7 @@ bak:
 	.long	.Linfo_string36         @ DW_AT_name
 	.byte	2                       @ DW_AT_decl_file
 	.byte	58                      @ DW_AT_decl_line
-	.long	186                     @ DW_AT_type
+	.long	1143                    @ DW_AT_type
 	.byte	0                       @ End Of Children Mark
 	.byte	14                      @ Abbrev [14] 0x15e:0x5e DW_TAG_subprogram
 	.long	.Lfunc_begin2           @ DW_AT_low_pc

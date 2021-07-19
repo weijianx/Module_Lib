@@ -43,8 +43,7 @@ OF SUCH DAMAGE.
 #include "stdbool.h"
 #include "string.h"
 
-#define	start_adder			0x0800F810
-//#define	start_adder			0x08008000
+#define	start_adder			0x08003000
 
 #define fmc_last_page		0x0800F800
 

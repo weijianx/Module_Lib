@@ -19,9 +19,9 @@
 	.eabi_attribute	14, 0	@ Tag_ABI_PCS_R9_use
 	.file	"gd32e230_pmu.c"
 	.file	1 "D:\\Keil_v5\\ARM\\ARMCLANG\\Bin\\..\\include" "stdint.h"
-	.file	2 "E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source/gd32e230_pmu.c"
-	.file	3 "E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include\\gd32e230_rcu.h"
-	.file	4 "E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" "../GD32E230_Firmware_Library/CMSIS/GD/GD32E230/Include\\gd32e230.h"
+	.file	2 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source/gd32e230_pmu.c"
+	.file	3 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include\\gd32e230_rcu.h"
+	.file	4 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/CMSIS/GD/GD32E230/Include\\gd32e230.h"
 	.file	5 "D:/Keil_v5\\Arm\\Packs\\ARM\\CMSIS\\5.7.0\\CMSIS\\Core\\Include" "core_cm23.h"
 	.section	.text.pmu_deinit,"ax",%progbits
 	.hidden	pmu_deinit              @ -- Begin function pmu_deinit
@@ -847,135 +847,135 @@ pmu_to_deepsleepmode.reg_snap:
 .Linfo_string1:
 	.asciz	"../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source\\gd32e230_pmu.c" @ string offset=55
 .Linfo_string2:
-	.asciz	"E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" @ string offset=135
+	.asciz	"E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" @ string offset=135
 .Linfo_string3:
-	.asciz	"reg_snap"              @ string offset=187
+	.asciz	"reg_snap"              @ string offset=177
 .Linfo_string4:
-	.asciz	"unsigned int"          @ string offset=196
+	.asciz	"unsigned int"          @ string offset=186
 .Linfo_string5:
-	.asciz	"uint32_t"              @ string offset=209
+	.asciz	"uint32_t"              @ string offset=199
 .Linfo_string6:
-	.asciz	"__ARRAY_SIZE_TYPE__"   @ string offset=218
+	.asciz	"__ARRAY_SIZE_TYPE__"   @ string offset=208
 .Linfo_string7:
-	.asciz	"unsigned short"        @ string offset=238
+	.asciz	"unsigned short"        @ string offset=228
 .Linfo_string8:
-	.asciz	"RCU_GPIOARST"          @ string offset=253
+	.asciz	"RCU_GPIOARST"          @ string offset=243
 .Linfo_string9:
-	.asciz	"RCU_GPIOBRST"          @ string offset=266
+	.asciz	"RCU_GPIOBRST"          @ string offset=256
 .Linfo_string10:
-	.asciz	"RCU_GPIOCRST"          @ string offset=279
+	.asciz	"RCU_GPIOCRST"          @ string offset=269
 .Linfo_string11:
-	.asciz	"RCU_GPIOFRST"          @ string offset=292
+	.asciz	"RCU_GPIOFRST"          @ string offset=282
 .Linfo_string12:
-	.asciz	"RCU_CFGCMPRST"         @ string offset=305
+	.asciz	"RCU_CFGCMPRST"         @ string offset=295
 .Linfo_string13:
-	.asciz	"RCU_ADCRST"            @ string offset=319
+	.asciz	"RCU_ADCRST"            @ string offset=309
 .Linfo_string14:
-	.asciz	"RCU_TIMER0RST"         @ string offset=330
+	.asciz	"RCU_TIMER0RST"         @ string offset=320
 .Linfo_string15:
-	.asciz	"RCU_SPI0RST"           @ string offset=344
+	.asciz	"RCU_SPI0RST"           @ string offset=334
 .Linfo_string16:
-	.asciz	"RCU_USART0RST"         @ string offset=356
+	.asciz	"RCU_USART0RST"         @ string offset=346
 .Linfo_string17:
-	.asciz	"RCU_TIMER14RST"        @ string offset=370
+	.asciz	"RCU_TIMER14RST"        @ string offset=360
 .Linfo_string18:
-	.asciz	"RCU_TIMER15RST"        @ string offset=385
+	.asciz	"RCU_TIMER15RST"        @ string offset=375
 .Linfo_string19:
-	.asciz	"RCU_TIMER16RST"        @ string offset=400
+	.asciz	"RCU_TIMER16RST"        @ string offset=390
 .Linfo_string20:
-	.asciz	"RCU_TIMER2RST"         @ string offset=415
+	.asciz	"RCU_TIMER2RST"         @ string offset=405
 .Linfo_string21:
-	.asciz	"RCU_TIMER5RST"         @ string offset=429
+	.asciz	"RCU_TIMER5RST"         @ string offset=419
 .Linfo_string22:
-	.asciz	"RCU_TIMER13RST"        @ string offset=443
+	.asciz	"RCU_TIMER13RST"        @ string offset=433
 .Linfo_string23:
-	.asciz	"RCU_WWDGTRST"          @ string offset=458
+	.asciz	"RCU_WWDGTRST"          @ string offset=448
 .Linfo_string24:
-	.asciz	"RCU_SPI1RST"           @ string offset=471
+	.asciz	"RCU_SPI1RST"           @ string offset=461
 .Linfo_string25:
-	.asciz	"RCU_USART1RST"         @ string offset=483
+	.asciz	"RCU_USART1RST"         @ string offset=473
 .Linfo_string26:
-	.asciz	"RCU_I2C0RST"           @ string offset=497
+	.asciz	"RCU_I2C0RST"           @ string offset=487
 .Linfo_string27:
-	.asciz	"RCU_I2C1RST"           @ string offset=509
+	.asciz	"RCU_I2C1RST"           @ string offset=499
 .Linfo_string28:
-	.asciz	"RCU_PMURST"            @ string offset=521
+	.asciz	"RCU_PMURST"            @ string offset=511
 .Linfo_string29:
-	.asciz	"unsigned char"         @ string offset=532
+	.asciz	"unsigned char"         @ string offset=522
 .Linfo_string30:
-	.asciz	"RESET"                 @ string offset=546
+	.asciz	"RESET"                 @ string offset=536
 .Linfo_string31:
-	.asciz	"SET"                   @ string offset=552
+	.asciz	"SET"                   @ string offset=542
 .Linfo_string32:
-	.asciz	"CPUID"                 @ string offset=556
+	.asciz	"CPUID"                 @ string offset=546
 .Linfo_string33:
-	.asciz	"ICSR"                  @ string offset=562
+	.asciz	"ICSR"                  @ string offset=552
 .Linfo_string34:
-	.asciz	"VTOR"                  @ string offset=567
+	.asciz	"VTOR"                  @ string offset=557
 .Linfo_string35:
-	.asciz	"AIRCR"                 @ string offset=572
+	.asciz	"AIRCR"                 @ string offset=562
 .Linfo_string36:
-	.asciz	"SCR"                   @ string offset=578
+	.asciz	"SCR"                   @ string offset=568
 .Linfo_string37:
-	.asciz	"CCR"                   @ string offset=582
+	.asciz	"CCR"                   @ string offset=572
 .Linfo_string38:
-	.asciz	"RESERVED1"             @ string offset=586
+	.asciz	"RESERVED1"             @ string offset=576
 .Linfo_string39:
-	.asciz	"SHPR"                  @ string offset=596
+	.asciz	"SHPR"                  @ string offset=586
 .Linfo_string40:
-	.asciz	"SHCSR"                 @ string offset=601
+	.asciz	"SHCSR"                 @ string offset=591
 .Linfo_string41:
-	.asciz	"SCB_Type"              @ string offset=607
+	.asciz	"SCB_Type"              @ string offset=597
 .Linfo_string42:
-	.asciz	"uint8_t"               @ string offset=616
+	.asciz	"uint8_t"               @ string offset=606
 .Linfo_string43:
-	.asciz	"pmu_deinit"            @ string offset=624
+	.asciz	"pmu_deinit"            @ string offset=614
 .Linfo_string44:
-	.asciz	"pmu_lvd_select"        @ string offset=635
+	.asciz	"pmu_lvd_select"        @ string offset=625
 .Linfo_string45:
-	.asciz	"pmu_ldo_output_select" @ string offset=650
+	.asciz	"pmu_ldo_output_select" @ string offset=640
 .Linfo_string46:
-	.asciz	"pmu_lvd_disable"       @ string offset=672
+	.asciz	"pmu_lvd_disable"       @ string offset=662
 .Linfo_string47:
-	.asciz	"pmu_to_sleepmode"      @ string offset=688
+	.asciz	"pmu_to_sleepmode"      @ string offset=678
 .Linfo_string48:
-	.asciz	"pmu_to_deepsleepmode"  @ string offset=705
+	.asciz	"pmu_to_deepsleepmode"  @ string offset=695
 .Linfo_string49:
-	.asciz	"pmu_to_standbymode"    @ string offset=726
+	.asciz	"pmu_to_standbymode"    @ string offset=716
 .Linfo_string50:
-	.asciz	"pmu_wakeup_pin_enable" @ string offset=745
+	.asciz	"pmu_wakeup_pin_enable" @ string offset=735
 .Linfo_string51:
-	.asciz	"pmu_wakeup_pin_disable" @ string offset=767
+	.asciz	"pmu_wakeup_pin_disable" @ string offset=757
 .Linfo_string52:
-	.asciz	"pmu_backup_write_enable" @ string offset=790
+	.asciz	"pmu_backup_write_enable" @ string offset=780
 .Linfo_string53:
-	.asciz	"pmu_backup_write_disable" @ string offset=814
+	.asciz	"pmu_backup_write_disable" @ string offset=804
 .Linfo_string54:
-	.asciz	"pmu_flag_clear"        @ string offset=839
+	.asciz	"pmu_flag_clear"        @ string offset=829
 .Linfo_string55:
-	.asciz	"pmu_flag_get"          @ string offset=854
+	.asciz	"pmu_flag_get"          @ string offset=844
 .Linfo_string56:
-	.asciz	"FlagStatus"            @ string offset=867
+	.asciz	"FlagStatus"            @ string offset=857
 .Linfo_string57:
-	.asciz	"lvdt_n"                @ string offset=878
+	.asciz	"lvdt_n"                @ string offset=868
 .Linfo_string58:
-	.asciz	"ldo_output"            @ string offset=885
+	.asciz	"ldo_output"            @ string offset=875
 .Linfo_string59:
-	.asciz	"sleepmodecmd"          @ string offset=896
+	.asciz	"sleepmodecmd"          @ string offset=886
 .Linfo_string60:
-	.asciz	"ldo"                   @ string offset=909
+	.asciz	"ldo"                   @ string offset=899
 .Linfo_string61:
-	.asciz	"deepsleepmodecmd"      @ string offset=913
+	.asciz	"deepsleepmodecmd"      @ string offset=903
 .Linfo_string62:
-	.asciz	"standbymodecmd"        @ string offset=930
+	.asciz	"standbymodecmd"        @ string offset=920
 .Linfo_string63:
-	.asciz	"wakeup_pin"            @ string offset=945
+	.asciz	"wakeup_pin"            @ string offset=935
 .Linfo_string64:
-	.asciz	"flag_clear"            @ string offset=956
+	.asciz	"flag_clear"            @ string offset=946
 .Linfo_string65:
-	.asciz	"flag"                  @ string offset=967
+	.asciz	"flag"                  @ string offset=957
 .Linfo_string66:
-	.asciz	"ret_status"            @ string offset=972
+	.asciz	"ret_status"            @ string offset=962
 	.section	.debug_abbrev,"",%progbits
 	.byte	1                       @ Abbreviation Code
 	.byte	17                      @ DW_TAG_compile_unit

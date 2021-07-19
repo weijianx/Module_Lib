@@ -1,8 +1,0 @@
--xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m23 -c
--fno-rtti -funsigned-char -fshort-enums -fshort-wchar
--D__MICROLIB -gdwarf-3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../ -I ../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include -I ../User -I ../GD32E230_Firmware_Library/CMSIS/GD/GD32E230/Include -I ../Utilities -I ../APP/Inc -I ../BSP/Inc
--I./RTE/_GD32E230C_EVAL
--ID:/Keil_v5/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include
--ID:/Keil_v5/Arm/Packs/GigaDevice/GD32E230_DFP/1.0.0/Device/Include
--D__UVISION_VERSION="531" -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32E230 -D_RTE_ -DGD32E230
--o ./output/gd32e230_fmc.o -MD "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source/gd32e230_fmc.c"

@@ -19,12 +19,12 @@
 	.eabi_attribute	14, 0	@ Tag_ABI_PCS_R9_use
 	.file	"gd32e230c_eval.c"
 	.file	1 "D:\\Keil_v5\\ARM\\ARMCLANG\\Bin\\..\\include" "stdint.h"
-	.file	2 "E:\\project\\product\\GD32\\GD32E230\\E230 - TH\\MDK-ARM" "../Utilities/gd32e230c_eval.c"
-	.file	3 "E:\\project\\product\\GD32\\GD32E230\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include\\gd32e230_rcu.h"
-	.file	4 "E:\\project\\product\\GD32\\GD32E230\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include\\gd32e230_exti.h"
-	.file	5 "E:\\project\\product\\GD32\\GD32E230\\E230 - TH\\MDK-ARM" "../Utilities\\gd32e230c_eval.h"
-	.file	6 "E:\\project\\product\\GD32\\GD32E230\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/CMSIS/GD/GD32E230/Include\\gd32e230.h"
-	.file	7 "E:\\project\\product\\GD32\\GD32E230\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include\\gd32e230_usart.h"
+	.file	2 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../Utilities/gd32e230c_eval.c"
+	.file	3 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include\\gd32e230_rcu.h"
+	.file	4 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include\\gd32e230_exti.h"
+	.file	5 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../Utilities\\gd32e230c_eval.h"
+	.file	6 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/CMSIS/GD/GD32E230/Include\\gd32e230.h"
+	.file	7 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include\\gd32e230_usart.h"
 	.section	.text.gd_eval_led_init,"ax",%progbits
 	.hidden	gd_eval_led_init        @ -- Begin function gd_eval_led_init
 	.globl	gd_eval_led_init
@@ -683,6 +683,118 @@ __arm_cp.6_3:
 	.cantunwind
 	.fnend
                                         @ -- End function
+	.section	.text.Delayms,"ax",%progbits
+	.hidden	Delayms                 @ -- Begin function Delayms
+	.globl	Delayms
+	.p2align	2
+	.type	Delayms,%function
+	.code	16                      @ @Delayms
+	.thumb_func
+Delayms:
+.Lfunc_begin7:
+	.loc	2 264 0 is_stmt 1       @ ../Utilities/gd32e230c_eval.c:264:0
+	.fnstart
+	.cfi_startproc
+@ %bb.0:
+	.pad	#16
+	sub	sp, #16
+	.cfi_def_cfa_offset 16
+	mov	r1, r0
+	add	r2, sp, #12
+	strh	r0, [r2]
+	add	r0, sp, #8
+	movs	r2, #0
+.Ltmp18:
+	.loc	2 267 7 prologue_end    @ ../Utilities/gd32e230c_eval.c:267:7
+	strh	r2, [r0]
+	.loc	2 267 6 is_stmt 0       @ ../Utilities/gd32e230c_eval.c:267:6
+	b	.LBB7_1
+.LBB7_1:                                @ =>This Loop Header: Depth=1
+                                        @     Child Loop BB7_3 Depth 2
+	.loc	2 0 6                   @ ../Utilities/gd32e230c_eval.c:0:6
+	add	r0, sp, #8
+.Ltmp19:
+	.loc	2 267 10                @ ../Utilities/gd32e230c_eval.c:267:10
+	ldrh	r0, [r0]
+	add	r1, sp, #12
+	.loc	2 267 12                @ ../Utilities/gd32e230c_eval.c:267:12
+	ldrh	r1, [r1]
+.Ltmp20:
+	.loc	2 267 2                 @ ../Utilities/gd32e230c_eval.c:267:2
+	cmp	r0, r1
+	bge	.LBB7_8
+	b	.LBB7_2
+.LBB7_2:                                @   in Loop: Header=BB7_1 Depth=1
+	.loc	2 0 2                   @ ../Utilities/gd32e230c_eval.c:0:2
+	add	r0, sp, #4
+	movs	r1, #0
+.Ltmp21:
+	.loc	2 268 8 is_stmt 1       @ ../Utilities/gd32e230c_eval.c:268:8
+	strh	r1, [r0]
+	.loc	2 268 7 is_stmt 0       @ ../Utilities/gd32e230c_eval.c:268:7
+	b	.LBB7_3
+.LBB7_3:                                @   Parent Loop BB7_1 Depth=1
+                                        @ =>  This Inner Loop Header: Depth=2
+	.loc	2 0 7                   @ ../Utilities/gd32e230c_eval.c:0:7
+	add	r0, sp, #4
+.Ltmp22:
+	.loc	2 268 11                @ ../Utilities/gd32e230c_eval.c:268:11
+	ldrh	r0, [r0]
+	ldr	r1, __arm_cp.7_0
+.Ltmp23:
+	.loc	2 268 3                 @ ../Utilities/gd32e230c_eval.c:268:3
+	cmp	r0, r1
+	bgt	.LBB7_6
+	b	.LBB7_4
+.LBB7_4:                                @   in Loop: Header=BB7_3 Depth=2
+.Ltmp24:
+	.loc	2 268 26                @ ../Utilities/gd32e230c_eval.c:268:26
+	ldr	r0, [sp]
+	adds	r0, r0, #1
+	mov	r1, sp
+	strb	r0, [r1]
+	.loc	2 268 25                @ ../Utilities/gd32e230c_eval.c:268:25
+	b	.LBB7_5
+.LBB7_5:                                @   in Loop: Header=BB7_3 Depth=2
+	.loc	2 268 21                @ ../Utilities/gd32e230c_eval.c:268:21
+	ldr	r0, [sp, #4]
+	adds	r0, r0, #1
+	add	r1, sp, #4
+	strh	r0, [r1]
+	.loc	2 268 3                 @ ../Utilities/gd32e230c_eval.c:268:3
+	b	.LBB7_3
+.Ltmp25:
+.LBB7_6:                                @   in Loop: Header=BB7_1 Depth=1
+	.loc	2 268 26                @ ../Utilities/gd32e230c_eval.c:268:26
+	b	.LBB7_7
+.Ltmp26:
+.LBB7_7:                                @   in Loop: Header=BB7_1 Depth=1
+	.loc	2 267 16 is_stmt 1      @ ../Utilities/gd32e230c_eval.c:267:16
+	ldr	r0, [sp, #8]
+	adds	r0, r0, #1
+	add	r1, sp, #8
+	strh	r0, [r1]
+	.loc	2 267 2 is_stmt 0       @ ../Utilities/gd32e230c_eval.c:267:2
+	b	.LBB7_1
+.Ltmp27:
+.LBB7_8:
+	.loc	2 269 1 is_stmt 1       @ ../Utilities/gd32e230c_eval.c:269:1
+	add	sp, #16
+	bx	lr
+.Ltmp28:
+	.p2align	2
+@ %bb.9:
+	.loc	2 0 1 is_stmt 0         @ ../Utilities/gd32e230c_eval.c:0:1
+__arm_cp.7_0:
+	.long	2328                    @ 0x918
+.Lcpi_end22:
+	.size	__arm_cp.7_0, .Lcpi_end22-__arm_cp.7_0
+.Lfunc_end7:
+	.size	Delayms, .Lfunc_end7-Delayms
+	.cfi_endproc
+	.cantunwind
+	.fnend
+                                        @ -- End function
 	.section	.text.USART0_IRQHandler,"ax",%progbits
 	.hidden	USART0_IRQHandler       @ -- Begin function USART0_IRQHandler
 	.globl	USART0_IRQHandler
@@ -691,8 +803,8 @@ __arm_cp.6_3:
 	.code	16                      @ @USART0_IRQHandler
 	.thumb_func
 USART0_IRQHandler:
-.Lfunc_begin7:
-	.loc	2 266 0 is_stmt 1       @ ../Utilities/gd32e230c_eval.c:266:0
+.Lfunc_begin8:
+	.loc	2 272 0 is_stmt 1       @ ../Utilities/gd32e230c_eval.c:272:0
 	.fnstart
 	.cfi_startproc
 @ %bb.0:
@@ -704,168 +816,171 @@ USART0_IRQHandler:
 	.pad	#16
 	sub	sp, #16
 	.cfi_def_cfa_offset 24
-	ldr	r0, __arm_cp.7_0
-	ldr	r1, __arm_cp.7_1
-.Ltmp18:
-	.loc	2 272 17 prologue_end   @ ../Utilities/gd32e230c_eval.c:272:17
+	ldr	r0, __arm_cp.8_0
+	ldr	r1, __arm_cp.8_1
+.Ltmp29:
+	.loc	2 274 17 prologue_end   @ ../Utilities/gd32e230c_eval.c:274:17
 	bl	usart_interrupt_flag_get
-.Ltmp19:
-	.loc	2 272 8 is_stmt 0       @ ../Utilities/gd32e230c_eval.c:272:8
+.Ltmp30:
+	.loc	2 274 8 is_stmt 0       @ ../Utilities/gd32e230c_eval.c:274:8
 	cmp	r0, #0
-	beq	.LBB7_4
-	b	.LBB7_1
-.LBB7_1:
+	beq	.LBB8_4
+	b	.LBB8_1
+.LBB8_1:
 	.loc	2 0 8                   @ ../Utilities/gd32e230c_eval.c:0:8
-	ldr	r0, __arm_cp.7_0
-	ldr	r1, __arm_cp.7_1
-.Ltmp20:
-	.loc	2 274 3 is_stmt 1       @ ../Utilities/gd32e230c_eval.c:274:3
+	ldr	r0, __arm_cp.8_0
+	ldr	r1, __arm_cp.8_1
+.Ltmp31:
+	.loc	2 276 3 is_stmt 1       @ ../Utilities/gd32e230c_eval.c:276:3
 	str	r0, [sp, #12]           @ 4-byte Spill
 	bl	usart_interrupt_flag_clear
-	.loc	2 277 8                 @ ../Utilities/gd32e230c_eval.c:277:8
+	.loc	2 279 8                 @ ../Utilities/gd32e230c_eval.c:279:8
 	ldr	r0, [sp, #12]           @ 4-byte Reload
 	bl	usart_data_receive
-	.loc	2 277 6 is_stmt 0       @ ../Utilities/gd32e230c_eval.c:277:6
-	ldr	r1, __arm_cp.7_2
+	.loc	2 279 6 is_stmt 0       @ ../Utilities/gd32e230c_eval.c:279:6
+	ldr	r1, __arm_cp.8_2
 	strb	r0, [r1]
-	.loc	2 279 29 is_stmt 1      @ ../Utilities/gd32e230c_eval.c:279:29
+	.loc	2 281 29 is_stmt 1      @ ../Utilities/gd32e230c_eval.c:281:29
 	ldrb	r0, [r1]
-	.loc	2 279 3 is_stmt 0       @ ../Utilities/gd32e230c_eval.c:279:3
+	.loc	2 281 3 is_stmt 0       @ ../Utilities/gd32e230c_eval.c:281:3
 	bl	MODBUS_ASCII_HandlRevData
-.Ltmp21:
-	.loc	2 281 12 is_stmt 1      @ ../Utilities/gd32e230c_eval.c:281:12
-	ldr	r0, __arm_cp.7_3
+.Ltmp32:
+	.loc	2 283 12 is_stmt 1      @ ../Utilities/gd32e230c_eval.c:283:12
+	ldr	r0, __arm_cp.8_3
 	ldrb	r0, [r0]
-.Ltmp22:
-	.loc	2 281 12 is_stmt 0      @ ../Utilities/gd32e230c_eval.c:281:12
+.Ltmp33:
+	.loc	2 283 12 is_stmt 0      @ ../Utilities/gd32e230c_eval.c:283:12
 	lsrs	r0, r0, #3
 	cmp	r0, #75
-	blo	.LBB7_3
-	b	.LBB7_2
-.LBB7_2:
+	blo	.LBB8_3
+	b	.LBB8_2
+.LBB8_2:
 	.loc	2 0 12                  @ ../Utilities/gd32e230c_eval.c:0:12
-	ldr	r0, __arm_cp.7_0
+	ldr	r0, __arm_cp.8_0
 	movs	r1, #5
-.Ltmp23:
-	.loc	2 282 13 is_stmt 1      @ ../Utilities/gd32e230c_eval.c:282:13
+.Ltmp34:
+	.loc	2 284 13 is_stmt 1      @ ../Utilities/gd32e230c_eval.c:284:13
 	bl	usart_interrupt_disable
-	.loc	2 283 9                 @ ../Utilities/gd32e230c_eval.c:283:9
-	b	.LBB7_3
-.Ltmp24:
-.LBB7_3:
-	.loc	2 285 5                 @ ../Utilities/gd32e230c_eval.c:285:5
-	b	.LBB7_4
-.Ltmp25:
-.LBB7_4:
+	.loc	2 285 9                 @ ../Utilities/gd32e230c_eval.c:285:9
+	b	.LBB8_3
+.Ltmp35:
+.LBB8_3:
+	.loc	2 287 5                 @ ../Utilities/gd32e230c_eval.c:287:5
+	b	.LBB8_4
+.Ltmp36:
+.LBB8_4:
 	.loc	2 0 5 is_stmt 0         @ ../Utilities/gd32e230c_eval.c:0:5
-	ldr	r0, __arm_cp.7_0
-	ldr	r1, __arm_cp.7_4
-.Ltmp26:
-	.loc	2 287 17 is_stmt 1      @ ../Utilities/gd32e230c_eval.c:287:17
+	ldr	r0, __arm_cp.8_0
+	ldr	r1, __arm_cp.8_4
+.Ltmp37:
+	.loc	2 289 17 is_stmt 1      @ ../Utilities/gd32e230c_eval.c:289:17
 	bl	usart_interrupt_flag_get
-.Ltmp27:
-	.loc	2 287 8 is_stmt 0       @ ../Utilities/gd32e230c_eval.c:287:8
+.Ltmp38:
+	.loc	2 289 8 is_stmt 0       @ ../Utilities/gd32e230c_eval.c:289:8
 	cmp	r0, #0
-	beq	.LBB7_8
-	b	.LBB7_5
-.LBB7_5:
+	beq	.LBB8_8
+	b	.LBB8_5
+.LBB8_5:
 	.loc	2 0 8                   @ ../Utilities/gd32e230c_eval.c:0:8
-	ldr	r0, __arm_cp.7_0
-	ldr	r1, __arm_cp.7_4
-.Ltmp28:
-	.loc	2 289 3 is_stmt 1       @ ../Utilities/gd32e230c_eval.c:289:3
+	ldr	r0, __arm_cp.8_0
+	ldr	r1, __arm_cp.8_4
+.Ltmp39:
+	.loc	2 291 3 is_stmt 1       @ ../Utilities/gd32e230c_eval.c:291:3
 	str	r0, [sp, #8]            @ 4-byte Spill
 	bl	usart_interrupt_flag_clear
-	.loc	2 291 63                @ ../Utilities/gd32e230c_eval.c:291:63
-	ldr	r0, __arm_cp.7_5
+	.loc	2 293 63                @ ../Utilities/gd32e230c_eval.c:293:63
+	ldr	r0, __arm_cp.8_5
 	ldrb	r1, [r0]
 	adds	r2, r1, #1
 	strb	r2, [r0]
-	.loc	2 291 39 is_stmt 0      @ ../Utilities/gd32e230c_eval.c:291:39
-	ldr	r2, __arm_cp.7_6
+	.loc	2 293 39 is_stmt 0      @ ../Utilities/gd32e230c_eval.c:293:39
+	ldr	r2, __arm_cp.8_6
 	ldrb	r1, [r2, r1]
-	.loc	2 291 9                 @ ../Utilities/gd32e230c_eval.c:291:9
+	.loc	2 293 9                 @ ../Utilities/gd32e230c_eval.c:293:9
 	ldr	r2, [sp, #8]            @ 4-byte Reload
 	str	r0, [sp, #4]            @ 4-byte Spill
 	mov	r0, r2
 	bl	usart_data_transmit
-.Ltmp29:
-	.loc	2 293 12 is_stmt 1      @ ../Utilities/gd32e230c_eval.c:293:12
-	ldr	r0, __arm_cp.7_7
+	movs	r0, #1
+	.loc	2 294 3 is_stmt 1       @ ../Utilities/gd32e230c_eval.c:294:3
+	bl	Delayms
+.Ltmp40:
+	.loc	2 295 12                @ ../Utilities/gd32e230c_eval.c:295:12
+	ldr	r0, __arm_cp.8_7
 	ldrb	r0, [r0]
-	.loc	2 293 25 is_stmt 0      @ ../Utilities/gd32e230c_eval.c:293:25
+	.loc	2 295 25 is_stmt 0      @ ../Utilities/gd32e230c_eval.c:295:25
 	ldr	r1, [sp, #4]            @ 4-byte Reload
 	ldrb	r2, [r1]
-.Ltmp30:
-	.loc	2 293 12                @ ../Utilities/gd32e230c_eval.c:293:12
+.Ltmp41:
+	.loc	2 295 12                @ ../Utilities/gd32e230c_eval.c:295:12
 	cmp	r0, r2
-	bgt	.LBB7_7
-	b	.LBB7_6
-.LBB7_6:
+	bgt	.LBB8_7
+	b	.LBB8_6
+.LBB8_6:
 	.loc	2 0 12                  @ ../Utilities/gd32e230c_eval.c:0:12
 	movs	r0, #9
 	lsls	r0, r0, #27
 	movs	r1, #4
-.Ltmp31:
-	.loc	2 294 4 is_stmt 1       @ ../Utilities/gd32e230c_eval.c:294:4
+.Ltmp42:
+	.loc	2 296 4 is_stmt 1       @ ../Utilities/gd32e230c_eval.c:296:4
 	bl	gpio_bit_reset
-	ldr	r0, __arm_cp.7_0
+	ldr	r0, __arm_cp.8_0
 	movs	r1, #7
-	.loc	2 295 13                @ ../Utilities/gd32e230c_eval.c:295:13
+	.loc	2 297 13                @ ../Utilities/gd32e230c_eval.c:297:13
 	bl	usart_interrupt_disable
-	.loc	2 297 14                @ ../Utilities/gd32e230c_eval.c:297:14
-	ldr	r0, __arm_cp.7_7
+	.loc	2 299 14                @ ../Utilities/gd32e230c_eval.c:299:14
+	ldr	r0, __arm_cp.8_7
 	movs	r1, #0
 	strb	r1, [r0]
-	.loc	2 298 9                 @ ../Utilities/gd32e230c_eval.c:298:9
-	b	.LBB7_7
-.Ltmp32:
-.LBB7_7:
-	.loc	2 299 5                 @ ../Utilities/gd32e230c_eval.c:299:5
-	b	.LBB7_8
-.Ltmp33:
-.LBB7_8:
-	.loc	2 300 1                 @ ../Utilities/gd32e230c_eval.c:300:1
+	.loc	2 300 9                 @ ../Utilities/gd32e230c_eval.c:300:9
+	b	.LBB8_7
+.Ltmp43:
+.LBB8_7:
+	.loc	2 301 5                 @ ../Utilities/gd32e230c_eval.c:301:5
+	b	.LBB8_8
+.Ltmp44:
+.LBB8_8:
+	.loc	2 302 1                 @ ../Utilities/gd32e230c_eval.c:302:1
 	add	sp, #16
 	pop	{r7, pc}
-.Ltmp34:
+.Ltmp45:
 	.p2align	2
 @ %bb.9:
 	.loc	2 0 1 is_stmt 0         @ ../Utilities/gd32e230c_eval.c:0:1
-__arm_cp.7_0:
+__arm_cp.8_0:
 	.long	1073821696              @ 0x40013800
-.Lcpi_end22:
-	.size	__arm_cp.7_0, .Lcpi_end22-__arm_cp.7_0
-__arm_cp.7_1:
-	.long	117768197               @ 0x7050005
 .Lcpi_end23:
-	.size	__arm_cp.7_1, .Lcpi_end23-__arm_cp.7_1
-__arm_cp.7_2:
-	.long	ch
+	.size	__arm_cp.8_0, .Lcpi_end23-__arm_cp.8_0
+__arm_cp.8_1:
+	.long	117768197               @ 0x7050005
 .Lcpi_end24:
-	.size	__arm_cp.7_2, .Lcpi_end24-__arm_cp.7_2
-__arm_cp.7_3:
-	.long	UARTx_RXBuffLen
+	.size	__arm_cp.8_1, .Lcpi_end24-__arm_cp.8_1
+__arm_cp.8_2:
+	.long	ch
 .Lcpi_end25:
-	.size	__arm_cp.7_3, .Lcpi_end25-__arm_cp.7_3
-__arm_cp.7_4:
-	.long	117899271               @ 0x7070007
+	.size	__arm_cp.8_2, .Lcpi_end25-__arm_cp.8_2
+__arm_cp.8_3:
+	.long	UARTx_RXBuffLen
 .Lcpi_end26:
-	.size	__arm_cp.7_4, .Lcpi_end26-__arm_cp.7_4
-__arm_cp.7_5:
-	.long	u8SendIndex
+	.size	__arm_cp.8_3, .Lcpi_end26-__arm_cp.8_3
+__arm_cp.8_4:
+	.long	117899271               @ 0x7070007
 .Lcpi_end27:
-	.size	__arm_cp.7_5, .Lcpi_end27-__arm_cp.7_5
-__arm_cp.7_6:
-	.long	UARTx_TXBUFF
+	.size	__arm_cp.8_4, .Lcpi_end27-__arm_cp.8_4
+__arm_cp.8_5:
+	.long	u8SendIndex
 .Lcpi_end28:
-	.size	__arm_cp.7_6, .Lcpi_end28-__arm_cp.7_6
-__arm_cp.7_7:
-	.long	u8SendNum
+	.size	__arm_cp.8_5, .Lcpi_end28-__arm_cp.8_5
+__arm_cp.8_6:
+	.long	UARTx_TXBUFF
 .Lcpi_end29:
-	.size	__arm_cp.7_7, .Lcpi_end29-__arm_cp.7_7
-.Lfunc_end7:
-	.size	USART0_IRQHandler, .Lfunc_end7-USART0_IRQHandler
+	.size	__arm_cp.8_6, .Lcpi_end29-__arm_cp.8_6
+__arm_cp.8_7:
+	.long	u8SendNum
+.Lcpi_end30:
+	.size	__arm_cp.8_7, .Lcpi_end30-__arm_cp.8_7
+.Lfunc_end8:
+	.size	USART0_IRQHandler, .Lfunc_end8-USART0_IRQHandler
 	.cfi_endproc
 	.cantunwind
 	.fnend
@@ -878,8 +993,8 @@ __arm_cp.7_7:
 	.code	16                      @ @UARTx_SendData
 	.thumb_func
 UARTx_SendData:
-.Lfunc_begin8:
-	.loc	2 316 0 is_stmt 1       @ ../Utilities/gd32e230c_eval.c:316:0
+.Lfunc_begin9:
+	.loc	2 318 0 is_stmt 1       @ ../Utilities/gd32e230c_eval.c:318:0
 	.fnstart
 	.cfi_startproc
 @ %bb.0:
@@ -894,172 +1009,172 @@ UARTx_SendData:
 	str	r0, [sp, #16]
 	str	r1, [sp, #12]
 	movs	r0, #0
-.Ltmp35:
-	.loc	2 317 14 prologue_end   @ ../Utilities/gd32e230c_eval.c:317:14
+.Ltmp46:
+	.loc	2 319 14 prologue_end   @ ../Utilities/gd32e230c_eval.c:319:14
 	str	r0, [sp, #8]
-.Ltmp36:
-	.loc	2 319 15                @ ../Utilities/gd32e230c_eval.c:319:15
+.Ltmp47:
+	.loc	2 321 15                @ ../Utilities/gd32e230c_eval.c:321:15
 	ldr	r0, [sp, #12]
-	.loc	2 319 20 is_stmt 0      @ ../Utilities/gd32e230c_eval.c:319:20
+	.loc	2 321 20 is_stmt 0      @ ../Utilities/gd32e230c_eval.c:321:20
 	cmp	r0, #0
-	beq	.LBB8_2
-	b	.LBB8_1
-.LBB8_1:
-	.loc	2 319 41                @ ../Utilities/gd32e230c_eval.c:319:41
+	beq	.LBB9_2
+	b	.LBB9_1
+.LBB9_1:
+	.loc	2 321 41                @ ../Utilities/gd32e230c_eval.c:321:41
 	ldr	r0, [sp, #16]
-.Ltmp37:
-	.loc	2 319 9                 @ ../Utilities/gd32e230c_eval.c:319:9
+.Ltmp48:
+	.loc	2 321 9                 @ ../Utilities/gd32e230c_eval.c:321:9
 	cmp	r0, #0
-	bne	.LBB8_3
-	b	.LBB8_2
-.LBB8_2:
+	bne	.LBB9_3
+	b	.LBB9_2
+.LBB9_2:
 	.loc	2 0 9                   @ ../Utilities/gd32e230c_eval.c:0:9
 	movs	r0, #0
-.Ltmp38:
-	.loc	2 320 9 is_stmt 1       @ ../Utilities/gd32e230c_eval.c:320:9
+.Ltmp49:
+	.loc	2 322 9 is_stmt 1       @ ../Utilities/gd32e230c_eval.c:322:9
 	str	r0, [sp, #20]
-	b	.LBB8_12
-.Ltmp39:
-.LBB8_3:
-	.loc	2 322 9                 @ ../Utilities/gd32e230c_eval.c:322:9
-	ldr	r0, __arm_cp.8_0
+	b	.LBB9_12
+.Ltmp50:
+.LBB9_3:
+	.loc	2 324 9                 @ ../Utilities/gd32e230c_eval.c:324:9
+	ldr	r0, __arm_cp.9_0
 	ldrb	r0, [r0]
-.Ltmp40:
-	.loc	2 322 9 is_stmt 0       @ ../Utilities/gd32e230c_eval.c:322:9
+.Ltmp51:
+	.loc	2 324 9 is_stmt 0       @ ../Utilities/gd32e230c_eval.c:324:9
 	cmp	r0, #0
-	beq	.LBB8_5
-	b	.LBB8_4
-.LBB8_4:
+	beq	.LBB9_5
+	b	.LBB9_4
+.LBB9_4:
 	.loc	2 0 9                   @ ../Utilities/gd32e230c_eval.c:0:9
 	movs	r0, #0
-.Ltmp41:
-	.loc	2 324 9 is_stmt 1       @ ../Utilities/gd32e230c_eval.c:324:9
+.Ltmp52:
+	.loc	2 326 9 is_stmt 1       @ ../Utilities/gd32e230c_eval.c:326:9
 	str	r0, [sp, #20]
-	b	.LBB8_12
-.Ltmp42:
-.LBB8_5:
-	.loc	2 327 9                 @ ../Utilities/gd32e230c_eval.c:327:9
+	b	.LBB9_12
+.Ltmp53:
+.LBB9_5:
+	.loc	2 329 9                 @ ../Utilities/gd32e230c_eval.c:329:9
 	ldr	r0, [sp, #12]
-	ldr	r1, __arm_cp.8_1
-.Ltmp43:
-	.loc	2 327 9 is_stmt 0       @ ../Utilities/gd32e230c_eval.c:327:9
+	ldr	r1, __arm_cp.9_1
+.Ltmp54:
+	.loc	2 329 9 is_stmt 0       @ ../Utilities/gd32e230c_eval.c:329:9
 	cmp	r0, r1
-	blo	.LBB8_7
-	b	.LBB8_6
-.LBB8_6:
+	blo	.LBB9_7
+	b	.LBB9_6
+.LBB9_6:
 	.loc	2 0 9                   @ ../Utilities/gd32e230c_eval.c:0:9
 	movw	r0, #600
-.Ltmp44:
-	.loc	2 329 13 is_stmt 1      @ ../Utilities/gd32e230c_eval.c:329:13
+.Ltmp55:
+	.loc	2 331 13 is_stmt 1      @ ../Utilities/gd32e230c_eval.c:331:13
 	str	r0, [sp, #12]
-	.loc	2 330 5                 @ ../Utilities/gd32e230c_eval.c:330:5
-	b	.LBB8_7
-.Ltmp45:
-.LBB8_7:
+	.loc	2 332 5                 @ ../Utilities/gd32e230c_eval.c:332:5
+	b	.LBB9_7
+.Ltmp56:
+.LBB9_7:
 	.loc	2 0 5 is_stmt 0         @ ../Utilities/gd32e230c_eval.c:0:5
 	movs	r0, #0
-.Ltmp46:
-	.loc	2 332 12 is_stmt 1      @ ../Utilities/gd32e230c_eval.c:332:12
+.Ltmp57:
+	.loc	2 334 12 is_stmt 1      @ ../Utilities/gd32e230c_eval.c:334:12
 	str	r0, [sp, #8]
-	.loc	2 332 10 is_stmt 0      @ ../Utilities/gd32e230c_eval.c:332:10
-	b	.LBB8_8
-.LBB8_8:                                @ =>This Inner Loop Header: Depth=1
-.Ltmp47:
-	.loc	2 332 17                @ ../Utilities/gd32e230c_eval.c:332:17
+	.loc	2 334 10 is_stmt 0      @ ../Utilities/gd32e230c_eval.c:334:10
+	b	.LBB9_8
+.LBB9_8:                                @ =>This Inner Loop Header: Depth=1
+.Ltmp58:
+	.loc	2 334 17                @ ../Utilities/gd32e230c_eval.c:334:17
 	ldr	r0, [sp, #8]
-	.loc	2 332 21                @ ../Utilities/gd32e230c_eval.c:332:21
+	.loc	2 334 21                @ ../Utilities/gd32e230c_eval.c:334:21
 	ldr	r1, [sp, #12]
-.Ltmp48:
-	.loc	2 332 5                 @ ../Utilities/gd32e230c_eval.c:332:5
+.Ltmp59:
+	.loc	2 334 5                 @ ../Utilities/gd32e230c_eval.c:334:5
 	cmp	r0, r1
-	bhs	.LBB8_11
-	b	.LBB8_9
-.LBB8_9:                                @   in Loop: Header=BB8_8 Depth=1
-.Ltmp49:
-	.loc	2 334 27 is_stmt 1      @ ../Utilities/gd32e230c_eval.c:334:27
+	bhs	.LBB9_11
+	b	.LBB9_9
+.LBB9_9:                                @   in Loop: Header=BB9_8 Depth=1
+.Ltmp60:
+	.loc	2 336 27 is_stmt 1      @ ../Utilities/gd32e230c_eval.c:336:27
 	ldr	r0, [sp, #16]
-	.loc	2 334 42 is_stmt 0      @ ../Utilities/gd32e230c_eval.c:334:42
+	.loc	2 336 42 is_stmt 0      @ ../Utilities/gd32e230c_eval.c:336:42
 	ldr	r1, [sp, #8]
-	.loc	2 334 27                @ ../Utilities/gd32e230c_eval.c:334:27
+	.loc	2 336 27                @ ../Utilities/gd32e230c_eval.c:336:27
 	ldrb	r0, [r0, r1]
-	.loc	2 334 9                 @ ../Utilities/gd32e230c_eval.c:334:9
-	ldr	r2, __arm_cp.8_2
-	.loc	2 334 25                @ ../Utilities/gd32e230c_eval.c:334:25
+	.loc	2 336 9                 @ ../Utilities/gd32e230c_eval.c:336:9
+	ldr	r2, __arm_cp.9_2
+	.loc	2 336 25                @ ../Utilities/gd32e230c_eval.c:336:25
 	strb	r0, [r2, r1]
-	.loc	2 335 5 is_stmt 1       @ ../Utilities/gd32e230c_eval.c:335:5
-	b	.LBB8_10
-.Ltmp50:
-.LBB8_10:                               @   in Loop: Header=BB8_8 Depth=1
-	.loc	2 332 27                @ ../Utilities/gd32e230c_eval.c:332:27
+	.loc	2 337 5 is_stmt 1       @ ../Utilities/gd32e230c_eval.c:337:5
+	b	.LBB9_10
+.Ltmp61:
+.LBB9_10:                               @   in Loop: Header=BB9_8 Depth=1
+	.loc	2 334 27                @ ../Utilities/gd32e230c_eval.c:334:27
 	ldr	r0, [sp, #8]
 	adds	r0, r0, #1
 	str	r0, [sp, #8]
-	.loc	2 332 5 is_stmt 0       @ ../Utilities/gd32e230c_eval.c:332:5
-	b	.LBB8_8
-.Ltmp51:
-.LBB8_11:
+	.loc	2 334 5 is_stmt 0       @ ../Utilities/gd32e230c_eval.c:334:5
+	b	.LBB9_8
+.Ltmp62:
+.LBB9_11:
 	.loc	2 0 5                   @ ../Utilities/gd32e230c_eval.c:0:5
 	movs	r0, #9
 	lsls	r0, r0, #27
 	movs	r1, #4
-	.loc	2 338 2 is_stmt 1       @ ../Utilities/gd32e230c_eval.c:338:2
+	.loc	2 340 2 is_stmt 1       @ ../Utilities/gd32e230c_eval.c:340:2
 	bl	gpio_bit_set
-	.loc	2 340 33                @ ../Utilities/gd32e230c_eval.c:340:33
-	ldr	r0, __arm_cp.8_2
+	.loc	2 342 33                @ ../Utilities/gd32e230c_eval.c:342:33
+	ldr	r0, __arm_cp.9_2
 	ldrb	r1, [r0]
-	ldr	r0, __arm_cp.8_3
-	.loc	2 340 5 is_stmt 0       @ ../Utilities/gd32e230c_eval.c:340:5
+	ldr	r0, __arm_cp.9_3
+	.loc	2 342 5 is_stmt 0       @ ../Utilities/gd32e230c_eval.c:342:5
 	str	r0, [sp, #4]            @ 4-byte Spill
 	bl	usart_data_transmit
-	.loc	2 342 17 is_stmt 1      @ ../Utilities/gd32e230c_eval.c:342:17
-	ldr	r0, __arm_cp.8_4
+	.loc	2 344 17 is_stmt 1      @ ../Utilities/gd32e230c_eval.c:344:17
+	ldr	r0, __arm_cp.9_4
 	movs	r1, #1
 	strb	r1, [r0]
-	.loc	2 343 17                @ ../Utilities/gd32e230c_eval.c:343:17
+	.loc	2 345 17                @ ../Utilities/gd32e230c_eval.c:345:17
 	ldr	r0, [sp, #12]
-	.loc	2 343 15 is_stmt 0      @ ../Utilities/gd32e230c_eval.c:343:15
-	ldr	r1, __arm_cp.8_0
+	.loc	2 345 15 is_stmt 0      @ ../Utilities/gd32e230c_eval.c:345:15
+	ldr	r1, __arm_cp.9_0
 	strb	r0, [r1]
 	movs	r1, #7
-	.loc	2 344 5 is_stmt 1       @ ../Utilities/gd32e230c_eval.c:344:5
+	.loc	2 346 5 is_stmt 1       @ ../Utilities/gd32e230c_eval.c:346:5
 	ldr	r0, [sp, #4]            @ 4-byte Reload
 	bl	usart_interrupt_enable
-	.loc	2 346 12                @ ../Utilities/gd32e230c_eval.c:346:12
+	.loc	2 348 12                @ ../Utilities/gd32e230c_eval.c:348:12
 	ldr	r0, [sp, #12]
-	.loc	2 346 5 is_stmt 0       @ ../Utilities/gd32e230c_eval.c:346:5
+	.loc	2 348 5 is_stmt 0       @ ../Utilities/gd32e230c_eval.c:348:5
 	str	r0, [sp, #20]
-	b	.LBB8_12
-.LBB8_12:
-	.loc	2 347 1 is_stmt 1       @ ../Utilities/gd32e230c_eval.c:347:1
+	b	.LBB9_12
+.LBB9_12:
+	.loc	2 349 1 is_stmt 1       @ ../Utilities/gd32e230c_eval.c:349:1
 	ldr	r0, [sp, #20]
 	add	sp, #24
 	pop	{r7, pc}
-.Ltmp52:
+.Ltmp63:
 	.p2align	2
 @ %bb.13:
 	.loc	2 0 1 is_stmt 0         @ ../Utilities/gd32e230c_eval.c:0:1
-__arm_cp.8_0:
+__arm_cp.9_0:
 	.long	u8SendNum
-.Lcpi_end30:
-	.size	__arm_cp.8_0, .Lcpi_end30-__arm_cp.8_0
-__arm_cp.8_1:
-	.long	601                     @ 0x259
 .Lcpi_end31:
-	.size	__arm_cp.8_1, .Lcpi_end31-__arm_cp.8_1
-__arm_cp.8_2:
-	.long	UARTx_TXBUFF
+	.size	__arm_cp.9_0, .Lcpi_end31-__arm_cp.9_0
+__arm_cp.9_1:
+	.long	601                     @ 0x259
 .Lcpi_end32:
-	.size	__arm_cp.8_2, .Lcpi_end32-__arm_cp.8_2
-__arm_cp.8_3:
-	.long	1073821696              @ 0x40013800
+	.size	__arm_cp.9_1, .Lcpi_end32-__arm_cp.9_1
+__arm_cp.9_2:
+	.long	UARTx_TXBUFF
 .Lcpi_end33:
-	.size	__arm_cp.8_3, .Lcpi_end33-__arm_cp.8_3
-__arm_cp.8_4:
-	.long	u8SendIndex
+	.size	__arm_cp.9_2, .Lcpi_end33-__arm_cp.9_2
+__arm_cp.9_3:
+	.long	1073821696              @ 0x40013800
 .Lcpi_end34:
-	.size	__arm_cp.8_4, .Lcpi_end34-__arm_cp.8_4
-.Lfunc_end8:
-	.size	UARTx_SendData, .Lfunc_end8-UARTx_SendData
+	.size	__arm_cp.9_3, .Lcpi_end34-__arm_cp.9_3
+__arm_cp.9_4:
+	.long	u8SendIndex
+.Lcpi_end35:
+	.size	__arm_cp.9_4, .Lcpi_end35-__arm_cp.9_4
+.Lfunc_end9:
+	.size	UARTx_SendData, .Lfunc_end9-UARTx_SendData
 	.cfi_endproc
 	.cantunwind
 	.fnend
@@ -1225,297 +1340,307 @@ UARTx_RXBuff:
 .Linfo_string1:
 	.asciz	"../Utilities\\gd32e230c_eval.c" @ string offset=55
 .Linfo_string2:
-	.asciz	"E:\\project\\product\\GD32\\GD32E230\\E230 - TH\\MDK-ARM" @ string offset=85
+	.asciz	"E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" @ string offset=85
 .Linfo_string3:
-	.asciz	"u8SendNum"             @ string offset=136
+	.asciz	"u8SendNum"             @ string offset=127
 .Linfo_string4:
-	.asciz	"unsigned char"         @ string offset=146
+	.asciz	"unsigned char"         @ string offset=137
 .Linfo_string5:
-	.asciz	"uint8_t"               @ string offset=160
+	.asciz	"uint8_t"               @ string offset=151
 .Linfo_string6:
-	.asciz	"u8SendIndex"           @ string offset=168
+	.asciz	"u8SendIndex"           @ string offset=159
 .Linfo_string7:
-	.asciz	"UARTx_RXBuffLen"       @ string offset=180
+	.asciz	"UARTx_RXBuffLen"       @ string offset=171
 .Linfo_string8:
-	.asciz	"UARTx_RXBuff"          @ string offset=196
+	.asciz	"UARTx_RXBuff"          @ string offset=187
 .Linfo_string9:
-	.asciz	"__ARRAY_SIZE_TYPE__"   @ string offset=209
+	.asciz	"__ARRAY_SIZE_TYPE__"   @ string offset=200
 .Linfo_string10:
-	.asciz	"UARTx_TXBUFF"          @ string offset=229
+	.asciz	"UARTx_TXBUFF"          @ string offset=220
 .Linfo_string11:
-	.asciz	"ch"                    @ string offset=242
+	.asciz	"ch"                    @ string offset=233
 .Linfo_string12:
-	.asciz	"char"                  @ string offset=245
+	.asciz	"char"                  @ string offset=236
 .Linfo_string13:
-	.asciz	"GPIO_CLK"              @ string offset=250
+	.asciz	"GPIO_CLK"              @ string offset=241
 .Linfo_string14:
-	.asciz	"unsigned short"        @ string offset=259
+	.asciz	"unsigned short"        @ string offset=250
 .Linfo_string15:
-	.asciz	"RCU_DMA"               @ string offset=274
+	.asciz	"RCU_DMA"               @ string offset=265
 .Linfo_string16:
-	.asciz	"RCU_CRC"               @ string offset=282
+	.asciz	"RCU_CRC"               @ string offset=273
 .Linfo_string17:
-	.asciz	"RCU_GPIOA"             @ string offset=290
+	.asciz	"RCU_GPIOA"             @ string offset=281
 .Linfo_string18:
-	.asciz	"RCU_GPIOB"             @ string offset=300
+	.asciz	"RCU_GPIOB"             @ string offset=291
 .Linfo_string19:
-	.asciz	"RCU_GPIOC"             @ string offset=310
+	.asciz	"RCU_GPIOC"             @ string offset=301
 .Linfo_string20:
-	.asciz	"RCU_GPIOF"             @ string offset=320
+	.asciz	"RCU_GPIOF"             @ string offset=311
 .Linfo_string21:
-	.asciz	"RCU_CFGCMP"            @ string offset=330
+	.asciz	"RCU_CFGCMP"            @ string offset=321
 .Linfo_string22:
-	.asciz	"RCU_ADC"               @ string offset=341
+	.asciz	"RCU_ADC"               @ string offset=332
 .Linfo_string23:
-	.asciz	"RCU_TIMER0"            @ string offset=349
+	.asciz	"RCU_TIMER0"            @ string offset=340
 .Linfo_string24:
-	.asciz	"RCU_SPI0"              @ string offset=360
+	.asciz	"RCU_SPI0"              @ string offset=351
 .Linfo_string25:
-	.asciz	"RCU_USART0"            @ string offset=369
+	.asciz	"RCU_USART0"            @ string offset=360
 .Linfo_string26:
-	.asciz	"RCU_TIMER14"           @ string offset=380
+	.asciz	"RCU_TIMER14"           @ string offset=371
 .Linfo_string27:
-	.asciz	"RCU_TIMER15"           @ string offset=392
+	.asciz	"RCU_TIMER15"           @ string offset=383
 .Linfo_string28:
-	.asciz	"RCU_TIMER16"           @ string offset=404
+	.asciz	"RCU_TIMER16"           @ string offset=395
 .Linfo_string29:
-	.asciz	"RCU_DBGMCU"            @ string offset=416
+	.asciz	"RCU_DBGMCU"            @ string offset=407
 .Linfo_string30:
-	.asciz	"RCU_TIMER2"            @ string offset=427
+	.asciz	"RCU_TIMER2"            @ string offset=418
 .Linfo_string31:
-	.asciz	"RCU_TIMER5"            @ string offset=438
+	.asciz	"RCU_TIMER5"            @ string offset=429
 .Linfo_string32:
-	.asciz	"RCU_TIMER13"           @ string offset=449
+	.asciz	"RCU_TIMER13"           @ string offset=440
 .Linfo_string33:
-	.asciz	"RCU_WWDGT"             @ string offset=461
+	.asciz	"RCU_WWDGT"             @ string offset=452
 .Linfo_string34:
-	.asciz	"RCU_SPI1"              @ string offset=471
+	.asciz	"RCU_SPI1"              @ string offset=462
 .Linfo_string35:
-	.asciz	"RCU_USART1"            @ string offset=480
+	.asciz	"RCU_USART1"            @ string offset=471
 .Linfo_string36:
-	.asciz	"RCU_I2C0"              @ string offset=491
+	.asciz	"RCU_I2C0"              @ string offset=482
 .Linfo_string37:
-	.asciz	"RCU_I2C1"              @ string offset=500
+	.asciz	"RCU_I2C1"              @ string offset=491
 .Linfo_string38:
-	.asciz	"RCU_PMU"               @ string offset=509
+	.asciz	"RCU_PMU"               @ string offset=500
 .Linfo_string39:
-	.asciz	"RCU_RTC"               @ string offset=517
+	.asciz	"RCU_RTC"               @ string offset=508
 .Linfo_string40:
-	.asciz	"rcu_periph_enum"       @ string offset=525
+	.asciz	"rcu_periph_enum"       @ string offset=516
 .Linfo_string41:
-	.asciz	"GPIO_PORT"             @ string offset=541
+	.asciz	"GPIO_PORT"             @ string offset=532
 .Linfo_string42:
-	.asciz	"unsigned int"          @ string offset=551
+	.asciz	"unsigned int"          @ string offset=542
 .Linfo_string43:
-	.asciz	"uint32_t"              @ string offset=564
+	.asciz	"uint32_t"              @ string offset=555
 .Linfo_string44:
-	.asciz	"GPIO_PIN"              @ string offset=573
+	.asciz	"GPIO_PIN"              @ string offset=564
 .Linfo_string45:
-	.asciz	"KEY_CLK"               @ string offset=582
+	.asciz	"KEY_CLK"               @ string offset=573
 .Linfo_string46:
-	.asciz	"KEY_PORT"              @ string offset=590
+	.asciz	"KEY_PORT"              @ string offset=581
 .Linfo_string47:
-	.asciz	"KEY_PIN"               @ string offset=599
+	.asciz	"KEY_PIN"               @ string offset=590
 .Linfo_string48:
-	.asciz	"KEY_IRQn"              @ string offset=607
+	.asciz	"KEY_IRQn"              @ string offset=598
 .Linfo_string49:
-	.asciz	"KEY_PORT_SOURCE"       @ string offset=616
+	.asciz	"KEY_PORT_SOURCE"       @ string offset=607
 .Linfo_string50:
-	.asciz	"KEY_PIN_SOURCE"        @ string offset=632
+	.asciz	"KEY_PIN_SOURCE"        @ string offset=623
 .Linfo_string51:
-	.asciz	"KEY_EXTI_LINE"         @ string offset=647
+	.asciz	"KEY_EXTI_LINE"         @ string offset=638
 .Linfo_string52:
-	.asciz	"EXTI_0"                @ string offset=661
+	.asciz	"EXTI_0"                @ string offset=652
 .Linfo_string53:
-	.asciz	"EXTI_1"                @ string offset=668
+	.asciz	"EXTI_1"                @ string offset=659
 .Linfo_string54:
-	.asciz	"EXTI_2"                @ string offset=675
+	.asciz	"EXTI_2"                @ string offset=666
 .Linfo_string55:
-	.asciz	"EXTI_3"                @ string offset=682
+	.asciz	"EXTI_3"                @ string offset=673
 .Linfo_string56:
-	.asciz	"EXTI_4"                @ string offset=689
+	.asciz	"EXTI_4"                @ string offset=680
 .Linfo_string57:
-	.asciz	"EXTI_5"                @ string offset=696
+	.asciz	"EXTI_5"                @ string offset=687
 .Linfo_string58:
-	.asciz	"EXTI_6"                @ string offset=703
+	.asciz	"EXTI_6"                @ string offset=694
 .Linfo_string59:
-	.asciz	"EXTI_7"                @ string offset=710
+	.asciz	"EXTI_7"                @ string offset=701
 .Linfo_string60:
-	.asciz	"EXTI_8"                @ string offset=717
+	.asciz	"EXTI_8"                @ string offset=708
 .Linfo_string61:
-	.asciz	"EXTI_9"                @ string offset=724
+	.asciz	"EXTI_9"                @ string offset=715
 .Linfo_string62:
-	.asciz	"EXTI_10"               @ string offset=731
+	.asciz	"EXTI_10"               @ string offset=722
 .Linfo_string63:
-	.asciz	"EXTI_11"               @ string offset=739
+	.asciz	"EXTI_11"               @ string offset=730
 .Linfo_string64:
-	.asciz	"EXTI_12"               @ string offset=747
+	.asciz	"EXTI_12"               @ string offset=738
 .Linfo_string65:
-	.asciz	"EXTI_13"               @ string offset=755
+	.asciz	"EXTI_13"               @ string offset=746
 .Linfo_string66:
-	.asciz	"EXTI_14"               @ string offset=763
+	.asciz	"EXTI_14"               @ string offset=754
 .Linfo_string67:
-	.asciz	"EXTI_15"               @ string offset=771
+	.asciz	"EXTI_15"               @ string offset=762
 .Linfo_string68:
-	.asciz	"EXTI_16"               @ string offset=779
+	.asciz	"EXTI_16"               @ string offset=770
 .Linfo_string69:
-	.asciz	"EXTI_17"               @ string offset=787
+	.asciz	"EXTI_17"               @ string offset=778
 .Linfo_string70:
-	.asciz	"EXTI_18"               @ string offset=795
+	.asciz	"EXTI_18"               @ string offset=786
 .Linfo_string71:
-	.asciz	"EXTI_19"               @ string offset=803
+	.asciz	"EXTI_19"               @ string offset=794
 .Linfo_string72:
-	.asciz	"EXTI_20"               @ string offset=811
+	.asciz	"EXTI_20"               @ string offset=802
 .Linfo_string73:
-	.asciz	"EXTI_21"               @ string offset=819
+	.asciz	"EXTI_21"               @ string offset=810
 .Linfo_string74:
-	.asciz	"EXTI_22"               @ string offset=827
+	.asciz	"EXTI_22"               @ string offset=818
 .Linfo_string75:
-	.asciz	"EXTI_23"               @ string offset=835
+	.asciz	"EXTI_23"               @ string offset=826
 .Linfo_string76:
-	.asciz	"EXTI_24"               @ string offset=843
+	.asciz	"EXTI_24"               @ string offset=834
 .Linfo_string77:
-	.asciz	"EXTI_25"               @ string offset=851
+	.asciz	"EXTI_25"               @ string offset=842
 .Linfo_string78:
-	.asciz	"EXTI_26"               @ string offset=859
+	.asciz	"EXTI_26"               @ string offset=850
 .Linfo_string79:
-	.asciz	"EXTI_27"               @ string offset=867
+	.asciz	"EXTI_27"               @ string offset=858
 .Linfo_string80:
-	.asciz	"exti_line_enum"        @ string offset=875
+	.asciz	"exti_line_enum"        @ string offset=866
 .Linfo_string81:
-	.asciz	"COM_CLK"               @ string offset=890
+	.asciz	"COM_CLK"               @ string offset=881
 .Linfo_string82:
-	.asciz	"COM_TX_PIN"            @ string offset=898
+	.asciz	"COM_TX_PIN"            @ string offset=889
 .Linfo_string83:
-	.asciz	"COM_RX_PIN"            @ string offset=909
+	.asciz	"COM_RX_PIN"            @ string offset=900
 .Linfo_string84:
-	.asciz	"LED1"                  @ string offset=920
+	.asciz	"LED1"                  @ string offset=911
 .Linfo_string85:
-	.asciz	"LED2"                  @ string offset=925
+	.asciz	"LED2"                  @ string offset=916
 .Linfo_string86:
-	.asciz	"LED3"                  @ string offset=930
+	.asciz	"LED3"                  @ string offset=921
 .Linfo_string87:
-	.asciz	"LED4"                  @ string offset=935
+	.asciz	"LED4"                  @ string offset=926
 .Linfo_string88:
-	.asciz	"KEY_WAKEUP"            @ string offset=940
+	.asciz	"KEY_WAKEUP"            @ string offset=931
 .Linfo_string89:
-	.asciz	"KEY_TAMPER"            @ string offset=951
+	.asciz	"KEY_TAMPER"            @ string offset=942
 .Linfo_string90:
-	.asciz	"KEY_MODE_GPIO"         @ string offset=962
+	.asciz	"KEY_MODE_GPIO"         @ string offset=953
 .Linfo_string91:
-	.asciz	"KEY_MODE_EXTI"         @ string offset=976
+	.asciz	"KEY_MODE_EXTI"         @ string offset=967
 .Linfo_string92:
-	.asciz	"EXTI_INTERRUPT"        @ string offset=990
+	.asciz	"EXTI_INTERRUPT"        @ string offset=981
 .Linfo_string93:
-	.asciz	"EXTI_EVENT"            @ string offset=1005
+	.asciz	"EXTI_EVENT"            @ string offset=996
 .Linfo_string94:
-	.asciz	"EXTI_TRIG_RISING"      @ string offset=1016
+	.asciz	"EXTI_TRIG_RISING"      @ string offset=1007
 .Linfo_string95:
-	.asciz	"EXTI_TRIG_FALLING"     @ string offset=1033
+	.asciz	"EXTI_TRIG_FALLING"     @ string offset=1024
 .Linfo_string96:
-	.asciz	"EXTI_TRIG_BOTH"        @ string offset=1051
+	.asciz	"EXTI_TRIG_BOTH"        @ string offset=1042
 .Linfo_string97:
-	.asciz	"RESET"                 @ string offset=1066
+	.asciz	"RESET"                 @ string offset=1057
 .Linfo_string98:
-	.asciz	"SET"                   @ string offset=1072
+	.asciz	"SET"                   @ string offset=1063
 .Linfo_string99:
-	.asciz	"USART_INT_FLAG_EB"     @ string offset=1076
+	.asciz	"USART_INT_FLAG_EB"     @ string offset=1067
 .Linfo_string100:
-	.asciz	"USART_INT_FLAG_RT"     @ string offset=1094
+	.asciz	"USART_INT_FLAG_RT"     @ string offset=1085
 .Linfo_string101:
-	.asciz	"USART_INT_FLAG_AM"     @ string offset=1112
+	.asciz	"USART_INT_FLAG_AM"     @ string offset=1103
 .Linfo_string102:
-	.asciz	"USART_INT_FLAG_PERR"   @ string offset=1130
+	.asciz	"USART_INT_FLAG_PERR"   @ string offset=1121
 .Linfo_string103:
-	.asciz	"USART_INT_FLAG_TBE"    @ string offset=1150
+	.asciz	"USART_INT_FLAG_TBE"    @ string offset=1141
 .Linfo_string104:
-	.asciz	"USART_INT_FLAG_TC"     @ string offset=1169
+	.asciz	"USART_INT_FLAG_TC"     @ string offset=1160
 .Linfo_string105:
-	.asciz	"USART_INT_FLAG_RBNE"   @ string offset=1187
+	.asciz	"USART_INT_FLAG_RBNE"   @ string offset=1178
 .Linfo_string106:
-	.asciz	"USART_INT_FLAG_RBNE_ORERR" @ string offset=1207
+	.asciz	"USART_INT_FLAG_RBNE_ORERR" @ string offset=1198
 .Linfo_string107:
-	.asciz	"USART_INT_FLAG_IDLE"   @ string offset=1233
+	.asciz	"USART_INT_FLAG_IDLE"   @ string offset=1224
 .Linfo_string108:
-	.asciz	"USART_INT_FLAG_LBD"    @ string offset=1253
+	.asciz	"USART_INT_FLAG_LBD"    @ string offset=1244
 .Linfo_string109:
-	.asciz	"USART_INT_FLAG_WU"     @ string offset=1272
+	.asciz	"USART_INT_FLAG_WU"     @ string offset=1263
 .Linfo_string110:
-	.asciz	"USART_INT_FLAG_CTS"    @ string offset=1290
+	.asciz	"USART_INT_FLAG_CTS"    @ string offset=1281
 .Linfo_string111:
-	.asciz	"USART_INT_FLAG_ERR_NERR" @ string offset=1309
+	.asciz	"USART_INT_FLAG_ERR_NERR" @ string offset=1300
 .Linfo_string112:
-	.asciz	"USART_INT_FLAG_ERR_ORERR" @ string offset=1333
+	.asciz	"USART_INT_FLAG_ERR_ORERR" @ string offset=1324
 .Linfo_string113:
-	.asciz	"USART_INT_FLAG_ERR_FERR" @ string offset=1358
+	.asciz	"USART_INT_FLAG_ERR_FERR" @ string offset=1349
 .Linfo_string114:
-	.asciz	"USART_INT_FLAG_RFF"    @ string offset=1382
+	.asciz	"USART_INT_FLAG_RFF"    @ string offset=1373
 .Linfo_string115:
-	.asciz	"USART_INT_EB"          @ string offset=1401
+	.asciz	"USART_INT_EB"          @ string offset=1392
 .Linfo_string116:
-	.asciz	"USART_INT_RT"          @ string offset=1414
+	.asciz	"USART_INT_RT"          @ string offset=1405
 .Linfo_string117:
-	.asciz	"USART_INT_AM"          @ string offset=1427
+	.asciz	"USART_INT_AM"          @ string offset=1418
 .Linfo_string118:
-	.asciz	"USART_INT_PERR"        @ string offset=1440
+	.asciz	"USART_INT_PERR"        @ string offset=1431
 .Linfo_string119:
-	.asciz	"USART_INT_TBE"         @ string offset=1455
+	.asciz	"USART_INT_TBE"         @ string offset=1446
 .Linfo_string120:
-	.asciz	"USART_INT_TC"          @ string offset=1469
+	.asciz	"USART_INT_TC"          @ string offset=1460
 .Linfo_string121:
-	.asciz	"USART_INT_RBNE"        @ string offset=1482
+	.asciz	"USART_INT_RBNE"        @ string offset=1473
 .Linfo_string122:
-	.asciz	"USART_INT_IDLE"        @ string offset=1497
+	.asciz	"USART_INT_IDLE"        @ string offset=1488
 .Linfo_string123:
-	.asciz	"USART_INT_LBD"         @ string offset=1512
+	.asciz	"USART_INT_LBD"         @ string offset=1503
 .Linfo_string124:
-	.asciz	"USART_INT_WU"          @ string offset=1526
+	.asciz	"USART_INT_WU"          @ string offset=1517
 .Linfo_string125:
-	.asciz	"USART_INT_CTS"         @ string offset=1539
+	.asciz	"USART_INT_CTS"         @ string offset=1530
 .Linfo_string126:
-	.asciz	"USART_INT_ERR"         @ string offset=1553
+	.asciz	"USART_INT_ERR"         @ string offset=1544
 .Linfo_string127:
-	.asciz	"USART_INT_RFF"         @ string offset=1567
+	.asciz	"USART_INT_RFF"         @ string offset=1558
 .Linfo_string128:
-	.asciz	"gd_eval_led_init"      @ string offset=1581
+	.asciz	"gd_eval_led_init"      @ string offset=1572
 .Linfo_string129:
-	.asciz	"gd_eval_led_on"        @ string offset=1598
+	.asciz	"gd_eval_led_on"        @ string offset=1589
 .Linfo_string130:
-	.asciz	"gd_eval_led_off"       @ string offset=1613
+	.asciz	"gd_eval_led_off"       @ string offset=1604
 .Linfo_string131:
-	.asciz	"gd_eval_led_toggle"    @ string offset=1629
+	.asciz	"gd_eval_led_toggle"    @ string offset=1620
 .Linfo_string132:
-	.asciz	"gd_eval_key_init"      @ string offset=1648
+	.asciz	"gd_eval_key_init"      @ string offset=1639
 .Linfo_string133:
-	.asciz	"gd_eval_key_state_get" @ string offset=1665
+	.asciz	"gd_eval_key_state_get" @ string offset=1656
 .Linfo_string134:
-	.asciz	"gd_eval_com_init"      @ string offset=1687
+	.asciz	"gd_eval_com_init"      @ string offset=1678
 .Linfo_string135:
-	.asciz	"USART0_IRQHandler"     @ string offset=1704
+	.asciz	"Delayms"               @ string offset=1695
 .Linfo_string136:
-	.asciz	"UARTx_SendData"        @ string offset=1722
+	.asciz	"USART0_IRQHandler"     @ string offset=1703
 .Linfo_string137:
-	.asciz	"lednum"                @ string offset=1737
+	.asciz	"UARTx_SendData"        @ string offset=1721
 .Linfo_string138:
-	.asciz	"led_typedef_enum"      @ string offset=1744
+	.asciz	"lednum"                @ string offset=1736
 .Linfo_string139:
-	.asciz	"keynum"                @ string offset=1761
+	.asciz	"led_typedef_enum"      @ string offset=1743
 .Linfo_string140:
-	.asciz	"key_typedef_enum"      @ string offset=1768
+	.asciz	"keynum"                @ string offset=1760
 .Linfo_string141:
-	.asciz	"keymode"               @ string offset=1785
+	.asciz	"key_typedef_enum"      @ string offset=1767
 .Linfo_string142:
-	.asciz	"keymode_typedef_enum"  @ string offset=1793
+	.asciz	"keymode"               @ string offset=1784
 .Linfo_string143:
-	.asciz	"com"                   @ string offset=1814
+	.asciz	"keymode_typedef_enum"  @ string offset=1792
 .Linfo_string144:
-	.asciz	"COM_ID"                @ string offset=1818
+	.asciz	"com"                   @ string offset=1813
 .Linfo_string145:
-	.asciz	"UARTx_SendBuff"        @ string offset=1825
+	.asciz	"COM_ID"                @ string offset=1817
 .Linfo_string146:
-	.asciz	"Len"                   @ string offset=1840
+	.asciz	"ms"                    @ string offset=1824
 .Linfo_string147:
-	.asciz	"i"                     @ string offset=1844
+	.asciz	"uint16_t"              @ string offset=1827
+.Linfo_string148:
+	.asciz	"i"                     @ string offset=1836
+.Linfo_string149:
+	.asciz	"j"                     @ string offset=1838
+.Linfo_string150:
+	.asciz	"k"                     @ string offset=1840
+.Linfo_string151:
+	.asciz	"UARTx_SendBuff"        @ string offset=1842
+.Linfo_string152:
+	.asciz	"Len"                   @ string offset=1857
 	.section	.debug_abbrev,"",%progbits
 	.byte	1                       @ Abbreviation Code
 	.byte	17                      @ DW_TAG_compile_unit
@@ -1790,7 +1915,7 @@ UARTx_RXBuff:
 	.byte	0                       @ EOM(2)
 	.byte	22                      @ Abbreviation Code
 	.byte	46                      @ DW_TAG_subprogram
-	.byte	0                       @ DW_CHILDREN_no
+	.byte	1                       @ DW_CHILDREN_yes
 	.byte	17                      @ DW_AT_low_pc
 	.byte	1                       @ DW_FORM_addr
 	.byte	18                      @ DW_AT_high_pc
@@ -1810,6 +1935,57 @@ UARTx_RXBuff:
 	.byte	0                       @ EOM(1)
 	.byte	0                       @ EOM(2)
 	.byte	23                      @ Abbreviation Code
+	.byte	5                       @ DW_TAG_formal_parameter
+	.byte	0                       @ DW_CHILDREN_no
+	.byte	2                       @ DW_AT_location
+	.byte	10                      @ DW_FORM_block1
+	.byte	3                       @ DW_AT_name
+	.byte	14                      @ DW_FORM_strp
+	.byte	58                      @ DW_AT_decl_file
+	.byte	11                      @ DW_FORM_data1
+	.byte	59                      @ DW_AT_decl_line
+	.byte	5                       @ DW_FORM_data2
+	.byte	73                      @ DW_AT_type
+	.byte	19                      @ DW_FORM_ref4
+	.byte	0                       @ EOM(1)
+	.byte	0                       @ EOM(2)
+	.byte	24                      @ Abbreviation Code
+	.byte	52                      @ DW_TAG_variable
+	.byte	0                       @ DW_CHILDREN_no
+	.byte	2                       @ DW_AT_location
+	.byte	10                      @ DW_FORM_block1
+	.byte	3                       @ DW_AT_name
+	.byte	14                      @ DW_FORM_strp
+	.byte	58                      @ DW_AT_decl_file
+	.byte	11                      @ DW_FORM_data1
+	.byte	59                      @ DW_AT_decl_line
+	.byte	5                       @ DW_FORM_data2
+	.byte	73                      @ DW_AT_type
+	.byte	19                      @ DW_FORM_ref4
+	.byte	0                       @ EOM(1)
+	.byte	0                       @ EOM(2)
+	.byte	25                      @ Abbreviation Code
+	.byte	46                      @ DW_TAG_subprogram
+	.byte	0                       @ DW_CHILDREN_no
+	.byte	17                      @ DW_AT_low_pc
+	.byte	1                       @ DW_FORM_addr
+	.byte	18                      @ DW_AT_high_pc
+	.byte	1                       @ DW_FORM_addr
+	.byte	64                      @ DW_AT_frame_base
+	.byte	10                      @ DW_FORM_block1
+	.byte	3                       @ DW_AT_name
+	.byte	14                      @ DW_FORM_strp
+	.byte	58                      @ DW_AT_decl_file
+	.byte	11                      @ DW_FORM_data1
+	.byte	59                      @ DW_AT_decl_line
+	.byte	5                       @ DW_FORM_data2
+	.byte	39                      @ DW_AT_prototyped
+	.byte	12                      @ DW_FORM_flag
+	.byte	63                      @ DW_AT_external
+	.byte	12                      @ DW_FORM_flag
+	.byte	0                       @ EOM(1)
+	.byte	0                       @ EOM(2)
+	.byte	26                      @ Abbreviation Code
 	.byte	46                      @ DW_TAG_subprogram
 	.byte	1                       @ DW_CHILDREN_yes
 	.byte	17                      @ DW_AT_low_pc
@@ -1832,36 +2008,6 @@ UARTx_RXBuff:
 	.byte	12                      @ DW_FORM_flag
 	.byte	0                       @ EOM(1)
 	.byte	0                       @ EOM(2)
-	.byte	24                      @ Abbreviation Code
-	.byte	5                       @ DW_TAG_formal_parameter
-	.byte	0                       @ DW_CHILDREN_no
-	.byte	2                       @ DW_AT_location
-	.byte	10                      @ DW_FORM_block1
-	.byte	3                       @ DW_AT_name
-	.byte	14                      @ DW_FORM_strp
-	.byte	58                      @ DW_AT_decl_file
-	.byte	11                      @ DW_FORM_data1
-	.byte	59                      @ DW_AT_decl_line
-	.byte	5                       @ DW_FORM_data2
-	.byte	73                      @ DW_AT_type
-	.byte	19                      @ DW_FORM_ref4
-	.byte	0                       @ EOM(1)
-	.byte	0                       @ EOM(2)
-	.byte	25                      @ Abbreviation Code
-	.byte	52                      @ DW_TAG_variable
-	.byte	0                       @ DW_CHILDREN_no
-	.byte	2                       @ DW_AT_location
-	.byte	10                      @ DW_FORM_block1
-	.byte	3                       @ DW_AT_name
-	.byte	14                      @ DW_FORM_strp
-	.byte	58                      @ DW_AT_decl_file
-	.byte	11                      @ DW_FORM_data1
-	.byte	59                      @ DW_AT_decl_line
-	.byte	5                       @ DW_FORM_data2
-	.byte	73                      @ DW_AT_type
-	.byte	19                      @ DW_FORM_ref4
-	.byte	0                       @ EOM(1)
-	.byte	0                       @ EOM(2)
 	.byte	0                       @ EOM(3)
 	.section	.debug_info,"",%progbits
 .Lcu_begin0:
@@ -1870,7 +2016,7 @@ UARTx_RXBuff:
 	.short	3                       @ DWARF version number
 	.long	.debug_abbrev           @ Offset Into Abbrev. Section
 	.byte	4                       @ Address Size (in bytes)
-	.byte	1                       @ Abbrev [1] 0xb:0x6e9 DW_TAG_compile_unit
+	.byte	1                       @ Abbrev [1] 0xb:0x745 DW_TAG_compile_unit
 	.long	.Linfo_string0          @ DW_AT_producer
 	.short	12                      @ DW_AT_language
 	.long	.Linfo_string1          @ DW_AT_name
@@ -1947,7 +2093,7 @@ UARTx_RXBuff:
 	.long	185                     @ DW_AT_type
 	.byte	1                       @ DW_AT_external
 	.byte	2                       @ DW_AT_decl_file
-	.short	264                     @ DW_AT_decl_line
+	.short	270                     @ DW_AT_decl_line
 	.byte	5                       @ DW_AT_location
 	.byte	3
 	.long	ch
@@ -2509,10 +2655,10 @@ UARTx_RXBuff:
 	.byte	2                       @ DW_AT_location
 	.byte	145
 	.byte	28
-	.long	.Linfo_string137        @ DW_AT_name
+	.long	.Linfo_string138        @ DW_AT_name
 	.byte	2                       @ DW_AT_decl_file
 	.byte	103                     @ DW_AT_decl_line
-	.long	1746                    @ DW_AT_type
+	.long	1827                    @ DW_AT_type
 	.byte	0                       @ End Of Children Mark
 	.byte	18                      @ Abbrev [18] 0x58c:0x22 DW_TAG_subprogram
 	.long	.Lfunc_begin1           @ DW_AT_low_pc
@@ -2528,10 +2674,10 @@ UARTx_RXBuff:
 	.byte	2                       @ DW_AT_location
 	.byte	145
 	.byte	0
-	.long	.Linfo_string137        @ DW_AT_name
+	.long	.Linfo_string138        @ DW_AT_name
 	.byte	2                       @ DW_AT_decl_file
 	.byte	124                     @ DW_AT_decl_line
-	.long	1746                    @ DW_AT_type
+	.long	1827                    @ DW_AT_type
 	.byte	0                       @ End Of Children Mark
 	.byte	18                      @ Abbrev [18] 0x5ae:0x22 DW_TAG_subprogram
 	.long	.Lfunc_begin2           @ DW_AT_low_pc
@@ -2547,10 +2693,10 @@ UARTx_RXBuff:
 	.byte	2                       @ DW_AT_location
 	.byte	145
 	.byte	0
-	.long	.Linfo_string137        @ DW_AT_name
+	.long	.Linfo_string138        @ DW_AT_name
 	.byte	2                       @ DW_AT_decl_file
 	.byte	139                     @ DW_AT_decl_line
-	.long	1746                    @ DW_AT_type
+	.long	1827                    @ DW_AT_type
 	.byte	0                       @ End Of Children Mark
 	.byte	18                      @ Abbrev [18] 0x5d0:0x22 DW_TAG_subprogram
 	.long	.Lfunc_begin3           @ DW_AT_low_pc
@@ -2566,10 +2712,10 @@ UARTx_RXBuff:
 	.byte	2                       @ DW_AT_location
 	.byte	145
 	.byte	0
-	.long	.Linfo_string137        @ DW_AT_name
+	.long	.Linfo_string138        @ DW_AT_name
 	.byte	2                       @ DW_AT_decl_file
 	.byte	154                     @ DW_AT_decl_line
-	.long	1746                    @ DW_AT_type
+	.long	1827                    @ DW_AT_type
 	.byte	0                       @ End Of Children Mark
 	.byte	18                      @ Abbrev [18] 0x5f2:0x30 DW_TAG_subprogram
 	.long	.Lfunc_begin4           @ DW_AT_low_pc
@@ -2585,18 +2731,18 @@ UARTx_RXBuff:
 	.byte	2                       @ DW_AT_location
 	.byte	145
 	.byte	36
-	.long	.Linfo_string139        @ DW_AT_name
+	.long	.Linfo_string140        @ DW_AT_name
 	.byte	2                       @ DW_AT_decl_file
 	.byte	170                     @ DW_AT_decl_line
-	.long	1757                    @ DW_AT_type
+	.long	1838                    @ DW_AT_type
 	.byte	19                      @ Abbrev [19] 0x613:0xe DW_TAG_formal_parameter
 	.byte	2                       @ DW_AT_location
 	.byte	145
 	.byte	32
-	.long	.Linfo_string141        @ DW_AT_name
+	.long	.Linfo_string142        @ DW_AT_name
 	.byte	2                       @ DW_AT_decl_file
 	.byte	170                     @ DW_AT_decl_line
-	.long	1768                    @ DW_AT_type
+	.long	1849                    @ DW_AT_type
 	.byte	0                       @ End Of Children Mark
 	.byte	20                      @ Abbrev [20] 0x622:0x26 DW_TAG_subprogram
 	.long	.Lfunc_begin5           @ DW_AT_low_pc
@@ -2613,10 +2759,10 @@ UARTx_RXBuff:
 	.byte	2                       @ DW_AT_location
 	.byte	145
 	.byte	12
-	.long	.Linfo_string139        @ DW_AT_name
+	.long	.Linfo_string140        @ DW_AT_name
 	.byte	2                       @ DW_AT_decl_file
 	.byte	200                     @ DW_AT_decl_line
-	.long	1757                    @ DW_AT_type
+	.long	1838                    @ DW_AT_type
 	.byte	0                       @ End Of Children Mark
 	.byte	18                      @ Abbrev [18] 0x648:0x30 DW_TAG_subprogram
 	.long	.Lfunc_begin6           @ DW_AT_low_pc
@@ -2632,7 +2778,7 @@ UARTx_RXBuff:
 	.byte	2                       @ DW_AT_location
 	.byte	145
 	.byte	28
-	.long	.Linfo_string143        @ DW_AT_name
+	.long	.Linfo_string144        @ DW_AT_name
 	.byte	2                       @ DW_AT_decl_file
 	.byte	212                     @ DW_AT_decl_line
 	.long	463                     @ DW_AT_type
@@ -2640,72 +2786,120 @@ UARTx_RXBuff:
 	.byte	2                       @ DW_AT_location
 	.byte	145
 	.byte	24
-	.long	.Linfo_string144        @ DW_AT_name
+	.long	.Linfo_string145        @ DW_AT_name
 	.byte	2                       @ DW_AT_decl_file
 	.byte	214                     @ DW_AT_decl_line
 	.long	463                     @ DW_AT_type
 	.byte	0                       @ End Of Children Mark
-	.byte	22                      @ Abbrev [22] 0x678:0x14 DW_TAG_subprogram
+	.byte	22                      @ Abbrev [22] 0x678:0x51 DW_TAG_subprogram
 	.long	.Lfunc_begin7           @ DW_AT_low_pc
 	.long	.Lfunc_end7             @ DW_AT_high_pc
 	.byte	1                       @ DW_AT_frame_base
 	.byte	93
 	.long	.Linfo_string135        @ DW_AT_name
 	.byte	2                       @ DW_AT_decl_file
-	.short	265                     @ DW_AT_decl_line
+	.short	263                     @ DW_AT_decl_line
 	.byte	1                       @ DW_AT_prototyped
 	.byte	1                       @ DW_AT_external
-	.byte	23                      @ Abbrev [23] 0x68c:0x46 DW_TAG_subprogram
+	.byte	23                      @ Abbrev [23] 0x68c:0xf DW_TAG_formal_parameter
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	12
+	.long	.Linfo_string146        @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.short	263                     @ DW_AT_decl_line
+	.long	1860                    @ DW_AT_type
+	.byte	24                      @ Abbrev [24] 0x69b:0xf DW_TAG_variable
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	8
+	.long	.Linfo_string148        @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.short	265                     @ DW_AT_decl_line
+	.long	1860                    @ DW_AT_type
+	.byte	24                      @ Abbrev [24] 0x6aa:0xf DW_TAG_variable
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	4
+	.long	.Linfo_string149        @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.short	265                     @ DW_AT_decl_line
+	.long	1860                    @ DW_AT_type
+	.byte	24                      @ Abbrev [24] 0x6b9:0xf DW_TAG_variable
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	0
+	.long	.Linfo_string150        @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.short	266                     @ DW_AT_decl_line
+	.long	56                      @ DW_AT_type
+	.byte	0                       @ End Of Children Mark
+	.byte	25                      @ Abbrev [25] 0x6c9:0x14 DW_TAG_subprogram
 	.long	.Lfunc_begin8           @ DW_AT_low_pc
 	.long	.Lfunc_end8             @ DW_AT_high_pc
 	.byte	1                       @ DW_AT_frame_base
 	.byte	93
 	.long	.Linfo_string136        @ DW_AT_name
 	.byte	2                       @ DW_AT_decl_file
-	.short	315                     @ DW_AT_decl_line
+	.short	271                     @ DW_AT_decl_line
+	.byte	1                       @ DW_AT_prototyped
+	.byte	1                       @ DW_AT_external
+	.byte	26                      @ Abbrev [26] 0x6dd:0x46 DW_TAG_subprogram
+	.long	.Lfunc_begin9           @ DW_AT_low_pc
+	.long	.Lfunc_end9             @ DW_AT_high_pc
+	.byte	1                       @ DW_AT_frame_base
+	.byte	93
+	.long	.Linfo_string137        @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.short	317                     @ DW_AT_decl_line
 	.byte	1                       @ DW_AT_prototyped
 	.long	463                     @ DW_AT_type
 	.byte	1                       @ DW_AT_external
-	.byte	24                      @ Abbrev [24] 0x6a4:0xf DW_TAG_formal_parameter
+	.byte	23                      @ Abbrev [23] 0x6f5:0xf DW_TAG_formal_parameter
 	.byte	2                       @ DW_AT_location
 	.byte	145
 	.byte	16
-	.long	.Linfo_string145        @ DW_AT_name
+	.long	.Linfo_string151        @ DW_AT_name
 	.byte	2                       @ DW_AT_decl_file
-	.short	315                     @ DW_AT_decl_line
+	.short	317                     @ DW_AT_decl_line
 	.long	1381                    @ DW_AT_type
-	.byte	24                      @ Abbrev [24] 0x6b3:0xf DW_TAG_formal_parameter
+	.byte	23                      @ Abbrev [23] 0x704:0xf DW_TAG_formal_parameter
 	.byte	2                       @ DW_AT_location
 	.byte	145
 	.byte	12
-	.long	.Linfo_string146        @ DW_AT_name
-	.byte	2                       @ DW_AT_decl_file
-	.short	315                     @ DW_AT_decl_line
-	.long	463                     @ DW_AT_type
-	.byte	25                      @ Abbrev [25] 0x6c2:0xf DW_TAG_variable
-	.byte	2                       @ DW_AT_location
-	.byte	145
-	.byte	8
-	.long	.Linfo_string147        @ DW_AT_name
+	.long	.Linfo_string152        @ DW_AT_name
 	.byte	2                       @ DW_AT_decl_file
 	.short	317                     @ DW_AT_decl_line
 	.long	463                     @ DW_AT_type
+	.byte	24                      @ Abbrev [24] 0x713:0xf DW_TAG_variable
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	8
+	.long	.Linfo_string148        @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.short	319                     @ DW_AT_decl_line
+	.long	463                     @ DW_AT_type
 	.byte	0                       @ End Of Children Mark
-	.byte	3                       @ Abbrev [3] 0x6d2:0xb DW_TAG_typedef
+	.byte	3                       @ Abbrev [3] 0x723:0xb DW_TAG_typedef
 	.long	980                     @ DW_AT_type
-	.long	.Linfo_string138        @ DW_AT_name
+	.long	.Linfo_string139        @ DW_AT_name
 	.byte	5                       @ DW_AT_decl_file
 	.byte	56                      @ DW_AT_decl_line
-	.byte	3                       @ Abbrev [3] 0x6dd:0xb DW_TAG_typedef
+	.byte	3                       @ Abbrev [3] 0x72e:0xb DW_TAG_typedef
 	.long	1013                    @ DW_AT_type
-	.long	.Linfo_string140        @ DW_AT_name
+	.long	.Linfo_string141        @ DW_AT_name
 	.byte	5                       @ DW_AT_decl_file
 	.byte	62                      @ DW_AT_decl_line
-	.byte	3                       @ Abbrev [3] 0x6e8:0xb DW_TAG_typedef
+	.byte	3                       @ Abbrev [3] 0x739:0xb DW_TAG_typedef
 	.long	1034                    @ DW_AT_type
-	.long	.Linfo_string142        @ DW_AT_name
+	.long	.Linfo_string143        @ DW_AT_name
 	.byte	5                       @ DW_AT_decl_file
 	.byte	68                      @ DW_AT_decl_line
+	.byte	3                       @ Abbrev [3] 0x744:0xb DW_TAG_typedef
+	.long	422                     @ DW_AT_type
+	.long	.Linfo_string147        @ DW_AT_name
+	.byte	1                       @ DW_AT_decl_file
+	.byte	63                      @ DW_AT_decl_line
 	.byte	0                       @ End Of Children Mark
 .Ldebug_info_end0:
 	.section	.debug_ranges,"",%progbits
@@ -2728,6 +2922,8 @@ UARTx_RXBuff:
 	.long	.Lfunc_end7
 	.long	.Lfunc_begin8
 	.long	.Lfunc_end8
+	.long	.Lfunc_begin9
+	.long	.Lfunc_end9
 	.long	0
 	.long	0
 	.ident	"Component: ARM Compiler 6.14 Tool: armclang [5db06c00]"

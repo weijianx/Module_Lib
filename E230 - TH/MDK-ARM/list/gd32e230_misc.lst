@@ -18,7 +18,7 @@
 	.eabi_attribute	26, 1	@ Tag_ABI_enum_size
 	.eabi_attribute	14, 0	@ Tag_ABI_PCS_R9_use
 	.file	"gd32e230_misc.c"
-	.file	1 "E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" "../GD32E230_Firmware_Library/CMSIS/GD/GD32E230/Include\\gd32e230.h"
+	.file	1 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/CMSIS/GD/GD32E230/Include\\gd32e230.h"
 	.file	2 "D:\\Keil_v5\\ARM\\ARMCLANG\\Bin\\..\\include" "stdint.h"
 	.file	3 "D:/Keil_v5\\Arm\\Packs\\ARM\\CMSIS\\5.7.0\\CMSIS\\Core\\Include" "core_cm23.h"
 	.section	.text.nvic_irq_enable,"ax",%progbits
@@ -30,7 +30,7 @@
 	.thumb_func
 nvic_irq_enable:
 .Lfunc_begin0:
-	.file	4 "E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source/gd32e230_misc.c"
+	.file	4 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source/gd32e230_misc.c"
 	.loc	4 48 0                  @ ../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source/gd32e230_misc.c:48:0
 	.fnstart
 	.cfi_sections .debug_frame
@@ -683,187 +683,187 @@ __arm_cp.10_0:
 .Linfo_string1:
 	.asciz	"../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source\\gd32e230_misc.c" @ string offset=55
 .Linfo_string2:
-	.asciz	"E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" @ string offset=136
+	.asciz	"E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" @ string offset=136
 .Linfo_string3:
-	.asciz	"signed char"           @ string offset=188
+	.asciz	"signed char"           @ string offset=178
 .Linfo_string4:
-	.asciz	"NonMaskableInt_IRQn"   @ string offset=200
+	.asciz	"NonMaskableInt_IRQn"   @ string offset=190
 .Linfo_string5:
-	.asciz	"HardFault_IRQn"        @ string offset=220
+	.asciz	"HardFault_IRQn"        @ string offset=210
 .Linfo_string6:
-	.asciz	"SVCall_IRQn"           @ string offset=235
+	.asciz	"SVCall_IRQn"           @ string offset=225
 .Linfo_string7:
-	.asciz	"PendSV_IRQn"           @ string offset=247
+	.asciz	"PendSV_IRQn"           @ string offset=237
 .Linfo_string8:
-	.asciz	"SysTick_IRQn"          @ string offset=259
+	.asciz	"SysTick_IRQn"          @ string offset=249
 .Linfo_string9:
-	.asciz	"WWDGT_IRQn"            @ string offset=272
+	.asciz	"WWDGT_IRQn"            @ string offset=262
 .Linfo_string10:
-	.asciz	"LVD_IRQn"              @ string offset=283
+	.asciz	"LVD_IRQn"              @ string offset=273
 .Linfo_string11:
-	.asciz	"RTC_IRQn"              @ string offset=292
+	.asciz	"RTC_IRQn"              @ string offset=282
 .Linfo_string12:
-	.asciz	"FMC_IRQn"              @ string offset=301
+	.asciz	"FMC_IRQn"              @ string offset=291
 .Linfo_string13:
-	.asciz	"RCU_IRQn"              @ string offset=310
+	.asciz	"RCU_IRQn"              @ string offset=300
 .Linfo_string14:
-	.asciz	"EXTI0_1_IRQn"          @ string offset=319
+	.asciz	"EXTI0_1_IRQn"          @ string offset=309
 .Linfo_string15:
-	.asciz	"EXTI2_3_IRQn"          @ string offset=332
+	.asciz	"EXTI2_3_IRQn"          @ string offset=322
 .Linfo_string16:
-	.asciz	"EXTI4_15_IRQn"         @ string offset=345
+	.asciz	"EXTI4_15_IRQn"         @ string offset=335
 .Linfo_string17:
-	.asciz	"DMA_Channel0_IRQn"     @ string offset=359
+	.asciz	"DMA_Channel0_IRQn"     @ string offset=349
 .Linfo_string18:
-	.asciz	"DMA_Channel1_2_IRQn"   @ string offset=377
+	.asciz	"DMA_Channel1_2_IRQn"   @ string offset=367
 .Linfo_string19:
-	.asciz	"DMA_Channel3_4_IRQn"   @ string offset=397
+	.asciz	"DMA_Channel3_4_IRQn"   @ string offset=387
 .Linfo_string20:
-	.asciz	"ADC_CMP_IRQn"          @ string offset=417
+	.asciz	"ADC_CMP_IRQn"          @ string offset=407
 .Linfo_string21:
-	.asciz	"TIMER0_BRK_UP_TRG_COM_IRQn" @ string offset=430
+	.asciz	"TIMER0_BRK_UP_TRG_COM_IRQn" @ string offset=420
 .Linfo_string22:
-	.asciz	"TIMER0_Channel_IRQn"   @ string offset=457
+	.asciz	"TIMER0_Channel_IRQn"   @ string offset=447
 .Linfo_string23:
-	.asciz	"TIMER2_IRQn"           @ string offset=477
+	.asciz	"TIMER2_IRQn"           @ string offset=467
 .Linfo_string24:
-	.asciz	"TIMER5_IRQn"           @ string offset=489
+	.asciz	"TIMER5_IRQn"           @ string offset=479
 .Linfo_string25:
-	.asciz	"TIMER13_IRQn"          @ string offset=501
+	.asciz	"TIMER13_IRQn"          @ string offset=491
 .Linfo_string26:
-	.asciz	"TIMER14_IRQn"          @ string offset=514
+	.asciz	"TIMER14_IRQn"          @ string offset=504
 .Linfo_string27:
-	.asciz	"TIMER15_IRQn"          @ string offset=527
+	.asciz	"TIMER15_IRQn"          @ string offset=517
 .Linfo_string28:
-	.asciz	"TIMER16_IRQn"          @ string offset=540
+	.asciz	"TIMER16_IRQn"          @ string offset=530
 .Linfo_string29:
-	.asciz	"I2C0_EV_IRQn"          @ string offset=553
+	.asciz	"I2C0_EV_IRQn"          @ string offset=543
 .Linfo_string30:
-	.asciz	"I2C1_EV_IRQn"          @ string offset=566
+	.asciz	"I2C1_EV_IRQn"          @ string offset=556
 .Linfo_string31:
-	.asciz	"SPI0_IRQn"             @ string offset=579
+	.asciz	"SPI0_IRQn"             @ string offset=569
 .Linfo_string32:
-	.asciz	"SPI1_IRQn"             @ string offset=589
+	.asciz	"SPI1_IRQn"             @ string offset=579
 .Linfo_string33:
-	.asciz	"USART0_IRQn"           @ string offset=599
+	.asciz	"USART0_IRQn"           @ string offset=589
 .Linfo_string34:
-	.asciz	"USART1_IRQn"           @ string offset=611
+	.asciz	"USART1_IRQn"           @ string offset=601
 .Linfo_string35:
-	.asciz	"I2C0_ER_IRQn"          @ string offset=623
+	.asciz	"I2C0_ER_IRQn"          @ string offset=613
 .Linfo_string36:
-	.asciz	"I2C1_ER_IRQn"          @ string offset=636
+	.asciz	"I2C1_ER_IRQn"          @ string offset=626
 .Linfo_string37:
-	.asciz	"IRQn"                  @ string offset=649
+	.asciz	"IRQn"                  @ string offset=639
 .Linfo_string38:
-	.asciz	"IRQn_Type"             @ string offset=654
+	.asciz	"IRQn_Type"             @ string offset=644
 .Linfo_string39:
-	.asciz	"unsigned int"          @ string offset=664
+	.asciz	"unsigned int"          @ string offset=654
 .Linfo_string40:
-	.asciz	"uint32_t"              @ string offset=677
+	.asciz	"uint32_t"              @ string offset=667
 .Linfo_string41:
-	.asciz	"CPUID"                 @ string offset=686
+	.asciz	"CPUID"                 @ string offset=676
 .Linfo_string42:
-	.asciz	"ICSR"                  @ string offset=692
+	.asciz	"ICSR"                  @ string offset=682
 .Linfo_string43:
-	.asciz	"VTOR"                  @ string offset=697
+	.asciz	"VTOR"                  @ string offset=687
 .Linfo_string44:
-	.asciz	"AIRCR"                 @ string offset=702
+	.asciz	"AIRCR"                 @ string offset=692
 .Linfo_string45:
-	.asciz	"SCR"                   @ string offset=708
+	.asciz	"SCR"                   @ string offset=698
 .Linfo_string46:
-	.asciz	"CCR"                   @ string offset=712
+	.asciz	"CCR"                   @ string offset=702
 .Linfo_string47:
-	.asciz	"RESERVED1"             @ string offset=716
+	.asciz	"RESERVED1"             @ string offset=706
 .Linfo_string48:
-	.asciz	"SHPR"                  @ string offset=726
+	.asciz	"SHPR"                  @ string offset=716
 .Linfo_string49:
-	.asciz	"__ARRAY_SIZE_TYPE__"   @ string offset=731
+	.asciz	"__ARRAY_SIZE_TYPE__"   @ string offset=721
 .Linfo_string50:
-	.asciz	"SHCSR"                 @ string offset=751
+	.asciz	"SHCSR"                 @ string offset=741
 .Linfo_string51:
-	.asciz	"SCB_Type"              @ string offset=757
+	.asciz	"SCB_Type"              @ string offset=747
 .Linfo_string52:
-	.asciz	"CTRL"                  @ string offset=766
+	.asciz	"CTRL"                  @ string offset=756
 .Linfo_string53:
-	.asciz	"LOAD"                  @ string offset=771
+	.asciz	"LOAD"                  @ string offset=761
 .Linfo_string54:
-	.asciz	"VAL"                   @ string offset=776
+	.asciz	"VAL"                   @ string offset=766
 .Linfo_string55:
-	.asciz	"CALIB"                 @ string offset=780
+	.asciz	"CALIB"                 @ string offset=770
 .Linfo_string56:
-	.asciz	"SysTick_Type"          @ string offset=786
+	.asciz	"SysTick_Type"          @ string offset=776
 .Linfo_string57:
-	.asciz	"int"                   @ string offset=799
+	.asciz	"int"                   @ string offset=789
 .Linfo_string58:
-	.asciz	"int32_t"               @ string offset=803
+	.asciz	"int32_t"               @ string offset=793
 .Linfo_string59:
-	.asciz	"ISER"                  @ string offset=811
+	.asciz	"ISER"                  @ string offset=801
 .Linfo_string60:
-	.asciz	"RESERVED0"             @ string offset=816
+	.asciz	"RESERVED0"             @ string offset=806
 .Linfo_string61:
-	.asciz	"ICER"                  @ string offset=826
+	.asciz	"ICER"                  @ string offset=816
 .Linfo_string62:
-	.asciz	"RSERVED1"              @ string offset=831
+	.asciz	"RSERVED1"              @ string offset=821
 .Linfo_string63:
-	.asciz	"ISPR"                  @ string offset=840
+	.asciz	"ISPR"                  @ string offset=830
 .Linfo_string64:
-	.asciz	"RESERVED2"             @ string offset=845
+	.asciz	"RESERVED2"             @ string offset=835
 .Linfo_string65:
-	.asciz	"ICPR"                  @ string offset=855
+	.asciz	"ICPR"                  @ string offset=845
 .Linfo_string66:
-	.asciz	"RESERVED3"             @ string offset=860
+	.asciz	"RESERVED3"             @ string offset=850
 .Linfo_string67:
-	.asciz	"IABR"                  @ string offset=870
+	.asciz	"IABR"                  @ string offset=860
 .Linfo_string68:
-	.asciz	"RESERVED4"             @ string offset=875
+	.asciz	"RESERVED4"             @ string offset=865
 .Linfo_string69:
-	.asciz	"ITNS"                  @ string offset=885
+	.asciz	"ITNS"                  @ string offset=875
 .Linfo_string70:
-	.asciz	"RESERVED5"             @ string offset=890
+	.asciz	"RESERVED5"             @ string offset=880
 .Linfo_string71:
-	.asciz	"IPR"                   @ string offset=900
+	.asciz	"IPR"                   @ string offset=890
 .Linfo_string72:
-	.asciz	"NVIC_Type"             @ string offset=904
+	.asciz	"NVIC_Type"             @ string offset=894
 .Linfo_string73:
-	.asciz	"nvic_irq_enable"       @ string offset=914
+	.asciz	"nvic_irq_enable"       @ string offset=904
 .Linfo_string74:
-	.asciz	"__NVIC_SetPriority"    @ string offset=930
+	.asciz	"__NVIC_SetPriority"    @ string offset=920
 .Linfo_string75:
-	.asciz	"__NVIC_EnableIRQ"      @ string offset=949
+	.asciz	"__NVIC_EnableIRQ"      @ string offset=939
 .Linfo_string76:
-	.asciz	"nvic_irq_disable"      @ string offset=966
+	.asciz	"nvic_irq_disable"      @ string offset=956
 .Linfo_string77:
-	.asciz	"__NVIC_DisableIRQ"     @ string offset=983
+	.asciz	"__NVIC_DisableIRQ"     @ string offset=973
 .Linfo_string78:
-	.asciz	"nvic_system_reset"     @ string offset=1001
+	.asciz	"nvic_system_reset"     @ string offset=991
 .Linfo_string79:
-	.asciz	"__NVIC_SystemReset"    @ string offset=1019
+	.asciz	"__NVIC_SystemReset"    @ string offset=1009
 .Linfo_string80:
-	.asciz	"nvic_vector_table_set" @ string offset=1038
+	.asciz	"nvic_vector_table_set" @ string offset=1028
 .Linfo_string81:
-	.asciz	"system_lowpower_set"   @ string offset=1060
+	.asciz	"system_lowpower_set"   @ string offset=1050
 .Linfo_string82:
-	.asciz	"system_lowpower_reset" @ string offset=1080
+	.asciz	"system_lowpower_reset" @ string offset=1070
 .Linfo_string83:
-	.asciz	"systick_clksource_set" @ string offset=1102
+	.asciz	"systick_clksource_set" @ string offset=1092
 .Linfo_string84:
-	.asciz	"nvic_irq"              @ string offset=1124
+	.asciz	"nvic_irq"              @ string offset=1114
 .Linfo_string85:
-	.asciz	"unsigned char"         @ string offset=1133
+	.asciz	"unsigned char"         @ string offset=1123
 .Linfo_string86:
-	.asciz	"uint8_t"               @ string offset=1147
+	.asciz	"uint8_t"               @ string offset=1137
 .Linfo_string87:
-	.asciz	"nvic_irq_priority"     @ string offset=1155
+	.asciz	"nvic_irq_priority"     @ string offset=1145
 .Linfo_string88:
-	.asciz	"priority"              @ string offset=1173
+	.asciz	"priority"              @ string offset=1163
 .Linfo_string89:
-	.asciz	"nvic_vict_tab"         @ string offset=1182
+	.asciz	"nvic_vict_tab"         @ string offset=1172
 .Linfo_string90:
-	.asciz	"offset"                @ string offset=1196
+	.asciz	"offset"                @ string offset=1186
 .Linfo_string91:
-	.asciz	"lowpower_mode"         @ string offset=1203
+	.asciz	"lowpower_mode"         @ string offset=1193
 .Linfo_string92:
-	.asciz	"systick_clksource"     @ string offset=1217
+	.asciz	"systick_clksource"     @ string offset=1207
 	.section	.debug_abbrev,"",%progbits
 	.byte	1                       @ Abbreviation Code
 	.byte	17                      @ DW_TAG_compile_unit

@@ -4,7 +4,7 @@
 #include "type.h"
 #include "para.h"
 #include "string.h"
-
+#include "TH_IIC.h"
 #include "SHT3x.h"
 
 
@@ -25,7 +25,7 @@ extern uint8_t Cur_Param[USER_DEFAULT_LEN];
 extern uint8_t const  User_Default_Param[USER_DEFAULT_LEN];
 
 
-uint8_t const SensorSoftVersion[8] = {0x07, 'G', 'D', '1', '.', '0', '.', '0'};      //软件版本  20200413
+uint8_t const SensorSoftVersion[10] = {0x07, 'G', 'D', '1', '.', '0', '.', '0'};      //软件版本  20200413
 
 extern SHT3_Typedef T_H;
 //**************************************************************************************************
@@ -255,7 +255,8 @@ void MBASC_Fun04(void)
             if(SlaveAdd >= 0x21 && SlaveAdd <= 0x25)
             {
                 //Data_Buf = (uint32_t)T_H.Temp[SlaveAdd - 0x21];       
-                Data_Buf = (uint32_t)T_H.Temp[0];      
+                Data_Buf = (uint32_t)T_H.Temp[0];   
+
             }
             else if(SlaveAdd >= 0x26 && SlaveAdd <= 0x29)
             {
@@ -396,10 +397,10 @@ void MBASC_Fun10()
 
             case 0x36:  
 				upload_persist = ((uint16_t)UARTx_RXBuff[7+index] << 8) + UARTx_RXBuff[8+index];
-                if(upload_persist < MBASC_AUTO_UPLOAD_NONE || upload_persist > MBASC_AUTO_UPLOAD_30S)
-                {
-                    break;
-                }
+//                if(upload_persist < MBASC_AUTO_UPLOAD_NONE || upload_persist > MBASC_AUTO_UPLOAD_30S)
+//                {
+//                    break;
+//                }
                 T_H.Upload_persist[T_H.dev_num] = upload_persist;
                 Flash_Write_MultiBytes(TEM_UPLOAD_PERSIST + T_H.dev_num, &T_H.Upload_persist[T_H.dev_num], 1);
                 break;
@@ -485,8 +486,9 @@ void MBASC_Fun10()
             case 0x4F:						               
                 break;                
 
-            case 0x70:						               
-                break; 
+            case 0x70:		
+				return ;
+//                break; 
                 
             default:
                 break;
@@ -622,6 +624,7 @@ void MBASC_Fun2B(void)
 //**************************************************************************************************
 void MBASC_Fun41(void)
 {
+	uint8_t buf[1]={0xFF};
     uint16_t ReadAdr = 0;
     uint16_t DataLength = 0;
     uint8_t ReadData;
@@ -644,20 +647,13 @@ void MBASC_Fun41(void)
     }
     else 
     {
-        Flash_Write_MultiBytes(1023,"\x0C", 1);
-        flash_read_MultiBytes(1023, &ReadData, 1);
-        if(ReadData == 0x0C)
-        {
-            SendBuf[SendLen++] = 0x00;
-            MBASC_SendMsg(SendBuf, SendLen);
-            while(0 != u8SendNum);                                              //????????,?????,????????????
-            NVIC_SystemReset();
-        }
-        else
-        {
-            SendBuf[SendLen++] = 0x01;
-            MBASC_SendMsg(SendBuf, SendLen); 
-        }
+	//	Flash_Write_OneByte(SOWAYFLASH_SRCPARA_ADDR,0xFF);
+		Flash_Write_MultiBytes(RUN_ADDR_BASE, &buf, 1);
+        SendBuf[SendLen++] = 0x00;
+        MBASC_SendMsg(SendBuf, SendLen);
+		Delay_1Ms(20);
+        NVIC_SystemReset();
+
     } 
 }     
      

@@ -28,7 +28,7 @@
 	.thumb_func
 Delay_Ms:
 .Lfunc_begin0:
-	.file	2 "E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" "../APP/Src/common.c"
+	.file	2 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../APP/Src/common.c"
 	.loc	2 4 0                   @ ../APP/Src/common.c:4:0
 	.fnstart
 	.cfi_sections .debug_frame
@@ -295,37 +295,37 @@ Unlong2Array:
 .Linfo_string1:
 	.asciz	"../APP/Src\\common.c"  @ string offset=55
 .Linfo_string2:
-	.asciz	"E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" @ string offset=75
+	.asciz	"E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" @ string offset=75
 .Linfo_string3:
-	.asciz	"unsigned char"         @ string offset=127
+	.asciz	"unsigned char"         @ string offset=117
 .Linfo_string4:
-	.asciz	"uint8_t"               @ string offset=141
+	.asciz	"uint8_t"               @ string offset=131
 .Linfo_string5:
-	.asciz	"Delay_Ms"              @ string offset=149
+	.asciz	"Delay_Ms"              @ string offset=139
 .Linfo_string6:
-	.asciz	"Delay_Us"              @ string offset=158
+	.asciz	"Delay_Us"              @ string offset=148
 .Linfo_string7:
-	.asciz	"Unshort2Array"         @ string offset=167
+	.asciz	"Unshort2Array"         @ string offset=157
 .Linfo_string8:
-	.asciz	"long32Array"           @ string offset=181
+	.asciz	"long32Array"           @ string offset=171
 .Linfo_string9:
-	.asciz	"Unlong2Array"          @ string offset=193
+	.asciz	"Unlong2Array"          @ string offset=183
 .Linfo_string10:
-	.asciz	"cnt"                   @ string offset=206
+	.asciz	"cnt"                   @ string offset=196
 .Linfo_string11:
-	.asciz	"unsigned int"          @ string offset=210
+	.asciz	"unsigned int"          @ string offset=200
 .Linfo_string12:
-	.asciz	"uint32_t"              @ string offset=223
+	.asciz	"uint32_t"              @ string offset=213
 .Linfo_string13:
-	.asciz	"SourceData"            @ string offset=232
+	.asciz	"SourceData"            @ string offset=222
 .Linfo_string14:
-	.asciz	"unsigned short"        @ string offset=243
+	.asciz	"unsigned short"        @ string offset=233
 .Linfo_string15:
-	.asciz	"uint16_t"              @ string offset=258
+	.asciz	"uint16_t"              @ string offset=248
 .Linfo_string16:
-	.asciz	"Array"                 @ string offset=267
+	.asciz	"Array"                 @ string offset=257
 .Linfo_string17:
-	.asciz	"i"                     @ string offset=273
+	.asciz	"i"                     @ string offset=263
 	.section	.debug_abbrev,"",%progbits
 	.byte	1                       @ Abbreviation Code
 	.byte	17                      @ DW_TAG_compile_unit

@@ -3036,7 +3036,7 @@ extern __attribute__((nothrow)) void _membitmovehb(void * , const void * , int ,
 extern __attribute__((nothrow)) void _membitmovewl(void * , const void * , int , int , size_t ) __attribute__((__nonnull__(1,2)));
 extern __attribute__((nothrow)) void _membitmovewb(void * , const void * , int , int , size_t ) __attribute__((__nonnull__(1,2)));
 # 45 "../BSP/Inc\\flash.h" 2
-# 89 "../BSP/Inc\\flash.h"
+# 88 "../BSP/Inc\\flash.h"
 uint8_t Flash_Read_OneByte(uint32_t RWAddr);
 
 void flash_read_multi(uint32_t readAdder, uint8_t *readBuf, uint16_t readLen);
@@ -3074,14 +3074,14 @@ uint8_t Flash_Read_OneByte(uint32_t RWAddr)
 
 void flash_read_multi(uint32_t readAdder, uint8_t *readBuf, uint16_t readLen)
 {
- uint8_t i;
+ uint16_t i;
 
  for(i=0; i<readLen; i++)
  {
-  *(readBuf + i) = Flash_Read_OneByte(readAdder + 0x0800F810);
+  *(readBuf + i) = Flash_Read_OneByte(readAdder + 0x08003000);
   readAdder++;
-  if(*(readBuf + i) == 0)
-   break;
+
+
  }
 }
 
@@ -3089,7 +3089,7 @@ void flash_read_multi(uint32_t readAdder, uint8_t *readBuf, uint16_t readLen)
 uint32_t flash_read_MultiBytes(uint32_t read_addr, uint8_t *pBuf, uint16_t len)
 {
     uint32_t i;
-    uint8_t *pSource = (uint8_t *)(read_addr + 0x0800F810);
+    uint8_t *pSource = (uint8_t *)(read_addr + 0x08003000);
 
 
 
@@ -3169,11 +3169,11 @@ uint8_t Flash_Write_MultiBytes(uint32_t RWAddr, uint8_t const *pWrbuf, uint16_t 
 
   fmc_unlock();
   fmc_flag_clear(((uint32_t)((uint32_t)0x01U<<(2)))|((uint32_t)((uint32_t)0x01U<<(3)))|((uint32_t)((uint32_t)0x01U<<(4)))|((uint32_t)((uint32_t)0x01U<<(5))));
-  fmc_page_erase(RWAddr + 0x0800F810);
+  fmc_page_erase(RWAddr + 0x08003000);
 
   for(i = 0; i < 1024;)
   {
-   fmc_word_program((0x0800F810 + WrAddr + i), (uint32_t)Flash_Buf[i/4]);
+   fmc_word_program((0x08003000 + WrAddr + i), (uint32_t)Flash_Buf[i/4]);
    i+=4;
   }
   fmc_lock();

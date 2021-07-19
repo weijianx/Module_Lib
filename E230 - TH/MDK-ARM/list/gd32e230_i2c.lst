@@ -18,9 +18,9 @@
 	.eabi_attribute	26, 1	@ Tag_ABI_enum_size
 	.eabi_attribute	14, 0	@ Tag_ABI_PCS_R9_use
 	.file	"gd32e230_i2c.c"
-	.file	1 "E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include\\gd32e230_rcu.h"
-	.file	2 "E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" "../GD32E230_Firmware_Library/CMSIS/GD/GD32E230/Include\\gd32e230.h"
-	.file	3 "E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include\\gd32e230_i2c.h"
+	.file	1 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include\\gd32e230_rcu.h"
+	.file	2 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/CMSIS/GD/GD32E230/Include\\gd32e230.h"
+	.file	3 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include\\gd32e230_i2c.h"
 	.file	4 "D:\\Keil_v5\\ARM\\ARMCLANG\\Bin\\..\\include" "stdint.h"
 	.section	.text.i2c_deinit,"ax",%progbits
 	.hidden	i2c_deinit              @ -- Begin function i2c_deinit
@@ -31,7 +31,7 @@
 	.thumb_func
 i2c_deinit:
 .Lfunc_begin0:
-	.file	5 "E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source/gd32e230_i2c.c"
+	.file	5 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source/gd32e230_i2c.c"
 	.loc	5 56 0                  @ ../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source/gd32e230_i2c.c:56:0
 	.fnstart
 	.cfi_sections .debug_frame
@@ -2334,317 +2334,317 @@ __arm_cp.34_0:
 .Linfo_string1:
 	.asciz	"../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source\\gd32e230_i2c.c" @ string offset=55
 .Linfo_string2:
-	.asciz	"E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" @ string offset=135
+	.asciz	"E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" @ string offset=135
 .Linfo_string3:
-	.asciz	"unsigned short"        @ string offset=187
+	.asciz	"unsigned short"        @ string offset=177
 .Linfo_string4:
-	.asciz	"RCU_GPIOARST"          @ string offset=202
+	.asciz	"RCU_GPIOARST"          @ string offset=192
 .Linfo_string5:
-	.asciz	"RCU_GPIOBRST"          @ string offset=215
+	.asciz	"RCU_GPIOBRST"          @ string offset=205
 .Linfo_string6:
-	.asciz	"RCU_GPIOCRST"          @ string offset=228
+	.asciz	"RCU_GPIOCRST"          @ string offset=218
 .Linfo_string7:
-	.asciz	"RCU_GPIOFRST"          @ string offset=241
+	.asciz	"RCU_GPIOFRST"          @ string offset=231
 .Linfo_string8:
-	.asciz	"RCU_CFGCMPRST"         @ string offset=254
+	.asciz	"RCU_CFGCMPRST"         @ string offset=244
 .Linfo_string9:
-	.asciz	"RCU_ADCRST"            @ string offset=268
+	.asciz	"RCU_ADCRST"            @ string offset=258
 .Linfo_string10:
-	.asciz	"RCU_TIMER0RST"         @ string offset=279
+	.asciz	"RCU_TIMER0RST"         @ string offset=269
 .Linfo_string11:
-	.asciz	"RCU_SPI0RST"           @ string offset=293
+	.asciz	"RCU_SPI0RST"           @ string offset=283
 .Linfo_string12:
-	.asciz	"RCU_USART0RST"         @ string offset=305
+	.asciz	"RCU_USART0RST"         @ string offset=295
 .Linfo_string13:
-	.asciz	"RCU_TIMER14RST"        @ string offset=319
+	.asciz	"RCU_TIMER14RST"        @ string offset=309
 .Linfo_string14:
-	.asciz	"RCU_TIMER15RST"        @ string offset=334
+	.asciz	"RCU_TIMER15RST"        @ string offset=324
 .Linfo_string15:
-	.asciz	"RCU_TIMER16RST"        @ string offset=349
+	.asciz	"RCU_TIMER16RST"        @ string offset=339
 .Linfo_string16:
-	.asciz	"RCU_TIMER2RST"         @ string offset=364
+	.asciz	"RCU_TIMER2RST"         @ string offset=354
 .Linfo_string17:
-	.asciz	"RCU_TIMER5RST"         @ string offset=378
+	.asciz	"RCU_TIMER5RST"         @ string offset=368
 .Linfo_string18:
-	.asciz	"RCU_TIMER13RST"        @ string offset=392
+	.asciz	"RCU_TIMER13RST"        @ string offset=382
 .Linfo_string19:
-	.asciz	"RCU_WWDGTRST"          @ string offset=407
+	.asciz	"RCU_WWDGTRST"          @ string offset=397
 .Linfo_string20:
-	.asciz	"RCU_SPI1RST"           @ string offset=420
+	.asciz	"RCU_SPI1RST"           @ string offset=410
 .Linfo_string21:
-	.asciz	"RCU_USART1RST"         @ string offset=432
+	.asciz	"RCU_USART1RST"         @ string offset=422
 .Linfo_string22:
-	.asciz	"RCU_I2C0RST"           @ string offset=446
+	.asciz	"RCU_I2C0RST"           @ string offset=436
 .Linfo_string23:
-	.asciz	"RCU_I2C1RST"           @ string offset=458
+	.asciz	"RCU_I2C1RST"           @ string offset=448
 .Linfo_string24:
-	.asciz	"RCU_PMURST"            @ string offset=470
+	.asciz	"RCU_PMURST"            @ string offset=460
 .Linfo_string25:
-	.asciz	"unsigned char"         @ string offset=481
+	.asciz	"unsigned char"         @ string offset=471
 .Linfo_string26:
-	.asciz	"CK_SYS"                @ string offset=495
+	.asciz	"CK_SYS"                @ string offset=485
 .Linfo_string27:
-	.asciz	"CK_AHB"                @ string offset=502
+	.asciz	"CK_AHB"                @ string offset=492
 .Linfo_string28:
-	.asciz	"CK_APB1"               @ string offset=509
+	.asciz	"CK_APB1"               @ string offset=499
 .Linfo_string29:
-	.asciz	"CK_APB2"               @ string offset=517
+	.asciz	"CK_APB2"               @ string offset=507
 .Linfo_string30:
-	.asciz	"CK_ADC"                @ string offset=525
+	.asciz	"CK_ADC"                @ string offset=515
 .Linfo_string31:
-	.asciz	"CK_USART"              @ string offset=532
+	.asciz	"CK_USART"              @ string offset=522
 .Linfo_string32:
-	.asciz	"RESET"                 @ string offset=541
+	.asciz	"RESET"                 @ string offset=531
 .Linfo_string33:
-	.asciz	"SET"                   @ string offset=547
+	.asciz	"SET"                   @ string offset=537
 .Linfo_string34:
-	.asciz	"I2C_FLAG_SBSEND"       @ string offset=551
+	.asciz	"I2C_FLAG_SBSEND"       @ string offset=541
 .Linfo_string35:
-	.asciz	"I2C_FLAG_ADDSEND"      @ string offset=567
+	.asciz	"I2C_FLAG_ADDSEND"      @ string offset=557
 .Linfo_string36:
-	.asciz	"I2C_FLAG_BTC"          @ string offset=584
+	.asciz	"I2C_FLAG_BTC"          @ string offset=574
 .Linfo_string37:
-	.asciz	"I2C_FLAG_ADD10SEND"    @ string offset=597
+	.asciz	"I2C_FLAG_ADD10SEND"    @ string offset=587
 .Linfo_string38:
-	.asciz	"I2C_FLAG_STPDET"       @ string offset=616
+	.asciz	"I2C_FLAG_STPDET"       @ string offset=606
 .Linfo_string39:
-	.asciz	"I2C_FLAG_RBNE"         @ string offset=632
+	.asciz	"I2C_FLAG_RBNE"         @ string offset=622
 .Linfo_string40:
-	.asciz	"I2C_FLAG_TBE"          @ string offset=646
+	.asciz	"I2C_FLAG_TBE"          @ string offset=636
 .Linfo_string41:
-	.asciz	"I2C_FLAG_BERR"         @ string offset=659
+	.asciz	"I2C_FLAG_BERR"         @ string offset=649
 .Linfo_string42:
-	.asciz	"I2C_FLAG_LOSTARB"      @ string offset=673
+	.asciz	"I2C_FLAG_LOSTARB"      @ string offset=663
 .Linfo_string43:
-	.asciz	"I2C_FLAG_AERR"         @ string offset=690
+	.asciz	"I2C_FLAG_AERR"         @ string offset=680
 .Linfo_string44:
-	.asciz	"I2C_FLAG_OUERR"        @ string offset=704
+	.asciz	"I2C_FLAG_OUERR"        @ string offset=694
 .Linfo_string45:
-	.asciz	"I2C_FLAG_PECERR"       @ string offset=719
+	.asciz	"I2C_FLAG_PECERR"       @ string offset=709
 .Linfo_string46:
-	.asciz	"I2C_FLAG_SMBTO"        @ string offset=735
+	.asciz	"I2C_FLAG_SMBTO"        @ string offset=725
 .Linfo_string47:
-	.asciz	"I2C_FLAG_SMBALT"       @ string offset=750
+	.asciz	"I2C_FLAG_SMBALT"       @ string offset=740
 .Linfo_string48:
-	.asciz	"I2C_FLAG_MASTER"       @ string offset=766
+	.asciz	"I2C_FLAG_MASTER"       @ string offset=756
 .Linfo_string49:
-	.asciz	"I2C_FLAG_I2CBSY"       @ string offset=782
+	.asciz	"I2C_FLAG_I2CBSY"       @ string offset=772
 .Linfo_string50:
-	.asciz	"I2C_FLAG_TR"           @ string offset=798
+	.asciz	"I2C_FLAG_TR"           @ string offset=788
 .Linfo_string51:
-	.asciz	"I2C_FLAG_RXGC"         @ string offset=810
+	.asciz	"I2C_FLAG_RXGC"         @ string offset=800
 .Linfo_string52:
-	.asciz	"I2C_FLAG_DEFSMB"       @ string offset=824
+	.asciz	"I2C_FLAG_DEFSMB"       @ string offset=814
 .Linfo_string53:
-	.asciz	"I2C_FLAG_HSTSMB"       @ string offset=840
+	.asciz	"I2C_FLAG_HSTSMB"       @ string offset=830
 .Linfo_string54:
-	.asciz	"I2C_FLAG_DUMOD"        @ string offset=856
+	.asciz	"I2C_FLAG_DUMOD"        @ string offset=846
 .Linfo_string55:
-	.asciz	"I2C_FLAG_TFF"          @ string offset=871
+	.asciz	"I2C_FLAG_TFF"          @ string offset=861
 .Linfo_string56:
-	.asciz	"I2C_FLAG_TFR"          @ string offset=884
+	.asciz	"I2C_FLAG_TFR"          @ string offset=874
 .Linfo_string57:
-	.asciz	"I2C_FLAG_RFF"          @ string offset=897
+	.asciz	"I2C_FLAG_RFF"          @ string offset=887
 .Linfo_string58:
-	.asciz	"I2C_FLAG_RFR"          @ string offset=910
+	.asciz	"I2C_FLAG_RFR"          @ string offset=900
 .Linfo_string59:
-	.asciz	"I2C_INT_ERR"           @ string offset=923
+	.asciz	"I2C_INT_ERR"           @ string offset=913
 .Linfo_string60:
-	.asciz	"I2C_INT_EV"            @ string offset=935
+	.asciz	"I2C_INT_EV"            @ string offset=925
 .Linfo_string61:
-	.asciz	"I2C_INT_BUF"           @ string offset=946
+	.asciz	"I2C_INT_BUF"           @ string offset=936
 .Linfo_string62:
-	.asciz	"I2C_INT_TFF"           @ string offset=958
+	.asciz	"I2C_INT_TFF"           @ string offset=948
 .Linfo_string63:
-	.asciz	"I2C_INT_TFR"           @ string offset=970
+	.asciz	"I2C_INT_TFR"           @ string offset=960
 .Linfo_string64:
-	.asciz	"I2C_INT_RFF"           @ string offset=982
+	.asciz	"I2C_INT_RFF"           @ string offset=972
 .Linfo_string65:
-	.asciz	"I2C_INT_RFR"           @ string offset=994
+	.asciz	"I2C_INT_RFR"           @ string offset=984
 .Linfo_string66:
-	.asciz	"unsigned int"          @ string offset=1006
+	.asciz	"unsigned int"          @ string offset=996
 .Linfo_string67:
-	.asciz	"I2C_INT_FLAG_SBSEND"   @ string offset=1019
+	.asciz	"I2C_INT_FLAG_SBSEND"   @ string offset=1009
 .Linfo_string68:
-	.asciz	"I2C_INT_FLAG_ADDSEND"  @ string offset=1039
+	.asciz	"I2C_INT_FLAG_ADDSEND"  @ string offset=1029
 .Linfo_string69:
-	.asciz	"I2C_INT_FLAG_BTC"      @ string offset=1060
+	.asciz	"I2C_INT_FLAG_BTC"      @ string offset=1050
 .Linfo_string70:
-	.asciz	"I2C_INT_FLAG_ADD10SEND" @ string offset=1077
+	.asciz	"I2C_INT_FLAG_ADD10SEND" @ string offset=1067
 .Linfo_string71:
-	.asciz	"I2C_INT_FLAG_STPDET"   @ string offset=1100
+	.asciz	"I2C_INT_FLAG_STPDET"   @ string offset=1090
 .Linfo_string72:
-	.asciz	"I2C_INT_FLAG_RBNE"     @ string offset=1120
+	.asciz	"I2C_INT_FLAG_RBNE"     @ string offset=1110
 .Linfo_string73:
-	.asciz	"I2C_INT_FLAG_TBE"      @ string offset=1138
+	.asciz	"I2C_INT_FLAG_TBE"      @ string offset=1128
 .Linfo_string74:
-	.asciz	"I2C_INT_FLAG_BERR"     @ string offset=1155
+	.asciz	"I2C_INT_FLAG_BERR"     @ string offset=1145
 .Linfo_string75:
-	.asciz	"I2C_INT_FLAG_LOSTARB"  @ string offset=1173
+	.asciz	"I2C_INT_FLAG_LOSTARB"  @ string offset=1163
 .Linfo_string76:
-	.asciz	"I2C_INT_FLAG_AERR"     @ string offset=1194
+	.asciz	"I2C_INT_FLAG_AERR"     @ string offset=1184
 .Linfo_string77:
-	.asciz	"I2C_INT_FLAG_OUERR"    @ string offset=1212
+	.asciz	"I2C_INT_FLAG_OUERR"    @ string offset=1202
 .Linfo_string78:
-	.asciz	"I2C_INT_FLAG_PECERR"   @ string offset=1231
+	.asciz	"I2C_INT_FLAG_PECERR"   @ string offset=1221
 .Linfo_string79:
-	.asciz	"I2C_INT_FLAG_SMBTO"    @ string offset=1251
+	.asciz	"I2C_INT_FLAG_SMBTO"    @ string offset=1241
 .Linfo_string80:
-	.asciz	"I2C_INT_FLAG_SMBALT"   @ string offset=1270
+	.asciz	"I2C_INT_FLAG_SMBALT"   @ string offset=1260
 .Linfo_string81:
-	.asciz	"I2C_INT_FLAG_TFF"      @ string offset=1290
+	.asciz	"I2C_INT_FLAG_TFF"      @ string offset=1280
 .Linfo_string82:
-	.asciz	"I2C_INT_FLAG_TFR"      @ string offset=1307
+	.asciz	"I2C_INT_FLAG_TFR"      @ string offset=1297
 .Linfo_string83:
-	.asciz	"I2C_INT_FLAG_RFF"      @ string offset=1324
+	.asciz	"I2C_INT_FLAG_RFF"      @ string offset=1314
 .Linfo_string84:
-	.asciz	"I2C_INT_FLAG_RFR"      @ string offset=1341
+	.asciz	"I2C_INT_FLAG_RFR"      @ string offset=1331
 .Linfo_string85:
-	.asciz	"uint32_t"              @ string offset=1358
+	.asciz	"uint32_t"              @ string offset=1348
 .Linfo_string86:
-	.asciz	"uint8_t"               @ string offset=1367
+	.asciz	"uint8_t"               @ string offset=1357
 .Linfo_string87:
-	.asciz	"i2c_deinit"            @ string offset=1375
+	.asciz	"i2c_deinit"            @ string offset=1365
 .Linfo_string88:
-	.asciz	"i2c_clock_config"      @ string offset=1386
+	.asciz	"i2c_clock_config"      @ string offset=1376
 .Linfo_string89:
-	.asciz	"i2c_mode_addr_config"  @ string offset=1403
+	.asciz	"i2c_mode_addr_config"  @ string offset=1393
 .Linfo_string90:
-	.asciz	"i2c_smbus_type_config" @ string offset=1424
+	.asciz	"i2c_smbus_type_config" @ string offset=1414
 .Linfo_string91:
-	.asciz	"i2c_ack_config"        @ string offset=1446
+	.asciz	"i2c_ack_config"        @ string offset=1436
 .Linfo_string92:
-	.asciz	"i2c_ackpos_config"     @ string offset=1461
+	.asciz	"i2c_ackpos_config"     @ string offset=1451
 .Linfo_string93:
-	.asciz	"i2c_master_addressing" @ string offset=1479
+	.asciz	"i2c_master_addressing" @ string offset=1469
 .Linfo_string94:
-	.asciz	"i2c_dualaddr_enable"   @ string offset=1501
+	.asciz	"i2c_dualaddr_enable"   @ string offset=1491
 .Linfo_string95:
-	.asciz	"i2c_dualaddr_disable"  @ string offset=1521
+	.asciz	"i2c_dualaddr_disable"  @ string offset=1511
 .Linfo_string96:
-	.asciz	"i2c_enable"            @ string offset=1542
+	.asciz	"i2c_enable"            @ string offset=1532
 .Linfo_string97:
-	.asciz	"i2c_disable"           @ string offset=1553
+	.asciz	"i2c_disable"           @ string offset=1543
 .Linfo_string98:
-	.asciz	"i2c_start_on_bus"      @ string offset=1565
+	.asciz	"i2c_start_on_bus"      @ string offset=1555
 .Linfo_string99:
-	.asciz	"i2c_stop_on_bus"       @ string offset=1582
+	.asciz	"i2c_stop_on_bus"       @ string offset=1572
 .Linfo_string100:
-	.asciz	"i2c_data_transmit"     @ string offset=1598
+	.asciz	"i2c_data_transmit"     @ string offset=1588
 .Linfo_string101:
-	.asciz	"i2c_data_receive"      @ string offset=1616
+	.asciz	"i2c_data_receive"      @ string offset=1606
 .Linfo_string102:
-	.asciz	"i2c_dma_enable"        @ string offset=1633
+	.asciz	"i2c_dma_enable"        @ string offset=1623
 .Linfo_string103:
-	.asciz	"i2c_dma_last_transfer_config" @ string offset=1648
+	.asciz	"i2c_dma_last_transfer_config" @ string offset=1638
 .Linfo_string104:
-	.asciz	"i2c_stretch_scl_low_config" @ string offset=1677
+	.asciz	"i2c_stretch_scl_low_config" @ string offset=1667
 .Linfo_string105:
-	.asciz	"i2c_slave_response_to_gcall_config" @ string offset=1704
+	.asciz	"i2c_slave_response_to_gcall_config" @ string offset=1694
 .Linfo_string106:
-	.asciz	"i2c_software_reset_config" @ string offset=1739
+	.asciz	"i2c_software_reset_config" @ string offset=1729
 .Linfo_string107:
-	.asciz	"i2c_pec_enable"        @ string offset=1765
+	.asciz	"i2c_pec_enable"        @ string offset=1755
 .Linfo_string108:
-	.asciz	"i2c_pec_transfer_enable" @ string offset=1780
+	.asciz	"i2c_pec_transfer_enable" @ string offset=1770
 .Linfo_string109:
-	.asciz	"i2c_pec_value_get"     @ string offset=1804
+	.asciz	"i2c_pec_value_get"     @ string offset=1794
 .Linfo_string110:
-	.asciz	"i2c_smbus_issue_alert" @ string offset=1822
+	.asciz	"i2c_smbus_issue_alert" @ string offset=1812
 .Linfo_string111:
-	.asciz	"i2c_smbus_arp_enable"  @ string offset=1844
+	.asciz	"i2c_smbus_arp_enable"  @ string offset=1834
 .Linfo_string112:
-	.asciz	"i2c_sam_enable"        @ string offset=1865
+	.asciz	"i2c_sam_enable"        @ string offset=1855
 .Linfo_string113:
-	.asciz	"i2c_sam_disable"       @ string offset=1880
+	.asciz	"i2c_sam_disable"       @ string offset=1870
 .Linfo_string114:
-	.asciz	"i2c_sam_timeout_enable" @ string offset=1896
+	.asciz	"i2c_sam_timeout_enable" @ string offset=1886
 .Linfo_string115:
-	.asciz	"i2c_sam_timeout_disable" @ string offset=1919
+	.asciz	"i2c_sam_timeout_disable" @ string offset=1909
 .Linfo_string116:
-	.asciz	"i2c_flag_get"          @ string offset=1943
+	.asciz	"i2c_flag_get"          @ string offset=1933
 .Linfo_string117:
-	.asciz	"FlagStatus"            @ string offset=1956
+	.asciz	"FlagStatus"            @ string offset=1946
 .Linfo_string118:
-	.asciz	"i2c_flag_clear"        @ string offset=1967
+	.asciz	"i2c_flag_clear"        @ string offset=1957
 .Linfo_string119:
-	.asciz	"i2c_interrupt_enable"  @ string offset=1982
+	.asciz	"i2c_interrupt_enable"  @ string offset=1972
 .Linfo_string120:
-	.asciz	"i2c_interrupt_disable" @ string offset=2003
+	.asciz	"i2c_interrupt_disable" @ string offset=1993
 .Linfo_string121:
-	.asciz	"i2c_interrupt_flag_get" @ string offset=2025
+	.asciz	"i2c_interrupt_flag_get" @ string offset=2015
 .Linfo_string122:
-	.asciz	"i2c_interrupt_flag_clear" @ string offset=2048
+	.asciz	"i2c_interrupt_flag_clear" @ string offset=2038
 .Linfo_string123:
-	.asciz	"i2c_periph"            @ string offset=2073
+	.asciz	"i2c_periph"            @ string offset=2063
 .Linfo_string124:
-	.asciz	"clkspeed"              @ string offset=2084
+	.asciz	"clkspeed"              @ string offset=2074
 .Linfo_string125:
-	.asciz	"dutycyc"               @ string offset=2093
+	.asciz	"dutycyc"               @ string offset=2083
 .Linfo_string126:
-	.asciz	"pclk1"                 @ string offset=2101
+	.asciz	"pclk1"                 @ string offset=2091
 .Linfo_string127:
-	.asciz	"clkc"                  @ string offset=2107
+	.asciz	"clkc"                  @ string offset=2097
 .Linfo_string128:
-	.asciz	"freq"                  @ string offset=2112
+	.asciz	"freq"                  @ string offset=2102
 .Linfo_string129:
-	.asciz	"risetime"              @ string offset=2117
+	.asciz	"risetime"              @ string offset=2107
 .Linfo_string130:
-	.asciz	"temp"                  @ string offset=2126
+	.asciz	"temp"                  @ string offset=2116
 .Linfo_string131:
-	.asciz	"mode"                  @ string offset=2131
+	.asciz	"mode"                  @ string offset=2121
 .Linfo_string132:
-	.asciz	"addformat"             @ string offset=2136
+	.asciz	"addformat"             @ string offset=2126
 .Linfo_string133:
-	.asciz	"addr"                  @ string offset=2146
+	.asciz	"addr"                  @ string offset=2136
 .Linfo_string134:
-	.asciz	"ctl"                   @ string offset=2151
+	.asciz	"ctl"                   @ string offset=2141
 .Linfo_string135:
-	.asciz	"type"                  @ string offset=2155
+	.asciz	"type"                  @ string offset=2145
 .Linfo_string136:
-	.asciz	"ack"                   @ string offset=2160
+	.asciz	"ack"                   @ string offset=2150
 .Linfo_string137:
-	.asciz	"pos"                   @ string offset=2164
+	.asciz	"pos"                   @ string offset=2154
 .Linfo_string138:
-	.asciz	"trandirection"         @ string offset=2168
+	.asciz	"trandirection"         @ string offset=2158
 .Linfo_string139:
-	.asciz	"data"                  @ string offset=2182
+	.asciz	"data"                  @ string offset=2172
 .Linfo_string140:
-	.asciz	"dmastate"              @ string offset=2187
+	.asciz	"dmastate"              @ string offset=2177
 .Linfo_string141:
-	.asciz	"dmalast"               @ string offset=2196
+	.asciz	"dmalast"               @ string offset=2186
 .Linfo_string142:
-	.asciz	"stretchpara"           @ string offset=2204
+	.asciz	"stretchpara"           @ string offset=2194
 .Linfo_string143:
-	.asciz	"gcallpara"             @ string offset=2216
+	.asciz	"gcallpara"             @ string offset=2206
 .Linfo_string144:
-	.asciz	"sreset"                @ string offset=2226
+	.asciz	"sreset"                @ string offset=2216
 .Linfo_string145:
-	.asciz	"pecstate"              @ string offset=2233
+	.asciz	"pecstate"              @ string offset=2223
 .Linfo_string146:
-	.asciz	"pecpara"               @ string offset=2242
+	.asciz	"pecpara"               @ string offset=2232
 .Linfo_string147:
-	.asciz	"smbuspara"             @ string offset=2250
+	.asciz	"smbuspara"             @ string offset=2240
 .Linfo_string148:
-	.asciz	"arpstate"              @ string offset=2260
+	.asciz	"arpstate"              @ string offset=2250
 .Linfo_string149:
-	.asciz	"flag"                  @ string offset=2269
+	.asciz	"flag"                  @ string offset=2259
 .Linfo_string150:
-	.asciz	"i2c_flag_enum"         @ string offset=2274
+	.asciz	"i2c_flag_enum"         @ string offset=2264
 .Linfo_string151:
-	.asciz	"interrupt"             @ string offset=2288
+	.asciz	"interrupt"             @ string offset=2278
 .Linfo_string152:
-	.asciz	"i2c_interrupt_enum"    @ string offset=2298
+	.asciz	"i2c_interrupt_enum"    @ string offset=2288
 .Linfo_string153:
-	.asciz	"int_flag"              @ string offset=2317
+	.asciz	"int_flag"              @ string offset=2307
 .Linfo_string154:
-	.asciz	"i2c_interrupt_flag_enum" @ string offset=2326
+	.asciz	"i2c_interrupt_flag_enum" @ string offset=2316
 .Linfo_string155:
-	.asciz	"intenable"             @ string offset=2350
+	.asciz	"intenable"             @ string offset=2340
 .Linfo_string156:
-	.asciz	"flagstatus"            @ string offset=2360
+	.asciz	"flagstatus"            @ string offset=2350
 .Linfo_string157:
-	.asciz	"bufie"                 @ string offset=2371
+	.asciz	"bufie"                 @ string offset=2361
 	.section	.debug_abbrev,"",%progbits
 	.byte	1                       @ Abbreviation Code
 	.byte	17                      @ DW_TAG_compile_unit

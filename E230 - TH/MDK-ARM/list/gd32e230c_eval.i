@@ -3088,7 +3088,7 @@ extern __attribute__((nothrow)) void _membitmovehb(void * , const void * , int ,
 extern __attribute__((nothrow)) void _membitmovewl(void * , const void * , int , int , size_t ) __attribute__((__nonnull__(1,2)));
 extern __attribute__((nothrow)) void _membitmovewb(void * , const void * , int , int , size_t ) __attribute__((__nonnull__(1,2)));
 # 45 "../BSP/Inc\\flash.h" 2
-# 89 "../BSP/Inc\\flash.h"
+# 88 "../BSP/Inc\\flash.h"
 uint8_t Flash_Read_OneByte(uint32_t RWAddr);
 
 void flash_read_multi(uint32_t readAdder, uint8_t *readBuf, uint16_t readLen);
@@ -3388,14 +3388,23 @@ uint8_t UARTx_RXBuffLen = 0;
 
 uint8_t UARTx_RXBuff[600];
 uint8_t UARTx_TXBUFF[600];
-# 264 "../Utilities/gd32e230c_eval.c"
+
+
+
+
+
+
+
+void Delayms(uint16_t ms)
+{
+ uint16_t i,j;
+ uint8_t k;
+ for(i=0;i<ms;i++)
+  for(j=0;j<0x0919;j++) k++;
+}
 char ch;
 void USART0_IRQHandler(void)
 {
-
-
-
-
 
     if(RESET != usart_interrupt_flag_get(((((uint32_t)0x40000000U) + 0x00004400U) + 0x0000F400U), USART_INT_FLAG_RBNE)){
 
@@ -3417,7 +3426,7 @@ void USART0_IRQHandler(void)
   usart_interrupt_flag_clear(((((uint32_t)0x40000000U) + 0x00004400U) + 0x0000F400U), USART_INT_FLAG_TBE);
 
         usart_data_transmit(((((uint32_t)0x40000000U) + 0x00004400U) + 0x0000F400U), UARTx_TXBUFF[u8SendIndex++]);
-
+  Delayms(1);
         if(u8SendNum <= u8SendIndex){
    gpio_bit_reset(((((uint32_t)0x48000000U) + 0x00000000U) + 0x00000000U),((uint32_t)((uint32_t)0x01U<<(2))));
             usart_interrupt_disable(((((uint32_t)0x40000000U) + 0x00004400U) + 0x0000F400U), USART_INT_TBE);
@@ -3426,7 +3435,7 @@ void USART0_IRQHandler(void)
         }
     }
 }
-# 315 "../Utilities/gd32e230c_eval.c"
+# 317 "../Utilities/gd32e230c_eval.c"
 uint32_t UARTx_SendData(uint8_t* UARTx_SendBuff, uint32_t Len)
 {
     uint32_t i = 0;

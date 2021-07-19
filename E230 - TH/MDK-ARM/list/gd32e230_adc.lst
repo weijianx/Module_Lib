@@ -18,8 +18,8 @@
 	.eabi_attribute	26, 1	@ Tag_ABI_enum_size
 	.eabi_attribute	14, 0	@ Tag_ABI_PCS_R9_use
 	.file	"gd32e230_adc.c"
-	.file	1 "E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include\\gd32e230_rcu.h"
-	.file	2 "E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" "../GD32E230_Firmware_Library/CMSIS/GD/GD32E230/Include\\gd32e230.h"
+	.file	1 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include\\gd32e230_rcu.h"
+	.file	2 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/CMSIS/GD/GD32E230/Include\\gd32e230.h"
 	.file	3 "D:\\Keil_v5\\ARM\\ARMCLANG\\Bin\\..\\include" "stdint.h"
 	.section	.text.adc_deinit,"ax",%progbits
 	.hidden	adc_deinit              @ -- Begin function adc_deinit
@@ -30,7 +30,7 @@
 	.thumb_func
 adc_deinit:
 .Lfunc_begin0:
-	.file	4 "E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source/gd32e230_adc.c"
+	.file	4 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source/gd32e230_adc.c"
 	.loc	4 46 0                  @ ../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source/gd32e230_adc.c:46:0
 	.fnstart
 	.cfi_sections .debug_frame
@@ -3050,197 +3050,197 @@ __arm_cp.33_0:
 .Linfo_string1:
 	.asciz	"../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source\\gd32e230_adc.c" @ string offset=55
 .Linfo_string2:
-	.asciz	"E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" @ string offset=135
+	.asciz	"E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" @ string offset=135
 .Linfo_string3:
-	.asciz	"unsigned short"        @ string offset=187
+	.asciz	"unsigned short"        @ string offset=177
 .Linfo_string4:
-	.asciz	"RCU_GPIOARST"          @ string offset=202
+	.asciz	"RCU_GPIOARST"          @ string offset=192
 .Linfo_string5:
-	.asciz	"RCU_GPIOBRST"          @ string offset=215
+	.asciz	"RCU_GPIOBRST"          @ string offset=205
 .Linfo_string6:
-	.asciz	"RCU_GPIOCRST"          @ string offset=228
+	.asciz	"RCU_GPIOCRST"          @ string offset=218
 .Linfo_string7:
-	.asciz	"RCU_GPIOFRST"          @ string offset=241
+	.asciz	"RCU_GPIOFRST"          @ string offset=231
 .Linfo_string8:
-	.asciz	"RCU_CFGCMPRST"         @ string offset=254
+	.asciz	"RCU_CFGCMPRST"         @ string offset=244
 .Linfo_string9:
-	.asciz	"RCU_ADCRST"            @ string offset=268
+	.asciz	"RCU_ADCRST"            @ string offset=258
 .Linfo_string10:
-	.asciz	"RCU_TIMER0RST"         @ string offset=279
+	.asciz	"RCU_TIMER0RST"         @ string offset=269
 .Linfo_string11:
-	.asciz	"RCU_SPI0RST"           @ string offset=293
+	.asciz	"RCU_SPI0RST"           @ string offset=283
 .Linfo_string12:
-	.asciz	"RCU_USART0RST"         @ string offset=305
+	.asciz	"RCU_USART0RST"         @ string offset=295
 .Linfo_string13:
-	.asciz	"RCU_TIMER14RST"        @ string offset=319
+	.asciz	"RCU_TIMER14RST"        @ string offset=309
 .Linfo_string14:
-	.asciz	"RCU_TIMER15RST"        @ string offset=334
+	.asciz	"RCU_TIMER15RST"        @ string offset=324
 .Linfo_string15:
-	.asciz	"RCU_TIMER16RST"        @ string offset=349
+	.asciz	"RCU_TIMER16RST"        @ string offset=339
 .Linfo_string16:
-	.asciz	"RCU_TIMER2RST"         @ string offset=364
+	.asciz	"RCU_TIMER2RST"         @ string offset=354
 .Linfo_string17:
-	.asciz	"RCU_TIMER5RST"         @ string offset=378
+	.asciz	"RCU_TIMER5RST"         @ string offset=368
 .Linfo_string18:
-	.asciz	"RCU_TIMER13RST"        @ string offset=392
+	.asciz	"RCU_TIMER13RST"        @ string offset=382
 .Linfo_string19:
-	.asciz	"RCU_WWDGTRST"          @ string offset=407
+	.asciz	"RCU_WWDGTRST"          @ string offset=397
 .Linfo_string20:
-	.asciz	"RCU_SPI1RST"           @ string offset=420
+	.asciz	"RCU_SPI1RST"           @ string offset=410
 .Linfo_string21:
-	.asciz	"RCU_USART1RST"         @ string offset=432
+	.asciz	"RCU_USART1RST"         @ string offset=422
 .Linfo_string22:
-	.asciz	"RCU_I2C0RST"           @ string offset=446
+	.asciz	"RCU_I2C0RST"           @ string offset=436
 .Linfo_string23:
-	.asciz	"RCU_I2C1RST"           @ string offset=458
+	.asciz	"RCU_I2C1RST"           @ string offset=448
 .Linfo_string24:
-	.asciz	"RCU_PMURST"            @ string offset=470
+	.asciz	"RCU_PMURST"            @ string offset=460
 .Linfo_string25:
-	.asciz	"unsigned char"         @ string offset=481
+	.asciz	"unsigned char"         @ string offset=471
 .Linfo_string26:
-	.asciz	"RESET"                 @ string offset=495
+	.asciz	"RESET"                 @ string offset=485
 .Linfo_string27:
-	.asciz	"SET"                   @ string offset=501
+	.asciz	"SET"                   @ string offset=491
 .Linfo_string28:
-	.asciz	"DISABLE"               @ string offset=505
+	.asciz	"DISABLE"               @ string offset=495
 .Linfo_string29:
-	.asciz	"ENABLE"                @ string offset=513
+	.asciz	"ENABLE"                @ string offset=503
 .Linfo_string30:
-	.asciz	"unsigned int"          @ string offset=520
+	.asciz	"unsigned int"          @ string offset=510
 .Linfo_string31:
-	.asciz	"uint32_t"              @ string offset=533
+	.asciz	"uint32_t"              @ string offset=523
 .Linfo_string32:
-	.asciz	"uint8_t"               @ string offset=542
+	.asciz	"uint8_t"               @ string offset=532
 .Linfo_string33:
-	.asciz	"uint16_t"              @ string offset=550
+	.asciz	"uint16_t"              @ string offset=540
 .Linfo_string34:
-	.asciz	"adc_deinit"            @ string offset=559
+	.asciz	"adc_deinit"            @ string offset=549
 .Linfo_string35:
-	.asciz	"adc_enable"            @ string offset=570
+	.asciz	"adc_enable"            @ string offset=560
 .Linfo_string36:
-	.asciz	"adc_disable"           @ string offset=581
+	.asciz	"adc_disable"           @ string offset=571
 .Linfo_string37:
-	.asciz	"adc_calibration_enable" @ string offset=593
+	.asciz	"adc_calibration_enable" @ string offset=583
 .Linfo_string38:
-	.asciz	"adc_dma_mode_enable"   @ string offset=616
+	.asciz	"adc_dma_mode_enable"   @ string offset=606
 .Linfo_string39:
-	.asciz	"adc_dma_mode_disable"  @ string offset=636
+	.asciz	"adc_dma_mode_disable"  @ string offset=626
 .Linfo_string40:
-	.asciz	"adc_tempsensor_vrefint_enable" @ string offset=657
+	.asciz	"adc_tempsensor_vrefint_enable" @ string offset=647
 .Linfo_string41:
-	.asciz	"adc_tempsensor_vrefint_disable" @ string offset=687
+	.asciz	"adc_tempsensor_vrefint_disable" @ string offset=677
 .Linfo_string42:
-	.asciz	"adc_discontinuous_mode_config" @ string offset=718
+	.asciz	"adc_discontinuous_mode_config" @ string offset=708
 .Linfo_string43:
-	.asciz	"adc_special_function_config" @ string offset=748
+	.asciz	"adc_special_function_config" @ string offset=738
 .Linfo_string44:
-	.asciz	"adc_data_alignment_config" @ string offset=776
+	.asciz	"adc_data_alignment_config" @ string offset=766
 .Linfo_string45:
-	.asciz	"adc_channel_length_config" @ string offset=802
+	.asciz	"adc_channel_length_config" @ string offset=792
 .Linfo_string46:
-	.asciz	"adc_regular_channel_config" @ string offset=828
+	.asciz	"adc_regular_channel_config" @ string offset=818
 .Linfo_string47:
-	.asciz	"adc_inserted_channel_config" @ string offset=855
+	.asciz	"adc_inserted_channel_config" @ string offset=845
 .Linfo_string48:
-	.asciz	"adc_inserted_channel_offset_config" @ string offset=883
+	.asciz	"adc_inserted_channel_offset_config" @ string offset=873
 .Linfo_string49:
-	.asciz	"adc_external_trigger_config" @ string offset=918
+	.asciz	"adc_external_trigger_config" @ string offset=908
 .Linfo_string50:
-	.asciz	"adc_external_trigger_source_config" @ string offset=946
+	.asciz	"adc_external_trigger_source_config" @ string offset=936
 .Linfo_string51:
-	.asciz	"adc_software_trigger_enable" @ string offset=981
+	.asciz	"adc_software_trigger_enable" @ string offset=971
 .Linfo_string52:
-	.asciz	"adc_regular_data_read" @ string offset=1009
+	.asciz	"adc_regular_data_read" @ string offset=999
 .Linfo_string53:
-	.asciz	"adc_inserted_data_read" @ string offset=1031
+	.asciz	"adc_inserted_data_read" @ string offset=1021
 .Linfo_string54:
-	.asciz	"adc_flag_get"          @ string offset=1054
+	.asciz	"adc_flag_get"          @ string offset=1044
 .Linfo_string55:
-	.asciz	"FlagStatus"            @ string offset=1067
+	.asciz	"FlagStatus"            @ string offset=1057
 .Linfo_string56:
-	.asciz	"adc_flag_clear"        @ string offset=1078
+	.asciz	"adc_flag_clear"        @ string offset=1068
 .Linfo_string57:
-	.asciz	"adc_interrupt_flag_get" @ string offset=1093
+	.asciz	"adc_interrupt_flag_get" @ string offset=1083
 .Linfo_string58:
-	.asciz	"adc_interrupt_flag_clear" @ string offset=1116
+	.asciz	"adc_interrupt_flag_clear" @ string offset=1106
 .Linfo_string59:
-	.asciz	"adc_interrupt_enable"  @ string offset=1141
+	.asciz	"adc_interrupt_enable"  @ string offset=1131
 .Linfo_string60:
-	.asciz	"adc_interrupt_disable" @ string offset=1162
+	.asciz	"adc_interrupt_disable" @ string offset=1152
 .Linfo_string61:
-	.asciz	"adc_watchdog_single_channel_enable" @ string offset=1184
+	.asciz	"adc_watchdog_single_channel_enable" @ string offset=1174
 .Linfo_string62:
-	.asciz	"adc_watchdog_group_channel_enable" @ string offset=1219
+	.asciz	"adc_watchdog_group_channel_enable" @ string offset=1209
 .Linfo_string63:
-	.asciz	"adc_watchdog_disable"  @ string offset=1253
+	.asciz	"adc_watchdog_disable"  @ string offset=1243
 .Linfo_string64:
-	.asciz	"adc_watchdog_threshold_config" @ string offset=1274
+	.asciz	"adc_watchdog_threshold_config" @ string offset=1264
 .Linfo_string65:
-	.asciz	"adc_resolution_config" @ string offset=1304
+	.asciz	"adc_resolution_config" @ string offset=1294
 .Linfo_string66:
-	.asciz	"adc_oversample_mode_config" @ string offset=1326
+	.asciz	"adc_oversample_mode_config" @ string offset=1316
 .Linfo_string67:
-	.asciz	"adc_oversample_mode_enable" @ string offset=1353
+	.asciz	"adc_oversample_mode_enable" @ string offset=1343
 .Linfo_string68:
-	.asciz	"adc_oversample_mode_disable" @ string offset=1380
+	.asciz	"adc_oversample_mode_disable" @ string offset=1370
 .Linfo_string69:
-	.asciz	"channel_group"         @ string offset=1408
+	.asciz	"channel_group"         @ string offset=1398
 .Linfo_string70:
-	.asciz	"length"                @ string offset=1422
+	.asciz	"length"                @ string offset=1412
 .Linfo_string71:
-	.asciz	"function"              @ string offset=1429
+	.asciz	"function"              @ string offset=1419
 .Linfo_string72:
-	.asciz	"newvalue"              @ string offset=1438
+	.asciz	"newvalue"              @ string offset=1428
 .Linfo_string73:
-	.asciz	"ControlStatus"         @ string offset=1447
+	.asciz	"ControlStatus"         @ string offset=1437
 .Linfo_string74:
-	.asciz	"data_alignment"        @ string offset=1461
+	.asciz	"data_alignment"        @ string offset=1451
 .Linfo_string75:
-	.asciz	"rank"                  @ string offset=1476
+	.asciz	"rank"                  @ string offset=1466
 .Linfo_string76:
-	.asciz	"channel"               @ string offset=1481
+	.asciz	"channel"               @ string offset=1471
 .Linfo_string77:
-	.asciz	"sample_time"           @ string offset=1489
+	.asciz	"sample_time"           @ string offset=1479
 .Linfo_string78:
-	.asciz	"rsq"                   @ string offset=1501
+	.asciz	"rsq"                   @ string offset=1491
 .Linfo_string79:
-	.asciz	"sampt"                 @ string offset=1505
+	.asciz	"sampt"                 @ string offset=1495
 .Linfo_string80:
-	.asciz	"inserted_length"       @ string offset=1511
+	.asciz	"inserted_length"       @ string offset=1501
 .Linfo_string81:
-	.asciz	"isq"                   @ string offset=1527
+	.asciz	"isq"                   @ string offset=1517
 .Linfo_string82:
-	.asciz	"inserted_channel"      @ string offset=1531
+	.asciz	"inserted_channel"      @ string offset=1521
 .Linfo_string83:
-	.asciz	"offset"                @ string offset=1548
+	.asciz	"offset"                @ string offset=1538
 .Linfo_string84:
-	.asciz	"num"                   @ string offset=1555
+	.asciz	"num"                   @ string offset=1545
 .Linfo_string85:
-	.asciz	"external_trigger_source" @ string offset=1559
+	.asciz	"external_trigger_source" @ string offset=1549
 .Linfo_string86:
-	.asciz	"idata"                 @ string offset=1583
+	.asciz	"idata"                 @ string offset=1573
 .Linfo_string87:
-	.asciz	"flag"                  @ string offset=1589
+	.asciz	"flag"                  @ string offset=1579
 .Linfo_string88:
-	.asciz	"reval"                 @ string offset=1594
+	.asciz	"reval"                 @ string offset=1584
 .Linfo_string89:
-	.asciz	"interrupt_flag"        @ string offset=1600
+	.asciz	"interrupt_flag"        @ string offset=1590
 .Linfo_string90:
-	.asciz	"state"                 @ string offset=1615
+	.asciz	"state"                 @ string offset=1605
 .Linfo_string91:
-	.asciz	"interrupt"             @ string offset=1621
+	.asciz	"interrupt"             @ string offset=1611
 .Linfo_string92:
-	.asciz	"low_threshold"         @ string offset=1631
+	.asciz	"low_threshold"         @ string offset=1621
 .Linfo_string93:
-	.asciz	"high_threshold"        @ string offset=1645
+	.asciz	"high_threshold"        @ string offset=1635
 .Linfo_string94:
-	.asciz	"resolution"            @ string offset=1660
+	.asciz	"resolution"            @ string offset=1650
 .Linfo_string95:
-	.asciz	"mode"                  @ string offset=1671
+	.asciz	"mode"                  @ string offset=1661
 .Linfo_string96:
-	.asciz	"shift"                 @ string offset=1676
+	.asciz	"shift"                 @ string offset=1666
 .Linfo_string97:
-	.asciz	"ratio"                 @ string offset=1682
+	.asciz	"ratio"                 @ string offset=1672
 	.section	.debug_abbrev,"",%progbits
 	.byte	1                       @ Abbreviation Code
 	.byte	17                      @ DW_TAG_compile_unit

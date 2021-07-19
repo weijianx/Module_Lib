@@ -3085,7 +3085,7 @@ extern __attribute__((nothrow)) void _membitmovehb(void * , const void * , int ,
 extern __attribute__((nothrow)) void _membitmovewl(void * , const void * , int , int , size_t ) __attribute__((__nonnull__(1,2)));
 extern __attribute__((nothrow)) void _membitmovewb(void * , const void * , int , int , size_t ) __attribute__((__nonnull__(1,2)));
 # 45 "../BSP/Inc\\flash.h" 2
-# 89 "../BSP/Inc\\flash.h"
+# 88 "../BSP/Inc\\flash.h"
 uint8_t Flash_Read_OneByte(uint32_t RWAddr);
 
 void flash_read_multi(uint32_t readAdder, uint8_t *readBuf, uint16_t readLen);
@@ -3235,7 +3235,27 @@ void MBASC_AutoUpLoadFrame(void);
 
 
 
+# 1 "../BSP/Inc\\TH_IIC.h" 1
+# 40 "../BSP/Inc\\TH_IIC.h"
+void TH_IIC_Init(void);
 
+void Get_Channal_Pin(uint8_t sChannel);
+
+void Delay_1Us(uint32_t cnt);
+void Delay_2Us(uint32_t cnt);
+void Delay_4Us(uint32_t cnt);
+
+void Delay_1Ms(uint32_t cnt);
+
+void TH_IIC_Start(void);
+void TH_IIC_Stop(void);
+
+void TH_IIC_Ack(void);
+void TH_IIC_NAck(void);
+void TH_IIC_Send_Byte(uint8_t txd);
+uint8_t TH_IIC_Wait_Ack(void);
+uint8_t TH_IIC_Read_Byte(uint8_t ack);
+# 8 "../APP/Src/modbus_asc.c" 2
 # 1 "../BSP/Inc\\SHT3x.h" 1
 # 62 "../BSP/Inc\\SHT3x.h"
 typedef enum {NExist = 0x00, Exist}SensorSta_Typedef;
@@ -3283,11 +3303,11 @@ extern BitAction UartRecvFrameOK;
 extern BitAction StartFillBufFlag;
 
 
-extern uint8_t Cur_Param[((((((((((((0x00 + 0x01) + 0x01) + 0x01) + 0x01) + 0x02) + 0x02) + 0x02) + 0x02) + 0x02) + 0x02) + 0x01) + 0x02)];
-extern uint8_t const User_Default_Param[((((((((((((0x00 + 0x01) + 0x01) + 0x01) + 0x01) + 0x02) + 0x02) + 0x02) + 0x02) + 0x02) + 0x02) + 0x01) + 0x02)];
+extern uint8_t Cur_Param[((((((((((((0x00 + 0x02) + 0x01) + 0x01) + 0x01) + 0x02) + 0x02) + 0x02) + 0x02) + 0x02) + 0x02) + 0x01) + 0x04)];
+extern uint8_t const User_Default_Param[((((((((((((0x00 + 0x02) + 0x01) + 0x01) + 0x01) + 0x02) + 0x02) + 0x02) + 0x02) + 0x02) + 0x02) + 0x01) + 0x04)];
 
 
-uint8_t const SensorSoftVersion[8] = {0x07, 'G', 'D', '1', '.', '0', '.', '0'};
+uint8_t const SensorSoftVersion[10] = {0x07, 'G', 'D', '1', '.', '0', '.', '0'};
 
 extern SHT3_Typedef T_H;
 # 43 "../APP/Src/modbus_asc.c"
@@ -3449,6 +3469,7 @@ void MBASC_Fun04(void)
             {
 
                 Data_Buf = (uint32_t)T_H.Temp[0];
+
             }
             else if(SlaveAdd >= 0x26 && SlaveAdd <= 0x29)
             {
@@ -3496,7 +3517,7 @@ void MBASC_Fun04(void)
 
     MBASC_SendMsg_NoLimit(SendBuf, SendLen);
 }
-# 323 "../APP/Src/modbus_asc.c"
+# 324 "../APP/Src/modbus_asc.c"
 void MBASC_Fun10()
 {
     uint32_t index = 0;
@@ -3543,19 +3564,19 @@ void MBASC_Fun10()
                 if(slave_addr >= 0x21 && slave_addr <= 0x25)
                 {
                     UserPara.SlaveAddr_Temp = slave_addr;
-     Flash_Write_MultiBytes((0x00 + 0x01), &UserPara.SlaveAddr_Temp , 1);
+     Flash_Write_MultiBytes((0x00 + 0x02), &UserPara.SlaveAddr_Temp , 1);
                 }
                 else if(slave_addr >= 0x26 && slave_addr <= 0x29)
                 {
                     UserPara.SlaveAddr_Humi = slave_addr;
-     Flash_Write_MultiBytes(((0x00 + 0x01) + 0x01), &UserPara.SlaveAddr_Humi , 1);
+     Flash_Write_MultiBytes(((0x00 + 0x02) + 0x01), &UserPara.SlaveAddr_Humi , 1);
                 }
                 break;
 
             case 0x31:
     UserPara.Baudrate = ((uint16_t)UARTx_RXBuff[7+index] << 8) + UARTx_RXBuff[8+index];
 
-                Flash_Write_MultiBytes((((0x00 + 0x01) + 0x01) + 0x01), &UserPara.Baudrate , 1);
+                Flash_Write_MultiBytes((((0x00 + 0x02) + 0x01) + 0x01), &UserPara.Baudrate , 1);
 
                 break;
 
@@ -3573,12 +3594,12 @@ void MBASC_Fun10()
 
             case 0x36:
     upload_persist = ((uint16_t)UARTx_RXBuff[7+index] << 8) + UARTx_RXBuff[8+index];
-                if(upload_persist < 0 || upload_persist > 4)
-                {
-                    break;
-                }
+
+
+
+
                 T_H.Upload_persist[T_H.dev_num] = upload_persist;
-                Flash_Write_MultiBytes(((((((((((0x00 + 0x01) + 0x01) + 0x01) + 0x01) + 0x02) + 0x02) + 0x02) + 0x02) + 0x02) + 0x02) + T_H.dev_num, &T_H.Upload_persist[T_H.dev_num], 1);
+                Flash_Write_MultiBytes(((((((((((0x00 + 0x02) + 0x01) + 0x01) + 0x01) + 0x02) + 0x02) + 0x02) + 0x02) + 0x02) + 0x02) + T_H.dev_num, &T_H.Upload_persist[T_H.dev_num], 1);
                 break;
 
             case 0x37:
@@ -3610,17 +3631,17 @@ void MBASC_Fun10()
 
             case 0x40:
                 T_H.UpThreshold[0] = ((uint16_t)UARTx_RXBuff[7+index] << 8) + UARTx_RXBuff[8+index];
-                Flash_Write_MultiBytes(((((0x00 + 0x01) + 0x01) + 0x01) + 0x01), (uint8_t*)&T_H.UpThreshold[0], 2);
+                Flash_Write_MultiBytes(((((0x00 + 0x02) + 0x01) + 0x01) + 0x01), (uint8_t*)&T_H.UpThreshold[0], 2);
                 break;
 
             case 0x41:
                 T_H.DoThreshold[0] = ((uint16_t)UARTx_RXBuff[7+index] << 8) + UARTx_RXBuff[8+index];
-                Flash_Write_MultiBytes((((((0x00 + 0x01) + 0x01) + 0x01) + 0x01) + 0x02), (uint8_t*)&T_H.DoThreshold[0], 2);
+                Flash_Write_MultiBytes((((((0x00 + 0x02) + 0x01) + 0x01) + 0x01) + 0x02), (uint8_t*)&T_H.DoThreshold[0], 2);
                 break;
 
             case 0x42:
                 T_H.Duration[0] = ((uint16_t)UARTx_RXBuff[7+index] << 8) + UARTx_RXBuff[8+index];
-                Flash_Write_MultiBytes(((((((0x00 + 0x01) + 0x01) + 0x01) + 0x01) + 0x02) + 0x02), (uint8_t*)&T_H.Duration[0], 2);
+                Flash_Write_MultiBytes(((((((0x00 + 0x02) + 0x01) + 0x01) + 0x01) + 0x02) + 0x02), (uint8_t*)&T_H.Duration[0], 2);
                 break;
 
             case 0x43:
@@ -3663,7 +3684,8 @@ void MBASC_Fun10()
                 break;
 
             case 0x70:
-                break;
+    return ;
+
 
             default:
                 break;
@@ -3673,7 +3695,7 @@ void MBASC_Fun10()
 
     MBASC_SendMsg_NoLimit(UARTx_RXBuff, 6);
 }
-# 515 "../APP/Src/modbus_asc.c"
+# 517 "../APP/Src/modbus_asc.c"
 void MBASC_Fun2B(void)
 {
     uint16_t Object_Num = 0, ReadAdr = 0;
@@ -3768,9 +3790,10 @@ void MBASC_Fun2B(void)
     }
     MBASC_SendMsg(SendBuf, SendLen);
 }
-# 623 "../APP/Src/modbus_asc.c"
+# 625 "../APP/Src/modbus_asc.c"
 void MBASC_Fun41(void)
 {
+ uint8_t buf[1]={0xFF};
     uint16_t ReadAdr = 0;
     uint16_t DataLength = 0;
     uint8_t ReadData;
@@ -3793,23 +3816,16 @@ void MBASC_Fun41(void)
     }
     else
     {
-        Flash_Write_MultiBytes(1023,"\x0C", 1);
-        flash_read_MultiBytes(1023, &ReadData, 1);
-        if(ReadData == 0x0C)
-        {
-            SendBuf[SendLen++] = 0x00;
-            MBASC_SendMsg(SendBuf, SendLen);
-            while(0 != u8SendNum);
-            __NVIC_SystemReset();
-        }
-        else
-        {
-            SendBuf[SendLen++] = 0x01;
-            MBASC_SendMsg(SendBuf, SendLen);
-        }
+
+  Flash_Write_MultiBytes(0x00, &buf, 1);
+        SendBuf[SendLen++] = 0x00;
+        MBASC_SendMsg(SendBuf, SendLen);
+  Delay_1Ms(20);
+        __NVIC_SystemReset();
+
     }
 }
-# 677 "../APP/Src/modbus_asc.c"
+# 673 "../APP/Src/modbus_asc.c"
 void MBASC_Function(void)
 {
     uint16_t RecvLen = 0;

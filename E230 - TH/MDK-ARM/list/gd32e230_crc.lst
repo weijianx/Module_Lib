@@ -28,7 +28,7 @@
 	.thumb_func
 crc_deinit:
 .Lfunc_begin0:
-	.file	2 "E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source/gd32e230_crc.c"
+	.file	2 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source/gd32e230_crc.c"
 	.loc	2 46 0                  @ ../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source/gd32e230_crc.c:46:0
 	.fnstart
 	.cfi_sections .debug_frame
@@ -633,63 +633,63 @@ __arm_cp.12_0:
 .Linfo_string1:
 	.asciz	"../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source\\gd32e230_crc.c" @ string offset=55
 .Linfo_string2:
-	.asciz	"E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" @ string offset=135
+	.asciz	"E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" @ string offset=135
 .Linfo_string3:
-	.asciz	"unsigned int"          @ string offset=187
+	.asciz	"unsigned int"          @ string offset=177
 .Linfo_string4:
-	.asciz	"uint32_t"              @ string offset=200
+	.asciz	"uint32_t"              @ string offset=190
 .Linfo_string5:
-	.asciz	"unsigned char"         @ string offset=209
+	.asciz	"unsigned char"         @ string offset=199
 .Linfo_string6:
-	.asciz	"uint8_t"               @ string offset=223
+	.asciz	"uint8_t"               @ string offset=213
 .Linfo_string7:
-	.asciz	"crc_deinit"            @ string offset=231
+	.asciz	"crc_deinit"            @ string offset=221
 .Linfo_string8:
-	.asciz	"crc_reverse_output_data_enable" @ string offset=242
+	.asciz	"crc_reverse_output_data_enable" @ string offset=232
 .Linfo_string9:
-	.asciz	"crc_reverse_output_data_disable" @ string offset=273
+	.asciz	"crc_reverse_output_data_disable" @ string offset=263
 .Linfo_string10:
-	.asciz	"crc_data_register_reset" @ string offset=305
+	.asciz	"crc_data_register_reset" @ string offset=295
 .Linfo_string11:
-	.asciz	"crc_data_register_read" @ string offset=329
+	.asciz	"crc_data_register_read" @ string offset=319
 .Linfo_string12:
-	.asciz	"crc_free_data_register_read" @ string offset=352
+	.asciz	"crc_free_data_register_read" @ string offset=342
 .Linfo_string13:
-	.asciz	"crc_free_data_register_write" @ string offset=380
+	.asciz	"crc_free_data_register_write" @ string offset=370
 .Linfo_string14:
-	.asciz	"crc_init_data_register_write" @ string offset=409
+	.asciz	"crc_init_data_register_write" @ string offset=399
 .Linfo_string15:
-	.asciz	"crc_input_data_reverse_config" @ string offset=438
+	.asciz	"crc_input_data_reverse_config" @ string offset=428
 .Linfo_string16:
-	.asciz	"crc_polynomial_size_set" @ string offset=468
+	.asciz	"crc_polynomial_size_set" @ string offset=458
 .Linfo_string17:
-	.asciz	"crc_polynomial_set"    @ string offset=492
+	.asciz	"crc_polynomial_set"    @ string offset=482
 .Linfo_string18:
-	.asciz	"crc_single_data_calculate" @ string offset=511
+	.asciz	"crc_single_data_calculate" @ string offset=501
 .Linfo_string19:
-	.asciz	"crc_block_data_calculate" @ string offset=537
+	.asciz	"crc_block_data_calculate" @ string offset=527
 .Linfo_string20:
-	.asciz	"data"                  @ string offset=562
+	.asciz	"data"                  @ string offset=552
 .Linfo_string21:
-	.asciz	"fdata"                 @ string offset=567
+	.asciz	"fdata"                 @ string offset=557
 .Linfo_string22:
-	.asciz	"free_data"             @ string offset=573
+	.asciz	"free_data"             @ string offset=563
 .Linfo_string23:
-	.asciz	"init_data"             @ string offset=583
+	.asciz	"init_data"             @ string offset=573
 .Linfo_string24:
-	.asciz	"data_reverse"          @ string offset=593
+	.asciz	"data_reverse"          @ string offset=583
 .Linfo_string25:
-	.asciz	"poly_size"             @ string offset=606
+	.asciz	"poly_size"             @ string offset=596
 .Linfo_string26:
-	.asciz	"poly"                  @ string offset=616
+	.asciz	"poly"                  @ string offset=606
 .Linfo_string27:
-	.asciz	"sdata"                 @ string offset=621
+	.asciz	"sdata"                 @ string offset=611
 .Linfo_string28:
-	.asciz	"array"                 @ string offset=627
+	.asciz	"array"                 @ string offset=617
 .Linfo_string29:
-	.asciz	"size"                  @ string offset=633
+	.asciz	"size"                  @ string offset=623
 .Linfo_string30:
-	.asciz	"index"                 @ string offset=638
+	.asciz	"index"                 @ string offset=628
 	.section	.debug_abbrev,"",%progbits
 	.byte	1                       @ Abbreviation Code
 	.byte	17                      @ DW_TAG_compile_unit

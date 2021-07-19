@@ -19,8 +19,8 @@
 	.eabi_attribute	14, 0	@ Tag_ABI_PCS_R9_use
 	.file	"para.c"
 	.file	1 "D:\\Keil_v5\\ARM\\ARMCLANG\\Bin\\..\\include" "stdint.h"
-	.file	2 "E:\\project\\product\\GD32\\GD32E230\\E230 - TH\\MDK-ARM" "../APP/Inc\\type.h"
-	.file	3 "E:\\project\\product\\GD32\\GD32E230\\E230 - TH\\MDK-ARM" "../APP/Src/para.c"
+	.file	2 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../APP/Inc\\type.h"
+	.file	3 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../APP/Src/para.c"
 	.section	.text.ReadPara,"ax",%progbits
 	.hidden	ReadPara                @ -- Begin function ReadPara
 	.globl	ReadPara
@@ -30,7 +30,7 @@
 	.thumb_func
 ReadPara:
 .Lfunc_begin0:
-	.loc	3 27 0                  @ ../APP/Src/para.c:27:0
+	.loc	3 28 0                  @ ../APP/Src/para.c:28:0
 	.fnstart
 	.cfi_sections .debug_frame
 	.cfi_startproc
@@ -43,128 +43,132 @@ ReadPara:
 	.pad	#16
 	sub	sp, #16
 	.cfi_def_cfa_offset 24
-	movs	r0, #0
-	add	r1, sp, #12
-	movs	r2, #1
+	add	r0, sp, #12
+	movs	r1, #1
 .Ltmp0:
-	.loc	3 29 5 prologue_end     @ ../APP/Src/para.c:29:5
-	str	r1, [sp, #8]            @ 4-byte Spill
+	.loc	3 30 5 prologue_end     @ ../APP/Src/para.c:30:5
+	str	r0, [sp, #8]            @ 4-byte Spill
+	mov	r0, r1
+	ldr	r2, [sp, #8]            @ 4-byte Reload
+	str	r1, [sp, #4]            @ 4-byte Spill
+	mov	r1, r2
+	ldr	r2, [sp, #4]            @ 4-byte Reload
 	bl	flash_read_MultiBytes
 .Ltmp1:
-	.loc	3 30 7                  @ ../APP/Src/para.c:30:7
+	.loc	3 31 7                  @ ../APP/Src/para.c:31:7
 	ldr	r1, [sp, #8]            @ 4-byte Reload
 	ldrb	r2, [r1]
-	.loc	3 30 23 is_stmt 0       @ ../APP/Src/para.c:30:23
+	.loc	3 31 23 is_stmt 0       @ ../APP/Src/para.c:31:23
 	ldr	r3, __arm_cp.0_0
-	ldrb	r3, [r3]
+	ldrb	r3, [r3, #1]
 .Ltmp2:
-	.loc	3 30 7                  @ ../APP/Src/para.c:30:7
+	.loc	3 31 7                  @ ../APP/Src/para.c:31:7
 	cmp	r2, r3
 	beq	.LBB0_2
 	b	.LBB0_1
 .LBB0_1:
 .Ltmp3:
-	.loc	3 32 9 is_stmt 1        @ ../APP/Src/para.c:32:9
+	.loc	3 33 9 is_stmt 1        @ ../APP/Src/para.c:33:9
 	ldr	r1, __arm_cp.0_0
 	movs	r0, #0
-	movs	r2, #19
+	movs	r2, #22
 	bl	Flash_Write_MultiBytes
-	.loc	3 33 5                  @ ../APP/Src/para.c:33:5
+	.loc	3 34 5                  @ ../APP/Src/para.c:34:5
 	b	.LBB0_2
 .Ltmp4:
 .LBB0_2:
-	.loc	3 34 5                  @ ../APP/Src/para.c:34:5
+	.loc	3 35 5                  @ ../APP/Src/para.c:35:5
 	ldr	r0, __arm_cp.0_1
 	movs	r1, #0
-	movs	r2, #19
-	str	r0, [sp, #4]            @ 4-byte Spill
+	movs	r2, #22
+	str	r0, [sp]                @ 4-byte Spill
 	mov	r0, r1
-	ldr	r1, [sp, #4]            @ 4-byte Reload
+	ldr	r1, [sp]                @ 4-byte Reload
 	bl	flash_read_MultiBytes
-	.loc	3 35 31                 @ ../APP/Src/para.c:35:31
-	ldr	r1, [sp, #4]            @ 4-byte Reload
-	ldrb	r2, [r1, #1]
-	.loc	3 35 29 is_stmt 0       @ ../APP/Src/para.c:35:29
-	ldr	r3, __arm_cp.0_2
-	strb	r2, [r3]
-	.loc	3 36 31 is_stmt 1       @ ../APP/Src/para.c:36:31
+	.loc	3 36 31                 @ ../APP/Src/para.c:36:31
+	ldr	r1, [sp]                @ 4-byte Reload
 	ldrb	r2, [r1, #2]
 	.loc	3 36 29 is_stmt 0       @ ../APP/Src/para.c:36:29
-	strb	r2, [r3, #1]
-	.loc	3 37 28 is_stmt 1       @ ../APP/Src/para.c:37:28
+	ldr	r3, __arm_cp.0_2
+	strb	r2, [r3]
+	.loc	3 37 31 is_stmt 1       @ ../APP/Src/para.c:37:31
 	ldrb	r2, [r1, #3]
-	.loc	3 37 26 is_stmt 0       @ ../APP/Src/para.c:37:26
+	.loc	3 37 29 is_stmt 0       @ ../APP/Src/para.c:37:29
+	strb	r2, [r3, #1]
+	.loc	3 38 28 is_stmt 1       @ ../APP/Src/para.c:38:28
+	ldrb	r2, [r1, #4]
+	.loc	3 38 26 is_stmt 0       @ ../APP/Src/para.c:38:26
 	strb	r2, [r3, #2]
-	.loc	3 42 27 is_stmt 1       @ ../APP/Src/para.c:42:27
-	ldrb	r2, [r1, #5]
-	.loc	3 42 50 is_stmt 0       @ ../APP/Src/para.c:42:50
-	lsls	r2, r2, #8
-	.loc	3 42 57                 @ ../APP/Src/para.c:42:57
-	ldrb	r3, [r1, #4]
-	.loc	3 42 56                 @ ../APP/Src/para.c:42:56
-	adds	r2, r2, r3
-	.loc	3 42 24                 @ ../APP/Src/para.c:42:24
-	ldr	r3, __arm_cp.0_3
-	strh	r2, [r3, #4]
 	.loc	3 43 27 is_stmt 1       @ ../APP/Src/para.c:43:27
-	ldrb	r2, [r1, #7]
+	ldrb	r2, [r1, #6]
 	.loc	3 43 50 is_stmt 0       @ ../APP/Src/para.c:43:50
 	lsls	r2, r2, #8
 	.loc	3 43 57                 @ ../APP/Src/para.c:43:57
-	ldrb	r4, [r1, #6]
+	ldrb	r3, [r1, #5]
 	.loc	3 43 56                 @ ../APP/Src/para.c:43:56
-	adds	r2, r2, r4
+	adds	r2, r2, r3
 	.loc	3 43 24                 @ ../APP/Src/para.c:43:24
-	strh	r2, [r3, #8]
-	.loc	3 45 28 is_stmt 1       @ ../APP/Src/para.c:45:28
-	ldrb	r2, [r1, #9]
-	.loc	3 45 51 is_stmt 0       @ ../APP/Src/para.c:45:51
+	ldr	r3, __arm_cp.0_3
+	strh	r2, [r3, #4]
+	.loc	3 44 27 is_stmt 1       @ ../APP/Src/para.c:44:27
+	ldrb	r2, [r1, #8]
+	.loc	3 44 50 is_stmt 0       @ ../APP/Src/para.c:44:50
 	lsls	r2, r2, #8
-	.loc	3 45 58                 @ ../APP/Src/para.c:45:58
-	ldrb	r4, [r1, #8]
-	.loc	3 45 57                 @ ../APP/Src/para.c:45:57
+	.loc	3 44 57                 @ ../APP/Src/para.c:44:57
+	ldrb	r4, [r1, #7]
+	.loc	3 44 56                 @ ../APP/Src/para.c:44:56
 	adds	r2, r2, r4
-	.loc	3 45 25                 @ ../APP/Src/para.c:45:25
-	strh	r2, [r3, #12]
+	.loc	3 44 24                 @ ../APP/Src/para.c:44:24
+	strh	r2, [r3, #8]
 	.loc	3 46 28 is_stmt 1       @ ../APP/Src/para.c:46:28
-	ldrb	r2, [r1, #11]
+	ldrb	r2, [r1, #10]
 	.loc	3 46 52 is_stmt 0       @ ../APP/Src/para.c:46:52
 	lsls	r2, r2, #8
 	.loc	3 46 59                 @ ../APP/Src/para.c:46:59
-	ldrb	r4, [r1, #10]
+	ldrb	r4, [r1, #9]
 	.loc	3 46 58                 @ ../APP/Src/para.c:46:58
 	adds	r2, r2, r4
 	.loc	3 46 25                 @ ../APP/Src/para.c:46:25
-	strh	r2, [r3, #14]
-	.loc	3 48 27 is_stmt 1       @ ../APP/Src/para.c:48:27
-	ldrb	r2, [r1, #13]
-	.loc	3 48 51 is_stmt 0       @ ../APP/Src/para.c:48:51
+	strh	r2, [r3, #12]
+	.loc	3 47 28 is_stmt 1       @ ../APP/Src/para.c:47:28
+	ldrb	r2, [r1, #12]
+	.loc	3 47 52 is_stmt 0       @ ../APP/Src/para.c:47:52
 	lsls	r2, r2, #8
-	.loc	3 48 58                 @ ../APP/Src/para.c:48:58
-	ldrb	r4, [r1, #12]
-	.loc	3 48 57                 @ ../APP/Src/para.c:48:57
+	.loc	3 47 59                 @ ../APP/Src/para.c:47:59
+	ldrb	r4, [r1, #11]
+	.loc	3 47 58                 @ ../APP/Src/para.c:47:58
 	adds	r2, r2, r4
-	.loc	3 48 24                 @ ../APP/Src/para.c:48:24
-	strh	r2, [r3, #6]
+	.loc	3 47 25                 @ ../APP/Src/para.c:47:25
+	strh	r2, [r3, #14]
 	.loc	3 49 27 is_stmt 1       @ ../APP/Src/para.c:49:27
-	ldrb	r2, [r1, #15]
+	ldrb	r2, [r1, #14]
 	.loc	3 49 51 is_stmt 0       @ ../APP/Src/para.c:49:51
 	lsls	r2, r2, #8
 	.loc	3 49 58                 @ ../APP/Src/para.c:49:58
-	ldrb	r4, [r1, #14]
+	ldrb	r4, [r1, #13]
 	.loc	3 49 57                 @ ../APP/Src/para.c:49:57
 	adds	r2, r2, r4
 	.loc	3 49 24                 @ ../APP/Src/para.c:49:24
-	strh	r2, [r3, #10]
-	.loc	3 51 29 is_stmt 1       @ ../APP/Src/para.c:51:29
+	strh	r2, [r3, #6]
+	.loc	3 50 27 is_stmt 1       @ ../APP/Src/para.c:50:27
 	ldrb	r2, [r1, #16]
-	.loc	3 51 27 is_stmt 0       @ ../APP/Src/para.c:51:27
-	strb	r2, [r3, #24]
+	.loc	3 50 51 is_stmt 0       @ ../APP/Src/para.c:50:51
+	lsls	r2, r2, #8
+	.loc	3 50 58                 @ ../APP/Src/para.c:50:58
+	ldrb	r4, [r1, #15]
+	.loc	3 50 57                 @ ../APP/Src/para.c:50:57
+	adds	r2, r2, r4
+	.loc	3 50 24                 @ ../APP/Src/para.c:50:24
+	strh	r2, [r3, #10]
 	.loc	3 52 29 is_stmt 1       @ ../APP/Src/para.c:52:29
 	ldrb	r2, [r1, #17]
 	.loc	3 52 27 is_stmt 0       @ ../APP/Src/para.c:52:27
+	strb	r2, [r3, #24]
+	.loc	3 53 29 is_stmt 1       @ ../APP/Src/para.c:53:29
+	ldrb	r2, [r1, #18]
+	.loc	3 53 27 is_stmt 0       @ ../APP/Src/para.c:53:27
 	strb	r2, [r3, #25]
-	.loc	3 55 1 is_stmt 1        @ ../APP/Src/para.c:55:1
+	.loc	3 56 1 is_stmt 1        @ ../APP/Src/para.c:56:1
 	add	sp, #16
 	pop	{r4, pc}
 .Ltmp5:
@@ -196,8 +200,8 @@ __arm_cp.0_3:
 	.type	User_Default_Param,%object @ @User_Default_Param
 	.section	.data.User_Default_Param,"aw",%progbits
 User_Default_Param:
-	.asciz	"\002!&\003\277\017G\n\036\000\036\000 \003\310\000\000\000"
-	.size	User_Default_Param, 19
+	.asciz	"\000\002!&\003\277\017G\n\036\000\036\000 \003\310\000\000\000\000\000"
+	.size	User_Default_Param, 22
 
 	.hidden	Cur_Param               @ @Cur_Param
 	.type	Cur_Param,%object
@@ -205,8 +209,8 @@ User_Default_Param:
 	.globl	Cur_Param
 Cur_Param:
 .LCur_Param$local:
-	.zero	19
-	.size	Cur_Param, 19
+	.zero	22
+	.size	Cur_Param, 22
 
 	.hidden	UserPara                @ @UserPara
 	.type	UserPara,%object
@@ -224,77 +228,77 @@ UserPara:
 .Linfo_string1:
 	.asciz	"../APP/Src\\para.c"    @ string offset=55
 .Linfo_string2:
-	.asciz	"E:\\project\\product\\GD32\\GD32E230\\E230 - TH\\MDK-ARM" @ string offset=73
+	.asciz	"E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" @ string offset=73
 .Linfo_string3:
-	.asciz	"UserPara"              @ string offset=124
+	.asciz	"UserPara"              @ string offset=115
 .Linfo_string4:
-	.asciz	"SlaveAddr_Temp"        @ string offset=133
+	.asciz	"SlaveAddr_Temp"        @ string offset=124
 .Linfo_string5:
-	.asciz	"unsigned char"         @ string offset=148
+	.asciz	"unsigned char"         @ string offset=139
 .Linfo_string6:
-	.asciz	"uint8_t"               @ string offset=162
+	.asciz	"uint8_t"               @ string offset=153
 .Linfo_string7:
-	.asciz	"SlaveAddr_Humi"        @ string offset=170
+	.asciz	"SlaveAddr_Humi"        @ string offset=161
 .Linfo_string8:
-	.asciz	"Baudrate"              @ string offset=185
+	.asciz	"Baudrate"              @ string offset=176
 .Linfo_string9:
-	.asciz	"Parity"                @ string offset=194
+	.asciz	"Parity"                @ string offset=185
 .Linfo_string10:
-	.asciz	"ImpDataFlag"           @ string offset=201
+	.asciz	"ImpDataFlag"           @ string offset=192
 .Linfo_string11:
-	.asciz	"RotateSta"             @ string offset=213
+	.asciz	"RotateSta"             @ string offset=204
 .Linfo_string12:
-	.asciz	"STA_STOP"              @ string offset=223
+	.asciz	"STA_STOP"              @ string offset=214
 .Linfo_string13:
-	.asciz	"STA_WORK"              @ string offset=232
+	.asciz	"STA_WORK"              @ string offset=223
 .Linfo_string14:
-	.asciz	"RotateStaTypeDef"      @ string offset=241
+	.asciz	"RotateStaTypeDef"      @ string offset=232
 .Linfo_string15:
-	.asciz	"DirSta"                @ string offset=258
+	.asciz	"DirSta"                @ string offset=249
 .Linfo_string16:
-	.asciz	"Stall"                 @ string offset=265
+	.asciz	"Stall"                 @ string offset=256
 .Linfo_string17:
-	.asciz	"Foreward"              @ string offset=271
+	.asciz	"Foreward"              @ string offset=262
 .Linfo_string18:
-	.asciz	"Reversal"              @ string offset=280
+	.asciz	"Reversal"              @ string offset=271
 .Linfo_string19:
-	.asciz	"DirectionState_TypeDef" @ string offset=289
+	.asciz	"DirectionState_TypeDef" @ string offset=280
 .Linfo_string20:
-	.asciz	"RotateSpeed"           @ string offset=312
+	.asciz	"RotateSpeed"           @ string offset=303
 .Linfo_string21:
-	.asciz	"unsigned int"          @ string offset=324
+	.asciz	"unsigned int"          @ string offset=315
 .Linfo_string22:
-	.asciz	"uint32_t"              @ string offset=337
+	.asciz	"uint32_t"              @ string offset=328
 .Linfo_string23:
-	.asciz	"PositiveTimeBase"      @ string offset=346
+	.asciz	"PositiveTimeBase"      @ string offset=337
 .Linfo_string24:
-	.asciz	"NegativeTimeBase"      @ string offset=363
+	.asciz	"NegativeTimeBase"      @ string offset=354
 .Linfo_string25:
-	.asciz	"WorkTime"              @ string offset=380
+	.asciz	"WorkTime"              @ string offset=371
 .Linfo_string26:
-	.asciz	"TotalPulse"            @ string offset=389
+	.asciz	"TotalPulse"            @ string offset=380
 .Linfo_string27:
-	.asciz	"Duration"              @ string offset=400
+	.asciz	"Duration"              @ string offset=391
 .Linfo_string28:
-	.asciz	"FilterBufMax"          @ string offset=409
+	.asciz	"FilterBufMax"          @ string offset=400
 .Linfo_string29:
-	.asciz	"FilterCycle"           @ string offset=422
+	.asciz	"FilterCycle"           @ string offset=413
 .Linfo_string30:
-	.asciz	"unsigned short"        @ string offset=434
+	.asciz	"unsigned short"        @ string offset=425
 .Linfo_string31:
-	.asciz	"uint16_t"              @ string offset=449
+	.asciz	"uint16_t"              @ string offset=440
 .Linfo_string32:
-	.asciz	"UserTypeDef"           @ string offset=458
+	.asciz	"UserTypeDef"           @ string offset=449
 .Linfo_string33:
-	.asciz	"Cur_Param"             @ string offset=470
+	.asciz	"Cur_Param"             @ string offset=461
 .Linfo_string34:
-	.asciz	"__ARRAY_SIZE_TYPE__"   @ string offset=480
+	.asciz	"__ARRAY_SIZE_TYPE__"   @ string offset=471
 .Linfo_string35:
-	.asciz	"User_Default_Param"    @ string offset=500
+	.asciz	"User_Default_Param"    @ string offset=491
 .Linfo_string36:
-	.asciz	"ReadPara"              @ string offset=519
+	.asciz	"ReadPara"              @ string offset=510
 .Linfo_string37:
-	.asciz	"ParaInitFlag"          @ string offset=528
+	.asciz	"ParaInitFlag"          @ string offset=519
 	.section	.debug_abbrev,"",%progbits
 	.byte	1                       @ Abbreviation Code
 	.byte	17                      @ DW_TAG_compile_unit
@@ -684,7 +688,7 @@ UserPara:
 	.long	252                     @ DW_AT_type
 	.byte	10                      @ Abbrev [10] 0x18f:0x6 DW_TAG_subrange_type
 	.long	406                     @ DW_AT_type
-	.byte	19                      @ DW_AT_count
+	.byte	22                      @ DW_AT_count
 	.byte	0                       @ End Of Children Mark
 	.byte	11                      @ Abbrev [11] 0x196:0x7 DW_TAG_base_type
 	.long	.Linfo_string34         @ DW_AT_name
@@ -705,7 +709,7 @@ UserPara:
 	.byte	93
 	.long	.Linfo_string36         @ DW_AT_name
 	.byte	3                       @ DW_AT_decl_file
-	.byte	26                      @ DW_AT_decl_line
+	.byte	27                      @ DW_AT_decl_line
 	.byte	1                       @ DW_AT_prototyped
 	.byte	1                       @ DW_AT_external
 	.byte	14                      @ Abbrev [14] 0x1c1:0xe DW_TAG_variable
@@ -714,7 +718,7 @@ UserPara:
 	.byte	12
 	.long	.Linfo_string37         @ DW_AT_name
 	.byte	3                       @ DW_AT_decl_file
-	.byte	28                      @ DW_AT_decl_line
+	.byte	29                      @ DW_AT_decl_line
 	.long	252                     @ DW_AT_type
 	.byte	0                       @ End Of Children Mark
 	.byte	0                       @ End Of Children Mark

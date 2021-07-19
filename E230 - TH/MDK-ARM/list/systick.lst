@@ -19,8 +19,8 @@
 	.eabi_attribute	14, 0	@ Tag_ABI_PCS_R9_use
 	.file	"systick.c"
 	.file	1 "D:\\Keil_v5\\ARM\\ARMCLANG\\Bin\\..\\include" "stdint.h"
-	.file	2 "E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" "../User/systick.c"
-	.file	3 "E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" "../GD32E230_Firmware_Library/CMSIS/GD/GD32E230/Include\\gd32e230.h"
+	.file	2 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../User/systick.c"
+	.file	3 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/CMSIS/GD/GD32E230/Include\\gd32e230.h"
 	.file	4 "D:/Keil_v5\\Arm\\Packs\\ARM\\CMSIS\\5.7.0\\CMSIS\\Core\\Include" "core_cm23.h"
 	.section	.text.systick_config,"ax",%progbits
 	.hidden	systick_config          @ -- Begin function systick_config
@@ -437,165 +437,165 @@ delay:
 .Linfo_string1:
 	.asciz	"../User\\systick.c"    @ string offset=55
 .Linfo_string2:
-	.asciz	"E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" @ string offset=73
+	.asciz	"E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" @ string offset=73
 .Linfo_string3:
-	.asciz	"delay"                 @ string offset=125
+	.asciz	"delay"                 @ string offset=115
 .Linfo_string4:
-	.asciz	"unsigned int"          @ string offset=131
+	.asciz	"unsigned int"          @ string offset=121
 .Linfo_string5:
-	.asciz	"uint32_t"              @ string offset=144
+	.asciz	"uint32_t"              @ string offset=134
 .Linfo_string6:
-	.asciz	"signed char"           @ string offset=153
+	.asciz	"signed char"           @ string offset=143
 .Linfo_string7:
-	.asciz	"NonMaskableInt_IRQn"   @ string offset=165
+	.asciz	"NonMaskableInt_IRQn"   @ string offset=155
 .Linfo_string8:
-	.asciz	"HardFault_IRQn"        @ string offset=185
+	.asciz	"HardFault_IRQn"        @ string offset=175
 .Linfo_string9:
-	.asciz	"SVCall_IRQn"           @ string offset=200
+	.asciz	"SVCall_IRQn"           @ string offset=190
 .Linfo_string10:
-	.asciz	"PendSV_IRQn"           @ string offset=212
+	.asciz	"PendSV_IRQn"           @ string offset=202
 .Linfo_string11:
-	.asciz	"SysTick_IRQn"          @ string offset=224
+	.asciz	"SysTick_IRQn"          @ string offset=214
 .Linfo_string12:
-	.asciz	"WWDGT_IRQn"            @ string offset=237
+	.asciz	"WWDGT_IRQn"            @ string offset=227
 .Linfo_string13:
-	.asciz	"LVD_IRQn"              @ string offset=248
+	.asciz	"LVD_IRQn"              @ string offset=238
 .Linfo_string14:
-	.asciz	"RTC_IRQn"              @ string offset=257
+	.asciz	"RTC_IRQn"              @ string offset=247
 .Linfo_string15:
-	.asciz	"FMC_IRQn"              @ string offset=266
+	.asciz	"FMC_IRQn"              @ string offset=256
 .Linfo_string16:
-	.asciz	"RCU_IRQn"              @ string offset=275
+	.asciz	"RCU_IRQn"              @ string offset=265
 .Linfo_string17:
-	.asciz	"EXTI0_1_IRQn"          @ string offset=284
+	.asciz	"EXTI0_1_IRQn"          @ string offset=274
 .Linfo_string18:
-	.asciz	"EXTI2_3_IRQn"          @ string offset=297
+	.asciz	"EXTI2_3_IRQn"          @ string offset=287
 .Linfo_string19:
-	.asciz	"EXTI4_15_IRQn"         @ string offset=310
+	.asciz	"EXTI4_15_IRQn"         @ string offset=300
 .Linfo_string20:
-	.asciz	"DMA_Channel0_IRQn"     @ string offset=324
+	.asciz	"DMA_Channel0_IRQn"     @ string offset=314
 .Linfo_string21:
-	.asciz	"DMA_Channel1_2_IRQn"   @ string offset=342
+	.asciz	"DMA_Channel1_2_IRQn"   @ string offset=332
 .Linfo_string22:
-	.asciz	"DMA_Channel3_4_IRQn"   @ string offset=362
+	.asciz	"DMA_Channel3_4_IRQn"   @ string offset=352
 .Linfo_string23:
-	.asciz	"ADC_CMP_IRQn"          @ string offset=382
+	.asciz	"ADC_CMP_IRQn"          @ string offset=372
 .Linfo_string24:
-	.asciz	"TIMER0_BRK_UP_TRG_COM_IRQn" @ string offset=395
+	.asciz	"TIMER0_BRK_UP_TRG_COM_IRQn" @ string offset=385
 .Linfo_string25:
-	.asciz	"TIMER0_Channel_IRQn"   @ string offset=422
+	.asciz	"TIMER0_Channel_IRQn"   @ string offset=412
 .Linfo_string26:
-	.asciz	"TIMER2_IRQn"           @ string offset=442
+	.asciz	"TIMER2_IRQn"           @ string offset=432
 .Linfo_string27:
-	.asciz	"TIMER5_IRQn"           @ string offset=454
+	.asciz	"TIMER5_IRQn"           @ string offset=444
 .Linfo_string28:
-	.asciz	"TIMER13_IRQn"          @ string offset=466
+	.asciz	"TIMER13_IRQn"          @ string offset=456
 .Linfo_string29:
-	.asciz	"TIMER14_IRQn"          @ string offset=479
+	.asciz	"TIMER14_IRQn"          @ string offset=469
 .Linfo_string30:
-	.asciz	"TIMER15_IRQn"          @ string offset=492
+	.asciz	"TIMER15_IRQn"          @ string offset=482
 .Linfo_string31:
-	.asciz	"TIMER16_IRQn"          @ string offset=505
+	.asciz	"TIMER16_IRQn"          @ string offset=495
 .Linfo_string32:
-	.asciz	"I2C0_EV_IRQn"          @ string offset=518
+	.asciz	"I2C0_EV_IRQn"          @ string offset=508
 .Linfo_string33:
-	.asciz	"I2C1_EV_IRQn"          @ string offset=531
+	.asciz	"I2C1_EV_IRQn"          @ string offset=521
 .Linfo_string34:
-	.asciz	"SPI0_IRQn"             @ string offset=544
+	.asciz	"SPI0_IRQn"             @ string offset=534
 .Linfo_string35:
-	.asciz	"SPI1_IRQn"             @ string offset=554
+	.asciz	"SPI1_IRQn"             @ string offset=544
 .Linfo_string36:
-	.asciz	"USART0_IRQn"           @ string offset=564
+	.asciz	"USART0_IRQn"           @ string offset=554
 .Linfo_string37:
-	.asciz	"USART1_IRQn"           @ string offset=576
+	.asciz	"USART1_IRQn"           @ string offset=566
 .Linfo_string38:
-	.asciz	"I2C0_ER_IRQn"          @ string offset=588
+	.asciz	"I2C0_ER_IRQn"          @ string offset=578
 .Linfo_string39:
-	.asciz	"I2C1_ER_IRQn"          @ string offset=601
+	.asciz	"I2C1_ER_IRQn"          @ string offset=591
 .Linfo_string40:
-	.asciz	"IRQn"                  @ string offset=614
+	.asciz	"IRQn"                  @ string offset=604
 .Linfo_string41:
-	.asciz	"CTRL"                  @ string offset=619
+	.asciz	"CTRL"                  @ string offset=609
 .Linfo_string42:
-	.asciz	"LOAD"                  @ string offset=624
+	.asciz	"LOAD"                  @ string offset=614
 .Linfo_string43:
-	.asciz	"VAL"                   @ string offset=629
+	.asciz	"VAL"                   @ string offset=619
 .Linfo_string44:
-	.asciz	"CALIB"                 @ string offset=633
+	.asciz	"CALIB"                 @ string offset=623
 .Linfo_string45:
-	.asciz	"SysTick_Type"          @ string offset=639
+	.asciz	"SysTick_Type"          @ string offset=629
 .Linfo_string46:
-	.asciz	"int"                   @ string offset=652
+	.asciz	"int"                   @ string offset=642
 .Linfo_string47:
-	.asciz	"int32_t"               @ string offset=656
+	.asciz	"int32_t"               @ string offset=646
 .Linfo_string48:
-	.asciz	"ISER"                  @ string offset=664
+	.asciz	"ISER"                  @ string offset=654
 .Linfo_string49:
-	.asciz	"__ARRAY_SIZE_TYPE__"   @ string offset=669
+	.asciz	"__ARRAY_SIZE_TYPE__"   @ string offset=659
 .Linfo_string50:
-	.asciz	"RESERVED0"             @ string offset=689
+	.asciz	"RESERVED0"             @ string offset=679
 .Linfo_string51:
-	.asciz	"ICER"                  @ string offset=699
+	.asciz	"ICER"                  @ string offset=689
 .Linfo_string52:
-	.asciz	"RSERVED1"              @ string offset=704
+	.asciz	"RSERVED1"              @ string offset=694
 .Linfo_string53:
-	.asciz	"ISPR"                  @ string offset=713
+	.asciz	"ISPR"                  @ string offset=703
 .Linfo_string54:
-	.asciz	"RESERVED2"             @ string offset=718
+	.asciz	"RESERVED2"             @ string offset=708
 .Linfo_string55:
-	.asciz	"ICPR"                  @ string offset=728
+	.asciz	"ICPR"                  @ string offset=718
 .Linfo_string56:
-	.asciz	"RESERVED3"             @ string offset=733
+	.asciz	"RESERVED3"             @ string offset=723
 .Linfo_string57:
-	.asciz	"IABR"                  @ string offset=743
+	.asciz	"IABR"                  @ string offset=733
 .Linfo_string58:
-	.asciz	"RESERVED4"             @ string offset=748
+	.asciz	"RESERVED4"             @ string offset=738
 .Linfo_string59:
-	.asciz	"ITNS"                  @ string offset=758
+	.asciz	"ITNS"                  @ string offset=748
 .Linfo_string60:
-	.asciz	"RESERVED5"             @ string offset=763
+	.asciz	"RESERVED5"             @ string offset=753
 .Linfo_string61:
-	.asciz	"IPR"                   @ string offset=773
+	.asciz	"IPR"                   @ string offset=763
 .Linfo_string62:
-	.asciz	"NVIC_Type"             @ string offset=777
+	.asciz	"NVIC_Type"             @ string offset=767
 .Linfo_string63:
-	.asciz	"CPUID"                 @ string offset=787
+	.asciz	"CPUID"                 @ string offset=777
 .Linfo_string64:
-	.asciz	"ICSR"                  @ string offset=793
+	.asciz	"ICSR"                  @ string offset=783
 .Linfo_string65:
-	.asciz	"VTOR"                  @ string offset=798
+	.asciz	"VTOR"                  @ string offset=788
 .Linfo_string66:
-	.asciz	"AIRCR"                 @ string offset=803
+	.asciz	"AIRCR"                 @ string offset=793
 .Linfo_string67:
-	.asciz	"SCR"                   @ string offset=809
+	.asciz	"SCR"                   @ string offset=799
 .Linfo_string68:
-	.asciz	"CCR"                   @ string offset=813
+	.asciz	"CCR"                   @ string offset=803
 .Linfo_string69:
-	.asciz	"RESERVED1"             @ string offset=817
+	.asciz	"RESERVED1"             @ string offset=807
 .Linfo_string70:
-	.asciz	"SHPR"                  @ string offset=827
+	.asciz	"SHPR"                  @ string offset=817
 .Linfo_string71:
-	.asciz	"SHCSR"                 @ string offset=832
+	.asciz	"SHCSR"                 @ string offset=822
 .Linfo_string72:
-	.asciz	"SCB_Type"              @ string offset=838
+	.asciz	"SCB_Type"              @ string offset=828
 .Linfo_string73:
-	.asciz	"systick_config"        @ string offset=847
+	.asciz	"systick_config"        @ string offset=837
 .Linfo_string74:
-	.asciz	"SysTick_Config"        @ string offset=862
+	.asciz	"SysTick_Config"        @ string offset=852
 .Linfo_string75:
-	.asciz	"__NVIC_SetPriority"    @ string offset=877
+	.asciz	"__NVIC_SetPriority"    @ string offset=867
 .Linfo_string76:
-	.asciz	"delay_1ms"             @ string offset=896
+	.asciz	"delay_1ms"             @ string offset=886
 .Linfo_string77:
-	.asciz	"delay_decrement"       @ string offset=906
+	.asciz	"delay_decrement"       @ string offset=896
 .Linfo_string78:
-	.asciz	"ticks"                 @ string offset=922
+	.asciz	"ticks"                 @ string offset=912
 .Linfo_string79:
-	.asciz	"IRQn_Type"             @ string offset=928
+	.asciz	"IRQn_Type"             @ string offset=918
 .Linfo_string80:
-	.asciz	"priority"              @ string offset=938
+	.asciz	"priority"              @ string offset=928
 .Linfo_string81:
-	.asciz	"count"                 @ string offset=947
+	.asciz	"count"                 @ string offset=937
 	.section	.debug_abbrev,"",%progbits
 	.byte	1                       @ Abbreviation Code
 	.byte	17                      @ DW_TAG_compile_unit

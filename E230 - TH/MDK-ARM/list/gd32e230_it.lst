@@ -27,7 +27,7 @@
 	.thumb_func
 NMI_Handler:
 .Lfunc_begin0:
-	.file	1 "E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" "../User/gd32e230_it.c"
+	.file	1 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../User/gd32e230_it.c"
 	.loc	1 54 0                  @ ../User/gd32e230_it.c:54:0
 	.fnstart
 	.cfi_sections .debug_frame
@@ -240,25 +240,25 @@ SysTick_Handler:
 .Linfo_string1:
 	.asciz	"../User\\gd32e230_it.c" @ string offset=55
 .Linfo_string2:
-	.asciz	"E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" @ string offset=77
+	.asciz	"E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" @ string offset=77
 .Linfo_string3:
-	.asciz	"NMI_Handler"           @ string offset=129
+	.asciz	"NMI_Handler"           @ string offset=119
 .Linfo_string4:
-	.asciz	"HardFault_Handler"     @ string offset=141
+	.asciz	"HardFault_Handler"     @ string offset=131
 .Linfo_string5:
-	.asciz	"MemManage_Handler"     @ string offset=159
+	.asciz	"MemManage_Handler"     @ string offset=149
 .Linfo_string6:
-	.asciz	"BusFault_Handler"      @ string offset=177
+	.asciz	"BusFault_Handler"      @ string offset=167
 .Linfo_string7:
-	.asciz	"UsageFault_Handler"    @ string offset=194
+	.asciz	"UsageFault_Handler"    @ string offset=184
 .Linfo_string8:
-	.asciz	"SVC_Handler"           @ string offset=213
+	.asciz	"SVC_Handler"           @ string offset=203
 .Linfo_string9:
-	.asciz	"DebugMon_Handler"      @ string offset=225
+	.asciz	"DebugMon_Handler"      @ string offset=215
 .Linfo_string10:
-	.asciz	"PendSV_Handler"        @ string offset=242
+	.asciz	"PendSV_Handler"        @ string offset=232
 .Linfo_string11:
-	.asciz	"SysTick_Handler"       @ string offset=257
+	.asciz	"SysTick_Handler"       @ string offset=247
 	.section	.debug_abbrev,"",%progbits
 	.byte	1                       @ Abbreviation Code
 	.byte	17                      @ DW_TAG_compile_unit

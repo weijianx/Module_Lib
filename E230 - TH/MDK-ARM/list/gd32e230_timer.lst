@@ -18,8 +18,8 @@
 	.eabi_attribute	26, 1	@ Tag_ABI_enum_size
 	.eabi_attribute	14, 0	@ Tag_ABI_PCS_R9_use
 	.file	"gd32e230_timer.c"
-	.file	1 "E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include\\gd32e230_rcu.h"
-	.file	2 "E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" "../GD32E230_Firmware_Library/CMSIS/GD/GD32E230/Include\\gd32e230.h"
+	.file	1 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include\\gd32e230_rcu.h"
+	.file	2 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/CMSIS/GD/GD32E230/Include\\gd32e230.h"
 	.file	3 "D:\\Keil_v5\\ARM\\ARMCLANG\\Bin\\..\\include" "stdint.h"
 	.section	.text.timer_deinit,"ax",%progbits
 	.hidden	timer_deinit            @ -- Begin function timer_deinit
@@ -30,7 +30,7 @@
 	.thumb_func
 timer_deinit:
 .Lfunc_begin0:
-	.file	4 "E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source/gd32e230_timer.c"
+	.file	4 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source/gd32e230_timer.c"
 	.loc	4 51 0                  @ ../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source/gd32e230_timer.c:51:0
 	.fnstart
 	.cfi_sections .debug_frame
@@ -6414,378 +6414,378 @@ timer_output_value_selection_config:
 	.cantunwind
 	.fnend
                                         @ -- End function
-	.file	5 "E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include\\gd32e230_timer.h"
+	.file	5 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include\\gd32e230_timer.h"
 	.section	.debug_str,"MS",%progbits,1
 .Linfo_string0:
 	.asciz	"Component: ARM Compiler 6.14 Tool: armclang [5db06c00]" @ string offset=0
 .Linfo_string1:
 	.asciz	"../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source\\gd32e230_timer.c" @ string offset=55
 .Linfo_string2:
-	.asciz	"E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" @ string offset=137
+	.asciz	"E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" @ string offset=137
 .Linfo_string3:
-	.asciz	"unsigned short"        @ string offset=189
+	.asciz	"unsigned short"        @ string offset=179
 .Linfo_string4:
-	.asciz	"RCU_GPIOARST"          @ string offset=204
+	.asciz	"RCU_GPIOARST"          @ string offset=194
 .Linfo_string5:
-	.asciz	"RCU_GPIOBRST"          @ string offset=217
+	.asciz	"RCU_GPIOBRST"          @ string offset=207
 .Linfo_string6:
-	.asciz	"RCU_GPIOCRST"          @ string offset=230
+	.asciz	"RCU_GPIOCRST"          @ string offset=220
 .Linfo_string7:
-	.asciz	"RCU_GPIOFRST"          @ string offset=243
+	.asciz	"RCU_GPIOFRST"          @ string offset=233
 .Linfo_string8:
-	.asciz	"RCU_CFGCMPRST"         @ string offset=256
+	.asciz	"RCU_CFGCMPRST"         @ string offset=246
 .Linfo_string9:
-	.asciz	"RCU_ADCRST"            @ string offset=270
+	.asciz	"RCU_ADCRST"            @ string offset=260
 .Linfo_string10:
-	.asciz	"RCU_TIMER0RST"         @ string offset=281
+	.asciz	"RCU_TIMER0RST"         @ string offset=271
 .Linfo_string11:
-	.asciz	"RCU_SPI0RST"           @ string offset=295
+	.asciz	"RCU_SPI0RST"           @ string offset=285
 .Linfo_string12:
-	.asciz	"RCU_USART0RST"         @ string offset=307
+	.asciz	"RCU_USART0RST"         @ string offset=297
 .Linfo_string13:
-	.asciz	"RCU_TIMER14RST"        @ string offset=321
+	.asciz	"RCU_TIMER14RST"        @ string offset=311
 .Linfo_string14:
-	.asciz	"RCU_TIMER15RST"        @ string offset=336
+	.asciz	"RCU_TIMER15RST"        @ string offset=326
 .Linfo_string15:
-	.asciz	"RCU_TIMER16RST"        @ string offset=351
+	.asciz	"RCU_TIMER16RST"        @ string offset=341
 .Linfo_string16:
-	.asciz	"RCU_TIMER2RST"         @ string offset=366
+	.asciz	"RCU_TIMER2RST"         @ string offset=356
 .Linfo_string17:
-	.asciz	"RCU_TIMER5RST"         @ string offset=380
+	.asciz	"RCU_TIMER5RST"         @ string offset=370
 .Linfo_string18:
-	.asciz	"RCU_TIMER13RST"        @ string offset=394
+	.asciz	"RCU_TIMER13RST"        @ string offset=384
 .Linfo_string19:
-	.asciz	"RCU_WWDGTRST"          @ string offset=409
+	.asciz	"RCU_WWDGTRST"          @ string offset=399
 .Linfo_string20:
-	.asciz	"RCU_SPI1RST"           @ string offset=422
+	.asciz	"RCU_SPI1RST"           @ string offset=412
 .Linfo_string21:
-	.asciz	"RCU_USART1RST"         @ string offset=434
+	.asciz	"RCU_USART1RST"         @ string offset=424
 .Linfo_string22:
-	.asciz	"RCU_I2C0RST"           @ string offset=448
+	.asciz	"RCU_I2C0RST"           @ string offset=438
 .Linfo_string23:
-	.asciz	"RCU_I2C1RST"           @ string offset=460
+	.asciz	"RCU_I2C1RST"           @ string offset=450
 .Linfo_string24:
-	.asciz	"RCU_PMURST"            @ string offset=472
+	.asciz	"RCU_PMURST"            @ string offset=462
 .Linfo_string25:
-	.asciz	"unsigned char"         @ string offset=483
+	.asciz	"unsigned char"         @ string offset=473
 .Linfo_string26:
-	.asciz	"RESET"                 @ string offset=497
+	.asciz	"RESET"                 @ string offset=487
 .Linfo_string27:
-	.asciz	"SET"                   @ string offset=503
+	.asciz	"SET"                   @ string offset=493
 .Linfo_string28:
-	.asciz	"DISABLE"               @ string offset=507
+	.asciz	"DISABLE"               @ string offset=497
 .Linfo_string29:
-	.asciz	"ENABLE"                @ string offset=515
+	.asciz	"ENABLE"                @ string offset=505
 .Linfo_string30:
-	.asciz	"uint16_t"              @ string offset=522
+	.asciz	"uint16_t"              @ string offset=512
 .Linfo_string31:
-	.asciz	"unsigned int"          @ string offset=531
+	.asciz	"unsigned int"          @ string offset=521
 .Linfo_string32:
-	.asciz	"uint32_t"              @ string offset=544
+	.asciz	"uint32_t"              @ string offset=534
 .Linfo_string33:
-	.asciz	"uint8_t"               @ string offset=553
+	.asciz	"uint8_t"               @ string offset=543
 .Linfo_string34:
-	.asciz	"timer_deinit"          @ string offset=561
+	.asciz	"timer_deinit"          @ string offset=551
 .Linfo_string35:
-	.asciz	"timer_struct_para_init" @ string offset=574
+	.asciz	"timer_struct_para_init" @ string offset=564
 .Linfo_string36:
-	.asciz	"timer_init"            @ string offset=597
+	.asciz	"timer_init"            @ string offset=587
 .Linfo_string37:
-	.asciz	"timer_enable"          @ string offset=608
+	.asciz	"timer_enable"          @ string offset=598
 .Linfo_string38:
-	.asciz	"timer_disable"         @ string offset=621
+	.asciz	"timer_disable"         @ string offset=611
 .Linfo_string39:
-	.asciz	"timer_auto_reload_shadow_enable" @ string offset=635
+	.asciz	"timer_auto_reload_shadow_enable" @ string offset=625
 .Linfo_string40:
-	.asciz	"timer_auto_reload_shadow_disable" @ string offset=667
+	.asciz	"timer_auto_reload_shadow_disable" @ string offset=657
 .Linfo_string41:
-	.asciz	"timer_update_event_enable" @ string offset=700
+	.asciz	"timer_update_event_enable" @ string offset=690
 .Linfo_string42:
-	.asciz	"timer_update_event_disable" @ string offset=726
+	.asciz	"timer_update_event_disable" @ string offset=716
 .Linfo_string43:
-	.asciz	"timer_counter_alignment" @ string offset=753
+	.asciz	"timer_counter_alignment" @ string offset=743
 .Linfo_string44:
-	.asciz	"timer_counter_up_direction" @ string offset=777
+	.asciz	"timer_counter_up_direction" @ string offset=767
 .Linfo_string45:
-	.asciz	"timer_counter_down_direction" @ string offset=804
+	.asciz	"timer_counter_down_direction" @ string offset=794
 .Linfo_string46:
-	.asciz	"timer_prescaler_config" @ string offset=833
+	.asciz	"timer_prescaler_config" @ string offset=823
 .Linfo_string47:
-	.asciz	"timer_repetition_value_config" @ string offset=856
+	.asciz	"timer_repetition_value_config" @ string offset=846
 .Linfo_string48:
-	.asciz	"timer_autoreload_value_config" @ string offset=886
+	.asciz	"timer_autoreload_value_config" @ string offset=876
 .Linfo_string49:
-	.asciz	"timer_counter_value_config" @ string offset=916
+	.asciz	"timer_counter_value_config" @ string offset=906
 .Linfo_string50:
-	.asciz	"timer_counter_read"    @ string offset=943
+	.asciz	"timer_counter_read"    @ string offset=933
 .Linfo_string51:
-	.asciz	"timer_prescaler_read"  @ string offset=962
+	.asciz	"timer_prescaler_read"  @ string offset=952
 .Linfo_string52:
-	.asciz	"timer_single_pulse_mode_config" @ string offset=983
+	.asciz	"timer_single_pulse_mode_config" @ string offset=973
 .Linfo_string53:
-	.asciz	"timer_update_source_config" @ string offset=1014
+	.asciz	"timer_update_source_config" @ string offset=1004
 .Linfo_string54:
-	.asciz	"timer_ocpre_clear_source_config" @ string offset=1041
+	.asciz	"timer_ocpre_clear_source_config" @ string offset=1031
 .Linfo_string55:
-	.asciz	"timer_interrupt_enable" @ string offset=1073
+	.asciz	"timer_interrupt_enable" @ string offset=1063
 .Linfo_string56:
-	.asciz	"timer_interrupt_disable" @ string offset=1096
+	.asciz	"timer_interrupt_disable" @ string offset=1086
 .Linfo_string57:
-	.asciz	"timer_interrupt_flag_get" @ string offset=1120
+	.asciz	"timer_interrupt_flag_get" @ string offset=1110
 .Linfo_string58:
-	.asciz	"FlagStatus"            @ string offset=1145
+	.asciz	"FlagStatus"            @ string offset=1135
 .Linfo_string59:
-	.asciz	"timer_interrupt_flag_clear" @ string offset=1156
+	.asciz	"timer_interrupt_flag_clear" @ string offset=1146
 .Linfo_string60:
-	.asciz	"timer_flag_get"        @ string offset=1183
+	.asciz	"timer_flag_get"        @ string offset=1173
 .Linfo_string61:
-	.asciz	"timer_flag_clear"      @ string offset=1198
+	.asciz	"timer_flag_clear"      @ string offset=1188
 .Linfo_string62:
-	.asciz	"timer_dma_enable"      @ string offset=1215
+	.asciz	"timer_dma_enable"      @ string offset=1205
 .Linfo_string63:
-	.asciz	"timer_dma_disable"     @ string offset=1232
+	.asciz	"timer_dma_disable"     @ string offset=1222
 .Linfo_string64:
-	.asciz	"timer_channel_dma_request_source_select" @ string offset=1250
+	.asciz	"timer_channel_dma_request_source_select" @ string offset=1240
 .Linfo_string65:
-	.asciz	"timer_dma_transfer_config" @ string offset=1290
+	.asciz	"timer_dma_transfer_config" @ string offset=1280
 .Linfo_string66:
-	.asciz	"timer_event_software_generate" @ string offset=1316
+	.asciz	"timer_event_software_generate" @ string offset=1306
 .Linfo_string67:
-	.asciz	"timer_break_struct_para_init" @ string offset=1346
+	.asciz	"timer_break_struct_para_init" @ string offset=1336
 .Linfo_string68:
-	.asciz	"timer_break_config"    @ string offset=1375
+	.asciz	"timer_break_config"    @ string offset=1365
 .Linfo_string69:
-	.asciz	"timer_break_enable"    @ string offset=1394
+	.asciz	"timer_break_enable"    @ string offset=1384
 .Linfo_string70:
-	.asciz	"timer_break_disable"   @ string offset=1413
+	.asciz	"timer_break_disable"   @ string offset=1403
 .Linfo_string71:
-	.asciz	"timer_automatic_output_enable" @ string offset=1433
+	.asciz	"timer_automatic_output_enable" @ string offset=1423
 .Linfo_string72:
-	.asciz	"timer_automatic_output_disable" @ string offset=1463
+	.asciz	"timer_automatic_output_disable" @ string offset=1453
 .Linfo_string73:
-	.asciz	"timer_primary_output_config" @ string offset=1494
+	.asciz	"timer_primary_output_config" @ string offset=1484
 .Linfo_string74:
-	.asciz	"timer_channel_control_shadow_config" @ string offset=1522
+	.asciz	"timer_channel_control_shadow_config" @ string offset=1512
 .Linfo_string75:
-	.asciz	"timer_channel_control_shadow_update_config" @ string offset=1558
+	.asciz	"timer_channel_control_shadow_update_config" @ string offset=1548
 .Linfo_string76:
-	.asciz	"timer_channel_output_struct_para_init" @ string offset=1601
+	.asciz	"timer_channel_output_struct_para_init" @ string offset=1591
 .Linfo_string77:
-	.asciz	"timer_channel_output_config" @ string offset=1639
+	.asciz	"timer_channel_output_config" @ string offset=1629
 .Linfo_string78:
-	.asciz	"timer_channel_output_mode_config" @ string offset=1667
+	.asciz	"timer_channel_output_mode_config" @ string offset=1657
 .Linfo_string79:
-	.asciz	"timer_channel_output_pulse_value_config" @ string offset=1700
+	.asciz	"timer_channel_output_pulse_value_config" @ string offset=1690
 .Linfo_string80:
-	.asciz	"timer_channel_output_shadow_config" @ string offset=1740
+	.asciz	"timer_channel_output_shadow_config" @ string offset=1730
 .Linfo_string81:
-	.asciz	"timer_channel_output_fast_config" @ string offset=1775
+	.asciz	"timer_channel_output_fast_config" @ string offset=1765
 .Linfo_string82:
-	.asciz	"timer_channel_output_clear_config" @ string offset=1808
+	.asciz	"timer_channel_output_clear_config" @ string offset=1798
 .Linfo_string83:
-	.asciz	"timer_channel_output_polarity_config" @ string offset=1842
+	.asciz	"timer_channel_output_polarity_config" @ string offset=1832
 .Linfo_string84:
-	.asciz	"timer_channel_complementary_output_polarity_config" @ string offset=1879
+	.asciz	"timer_channel_complementary_output_polarity_config" @ string offset=1869
 .Linfo_string85:
-	.asciz	"timer_channel_output_state_config" @ string offset=1930
+	.asciz	"timer_channel_output_state_config" @ string offset=1920
 .Linfo_string86:
-	.asciz	"timer_channel_complementary_output_state_config" @ string offset=1964
+	.asciz	"timer_channel_complementary_output_state_config" @ string offset=1954
 .Linfo_string87:
-	.asciz	"timer_channel_input_struct_para_init" @ string offset=2012
+	.asciz	"timer_channel_input_struct_para_init" @ string offset=2002
 .Linfo_string88:
-	.asciz	"timer_input_capture_config" @ string offset=2049
+	.asciz	"timer_input_capture_config" @ string offset=2039
 .Linfo_string89:
-	.asciz	"timer_channel_input_capture_prescaler_config" @ string offset=2076
+	.asciz	"timer_channel_input_capture_prescaler_config" @ string offset=2066
 .Linfo_string90:
-	.asciz	"timer_channel_capture_value_register_read" @ string offset=2121
+	.asciz	"timer_channel_capture_value_register_read" @ string offset=2111
 .Linfo_string91:
-	.asciz	"timer_input_pwm_capture_config" @ string offset=2163
+	.asciz	"timer_input_pwm_capture_config" @ string offset=2153
 .Linfo_string92:
-	.asciz	"timer_hall_mode_config" @ string offset=2194
+	.asciz	"timer_hall_mode_config" @ string offset=2184
 .Linfo_string93:
-	.asciz	"timer_input_trigger_source_select" @ string offset=2217
+	.asciz	"timer_input_trigger_source_select" @ string offset=2207
 .Linfo_string94:
-	.asciz	"timer_master_output_trigger_source_select" @ string offset=2251
+	.asciz	"timer_master_output_trigger_source_select" @ string offset=2241
 .Linfo_string95:
-	.asciz	"timer_slave_mode_select" @ string offset=2293
+	.asciz	"timer_slave_mode_select" @ string offset=2283
 .Linfo_string96:
-	.asciz	"timer_master_slave_mode_config" @ string offset=2317
+	.asciz	"timer_master_slave_mode_config" @ string offset=2307
 .Linfo_string97:
-	.asciz	"timer_external_trigger_config" @ string offset=2348
+	.asciz	"timer_external_trigger_config" @ string offset=2338
 .Linfo_string98:
-	.asciz	"timer_quadrature_decoder_mode_config" @ string offset=2378
+	.asciz	"timer_quadrature_decoder_mode_config" @ string offset=2368
 .Linfo_string99:
-	.asciz	"timer_internal_clock_config" @ string offset=2415
+	.asciz	"timer_internal_clock_config" @ string offset=2405
 .Linfo_string100:
-	.asciz	"timer_internal_trigger_as_external_clock_config" @ string offset=2443
+	.asciz	"timer_internal_trigger_as_external_clock_config" @ string offset=2433
 .Linfo_string101:
-	.asciz	"timer_external_trigger_as_external_clock_config" @ string offset=2491
+	.asciz	"timer_external_trigger_as_external_clock_config" @ string offset=2481
 .Linfo_string102:
-	.asciz	"timer_external_clock_mode0_config" @ string offset=2539
+	.asciz	"timer_external_clock_mode0_config" @ string offset=2529
 .Linfo_string103:
-	.asciz	"timer_external_clock_mode1_config" @ string offset=2573
+	.asciz	"timer_external_clock_mode1_config" @ string offset=2563
 .Linfo_string104:
-	.asciz	"timer_external_clock_mode1_disable" @ string offset=2607
+	.asciz	"timer_external_clock_mode1_disable" @ string offset=2597
 .Linfo_string105:
-	.asciz	"timer_channel_remap_config" @ string offset=2642
+	.asciz	"timer_channel_remap_config" @ string offset=2632
 .Linfo_string106:
-	.asciz	"timer_write_chxval_register_config" @ string offset=2669
+	.asciz	"timer_write_chxval_register_config" @ string offset=2659
 .Linfo_string107:
-	.asciz	"timer_output_value_selection_config" @ string offset=2704
+	.asciz	"timer_output_value_selection_config" @ string offset=2694
 .Linfo_string108:
-	.asciz	"timer_periph"          @ string offset=2740
+	.asciz	"timer_periph"          @ string offset=2730
 .Linfo_string109:
-	.asciz	"initpara"              @ string offset=2753
+	.asciz	"initpara"              @ string offset=2743
 .Linfo_string110:
-	.asciz	"prescaler"             @ string offset=2762
+	.asciz	"prescaler"             @ string offset=2752
 .Linfo_string111:
-	.asciz	"alignedmode"           @ string offset=2772
+	.asciz	"alignedmode"           @ string offset=2762
 .Linfo_string112:
-	.asciz	"counterdirection"      @ string offset=2784
+	.asciz	"counterdirection"      @ string offset=2774
 .Linfo_string113:
-	.asciz	"clockdivision"         @ string offset=2801
+	.asciz	"clockdivision"         @ string offset=2791
 .Linfo_string114:
-	.asciz	"period"                @ string offset=2815
+	.asciz	"period"                @ string offset=2805
 .Linfo_string115:
-	.asciz	"repetitioncounter"     @ string offset=2822
+	.asciz	"repetitioncounter"     @ string offset=2812
 .Linfo_string116:
-	.asciz	"timer_parameter_struct" @ string offset=2840
+	.asciz	"timer_parameter_struct" @ string offset=2830
 .Linfo_string117:
-	.asciz	"aligned"               @ string offset=2863
+	.asciz	"aligned"               @ string offset=2853
 .Linfo_string118:
-	.asciz	"pscreload"             @ string offset=2871
+	.asciz	"pscreload"             @ string offset=2861
 .Linfo_string119:
-	.asciz	"repetition"            @ string offset=2881
+	.asciz	"repetition"            @ string offset=2871
 .Linfo_string120:
-	.asciz	"autoreload"            @ string offset=2892
+	.asciz	"autoreload"            @ string offset=2882
 .Linfo_string121:
-	.asciz	"counter"               @ string offset=2903
+	.asciz	"counter"               @ string offset=2893
 .Linfo_string122:
-	.asciz	"count_value"           @ string offset=2911
+	.asciz	"count_value"           @ string offset=2901
 .Linfo_string123:
-	.asciz	"prescaler_value"       @ string offset=2923
+	.asciz	"prescaler_value"       @ string offset=2913
 .Linfo_string124:
-	.asciz	"spmode"                @ string offset=2939
+	.asciz	"spmode"                @ string offset=2929
 .Linfo_string125:
-	.asciz	"update"                @ string offset=2946
+	.asciz	"update"                @ string offset=2936
 .Linfo_string126:
-	.asciz	"ocpreclear"            @ string offset=2953
+	.asciz	"ocpreclear"            @ string offset=2943
 .Linfo_string127:
-	.asciz	"interrupt"             @ string offset=2964
+	.asciz	"interrupt"             @ string offset=2954
 .Linfo_string128:
-	.asciz	"val"                   @ string offset=2974
+	.asciz	"val"                   @ string offset=2964
 .Linfo_string129:
-	.asciz	"flag"                  @ string offset=2978
+	.asciz	"flag"                  @ string offset=2968
 .Linfo_string130:
-	.asciz	"dma"                   @ string offset=2983
+	.asciz	"dma"                   @ string offset=2973
 .Linfo_string131:
-	.asciz	"dma_request"           @ string offset=2987
+	.asciz	"dma_request"           @ string offset=2977
 .Linfo_string132:
-	.asciz	"dma_baseaddr"          @ string offset=2999
+	.asciz	"dma_baseaddr"          @ string offset=2989
 .Linfo_string133:
-	.asciz	"dma_lenth"             @ string offset=3012
+	.asciz	"dma_lenth"             @ string offset=3002
 .Linfo_string134:
-	.asciz	"event"                 @ string offset=3022
+	.asciz	"event"                 @ string offset=3012
 .Linfo_string135:
-	.asciz	"breakpara"             @ string offset=3028
+	.asciz	"breakpara"             @ string offset=3018
 .Linfo_string136:
-	.asciz	"runoffstate"           @ string offset=3038
+	.asciz	"runoffstate"           @ string offset=3028
 .Linfo_string137:
-	.asciz	"ideloffstate"          @ string offset=3050
+	.asciz	"ideloffstate"          @ string offset=3040
 .Linfo_string138:
-	.asciz	"deadtime"              @ string offset=3063
+	.asciz	"deadtime"              @ string offset=3053
 .Linfo_string139:
-	.asciz	"breakpolarity"         @ string offset=3072
+	.asciz	"breakpolarity"         @ string offset=3062
 .Linfo_string140:
-	.asciz	"outputautostate"       @ string offset=3086
+	.asciz	"outputautostate"       @ string offset=3076
 .Linfo_string141:
-	.asciz	"protectmode"           @ string offset=3102
+	.asciz	"protectmode"           @ string offset=3092
 .Linfo_string142:
-	.asciz	"breakstate"            @ string offset=3114
+	.asciz	"breakstate"            @ string offset=3104
 .Linfo_string143:
-	.asciz	"timer_break_parameter_struct" @ string offset=3125
+	.asciz	"timer_break_parameter_struct" @ string offset=3115
 .Linfo_string144:
-	.asciz	"newvalue"              @ string offset=3154
+	.asciz	"newvalue"              @ string offset=3144
 .Linfo_string145:
-	.asciz	"ControlStatus"         @ string offset=3163
+	.asciz	"ControlStatus"         @ string offset=3153
 .Linfo_string146:
-	.asciz	"ccuctl"                @ string offset=3177
+	.asciz	"ccuctl"                @ string offset=3167
 .Linfo_string147:
-	.asciz	"ocpara"                @ string offset=3184
+	.asciz	"ocpara"                @ string offset=3174
 .Linfo_string148:
-	.asciz	"outputstate"           @ string offset=3191
+	.asciz	"outputstate"           @ string offset=3181
 .Linfo_string149:
-	.asciz	"outputnstate"          @ string offset=3203
+	.asciz	"outputnstate"          @ string offset=3193
 .Linfo_string150:
-	.asciz	"ocpolarity"            @ string offset=3216
+	.asciz	"ocpolarity"            @ string offset=3206
 .Linfo_string151:
-	.asciz	"ocnpolarity"           @ string offset=3227
+	.asciz	"ocnpolarity"           @ string offset=3217
 .Linfo_string152:
-	.asciz	"ocidlestate"           @ string offset=3239
+	.asciz	"ocidlestate"           @ string offset=3229
 .Linfo_string153:
-	.asciz	"ocnidlestate"          @ string offset=3251
+	.asciz	"ocnidlestate"          @ string offset=3241
 .Linfo_string154:
-	.asciz	"timer_oc_parameter_struct" @ string offset=3264
+	.asciz	"timer_oc_parameter_struct" @ string offset=3254
 .Linfo_string155:
-	.asciz	"channel"               @ string offset=3290
+	.asciz	"channel"               @ string offset=3280
 .Linfo_string156:
-	.asciz	"ocmode"                @ string offset=3298
+	.asciz	"ocmode"                @ string offset=3288
 .Linfo_string157:
-	.asciz	"pulse"                 @ string offset=3305
+	.asciz	"pulse"                 @ string offset=3295
 .Linfo_string158:
-	.asciz	"ocshadow"              @ string offset=3311
+	.asciz	"ocshadow"              @ string offset=3301
 .Linfo_string159:
-	.asciz	"ocfast"                @ string offset=3320
+	.asciz	"ocfast"                @ string offset=3310
 .Linfo_string160:
-	.asciz	"occlear"               @ string offset=3327
+	.asciz	"occlear"               @ string offset=3317
 .Linfo_string161:
-	.asciz	"state"                 @ string offset=3335
+	.asciz	"state"                 @ string offset=3325
 .Linfo_string162:
-	.asciz	"ocnstate"              @ string offset=3341
+	.asciz	"ocnstate"              @ string offset=3331
 .Linfo_string163:
-	.asciz	"icpara"                @ string offset=3350
+	.asciz	"icpara"                @ string offset=3340
 .Linfo_string164:
-	.asciz	"icpolarity"            @ string offset=3357
+	.asciz	"icpolarity"            @ string offset=3347
 .Linfo_string165:
-	.asciz	"icselection"           @ string offset=3368
+	.asciz	"icselection"           @ string offset=3358
 .Linfo_string166:
-	.asciz	"icprescaler"           @ string offset=3380
+	.asciz	"icprescaler"           @ string offset=3370
 .Linfo_string167:
-	.asciz	"icfilter"              @ string offset=3392
+	.asciz	"icfilter"              @ string offset=3382
 .Linfo_string168:
-	.asciz	"timer_ic_parameter_struct" @ string offset=3401
+	.asciz	"timer_ic_parameter_struct" @ string offset=3391
 .Linfo_string169:
-	.asciz	"icpwm"                 @ string offset=3427
+	.asciz	"icpwm"                 @ string offset=3417
 .Linfo_string170:
-	.asciz	"hallmode"              @ string offset=3433
+	.asciz	"hallmode"              @ string offset=3423
 .Linfo_string171:
-	.asciz	"intrigger"             @ string offset=3442
+	.asciz	"intrigger"             @ string offset=3432
 .Linfo_string172:
-	.asciz	"outrigger"             @ string offset=3452
+	.asciz	"outrigger"             @ string offset=3442
 .Linfo_string173:
-	.asciz	"slavemode"             @ string offset=3462
+	.asciz	"slavemode"             @ string offset=3452
 .Linfo_string174:
-	.asciz	"masterslave"           @ string offset=3472
+	.asciz	"masterslave"           @ string offset=3462
 .Linfo_string175:
-	.asciz	"extprescaler"          @ string offset=3484
+	.asciz	"extprescaler"          @ string offset=3474
 .Linfo_string176:
-	.asciz	"extpolarity"           @ string offset=3497
+	.asciz	"extpolarity"           @ string offset=3487
 .Linfo_string177:
-	.asciz	"extfilter"             @ string offset=3509
+	.asciz	"extfilter"             @ string offset=3499
 .Linfo_string178:
-	.asciz	"decomode"              @ string offset=3519
+	.asciz	"decomode"              @ string offset=3509
 .Linfo_string179:
-	.asciz	"ic0polarity"           @ string offset=3528
+	.asciz	"ic0polarity"           @ string offset=3518
 .Linfo_string180:
-	.asciz	"ic1polarity"           @ string offset=3540
+	.asciz	"ic1polarity"           @ string offset=3530
 .Linfo_string181:
-	.asciz	"extrigger"             @ string offset=3552
+	.asciz	"extrigger"             @ string offset=3542
 .Linfo_string182:
-	.asciz	"remap"                 @ string offset=3562
+	.asciz	"remap"                 @ string offset=3552
 .Linfo_string183:
-	.asciz	"ccsel"                 @ string offset=3568
+	.asciz	"ccsel"                 @ string offset=3558
 .Linfo_string184:
-	.asciz	"outsel"                @ string offset=3574
+	.asciz	"outsel"                @ string offset=3564
 	.section	.debug_abbrev,"",%progbits
 	.byte	1                       @ Abbreviation Code
 	.byte	17                      @ DW_TAG_compile_unit

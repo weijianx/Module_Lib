@@ -18,8 +18,8 @@
 	.eabi_attribute	26, 1	@ Tag_ABI_enum_size
 	.eabi_attribute	14, 0	@ Tag_ABI_PCS_R9_use
 	.file	"modbus_ascii.c"
-	.file	1 "E:\\project\\product\\GD32\\GD32E230\\E230 - TH\\MDK-ARM" "../APP/Inc/type.h"
-	.file	2 "E:\\project\\product\\GD32\\GD32E230\\E230 - TH\\MDK-ARM" "../APP/Src/modbus_ascii.c"
+	.file	1 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../APP/Inc/type.h"
+	.file	2 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../APP/Src/modbus_ascii.c"
 	.file	3 "D:\\Keil_v5\\ARM\\ARMCLANG\\Bin\\..\\include" "stdint.h"
 	.section	.text.MODBUS_ASCII_HexToAscii,"ax",%progbits
 	.hidden	MODBUS_ASCII_HexToAscii @ -- Begin function MODBUS_ASCII_HexToAscii
@@ -1411,7 +1411,7 @@ MODBUS_ASCII_SendData:
 .Ltmp131:
 	.loc	2 395 9 is_stmt 1       @ ../APP/Src/modbus_ascii.c:395:9
 	strh	r1, [r0]
-	b	.LBB8_11
+	b	.LBB8_10
 .Ltmp132:
 .LBB8_3:
 	.loc	2 0 9 is_stmt 0         @ ../APP/Src/modbus_ascii.c:0:9
@@ -1436,7 +1436,7 @@ MODBUS_ASCII_SendData:
 .Ltmp135:
 	.loc	2 400 6 is_stmt 1       @ ../APP/Src/modbus_ascii.c:400:6
 	strh	r1, [r0]
-	b	.LBB8_11
+	b	.LBB8_10
 .Ltmp136:
 .LBB8_5:
 	.loc	2 403 20                @ ../APP/Src/modbus_ascii.c:403:20
@@ -1507,79 +1507,79 @@ MODBUS_ASCII_SendData:
 	movs	r2, #10
 	.loc	2 412 29 is_stmt 0      @ ../APP/Src/modbus_ascii.c:412:29
 	strb	r2, [r3, r0]
-	.loc	2 413 5 is_stmt 1       @ ../APP/Src/modbus_ascii.c:413:5
+	movs	r0, #9
+	lsls	r0, r0, #27
+	movs	r1, #4
+	.loc	2 418 2 is_stmt 1       @ ../APP/Src/modbus_ascii.c:418:2
+	bl	gpio_bit_set
+	movs	r0, #0
+	.loc	2 419 13                @ ../APP/Src/modbus_ascii.c:419:13
+	ldr	r1, [sp, #12]           @ 4-byte Reload
+	strh	r0, [r1]
+	.loc	2 420 2                 @ ../APP/Src/modbus_ascii.c:420:2
 	b	.LBB8_6
 .LBB8_6:                                @ =>This Inner Loop Header: Depth=1
-	.loc	2 0 5 is_stmt 0         @ ../APP/Src/modbus_ascii.c:0:5
+	.loc	2 0 2 is_stmt 0         @ ../APP/Src/modbus_ascii.c:0:2
 	add	r0, sp, #20
-	.loc	2 413 24                @ ../APP/Src/modbus_ascii.c:413:24
-	ldrh	r0, [r0]
-	.loc	2 413 12                @ ../APP/Src/modbus_ascii.c:413:12
-	ldr	r1, __arm_cp.8_1
-	adds	r0, r0, r1
-	subs	r0, r0, #1
-	ldrb	r0, [r0]
-	movs	r1, #0
-	.loc	2 413 47                @ ../APP/Src/modbus_ascii.c:413:47
-	cmp	r0, #13
-	str	r1, [sp, #4]            @ 4-byte Spill
-	beq	.LBB8_8
-	b	.LBB8_7
-.LBB8_7:                                @   in Loop: Header=BB8_6 Depth=1
-	.loc	2 0 47                  @ ../APP/Src/modbus_ascii.c:0:47
-	add	r0, sp, #20
-	.loc	2 413 63                @ ../APP/Src/modbus_ascii.c:413:63
-	ldrh	r0, [r0]
-	.loc	2 413 51                @ ../APP/Src/modbus_ascii.c:413:51
-	ldr	r1, __arm_cp.8_1
-	ldrb	r0, [r1, r0]
-	.loc	2 413 75                @ ../APP/Src/modbus_ascii.c:413:75
-	subs	r0, #10
-	subs	r1, r0, #1
-	sbcs	r0, r1
+.Ltmp137:
+	.loc	2 422 27 is_stmt 1      @ ../APP/Src/modbus_ascii.c:422:27
+	ldrh	r1, [r0]
+	.loc	2 422 15 is_stmt 0      @ ../APP/Src/modbus_ascii.c:422:15
+	ldr	r2, __arm_cp.8_1
+	ldrb	r1, [r2, r1]
+	.loc	2 422 3                 @ ../APP/Src/modbus_ascii.c:422:3
+	ldr	r3, __arm_cp.8_2
 	str	r0, [sp, #4]            @ 4-byte Spill
-	b	.LBB8_8
-.LBB8_8:                                @   in Loop: Header=BB8_6 Depth=1
-	.loc	2 0 0                   @ ../APP/Src/modbus_ascii.c:0:0
-	ldr	r0, [sp, #4]            @ 4-byte Reload
-	.loc	2 413 5                 @ ../APP/Src/modbus_ascii.c:413:5
-	lsls	r0, r0, #31
-	cmp	r0, #0
-	beq	.LBB8_10
+	mov	r0, r3
+	str	r2, [sp]                @ 4-byte Spill
+	bl	printf
+.Ltmp138:
+	.loc	2 423 18 is_stmt 1      @ ../APP/Src/modbus_ascii.c:423:18
+	ldr	r1, [sp, #4]            @ 4-byte Reload
+	ldrh	r2, [r1]
+	.loc	2 423 6 is_stmt 0       @ ../APP/Src/modbus_ascii.c:423:6
+	ldr	r3, [sp]                @ 4-byte Reload
+	ldrb	r2, [r3, r2]
+.Ltmp139:
+	.loc	2 423 6                 @ ../APP/Src/modbus_ascii.c:423:6
+	cmp	r2, #10
+	bne	.LBB8_8
+	b	.LBB8_7
+.LBB8_7:
+.Ltmp140:
+	.loc	2 424 4 is_stmt 1       @ ../APP/Src/modbus_ascii.c:424:4
 	b	.LBB8_9
-.LBB8_9:                                @   in Loop: Header=BB8_6 Depth=1
-	.loc	2 414 13 is_stmt 1      @ ../APP/Src/modbus_ascii.c:414:13
+.Ltmp141:
+.LBB8_8:                                @   in Loop: Header=BB8_6 Depth=1
+	.loc	2 426 13                @ ../APP/Src/modbus_ascii.c:426:13
 	ldr	r0, [sp, #20]
 	adds	r0, r0, #1
 	add	r1, sp, #20
 	strh	r0, [r1]
-	.loc	2 413 5                 @ ../APP/Src/modbus_ascii.c:413:5
+.Ltmp142:
+	.loc	2 420 2                 @ ../APP/Src/modbus_ascii.c:420:2
 	b	.LBB8_6
-.LBB8_10:
-	.loc	2 416 12                @ ../APP/Src/modbus_ascii.c:416:12
-	ldr	r0, [sp, #20]
-	adds	r0, r0, #3
-	add	r1, sp, #20
-	strh	r0, [r1]
-	.loc	2 417 41                @ ../APP/Src/modbus_ascii.c:417:41
-	ldrh	r1, [r1]
-	.loc	2 417 13 is_stmt 0      @ ../APP/Src/modbus_ascii.c:417:13
-	ldr	r0, __arm_cp.8_1
-	bl	UARTx_SendData
-	add	r1, sp, #36
-	.loc	2 417 5                 @ ../APP/Src/modbus_ascii.c:417:5
-	strh	r0, [r1]
-	b	.LBB8_11
-.LBB8_11:
-	.loc	2 0 5                   @ ../APP/Src/modbus_ascii.c:0:5
+.LBB8_9:
+	.loc	2 428 2                 @ ../APP/Src/modbus_ascii.c:428:2
+	bl	fwdgt_counter_reload
+	.loc	2 431 10                @ ../APP/Src/modbus_ascii.c:431:10
+	ldr	r0, __arm_cp.8_3
+	movs	r1, #0
+	strb	r1, [r0]
 	add	r0, sp, #36
-	.loc	2 418 1 is_stmt 1       @ ../APP/Src/modbus_ascii.c:418:1
+	.loc	2 433 2                 @ ../APP/Src/modbus_ascii.c:433:2
+	strh	r1, [r0]
+	b	.LBB8_10
+.LBB8_10:
+	.loc	2 0 2 is_stmt 0         @ ../APP/Src/modbus_ascii.c:0:2
+	add	r0, sp, #36
+	.loc	2 434 1 is_stmt 1       @ ../APP/Src/modbus_ascii.c:434:1
 	ldrh	r0, [r0]
 	add	sp, #40
 	pop	{r4, pc}
-.Ltmp137:
+.Ltmp143:
 	.p2align	2
-@ %bb.12:
+@ %bb.11:
 	.loc	2 0 1 is_stmt 0         @ ../APP/Src/modbus_ascii.c:0:1
 __arm_cp.8_0:
 	.long	601                     @ 0x259
@@ -1589,6 +1589,14 @@ __arm_cp.8_1:
 	.long	cyAsciiBuff
 .Lcpi_end8:
 	.size	__arm_cp.8_1, .Lcpi_end8-__arm_cp.8_1
+__arm_cp.8_2:
+	.long	.L.str
+.Lcpi_end9:
+	.size	__arm_cp.8_2, .Lcpi_end9-__arm_cp.8_2
+__arm_cp.8_3:
+	.long	receive
+.Lcpi_end10:
+	.size	__arm_cp.8_3, .Lcpi_end10-__arm_cp.8_3
 .Lfunc_end8:
 	.size	MODBUS_ASCII_SendData, .Lfunc_end8-MODBUS_ASCII_SendData
 	.cfi_endproc
@@ -1604,7 +1612,7 @@ __arm_cp.8_1:
 	.thumb_func
 MODBUS_ASCII_SendData1:
 .Lfunc_begin9:
-	.loc	2 421 0 is_stmt 1       @ ../APP/Src/modbus_ascii.c:421:0
+	.loc	2 437 0 is_stmt 1       @ ../APP/Src/modbus_ascii.c:437:0
 	.fnstart
 	.cfi_startproc
 @ %bb.0:
@@ -1620,18 +1628,18 @@ MODBUS_ASCII_SendData1:
 	str	r0, [sp, #32]
 	add	r0, sp, #28
 	strh	r1, [r0]
-.Ltmp138:
-	.loc	2 425 16 prologue_end   @ ../APP/Src/modbus_ascii.c:425:16
+.Ltmp144:
+	.loc	2 441 16 prologue_end   @ ../APP/Src/modbus_ascii.c:441:16
 	ldrh	r0, [r0]
-	.loc	2 425 23 is_stmt 0      @ ../APP/Src/modbus_ascii.c:425:23
+	.loc	2 441 23 is_stmt 0      @ ../APP/Src/modbus_ascii.c:441:23
 	cmp	r0, #0
 	beq	.LBB9_2
 	b	.LBB9_1
 .LBB9_1:
-	.loc	2 425 45                @ ../APP/Src/modbus_ascii.c:425:45
+	.loc	2 441 45                @ ../APP/Src/modbus_ascii.c:441:45
 	ldr	r0, [sp, #32]
-.Ltmp139:
-	.loc	2 425 10                @ ../APP/Src/modbus_ascii.c:425:10
+.Ltmp145:
+	.loc	2 441 10                @ ../APP/Src/modbus_ascii.c:441:10
 	cmp	r0, #0
 	bne	.LBB9_3
 	b	.LBB9_2
@@ -1639,24 +1647,24 @@ MODBUS_ASCII_SendData1:
 	.loc	2 0 10                  @ ../APP/Src/modbus_ascii.c:0:10
 	add	r0, sp, #36
 	movs	r1, #0
-.Ltmp140:
-	.loc	2 427 9 is_stmt 1       @ ../APP/Src/modbus_ascii.c:427:9
+.Ltmp146:
+	.loc	2 443 9 is_stmt 1       @ ../APP/Src/modbus_ascii.c:443:9
 	strh	r1, [r0]
 	b	.LBB9_10
-.Ltmp141:
+.Ltmp147:
 .LBB9_3:
 	.loc	2 0 9 is_stmt 0         @ ../APP/Src/modbus_ascii.c:0:9
 	add	r0, sp, #28
-.Ltmp142:
-	.loc	2 430 11 is_stmt 1      @ ../APP/Src/modbus_ascii.c:430:11
+.Ltmp148:
+	.loc	2 446 11 is_stmt 1      @ ../APP/Src/modbus_ascii.c:446:11
 	ldrh	r0, [r0]
-	.loc	2 430 17 is_stmt 0      @ ../APP/Src/modbus_ascii.c:430:17
+	.loc	2 446 17 is_stmt 0      @ ../APP/Src/modbus_ascii.c:446:17
 	lsls	r0, r0, #1
-	.loc	2 430 21                @ ../APP/Src/modbus_ascii.c:430:21
+	.loc	2 446 21                @ ../APP/Src/modbus_ascii.c:446:21
 	adds	r0, r0, #5
 	ldr	r1, __arm_cp.9_0
-.Ltmp143:
-	.loc	2 430 10                @ ../APP/Src/modbus_ascii.c:430:10
+.Ltmp149:
+	.loc	2 446 10                @ ../APP/Src/modbus_ascii.c:446:10
 	cmp	r0, r1
 	blt	.LBB9_5
 	b	.LBB9_4
@@ -1664,26 +1672,26 @@ MODBUS_ASCII_SendData1:
 	.loc	2 0 10                  @ ../APP/Src/modbus_ascii.c:0:10
 	add	r0, sp, #36
 	movs	r1, #0
-.Ltmp144:
-	.loc	2 432 6 is_stmt 1       @ ../APP/Src/modbus_ascii.c:432:6
+.Ltmp150:
+	.loc	2 448 6 is_stmt 1       @ ../APP/Src/modbus_ascii.c:448:6
 	strh	r1, [r0]
 	b	.LBB9_10
-.Ltmp145:
+.Ltmp151:
 .LBB9_5:
-	.loc	2 435 20                @ ../APP/Src/modbus_ascii.c:435:20
+	.loc	2 451 20                @ ../APP/Src/modbus_ascii.c:451:20
 	ldr	r0, __arm_cp.9_1
 	movs	r1, #58
 	strb	r1, [r0]
 	add	r1, sp, #20
 	movs	r2, #1
-	.loc	2 436 16                @ ../APP/Src/modbus_ascii.c:436:16
+	.loc	2 452 16                @ ../APP/Src/modbus_ascii.c:452:16
 	strh	r2, [r1]
-	.loc	2 438 55                @ ../APP/Src/modbus_ascii.c:438:55
+	.loc	2 454 55                @ ../APP/Src/modbus_ascii.c:454:55
 	ldr	r2, [sp, #32]
 	add	r3, sp, #28
-	.loc	2 438 67 is_stmt 0      @ ../APP/Src/modbus_ascii.c:438:67
+	.loc	2 454 67 is_stmt 0      @ ../APP/Src/modbus_ascii.c:454:67
 	ldrh	r3, [r3]
-	.loc	2 438 19                @ ../APP/Src/modbus_ascii.c:438:19
+	.loc	2 454 19                @ ../APP/Src/modbus_ascii.c:454:19
 	adds	r4, r0, #1
 	str	r0, [sp, #16]           @ 4-byte Spill
 	mov	r0, r2
@@ -1692,140 +1700,142 @@ MODBUS_ASCII_SendData1:
 	mov	r2, r4
 	str	r4, [sp, #8]            @ 4-byte Spill
 	bl	MODBUS_ASCII_RtuPacketToAsciiPacket
-	.loc	2 438 16                @ ../APP/Src/modbus_ascii.c:438:16
+	.loc	2 454 16                @ ../APP/Src/modbus_ascii.c:454:16
 	ldr	r1, [sp, #20]
 	adds	r0, r1, r0
 	ldr	r1, [sp, #12]           @ 4-byte Reload
 	strh	r0, [r1]
-	.loc	2 439 50 is_stmt 1      @ ../APP/Src/modbus_ascii.c:439:50
+	.loc	2 455 50 is_stmt 1      @ ../APP/Src/modbus_ascii.c:455:50
 	ldr	r0, [sp, #20]
-	.loc	2 439 61 is_stmt 0      @ ../APP/Src/modbus_ascii.c:439:61
+	.loc	2 455 61 is_stmt 0      @ ../APP/Src/modbus_ascii.c:455:61
 	subs	r0, r0, #1
-	.loc	2 439 13                @ ../APP/Src/modbus_ascii.c:439:13
+	.loc	2 455 13                @ ../APP/Src/modbus_ascii.c:455:13
 	uxth	r1, r0
 	ldr	r0, [sp, #8]            @ 4-byte Reload
 	bl	MODBUS_ASCII_GetLrc
 	add	r1, sp, #24
-	.loc	2 439 11                @ ../APP/Src/modbus_ascii.c:439:11
+	.loc	2 455 11                @ ../APP/Src/modbus_ascii.c:455:11
 	strb	r0, [r1]
-	.loc	2 440 29 is_stmt 1      @ ../APP/Src/modbus_ascii.c:440:29
+	.loc	2 456 29 is_stmt 1      @ ../APP/Src/modbus_ascii.c:456:29
 	ldrb	r0, [r1]
-	.loc	2 440 49 is_stmt 0      @ ../APP/Src/modbus_ascii.c:440:49
+	.loc	2 456 49 is_stmt 0      @ ../APP/Src/modbus_ascii.c:456:49
 	ldr	r1, [sp, #12]           @ 4-byte Reload
 	ldrh	r2, [r1]
-	.loc	2 440 37                @ ../APP/Src/modbus_ascii.c:440:37
+	.loc	2 456 37                @ ../APP/Src/modbus_ascii.c:456:37
 	ldr	r3, [sp, #16]           @ 4-byte Reload
 	adds	r1, r3, r2
-	.loc	2 440 5                 @ ../APP/Src/modbus_ascii.c:440:5
+	.loc	2 456 5                 @ ../APP/Src/modbus_ascii.c:456:5
 	bl	MODBUS_ASCII_HexToAscii
-	.loc	2 441 16 is_stmt 1      @ ../APP/Src/modbus_ascii.c:441:16
+	.loc	2 457 16 is_stmt 1      @ ../APP/Src/modbus_ascii.c:457:16
 	ldr	r0, [sp, #20]
 	adds	r0, r0, #2
 	ldr	r1, [sp, #12]           @ 4-byte Reload
 	strh	r0, [r1]
-	.loc	2 442 17                @ ../APP/Src/modbus_ascii.c:442:17
+	.loc	2 458 17                @ ../APP/Src/modbus_ascii.c:458:17
 	ldrh	r0, [r1]
 	movs	r2, #13
-	.loc	2 442 29 is_stmt 0      @ ../APP/Src/modbus_ascii.c:442:29
+	.loc	2 458 29 is_stmt 0      @ ../APP/Src/modbus_ascii.c:458:29
 	ldr	r3, [sp, #16]           @ 4-byte Reload
 	strb	r2, [r3, r0]
-	.loc	2 443 15 is_stmt 1      @ ../APP/Src/modbus_ascii.c:443:15
+	.loc	2 459 15 is_stmt 1      @ ../APP/Src/modbus_ascii.c:459:15
 	ldr	r0, [sp, #20]
 	adds	r0, r0, #1
 	strh	r0, [r1]
-	.loc	2 444 17                @ ../APP/Src/modbus_ascii.c:444:17
+	.loc	2 460 17                @ ../APP/Src/modbus_ascii.c:460:17
 	ldrh	r0, [r1]
 	movs	r2, #10
-	.loc	2 444 29 is_stmt 0      @ ../APP/Src/modbus_ascii.c:444:29
+	.loc	2 460 29 is_stmt 0      @ ../APP/Src/modbus_ascii.c:460:29
 	strb	r2, [r3, r0]
 	movs	r0, #9
 	lsls	r0, r0, #27
 	movs	r1, #4
-	.loc	2 445 2 is_stmt 1       @ ../APP/Src/modbus_ascii.c:445:2
+	.loc	2 461 2 is_stmt 1       @ ../APP/Src/modbus_ascii.c:461:2
 	bl	gpio_bit_set
 	movs	r0, #0
-	.loc	2 446 13                @ ../APP/Src/modbus_ascii.c:446:13
+	.loc	2 462 13                @ ../APP/Src/modbus_ascii.c:462:13
 	ldr	r1, [sp, #12]           @ 4-byte Reload
 	strh	r0, [r1]
-	.loc	2 448 2                 @ ../APP/Src/modbus_ascii.c:448:2
+	.loc	2 464 2                 @ ../APP/Src/modbus_ascii.c:464:2
 	b	.LBB9_6
 .LBB9_6:                                @ =>This Inner Loop Header: Depth=1
 	.loc	2 0 2 is_stmt 0         @ ../APP/Src/modbus_ascii.c:0:2
 	add	r0, sp, #20
-.Ltmp146:
-	.loc	2 450 27 is_stmt 1      @ ../APP/Src/modbus_ascii.c:450:27
+.Ltmp152:
+	.loc	2 466 27 is_stmt 1      @ ../APP/Src/modbus_ascii.c:466:27
 	ldrh	r1, [r0]
-	.loc	2 450 15 is_stmt 0      @ ../APP/Src/modbus_ascii.c:450:15
+	.loc	2 466 15 is_stmt 0      @ ../APP/Src/modbus_ascii.c:466:15
 	ldr	r2, __arm_cp.9_1
 	ldrb	r1, [r2, r1]
-	.loc	2 450 3                 @ ../APP/Src/modbus_ascii.c:450:3
+	.loc	2 466 3                 @ ../APP/Src/modbus_ascii.c:466:3
 	ldr	r3, __arm_cp.9_2
 	str	r0, [sp, #4]            @ 4-byte Spill
 	mov	r0, r3
 	str	r2, [sp]                @ 4-byte Spill
 	bl	printf
-.Ltmp147:
-	.loc	2 451 18 is_stmt 1      @ ../APP/Src/modbus_ascii.c:451:18
+.Ltmp153:
+	.loc	2 467 18 is_stmt 1      @ ../APP/Src/modbus_ascii.c:467:18
 	ldr	r1, [sp, #4]            @ 4-byte Reload
 	ldrh	r2, [r1]
-	.loc	2 451 6 is_stmt 0       @ ../APP/Src/modbus_ascii.c:451:6
+	.loc	2 467 6 is_stmt 0       @ ../APP/Src/modbus_ascii.c:467:6
 	ldr	r3, [sp]                @ 4-byte Reload
 	ldrb	r2, [r3, r2]
-.Ltmp148:
-	.loc	2 451 6                 @ ../APP/Src/modbus_ascii.c:451:6
+.Ltmp154:
+	.loc	2 467 6                 @ ../APP/Src/modbus_ascii.c:467:6
 	cmp	r2, #10
 	bne	.LBB9_8
 	b	.LBB9_7
 .LBB9_7:
-.Ltmp149:
-	.loc	2 452 4 is_stmt 1       @ ../APP/Src/modbus_ascii.c:452:4
+.Ltmp155:
+	.loc	2 468 4 is_stmt 1       @ ../APP/Src/modbus_ascii.c:468:4
 	b	.LBB9_9
-.Ltmp150:
+.Ltmp156:
 .LBB9_8:                                @   in Loop: Header=BB9_6 Depth=1
-	.loc	2 454 13                @ ../APP/Src/modbus_ascii.c:454:13
+	.loc	2 470 13                @ ../APP/Src/modbus_ascii.c:470:13
 	ldr	r0, [sp, #20]
 	adds	r0, r0, #1
 	add	r1, sp, #20
 	strh	r0, [r1]
-.Ltmp151:
-	.loc	2 448 2                 @ ../APP/Src/modbus_ascii.c:448:2
+.Ltmp157:
+	.loc	2 464 2                 @ ../APP/Src/modbus_ascii.c:464:2
 	b	.LBB9_6
 .LBB9_9:
-	.loc	2 456 2                 @ ../APP/Src/modbus_ascii.c:456:2
+	.loc	2 472 2                 @ ../APP/Src/modbus_ascii.c:472:2
 	bl	fwdgt_counter_reload
-	.loc	2 459 10                @ ../APP/Src/modbus_ascii.c:459:10
+	.loc	2 475 10                @ ../APP/Src/modbus_ascii.c:475:10
 	ldr	r0, __arm_cp.9_3
 	movs	r1, #0
 	strb	r1, [r0]
-	.loc	2 460 1                 @ ../APP/Src/modbus_ascii.c:460:1
+	add	r0, sp, #36
+	.loc	2 477 2                 @ ../APP/Src/modbus_ascii.c:477:2
+	strh	r1, [r0]
 	b	.LBB9_10
 .LBB9_10:
-	.loc	2 0 1 is_stmt 0         @ ../APP/Src/modbus_ascii.c:0:1
+	.loc	2 0 2 is_stmt 0         @ ../APP/Src/modbus_ascii.c:0:2
 	add	r0, sp, #36
-	.loc	2 460 1                 @ ../APP/Src/modbus_ascii.c:460:1
+	.loc	2 478 1 is_stmt 1       @ ../APP/Src/modbus_ascii.c:478:1
 	ldrh	r0, [r0]
 	add	sp, #40
 	pop	{r4, pc}
-.Ltmp152:
+.Ltmp158:
 	.p2align	2
 @ %bb.11:
-	.loc	2 0 1                   @ ../APP/Src/modbus_ascii.c:0:1
+	.loc	2 0 1 is_stmt 0         @ ../APP/Src/modbus_ascii.c:0:1
 __arm_cp.9_0:
 	.long	601                     @ 0x259
-.Lcpi_end9:
-	.size	__arm_cp.9_0, .Lcpi_end9-__arm_cp.9_0
+.Lcpi_end11:
+	.size	__arm_cp.9_0, .Lcpi_end11-__arm_cp.9_0
 __arm_cp.9_1:
 	.long	cyAsciiBuff
-.Lcpi_end10:
-	.size	__arm_cp.9_1, .Lcpi_end10-__arm_cp.9_1
+.Lcpi_end12:
+	.size	__arm_cp.9_1, .Lcpi_end12-__arm_cp.9_1
 __arm_cp.9_2:
 	.long	.L.str
-.Lcpi_end11:
-	.size	__arm_cp.9_2, .Lcpi_end11-__arm_cp.9_2
+.Lcpi_end13:
+	.size	__arm_cp.9_2, .Lcpi_end13-__arm_cp.9_2
 __arm_cp.9_3:
 	.long	receive
-.Lcpi_end12:
-	.size	__arm_cp.9_3, .Lcpi_end12-__arm_cp.9_3
+.Lcpi_end14:
+	.size	__arm_cp.9_3, .Lcpi_end14-__arm_cp.9_3
 .Lfunc_end9:
 	.size	MODBUS_ASCII_SendData1, .Lfunc_end9-MODBUS_ASCII_SendData1
 	.cfi_endproc
@@ -1875,85 +1885,85 @@ cyAsciiBuff:
 .Linfo_string1:
 	.asciz	"../APP/Src\\modbus_ascii.c" @ string offset=55
 .Linfo_string2:
-	.asciz	"E:\\project\\product\\GD32\\GD32E230\\E230 - TH\\MDK-ARM" @ string offset=81
+	.asciz	"E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" @ string offset=81
 .Linfo_string3:
-	.asciz	"UartRecvFrameOK"       @ string offset=132
+	.asciz	"UartRecvFrameOK"       @ string offset=123
 .Linfo_string4:
-	.asciz	"unsigned char"         @ string offset=148
+	.asciz	"unsigned char"         @ string offset=139
 .Linfo_string5:
-	.asciz	"Bit_RESET"             @ string offset=162
+	.asciz	"Bit_RESET"             @ string offset=153
 .Linfo_string6:
-	.asciz	"Bit_SET"               @ string offset=172
+	.asciz	"Bit_SET"               @ string offset=163
 .Linfo_string7:
-	.asciz	"BitAction"             @ string offset=180
+	.asciz	"BitAction"             @ string offset=171
 .Linfo_string8:
-	.asciz	"cyAsciiBuff"           @ string offset=190
+	.asciz	"cyAsciiBuff"           @ string offset=181
 .Linfo_string9:
-	.asciz	"uint8_t"               @ string offset=202
+	.asciz	"uint8_t"               @ string offset=193
 .Linfo_string10:
-	.asciz	"__ARRAY_SIZE_TYPE__"   @ string offset=210
+	.asciz	"__ARRAY_SIZE_TYPE__"   @ string offset=201
 .Linfo_string11:
-	.asciz	"g_cyRevState"          @ string offset=230
+	.asciz	"g_cyRevState"          @ string offset=221
 .Linfo_string12:
-	.asciz	"g_cyRevBufffLen"       @ string offset=243
+	.asciz	"g_cyRevBufffLen"       @ string offset=234
 .Linfo_string13:
-	.asciz	"unsigned short"        @ string offset=259
+	.asciz	"unsigned short"        @ string offset=250
 .Linfo_string14:
-	.asciz	"uint16_t"              @ string offset=274
+	.asciz	"uint16_t"              @ string offset=265
 .Linfo_string15:
-	.asciz	"unsigned int"          @ string offset=283
+	.asciz	"unsigned int"          @ string offset=274
 .Linfo_string16:
-	.asciz	"uint32_t"              @ string offset=296
+	.asciz	"uint32_t"              @ string offset=287
 .Linfo_string17:
-	.asciz	"MODBUS_ASCII_HexToAscii" @ string offset=305
+	.asciz	"MODBUS_ASCII_HexToAscii" @ string offset=296
 .Linfo_string18:
-	.asciz	"MODBUS_ASCII_AsciiToHex" @ string offset=329
+	.asciz	"MODBUS_ASCII_AsciiToHex" @ string offset=320
 .Linfo_string19:
-	.asciz	"MODBUS_ASCII_GetLrc"   @ string offset=353
+	.asciz	"MODBUS_ASCII_GetLrc"   @ string offset=344
 .Linfo_string20:
-	.asciz	"MODBUS_ASCII_AsciiPacketToRtuPacket" @ string offset=373
+	.asciz	"MODBUS_ASCII_AsciiPacketToRtuPacket" @ string offset=364
 .Linfo_string21:
-	.asciz	"MODBUS_ASCII_RtuPacketToAsciiPacket" @ string offset=409
+	.asciz	"MODBUS_ASCII_RtuPacketToAsciiPacket" @ string offset=400
 .Linfo_string22:
-	.asciz	"MODBUS_ASCII_HandlRevData" @ string offset=445
+	.asciz	"MODBUS_ASCII_HandlRevData" @ string offset=436
 .Linfo_string23:
-	.asciz	"MODBUS_ASCII_CheckAscii" @ string offset=471
+	.asciz	"MODBUS_ASCII_CheckAscii" @ string offset=462
 .Linfo_string24:
-	.asciz	"MODBUS_ASCII_RecvData" @ string offset=495
+	.asciz	"MODBUS_ASCII_RecvData" @ string offset=486
 .Linfo_string25:
-	.asciz	"MODBUS_ASCII_SendData" @ string offset=517
+	.asciz	"MODBUS_ASCII_SendData" @ string offset=508
 .Linfo_string26:
-	.asciz	"MODBUS_ASCII_SendData1" @ string offset=539
+	.asciz	"MODBUS_ASCII_SendData1" @ string offset=530
 .Linfo_string27:
-	.asciz	"cyHexData"             @ string offset=562
+	.asciz	"cyHexData"             @ string offset=553
 .Linfo_string28:
-	.asciz	"pCyAsciiBuf"           @ string offset=572
+	.asciz	"pCyAsciiBuf"           @ string offset=563
 .Linfo_string29:
-	.asciz	"cyTemp"                @ string offset=584
+	.asciz	"cyTemp"                @ string offset=575
 .Linfo_string30:
-	.asciz	"cyLen"                 @ string offset=591
+	.asciz	"cyLen"                 @ string offset=582
 .Linfo_string31:
-	.asciz	"cyLrcVal"              @ string offset=597
+	.asciz	"cyLrcVal"              @ string offset=588
 .Linfo_string32:
-	.asciz	"i"                     @ string offset=606
+	.asciz	"i"                     @ string offset=597
 .Linfo_string33:
-	.asciz	"cyAsciiLen"            @ string offset=608
+	.asciz	"cyAsciiLen"            @ string offset=599
 .Linfo_string34:
-	.asciz	"pCyRtuBuf"             @ string offset=619
+	.asciz	"pCyRtuBuf"             @ string offset=610
 .Linfo_string35:
-	.asciz	"cyRtuLen"              @ string offset=629
+	.asciz	"cyRtuLen"              @ string offset=620
 .Linfo_string36:
-	.asciz	"cyRevData"             @ string offset=638
+	.asciz	"cyRevData"             @ string offset=629
 .Linfo_string37:
-	.asciz	"cyRecvBuff"            @ string offset=648
+	.asciz	"cyRecvBuff"            @ string offset=639
 .Linfo_string38:
-	.asciz	"pCyLen"                @ string offset=659
+	.asciz	"pCyLen"                @ string offset=650
 .Linfo_string39:
-	.asciz	"cyLrc"                 @ string offset=666
+	.asciz	"cyLrc"                 @ string offset=657
 .Linfo_string40:
-	.asciz	"eres"                  @ string offset=672
+	.asciz	"eres"                  @ string offset=663
 .Linfo_string41:
-	.asciz	"cySendBuff"            @ string offset=677
+	.asciz	"cySendBuff"            @ string offset=668
 	.section	.debug_abbrev,"",%progbits
 	.byte	1                       @ Abbreviation Code
 	.byte	17                      @ DW_TAG_compile_unit
@@ -2680,7 +2690,7 @@ cyAsciiBuff:
 	.byte	93
 	.long	.Linfo_string26         @ DW_AT_name
 	.byte	2                       @ DW_AT_decl_file
-	.short	420                     @ DW_AT_decl_line
+	.short	436                     @ DW_AT_decl_line
 	.byte	1                       @ DW_AT_prototyped
 	.long	178                     @ DW_AT_type
 	.byte	1                       @ DW_AT_external
@@ -2690,7 +2700,7 @@ cyAsciiBuff:
 	.byte	32
 	.long	.Linfo_string41         @ DW_AT_name
 	.byte	2                       @ DW_AT_decl_file
-	.short	420                     @ DW_AT_decl_line
+	.short	436                     @ DW_AT_decl_line
 	.long	196                     @ DW_AT_type
 	.byte	17                      @ Abbrev [17] 0x392:0xf DW_TAG_formal_parameter
 	.byte	2                       @ DW_AT_location
@@ -2698,7 +2708,7 @@ cyAsciiBuff:
 	.byte	28
 	.long	.Linfo_string30         @ DW_AT_name
 	.byte	2                       @ DW_AT_decl_file
-	.short	420                     @ DW_AT_decl_line
+	.short	436                     @ DW_AT_decl_line
 	.long	178                     @ DW_AT_type
 	.byte	18                      @ Abbrev [18] 0x3a1:0xf DW_TAG_variable
 	.byte	2                       @ DW_AT_location
@@ -2706,7 +2716,7 @@ cyAsciiBuff:
 	.byte	24
 	.long	.Linfo_string39         @ DW_AT_name
 	.byte	2                       @ DW_AT_decl_file
-	.short	422                     @ DW_AT_decl_line
+	.short	438                     @ DW_AT_decl_line
 	.long	126                     @ DW_AT_type
 	.byte	18                      @ Abbrev [18] 0x3b0:0xf DW_TAG_variable
 	.byte	2                       @ DW_AT_location
@@ -2714,7 +2724,7 @@ cyAsciiBuff:
 	.byte	20
 	.long	.Linfo_string33         @ DW_AT_name
 	.byte	2                       @ DW_AT_decl_file
-	.short	423                     @ DW_AT_decl_line
+	.short	439                     @ DW_AT_decl_line
 	.long	178                     @ DW_AT_type
 	.byte	0                       @ End Of Children Mark
 	.byte	11                      @ Abbrev [11] 0x3c0:0x5 DW_TAG_pointer_type

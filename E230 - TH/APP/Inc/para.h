@@ -4,8 +4,8 @@
 #include "type.h"
 
 
-#define RUN_ADDR_BASE				                                  0x00								//????????,????????EEPROMP
-#define SLAVE_ADDR_TEMP					(RUN_ADDR_BASE		+ 0x01)
+#define RUN_ADDR_BASE				    0x00								//????????,????????EEPROMP
+#define SLAVE_ADDR_TEMP					(RUN_ADDR_BASE		+ 0x02)
 #define SLAVE_ADDR_HUMI					(SLAVE_ADDR_TEMP	+ 0x01)
 #define Baudrate_ADDR					(SLAVE_ADDR_HUMI		+ 0x01)
 #define TEM_UP_THR                                      (Baudrate_ADDR             + 0x01) //??1???
@@ -20,7 +20,7 @@
 #define TEM_UPLOAD_PERSIST                             (HUM_DO_THR            + 0x02) //????????
 #define HUM_UPLOAD_PERSIST                             (TEM_UPLOAD_PERSIST    + 0x01) //????????
 
-#define USER_DEFAULT_LEN				(HUM_UPLOAD_PERSIST             + 0x02)
+#define USER_DEFAULT_LEN				(HUM_UPLOAD_PERSIST             + 0x04)
 
 //---------------------------------------------------
 #define COMPANY						(USER_DEFAULT_LEN       + 0x40) 

@@ -33,7 +33,7 @@ I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_mi
 I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_cmp.h)(0x5BD276FD)
 I (..\User\systick.h)(0x5BD974A1)
 I (..\Utilities\gd32e230c_eval.h)(0x601A032A)
-F (..\User\main.c)(0x60F00FD5)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m23 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../ -I ../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include -I ../User -I ../GD32E230_Firmware_Library/CMSIS/GD/GD32E230/Include -I ../Utilities -I ../APP/Inc -I ../BSP/Inc-I./RTE/_GD32E230C_EVAL-ID:/Keil_v5/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-ID:/Keil_v5/Arm/Packs/GigaDevice/GD32E230_DFP/1.0.0/Device/Include-D__UVISION_VERSION="531" -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32E230 -D_RTE_ -DGD32E230-o ./output/main.o -MD)
+F (..\User\main.c)(0x60F3E85F)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m23 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../ -I ../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include -I ../User -I ../GD32E230_Firmware_Library/CMSIS/GD/GD32E230/Include -I ../Utilities -I ../APP/Inc -I ../BSP/Inc-I./RTE/_GD32E230C_EVAL-ID:/Keil_v5/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-ID:/Keil_v5/Arm/Packs/GigaDevice/GD32E230_DFP/1.0.0/Device/Include-D__UVISION_VERSION="531" -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32E230 -D_RTE_ -DGD32E230-o ./output/main.o -MD)
 I (..\GD32E230_Firmware_Library\CMSIS\GD\GD32E230\Include\gd32e230.h)(0x5BF4FAA3)
 I (D:\Keil_v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm23.h)(0x5E8ED122)
 I (D:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5ED60BE4)
@@ -68,11 +68,11 @@ I (..\User\systick.h)(0x5BD974A1)
 I (D:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x5ED60BE4)
 I (..\BSP\Inc\timer.h)(0x60E6916E)
 I (..\APP\Inc\type.h)(0x60DE8DBB)
-I (..\BSP\Inc\flash.h)(0x60F00FD5)
+I (..\BSP\Inc\flash.h)(0x60F00361)
 I (D:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5ED60BE4)
 I (D:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5ED60BE4)
 I (..\APP\Inc\modbus_asc.h)(0x60E6789B)
-I (..\APP\Inc\para.h)(0x60DE8BCB)
+I (..\APP\Inc\para.h)(0x60F103AC)
 I (..\APP\Inc\modbus_ascii.h)(0x6031B3DC)
 I (..\APP\Inc\common.h)(0x60155E59)
 I (..\BSP\Inc\SHT3x.h)(0x60DE8BCB)
@@ -139,7 +139,7 @@ I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_us
 I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_wwdgt.h)(0x5BD276FD)
 I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_misc.h)(0x5BD276FD)
 I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_cmp.h)(0x5BD276FD)
-F (..\APP\Src\modbus_asc.c)(0x60F013B6)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m23 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../ -I ../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include -I ../User -I ../GD32E230_Firmware_Library/CMSIS/GD/GD32E230/Include -I ../Utilities -I ../APP/Inc -I ../BSP/Inc-I./RTE/_GD32E230C_EVAL-ID:/Keil_v5/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-ID:/Keil_v5/Arm/Packs/GigaDevice/GD32E230_DFP/1.0.0/Device/Include-D__UVISION_VERSION="531" -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32E230 -D_RTE_ -DGD32E230-o ./output/modbus_asc.o -MD)
+F (..\APP\Src\modbus_asc.c)(0x60F4D64F)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m23 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../ -I ../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include -I ../User -I ../GD32E230_Firmware_Library/CMSIS/GD/GD32E230/Include -I ../Utilities -I ../APP/Inc -I ../BSP/Inc-I./RTE/_GD32E230C_EVAL-ID:/Keil_v5/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-ID:/Keil_v5/Arm/Packs/GigaDevice/GD32E230_DFP/1.0.0/Device/Include-D__UVISION_VERSION="531" -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32E230 -D_RTE_ -DGD32E230-o ./output/modbus_asc.o -MD)
 I (..\APP\Inc\modbus_asc.h)(0x60E6789B)
 I (..\APP\Inc\type.h)(0x60DE8DBB)
 I (..\GD32E230_Firmware_Library\CMSIS\GD\GD32E230\Include\gd32e230.h)(0x5BF4FAA3)
@@ -172,97 +172,98 @@ I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_ww
 I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_misc.h)(0x5BD276FD)
 I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_cmp.h)(0x5BD276FD)
 I (..\Utilities\gd32e230c_eval.h)(0x601A032A)
-I (..\BSP\Inc\flash.h)(0x60F00FD5)
+I (..\BSP\Inc\flash.h)(0x60F00361)
 I (D:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5ED60BE4)
 I (D:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5ED60BE4)
-I (..\APP\Inc\para.h)(0x60DE8BCB)
+I (..\APP\Inc\para.h)(0x60F103AC)
+I (..\User\systick.h)(0x5BD974A1)
+I (..\APP\Inc\modbus_ascii.h)(0x6031B3DC)
+I (..\APP\Inc\common.h)(0x60155E59)
+I (..\BSP\Inc\TH_IIC.h)(0x60E2F981)
+I (..\BSP\Inc\SHT3x.h)(0x60DE8BCB)
+F (..\APP\Src\modbus_ascii.c)(0x60F27D35)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m23 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../ -I ../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include -I ../User -I ../GD32E230_Firmware_Library/CMSIS/GD/GD32E230/Include -I ../Utilities -I ../APP/Inc -I ../BSP/Inc-I./RTE/_GD32E230C_EVAL-ID:/Keil_v5/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-ID:/Keil_v5/Arm/Packs/GigaDevice/GD32E230_DFP/1.0.0/Device/Include-D__UVISION_VERSION="531" -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32E230 -D_RTE_ -DGD32E230-o ./output/modbus_ascii.o -MD)
+I (..\APP\Inc\type.h)(0x60DE8DBB)
+I (..\GD32E230_Firmware_Library\CMSIS\GD\GD32E230\Include\gd32e230.h)(0x5BF4FAA3)
+I (D:\Keil_v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm23.h)(0x5E8ED122)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5ED60BE4)
+I (D:\Keil_v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\Keil_v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\Keil_v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8ED122)
+I (D:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5E0CC2EC)
+I (D:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5E0CC318)
+I (..\GD32E230_Firmware_Library\CMSIS\GD\GD32E230\Include\system_gd32e230.h)(0x5BF4FAA2)
+I (..\User\gd32e230_libopt.h)(0x5BD974A2)
+I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_adc.h)(0x5BD276FD)
+I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_crc.h)(0x5BD276FD)
+I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_dbg.h)(0x5BD276FD)
+I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_dma.h)(0x5BD276FD)
+I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_exti.h)(0x5BD276FD)
+I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_fmc.h)(0x5BD276FD)
+I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_gpio.h)(0x5BD276FD)
+I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_syscfg.h)(0x5BD276FD)
+I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_i2c.h)(0x5BD276FD)
+I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_fwdgt.h)(0x5BD276FD)
+I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_pmu.h)(0x5BD276FD)
+I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_rcu.h)(0x5BD276FD)
+I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_rtc.h)(0x5BD276FD)
+I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_spi.h)(0x5BD276FD)
+I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_timer.h)(0x5BD276FD)
+I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_usart.h)(0x5BD276FD)
+I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_wwdgt.h)(0x5BD276FD)
+I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_misc.h)(0x5BD276FD)
+I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_cmp.h)(0x5BD276FD)
+I (..\Utilities\gd32e230c_eval.h)(0x601A032A)
+I (..\BSP\Inc\flash.h)(0x60F00361)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5ED60BE4)
+I (D:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5ED60BE4)
+I (..\APP\Inc\modbus_asc.h)(0x60E6789B)
+I (..\APP\Inc\para.h)(0x60F103AC)
+I (..\User\systick.h)(0x5BD974A1)
+I (..\APP\Inc\modbus_ascii.h)(0x6031B3DC)
+I (..\APP\Inc\common.h)(0x60155E59)
+F (..\APP\Src\para.c)(0x60F104BA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m23 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../ -I ../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include -I ../User -I ../GD32E230_Firmware_Library/CMSIS/GD/GD32E230/Include -I ../Utilities -I ../APP/Inc -I ../BSP/Inc-I./RTE/_GD32E230C_EVAL-ID:/Keil_v5/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-ID:/Keil_v5/Arm/Packs/GigaDevice/GD32E230_DFP/1.0.0/Device/Include-D__UVISION_VERSION="531" -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32E230 -D_RTE_ -DGD32E230-o ./output/para.o -MD)
+I (..\APP\Inc\para.h)(0x60F103AC)
+I (..\APP\Inc\type.h)(0x60DE8DBB)
+I (..\GD32E230_Firmware_Library\CMSIS\GD\GD32E230\Include\gd32e230.h)(0x5BF4FAA3)
+I (D:\Keil_v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm23.h)(0x5E8ED122)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5ED60BE4)
+I (D:\Keil_v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\Keil_v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\Keil_v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8ED122)
+I (D:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5E0CC2EC)
+I (D:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5E0CC318)
+I (..\GD32E230_Firmware_Library\CMSIS\GD\GD32E230\Include\system_gd32e230.h)(0x5BF4FAA2)
+I (..\User\gd32e230_libopt.h)(0x5BD974A2)
+I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_adc.h)(0x5BD276FD)
+I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_crc.h)(0x5BD276FD)
+I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_dbg.h)(0x5BD276FD)
+I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_dma.h)(0x5BD276FD)
+I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_exti.h)(0x5BD276FD)
+I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_fmc.h)(0x5BD276FD)
+I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_gpio.h)(0x5BD276FD)
+I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_syscfg.h)(0x5BD276FD)
+I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_i2c.h)(0x5BD276FD)
+I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_fwdgt.h)(0x5BD276FD)
+I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_pmu.h)(0x5BD276FD)
+I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_rcu.h)(0x5BD276FD)
+I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_rtc.h)(0x5BD276FD)
+I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_spi.h)(0x5BD276FD)
+I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_timer.h)(0x5BD276FD)
+I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_usart.h)(0x5BD276FD)
+I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_wwdgt.h)(0x5BD276FD)
+I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_misc.h)(0x5BD276FD)
+I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_cmp.h)(0x5BD276FD)
+I (..\Utilities\gd32e230c_eval.h)(0x601A032A)
+I (..\BSP\Inc\flash.h)(0x60F00361)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5ED60BE4)
+I (D:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5ED60BE4)
+I (..\APP\Inc\modbus_asc.h)(0x60E6789B)
 I (..\User\systick.h)(0x5BD974A1)
 I (..\APP\Inc\modbus_ascii.h)(0x6031B3DC)
 I (..\APP\Inc\common.h)(0x60155E59)
 I (..\BSP\Inc\SHT3x.h)(0x60DE8BCB)
-F (..\APP\Src\modbus_ascii.c)(0x60ED3536)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m23 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../ -I ../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include -I ../User -I ../GD32E230_Firmware_Library/CMSIS/GD/GD32E230/Include -I ../Utilities -I ../APP/Inc -I ../BSP/Inc-I./RTE/_GD32E230C_EVAL-ID:/Keil_v5/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-ID:/Keil_v5/Arm/Packs/GigaDevice/GD32E230_DFP/1.0.0/Device/Include-D__UVISION_VERSION="531" -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32E230 -D_RTE_ -DGD32E230-o ./output/modbus_ascii.o -MD)
-I (..\APP\Inc\type.h)(0x60DE8DBB)
-I (..\GD32E230_Firmware_Library\CMSIS\GD\GD32E230\Include\gd32e230.h)(0x5BF4FAA3)
-I (D:\Keil_v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm23.h)(0x5E8ED122)
-I (D:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5ED60BE4)
-I (D:\Keil_v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
-I (D:\Keil_v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
-I (D:\Keil_v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8ED122)
-I (D:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5E0CC2EC)
-I (D:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5E0CC318)
-I (..\GD32E230_Firmware_Library\CMSIS\GD\GD32E230\Include\system_gd32e230.h)(0x5BF4FAA2)
-I (..\User\gd32e230_libopt.h)(0x5BD974A2)
-I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_adc.h)(0x5BD276FD)
-I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_crc.h)(0x5BD276FD)
-I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_dbg.h)(0x5BD276FD)
-I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_dma.h)(0x5BD276FD)
-I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_exti.h)(0x5BD276FD)
-I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_fmc.h)(0x5BD276FD)
-I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_gpio.h)(0x5BD276FD)
-I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_syscfg.h)(0x5BD276FD)
-I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_i2c.h)(0x5BD276FD)
-I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_fwdgt.h)(0x5BD276FD)
-I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_pmu.h)(0x5BD276FD)
-I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_rcu.h)(0x5BD276FD)
-I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_rtc.h)(0x5BD276FD)
-I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_spi.h)(0x5BD276FD)
-I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_timer.h)(0x5BD276FD)
-I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_usart.h)(0x5BD276FD)
-I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_wwdgt.h)(0x5BD276FD)
-I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_misc.h)(0x5BD276FD)
-I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_cmp.h)(0x5BD276FD)
-I (..\Utilities\gd32e230c_eval.h)(0x601A032A)
-I (..\BSP\Inc\flash.h)(0x60F00FD5)
-I (D:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5ED60BE4)
-I (D:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5ED60BE4)
-I (..\APP\Inc\modbus_asc.h)(0x60E6789B)
-I (..\APP\Inc\para.h)(0x60DE8BCB)
-I (..\User\systick.h)(0x5BD974A1)
-I (..\APP\Inc\modbus_ascii.h)(0x6031B3DC)
-I (..\APP\Inc\common.h)(0x60155E59)
-F (..\APP\Src\para.c)(0x60E69976)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m23 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../ -I ../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include -I ../User -I ../GD32E230_Firmware_Library/CMSIS/GD/GD32E230/Include -I ../Utilities -I ../APP/Inc -I ../BSP/Inc-I./RTE/_GD32E230C_EVAL-ID:/Keil_v5/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-ID:/Keil_v5/Arm/Packs/GigaDevice/GD32E230_DFP/1.0.0/Device/Include-D__UVISION_VERSION="531" -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32E230 -D_RTE_ -DGD32E230-o ./output/para.o -MD)
-I (..\APP\Inc\para.h)(0x60DE8BCB)
-I (..\APP\Inc\type.h)(0x60DE8DBB)
-I (..\GD32E230_Firmware_Library\CMSIS\GD\GD32E230\Include\gd32e230.h)(0x5BF4FAA3)
-I (D:\Keil_v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm23.h)(0x5E8ED122)
-I (D:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5ED60BE4)
-I (D:\Keil_v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
-I (D:\Keil_v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
-I (D:\Keil_v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8ED122)
-I (D:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5E0CC2EC)
-I (D:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5E0CC318)
-I (..\GD32E230_Firmware_Library\CMSIS\GD\GD32E230\Include\system_gd32e230.h)(0x5BF4FAA2)
-I (..\User\gd32e230_libopt.h)(0x5BD974A2)
-I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_adc.h)(0x5BD276FD)
-I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_crc.h)(0x5BD276FD)
-I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_dbg.h)(0x5BD276FD)
-I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_dma.h)(0x5BD276FD)
-I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_exti.h)(0x5BD276FD)
-I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_fmc.h)(0x5BD276FD)
-I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_gpio.h)(0x5BD276FD)
-I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_syscfg.h)(0x5BD276FD)
-I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_i2c.h)(0x5BD276FD)
-I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_fwdgt.h)(0x5BD276FD)
-I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_pmu.h)(0x5BD276FD)
-I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_rcu.h)(0x5BD276FD)
-I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_rtc.h)(0x5BD276FD)
-I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_spi.h)(0x5BD276FD)
-I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_timer.h)(0x5BD276FD)
-I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_usart.h)(0x5BD276FD)
-I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_wwdgt.h)(0x5BD276FD)
-I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_misc.h)(0x5BD276FD)
-I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_cmp.h)(0x5BD276FD)
-I (..\Utilities\gd32e230c_eval.h)(0x601A032A)
-I (..\BSP\Inc\flash.h)(0x60F00FD5)
-I (D:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5ED60BE4)
-I (D:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5ED60BE4)
-I (..\APP\Inc\modbus_asc.h)(0x60E6789B)
-I (..\User\systick.h)(0x5BD974A1)
-I (..\APP\Inc\modbus_ascii.h)(0x6031B3DC)
-I (..\APP\Inc\common.h)(0x60155E59)
-I (..\BSP\Inc\SHT3x.h)(0x60DE8BCB)
-F (..\BSP\Src\flash.c)(0x60DD2D65)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m23 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../ -I ../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include -I ../User -I ../GD32E230_Firmware_Library/CMSIS/GD/GD32E230/Include -I ../Utilities -I ../APP/Inc -I ../BSP/Inc-I./RTE/_GD32E230C_EVAL-ID:/Keil_v5/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-ID:/Keil_v5/Arm/Packs/GigaDevice/GD32E230_DFP/1.0.0/Device/Include-D__UVISION_VERSION="531" -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32E230 -D_RTE_ -DGD32E230-o ./output/flash.o -MD)
-I (..\BSP\Inc\flash.h)(0x60F00FD5)
+F (..\BSP\Src\flash.c)(0x60F12831)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m23 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../ -I ../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include -I ../User -I ../GD32E230_Firmware_Library/CMSIS/GD/GD32E230/Include -I ../Utilities -I ../APP/Inc -I ../BSP/Inc-I./RTE/_GD32E230C_EVAL-ID:/Keil_v5/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-ID:/Keil_v5/Arm/Packs/GigaDevice/GD32E230_DFP/1.0.0/Device/Include-D__UVISION_VERSION="531" -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32E230 -D_RTE_ -DGD32E230-o ./output/flash.o -MD)
+I (..\BSP\Inc\flash.h)(0x60F00361)
 I (..\GD32E230_Firmware_Library\CMSIS\GD\GD32E230\Include\gd32e230.h)(0x5BF4FAA3)
 I (D:\Keil_v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm23.h)(0x5E8ED122)
 I (D:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5ED60BE4)
@@ -327,11 +328,11 @@ I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_mi
 I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_cmp.h)(0x5BD276FD)
 I (..\APP\Inc\type.h)(0x60DE8DBB)
 I (..\Utilities\gd32e230c_eval.h)(0x601A032A)
-I (..\BSP\Inc\flash.h)(0x60F00FD5)
+I (..\BSP\Inc\flash.h)(0x60F00361)
 I (D:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5ED60BE4)
 I (D:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5ED60BE4)
 I (..\APP\Inc\modbus_asc.h)(0x60E6789B)
-I (..\APP\Inc\para.h)(0x60DE8BCB)
+I (..\APP\Inc\para.h)(0x60F103AC)
 I (..\User\systick.h)(0x5BD974A1)
 I (..\APP\Inc\modbus_ascii.h)(0x6031B3DC)
 I (..\APP\Inc\common.h)(0x60155E59)
@@ -366,7 +367,7 @@ I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_us
 I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_wwdgt.h)(0x5BD276FD)
 I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_misc.h)(0x5BD276FD)
 I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_cmp.h)(0x5BD276FD)
-F (..\BSP\Src\SHT3x.c)(0x60E2F946)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m23 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../ -I ../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include -I ../User -I ../GD32E230_Firmware_Library/CMSIS/GD/GD32E230/Include -I ../Utilities -I ../APP/Inc -I ../BSP/Inc-I./RTE/_GD32E230C_EVAL-ID:/Keil_v5/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-ID:/Keil_v5/Arm/Packs/GigaDevice/GD32E230_DFP/1.0.0/Device/Include-D__UVISION_VERSION="531" -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32E230 -D_RTE_ -DGD32E230-o ./output/sht3x.o -MD)
+F (..\BSP\Src\SHT3x.c)(0x60F3E829)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m23 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../ -I ../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include -I ../User -I ../GD32E230_Firmware_Library/CMSIS/GD/GD32E230/Include -I ../Utilities -I ../APP/Inc -I ../BSP/Inc-I./RTE/_GD32E230C_EVAL-ID:/Keil_v5/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-ID:/Keil_v5/Arm/Packs/GigaDevice/GD32E230_DFP/1.0.0/Device/Include-D__UVISION_VERSION="531" -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32E230 -D_RTE_ -DGD32E230-o ./output/sht3x.o -MD)
 I (..\BSP\Inc\SHT3x.h)(0x60DE8BCB)
 I (..\GD32E230_Firmware_Library\CMSIS\GD\GD32E230\Include\gd32e230.h)(0x5BF4FAA3)
 I (D:\Keil_v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm23.h)(0x5E8ED122)
@@ -999,7 +1000,7 @@ I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_ti
 I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_usart.h)(0x5BD276FD)
 I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_misc.h)(0x5BD276FD)
 I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_cmp.h)(0x5BD276FD)
-F (..\Utilities\gd32e230c_eval.c)(0x60ED3CB3)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m23 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../ -I ../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include -I ../User -I ../GD32E230_Firmware_Library/CMSIS/GD/GD32E230/Include -I ../Utilities -I ../APP/Inc -I ../BSP/Inc-I./RTE/_GD32E230C_EVAL-ID:/Keil_v5/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-ID:/Keil_v5/Arm/Packs/GigaDevice/GD32E230_DFP/1.0.0/Device/Include-D__UVISION_VERSION="531" -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32E230 -D_RTE_ -DGD32E230-o ./output/gd32e230c_eval.o -MD)
+F (..\Utilities\gd32e230c_eval.c)(0x60F27C5E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m23 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../ -I ../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include -I ../User -I ../GD32E230_Firmware_Library/CMSIS/GD/GD32E230/Include -I ../Utilities -I ../APP/Inc -I ../BSP/Inc-I./RTE/_GD32E230C_EVAL-ID:/Keil_v5/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-ID:/Keil_v5/Arm/Packs/GigaDevice/GD32E230_DFP/1.0.0/Device/Include-D__UVISION_VERSION="531" -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32E230 -D_RTE_ -DGD32E230-o ./output/gd32e230c_eval.o -MD)
 I (..\Utilities\gd32e230c_eval.h)(0x601A032A)
 I (..\GD32E230_Firmware_Library\CMSIS\GD\GD32E230\Include\gd32e230.h)(0x5BF4FAA3)
 I (D:\Keil_v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm23.h)(0x5E8ED122)
@@ -1031,11 +1032,11 @@ I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_ww
 I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_misc.h)(0x5BD276FD)
 I (..\GD32E230_Firmware_Library\GD32E230_standard_peripheral\Include\gd32e230_cmp.h)(0x5BD276FD)
 I (..\APP\Inc\type.h)(0x60DE8DBB)
-I (..\BSP\Inc\flash.h)(0x60F00FD5)
+I (..\BSP\Inc\flash.h)(0x60F00361)
 I (D:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5ED60BE4)
 I (D:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5ED60BE4)
 I (..\APP\Inc\modbus_asc.h)(0x60E6789B)
-I (..\APP\Inc\para.h)(0x60DE8BCB)
+I (..\APP\Inc\para.h)(0x60F103AC)
 I (..\User\systick.h)(0x5BD974A1)
 I (..\APP\Inc\modbus_ascii.h)(0x6031B3DC)
 I (..\APP\Inc\common.h)(0x60155E59)

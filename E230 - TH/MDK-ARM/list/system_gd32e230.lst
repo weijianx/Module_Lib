@@ -19,7 +19,7 @@
 	.eabi_attribute	14, 0	@ Tag_ABI_PCS_R9_use
 	.file	"system_gd32e230.c"
 	.file	1 "D:\\Keil_v5\\ARM\\ARMCLANG\\Bin\\..\\include" "stdint.h"
-	.file	2 "E:\\project\\product\\GD32\\GD32E230\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/CMSIS/GD/GD32E230/Source/system_gd32e230.c"
+	.file	2 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/CMSIS/GD/GD32E230/Source/system_gd32e230.c"
 	.section	.text.SystemInit,"ax",%progbits
 	.hidden	SystemInit              @ -- Begin function SystemInit
 	.globl	SystemInit
@@ -703,51 +703,51 @@ SystemCoreClock:
 .Linfo_string1:
 	.asciz	"../GD32E230_Firmware_Library/CMSIS/GD/GD32E230/Source\\system_gd32e230.c" @ string offset=55
 .Linfo_string2:
-	.asciz	"E:\\project\\product\\GD32\\GD32E230\\E230 - TH\\MDK-ARM" @ string offset=127
+	.asciz	"E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" @ string offset=127
 .Linfo_string3:
-	.asciz	"SystemCoreClock"       @ string offset=178
+	.asciz	"SystemCoreClock"       @ string offset=169
 .Linfo_string4:
-	.asciz	"unsigned int"          @ string offset=194
+	.asciz	"unsigned int"          @ string offset=185
 .Linfo_string5:
-	.asciz	"uint32_t"              @ string offset=207
+	.asciz	"uint32_t"              @ string offset=198
 .Linfo_string6:
-	.asciz	"unsigned short"        @ string offset=216
+	.asciz	"unsigned short"        @ string offset=207
 .Linfo_string7:
-	.asciz	"uint16_t"              @ string offset=231
+	.asciz	"uint16_t"              @ string offset=222
 .Linfo_string8:
-	.asciz	"unsigned char"         @ string offset=240
+	.asciz	"unsigned char"         @ string offset=231
 .Linfo_string9:
-	.asciz	"uint8_t"               @ string offset=254
+	.asciz	"uint8_t"               @ string offset=245
 .Linfo_string10:
-	.asciz	"SystemInit"            @ string offset=262
+	.asciz	"SystemInit"            @ string offset=253
 .Linfo_string11:
-	.asciz	"system_clock_config"   @ string offset=273
+	.asciz	"system_clock_config"   @ string offset=264
 .Linfo_string12:
-	.asciz	"SystemCoreClockUpdate" @ string offset=293
+	.asciz	"SystemCoreClockUpdate" @ string offset=284
 .Linfo_string13:
-	.asciz	"system_clock_72m_irc8m" @ string offset=315
+	.asciz	"system_clock_72m_irc8m" @ string offset=306
 .Linfo_string14:
-	.asciz	"sws"                   @ string offset=338
+	.asciz	"sws"                   @ string offset=329
 .Linfo_string15:
-	.asciz	"pllmf"                 @ string offset=342
+	.asciz	"pllmf"                 @ string offset=333
 .Linfo_string16:
-	.asciz	"pllmf4"                @ string offset=348
+	.asciz	"pllmf4"                @ string offset=339
 .Linfo_string17:
-	.asciz	"pllsel"                @ string offset=355
+	.asciz	"pllsel"                @ string offset=346
 .Linfo_string18:
-	.asciz	"prediv"                @ string offset=362
+	.asciz	"prediv"                @ string offset=353
 .Linfo_string19:
-	.asciz	"idx"                   @ string offset=369
+	.asciz	"idx"                   @ string offset=360
 .Linfo_string20:
-	.asciz	"clk_exp"               @ string offset=373
+	.asciz	"clk_exp"               @ string offset=364
 .Linfo_string21:
-	.asciz	"ahb_exp"               @ string offset=381
+	.asciz	"ahb_exp"               @ string offset=372
 .Linfo_string22:
-	.asciz	"__ARRAY_SIZE_TYPE__"   @ string offset=389
+	.asciz	"__ARRAY_SIZE_TYPE__"   @ string offset=380
 .Linfo_string23:
-	.asciz	"timeout"               @ string offset=409
+	.asciz	"timeout"               @ string offset=400
 .Linfo_string24:
-	.asciz	"stab_flag"             @ string offset=417
+	.asciz	"stab_flag"             @ string offset=408
 	.section	.debug_abbrev,"",%progbits
 	.byte	1                       @ Abbreviation Code
 	.byte	17                      @ DW_TAG_compile_unit

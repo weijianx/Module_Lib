@@ -344,7 +344,8 @@ float TH_Filter(float NewData, float* FilterBuf, uint16_t FilterNum, uint16_t De
 void ReadTH(void)
 {
    // OS_ERR err;
-    uint8_t i;
+	static uint8_t sing = 0;
+    uint8_t i,i1=0,j1=0;
     uint8_t status;
     uint8_t sDataBuff[6];
     uint16_t sTH[2];
@@ -375,6 +376,18 @@ void ReadTH(void)
                     sTH[1] = ((uint16_t)sDataBuff[3] << 8) | sDataBuff[4];      //读出的湿度数组
                     sTem[i] = -45.0f + 175.0f * sTH[0] / 65535.0f;              //计算成摄氏度
                     sHum[i] = 100.0f * sTH[1] / 65535.0f;                       //计算成百分比
+					if(sing == 0)
+					{
+						for(i1 = 0; i1 < SENSOR_NUM; i1++)
+						{
+							for(j1 = 0; j1 < FILTER_NUM; j1++)
+							{
+								gTemBuf[i1][j1] = -45.0f + 175.0f * sTH[0] / 65535.0f;                                              //温度缓存初始设置为25度
+								gHumBuf[i1][j1] = 100.0f * sTH[1] / 65535.0f;                                              //湿度缓存初始设置为50%
+							}
+						}
+						sing =1;
+					}
                     sTem[i] = TH_Filter(sTem[i], gTemBuf[i], TEM_FIL_NUM, DEL_HEAD_NUM, DEL_TAIL_NUM);//温度滤波
                     sHum[i] = TH_Filter(sHum[i], gHumBuf[i], HUM_FIL_NUM, DEL_HEAD_NUM, DEL_TAIL_NUM);//湿度滤波
                     T_H.Temp[i] = (uint16_t)((sTem[i] + 273.1f) * 10.0f + 0.5f);

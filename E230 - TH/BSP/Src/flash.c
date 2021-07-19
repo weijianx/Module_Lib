@@ -55,14 +55,14 @@ uint8_t Flash_Read_OneByte(uint32_t RWAddr)
 
 void flash_read_multi(uint32_t readAdder, uint8_t *readBuf, uint16_t readLen)
 {
-	uint8_t i;
+	uint16_t i;
 	
 	for(i=0; i<readLen; i++)
 	{
 		*(readBuf + i) = Flash_Read_OneByte(readAdder + start_adder);
 		readAdder++;
-		if(*(readBuf + i) == NULL)
-			break;
+//		if(*(readBuf + i) == NULL)
+//			break;
 	}
 }
 

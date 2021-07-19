@@ -18,8 +18,8 @@
 	.eabi_attribute	26, 1	@ Tag_ABI_enum_size
 	.eabi_attribute	14, 0	@ Tag_ABI_PCS_R9_use
 	.file	"gd32e230_rcu.c"
-	.file	1 "E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include\\gd32e230_rcu.h"
-	.file	2 "E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" "../GD32E230_Firmware_Library/CMSIS/GD/GD32E230/Include\\gd32e230.h"
+	.file	1 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include\\gd32e230_rcu.h"
+	.file	2 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/CMSIS/GD/GD32E230/Include\\gd32e230.h"
 	.file	3 "D:\\Keil_v5\\ARM\\ARMCLANG\\Bin\\..\\include" "stdint.h"
 	.section	.text.rcu_deinit,"ax",%progbits
 	.hidden	rcu_deinit              @ -- Begin function rcu_deinit
@@ -30,7 +30,7 @@
 	.thumb_func
 rcu_deinit:
 .Lfunc_begin0:
-	.file	4 "E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source/gd32e230_rcu.c"
+	.file	4 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source/gd32e230_rcu.c"
 	.loc	4 55 0                  @ ../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source/gd32e230_rcu.c:55:0
 	.fnstart
 	.cfi_sections .debug_frame
@@ -3645,445 +3645,445 @@ __arm_cp.38_8:
 .Linfo_string1:
 	.asciz	"../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source\\gd32e230_rcu.c" @ string offset=55
 .Linfo_string2:
-	.asciz	"E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" @ string offset=135
+	.asciz	"E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" @ string offset=135
 .Linfo_string3:
-	.asciz	"unsigned short"        @ string offset=187
+	.asciz	"unsigned short"        @ string offset=177
 .Linfo_string4:
-	.asciz	"RCU_DMA"               @ string offset=202
+	.asciz	"RCU_DMA"               @ string offset=192
 .Linfo_string5:
-	.asciz	"RCU_CRC"               @ string offset=210
+	.asciz	"RCU_CRC"               @ string offset=200
 .Linfo_string6:
-	.asciz	"RCU_GPIOA"             @ string offset=218
+	.asciz	"RCU_GPIOA"             @ string offset=208
 .Linfo_string7:
-	.asciz	"RCU_GPIOB"             @ string offset=228
+	.asciz	"RCU_GPIOB"             @ string offset=218
 .Linfo_string8:
-	.asciz	"RCU_GPIOC"             @ string offset=238
+	.asciz	"RCU_GPIOC"             @ string offset=228
 .Linfo_string9:
-	.asciz	"RCU_GPIOF"             @ string offset=248
+	.asciz	"RCU_GPIOF"             @ string offset=238
 .Linfo_string10:
-	.asciz	"RCU_CFGCMP"            @ string offset=258
+	.asciz	"RCU_CFGCMP"            @ string offset=248
 .Linfo_string11:
-	.asciz	"RCU_ADC"               @ string offset=269
+	.asciz	"RCU_ADC"               @ string offset=259
 .Linfo_string12:
-	.asciz	"RCU_TIMER0"            @ string offset=277
+	.asciz	"RCU_TIMER0"            @ string offset=267
 .Linfo_string13:
-	.asciz	"RCU_SPI0"              @ string offset=288
+	.asciz	"RCU_SPI0"              @ string offset=278
 .Linfo_string14:
-	.asciz	"RCU_USART0"            @ string offset=297
+	.asciz	"RCU_USART0"            @ string offset=287
 .Linfo_string15:
-	.asciz	"RCU_TIMER14"           @ string offset=308
+	.asciz	"RCU_TIMER14"           @ string offset=298
 .Linfo_string16:
-	.asciz	"RCU_TIMER15"           @ string offset=320
+	.asciz	"RCU_TIMER15"           @ string offset=310
 .Linfo_string17:
-	.asciz	"RCU_TIMER16"           @ string offset=332
+	.asciz	"RCU_TIMER16"           @ string offset=322
 .Linfo_string18:
-	.asciz	"RCU_DBGMCU"            @ string offset=344
+	.asciz	"RCU_DBGMCU"            @ string offset=334
 .Linfo_string19:
-	.asciz	"RCU_TIMER2"            @ string offset=355
+	.asciz	"RCU_TIMER2"            @ string offset=345
 .Linfo_string20:
-	.asciz	"RCU_TIMER5"            @ string offset=366
+	.asciz	"RCU_TIMER5"            @ string offset=356
 .Linfo_string21:
-	.asciz	"RCU_TIMER13"           @ string offset=377
+	.asciz	"RCU_TIMER13"           @ string offset=367
 .Linfo_string22:
-	.asciz	"RCU_WWDGT"             @ string offset=389
+	.asciz	"RCU_WWDGT"             @ string offset=379
 .Linfo_string23:
-	.asciz	"RCU_SPI1"              @ string offset=399
+	.asciz	"RCU_SPI1"              @ string offset=389
 .Linfo_string24:
-	.asciz	"RCU_USART1"            @ string offset=408
+	.asciz	"RCU_USART1"            @ string offset=398
 .Linfo_string25:
-	.asciz	"RCU_I2C0"              @ string offset=419
+	.asciz	"RCU_I2C0"              @ string offset=409
 .Linfo_string26:
-	.asciz	"RCU_I2C1"              @ string offset=428
+	.asciz	"RCU_I2C1"              @ string offset=418
 .Linfo_string27:
-	.asciz	"RCU_PMU"               @ string offset=437
+	.asciz	"RCU_PMU"               @ string offset=427
 .Linfo_string28:
-	.asciz	"RCU_RTC"               @ string offset=445
+	.asciz	"RCU_RTC"               @ string offset=435
 .Linfo_string29:
-	.asciz	"RCU_SRAM_SLP"          @ string offset=453
+	.asciz	"RCU_SRAM_SLP"          @ string offset=443
 .Linfo_string30:
-	.asciz	"RCU_FMC_SLP"           @ string offset=466
+	.asciz	"RCU_FMC_SLP"           @ string offset=456
 .Linfo_string31:
-	.asciz	"RCU_GPIOARST"          @ string offset=478
+	.asciz	"RCU_GPIOARST"          @ string offset=468
 .Linfo_string32:
-	.asciz	"RCU_GPIOBRST"          @ string offset=491
+	.asciz	"RCU_GPIOBRST"          @ string offset=481
 .Linfo_string33:
-	.asciz	"RCU_GPIOCRST"          @ string offset=504
+	.asciz	"RCU_GPIOCRST"          @ string offset=494
 .Linfo_string34:
-	.asciz	"RCU_GPIOFRST"          @ string offset=517
+	.asciz	"RCU_GPIOFRST"          @ string offset=507
 .Linfo_string35:
-	.asciz	"RCU_CFGCMPRST"         @ string offset=530
+	.asciz	"RCU_CFGCMPRST"         @ string offset=520
 .Linfo_string36:
-	.asciz	"RCU_ADCRST"            @ string offset=544
+	.asciz	"RCU_ADCRST"            @ string offset=534
 .Linfo_string37:
-	.asciz	"RCU_TIMER0RST"         @ string offset=555
+	.asciz	"RCU_TIMER0RST"         @ string offset=545
 .Linfo_string38:
-	.asciz	"RCU_SPI0RST"           @ string offset=569
+	.asciz	"RCU_SPI0RST"           @ string offset=559
 .Linfo_string39:
-	.asciz	"RCU_USART0RST"         @ string offset=581
+	.asciz	"RCU_USART0RST"         @ string offset=571
 .Linfo_string40:
-	.asciz	"RCU_TIMER14RST"        @ string offset=595
+	.asciz	"RCU_TIMER14RST"        @ string offset=585
 .Linfo_string41:
-	.asciz	"RCU_TIMER15RST"        @ string offset=610
+	.asciz	"RCU_TIMER15RST"        @ string offset=600
 .Linfo_string42:
-	.asciz	"RCU_TIMER16RST"        @ string offset=625
+	.asciz	"RCU_TIMER16RST"        @ string offset=615
 .Linfo_string43:
-	.asciz	"RCU_TIMER2RST"         @ string offset=640
+	.asciz	"RCU_TIMER2RST"         @ string offset=630
 .Linfo_string44:
-	.asciz	"RCU_TIMER5RST"         @ string offset=654
+	.asciz	"RCU_TIMER5RST"         @ string offset=644
 .Linfo_string45:
-	.asciz	"RCU_TIMER13RST"        @ string offset=668
+	.asciz	"RCU_TIMER13RST"        @ string offset=658
 .Linfo_string46:
-	.asciz	"RCU_WWDGTRST"          @ string offset=683
+	.asciz	"RCU_WWDGTRST"          @ string offset=673
 .Linfo_string47:
-	.asciz	"RCU_SPI1RST"           @ string offset=696
+	.asciz	"RCU_SPI1RST"           @ string offset=686
 .Linfo_string48:
-	.asciz	"RCU_USART1RST"         @ string offset=708
+	.asciz	"RCU_USART1RST"         @ string offset=698
 .Linfo_string49:
-	.asciz	"RCU_I2C0RST"           @ string offset=722
+	.asciz	"RCU_I2C0RST"           @ string offset=712
 .Linfo_string50:
-	.asciz	"RCU_I2C1RST"           @ string offset=734
+	.asciz	"RCU_I2C1RST"           @ string offset=724
 .Linfo_string51:
-	.asciz	"RCU_PMURST"            @ string offset=746
+	.asciz	"RCU_PMURST"            @ string offset=736
 .Linfo_string52:
-	.asciz	"unsigned char"         @ string offset=757
+	.asciz	"unsigned char"         @ string offset=747
 .Linfo_string53:
-	.asciz	"RCU_ADCCK_IRC28M_DIV2" @ string offset=771
+	.asciz	"RCU_ADCCK_IRC28M_DIV2" @ string offset=761
 .Linfo_string54:
-	.asciz	"RCU_ADCCK_IRC28M"      @ string offset=793
+	.asciz	"RCU_ADCCK_IRC28M"      @ string offset=783
 .Linfo_string55:
-	.asciz	"RCU_ADCCK_APB2_DIV2"   @ string offset=810
+	.asciz	"RCU_ADCCK_APB2_DIV2"   @ string offset=800
 .Linfo_string56:
-	.asciz	"RCU_ADCCK_AHB_DIV3"    @ string offset=830
+	.asciz	"RCU_ADCCK_AHB_DIV3"    @ string offset=820
 .Linfo_string57:
-	.asciz	"RCU_ADCCK_APB2_DIV4"   @ string offset=849
+	.asciz	"RCU_ADCCK_APB2_DIV4"   @ string offset=839
 .Linfo_string58:
-	.asciz	"RCU_ADCCK_AHB_DIV5"    @ string offset=869
+	.asciz	"RCU_ADCCK_AHB_DIV5"    @ string offset=859
 .Linfo_string59:
-	.asciz	"RCU_ADCCK_APB2_DIV6"   @ string offset=888
+	.asciz	"RCU_ADCCK_APB2_DIV6"   @ string offset=878
 .Linfo_string60:
-	.asciz	"RCU_ADCCK_AHB_DIV7"    @ string offset=908
+	.asciz	"RCU_ADCCK_AHB_DIV7"    @ string offset=898
 .Linfo_string61:
-	.asciz	"RCU_ADCCK_APB2_DIV8"   @ string offset=927
+	.asciz	"RCU_ADCCK_APB2_DIV8"   @ string offset=917
 .Linfo_string62:
-	.asciz	"RCU_ADCCK_AHB_DIV9"    @ string offset=947
+	.asciz	"RCU_ADCCK_AHB_DIV9"    @ string offset=937
 .Linfo_string63:
-	.asciz	"RESET"                 @ string offset=966
+	.asciz	"RESET"                 @ string offset=956
 .Linfo_string64:
-	.asciz	"SET"                   @ string offset=972
+	.asciz	"SET"                   @ string offset=962
 .Linfo_string65:
-	.asciz	"RCU_FLAG_IRC40KSTB"    @ string offset=976
+	.asciz	"RCU_FLAG_IRC40KSTB"    @ string offset=966
 .Linfo_string66:
-	.asciz	"RCU_FLAG_LXTALSTB"     @ string offset=995
+	.asciz	"RCU_FLAG_LXTALSTB"     @ string offset=985
 .Linfo_string67:
-	.asciz	"RCU_FLAG_IRC8MSTB"     @ string offset=1013
+	.asciz	"RCU_FLAG_IRC8MSTB"     @ string offset=1003
 .Linfo_string68:
-	.asciz	"RCU_FLAG_HXTALSTB"     @ string offset=1031
+	.asciz	"RCU_FLAG_HXTALSTB"     @ string offset=1021
 .Linfo_string69:
-	.asciz	"RCU_FLAG_PLLSTB"       @ string offset=1049
+	.asciz	"RCU_FLAG_PLLSTB"       @ string offset=1039
 .Linfo_string70:
-	.asciz	"RCU_FLAG_IRC28MSTB"    @ string offset=1065
+	.asciz	"RCU_FLAG_IRC28MSTB"    @ string offset=1055
 .Linfo_string71:
-	.asciz	"RCU_FLAG_V12RST"       @ string offset=1084
+	.asciz	"RCU_FLAG_V12RST"       @ string offset=1074
 .Linfo_string72:
-	.asciz	"RCU_FLAG_OBLRST"       @ string offset=1100
+	.asciz	"RCU_FLAG_OBLRST"       @ string offset=1090
 .Linfo_string73:
-	.asciz	"RCU_FLAG_EPRST"        @ string offset=1116
+	.asciz	"RCU_FLAG_EPRST"        @ string offset=1106
 .Linfo_string74:
-	.asciz	"RCU_FLAG_PORRST"       @ string offset=1131
+	.asciz	"RCU_FLAG_PORRST"       @ string offset=1121
 .Linfo_string75:
-	.asciz	"RCU_FLAG_SWRST"        @ string offset=1147
+	.asciz	"RCU_FLAG_SWRST"        @ string offset=1137
 .Linfo_string76:
-	.asciz	"RCU_FLAG_FWDGTRST"     @ string offset=1162
+	.asciz	"RCU_FLAG_FWDGTRST"     @ string offset=1152
 .Linfo_string77:
-	.asciz	"RCU_FLAG_WWDGTRST"     @ string offset=1180
+	.asciz	"RCU_FLAG_WWDGTRST"     @ string offset=1170
 .Linfo_string78:
-	.asciz	"RCU_FLAG_LPRST"        @ string offset=1198
+	.asciz	"RCU_FLAG_LPRST"        @ string offset=1188
 .Linfo_string79:
-	.asciz	"RCU_INT_FLAG_IRC40KSTB" @ string offset=1213
+	.asciz	"RCU_INT_FLAG_IRC40KSTB" @ string offset=1203
 .Linfo_string80:
-	.asciz	"RCU_INT_FLAG_LXTALSTB" @ string offset=1236
+	.asciz	"RCU_INT_FLAG_LXTALSTB" @ string offset=1226
 .Linfo_string81:
-	.asciz	"RCU_INT_FLAG_IRC8MSTB" @ string offset=1258
+	.asciz	"RCU_INT_FLAG_IRC8MSTB" @ string offset=1248
 .Linfo_string82:
-	.asciz	"RCU_INT_FLAG_HXTALSTB" @ string offset=1280
+	.asciz	"RCU_INT_FLAG_HXTALSTB" @ string offset=1270
 .Linfo_string83:
-	.asciz	"RCU_INT_FLAG_PLLSTB"   @ string offset=1302
+	.asciz	"RCU_INT_FLAG_PLLSTB"   @ string offset=1292
 .Linfo_string84:
-	.asciz	"RCU_INT_FLAG_IRC28MSTB" @ string offset=1322
+	.asciz	"RCU_INT_FLAG_IRC28MSTB" @ string offset=1312
 .Linfo_string85:
-	.asciz	"RCU_INT_FLAG_CKM"      @ string offset=1345
+	.asciz	"RCU_INT_FLAG_CKM"      @ string offset=1335
 .Linfo_string86:
-	.asciz	"RCU_INT_FLAG_IRC40KSTB_CLR" @ string offset=1362
+	.asciz	"RCU_INT_FLAG_IRC40KSTB_CLR" @ string offset=1352
 .Linfo_string87:
-	.asciz	"RCU_INT_FLAG_LXTALSTB_CLR" @ string offset=1389
+	.asciz	"RCU_INT_FLAG_LXTALSTB_CLR" @ string offset=1379
 .Linfo_string88:
-	.asciz	"RCU_INT_FLAG_IRC8MSTB_CLR" @ string offset=1415
+	.asciz	"RCU_INT_FLAG_IRC8MSTB_CLR" @ string offset=1405
 .Linfo_string89:
-	.asciz	"RCU_INT_FLAG_HXTALSTB_CLR" @ string offset=1441
+	.asciz	"RCU_INT_FLAG_HXTALSTB_CLR" @ string offset=1431
 .Linfo_string90:
-	.asciz	"RCU_INT_FLAG_PLLSTB_CLR" @ string offset=1467
+	.asciz	"RCU_INT_FLAG_PLLSTB_CLR" @ string offset=1457
 .Linfo_string91:
-	.asciz	"RCU_INT_FLAG_IRC28MSTB_CLR" @ string offset=1491
+	.asciz	"RCU_INT_FLAG_IRC28MSTB_CLR" @ string offset=1481
 .Linfo_string92:
-	.asciz	"RCU_INT_FLAG_CKM_CLR"  @ string offset=1518
+	.asciz	"RCU_INT_FLAG_CKM_CLR"  @ string offset=1508
 .Linfo_string93:
-	.asciz	"RCU_INT_IRC40KSTB"     @ string offset=1539
+	.asciz	"RCU_INT_IRC40KSTB"     @ string offset=1529
 .Linfo_string94:
-	.asciz	"RCU_INT_LXTALSTB"      @ string offset=1557
+	.asciz	"RCU_INT_LXTALSTB"      @ string offset=1547
 .Linfo_string95:
-	.asciz	"RCU_INT_IRC8MSTB"      @ string offset=1574
+	.asciz	"RCU_INT_IRC8MSTB"      @ string offset=1564
 .Linfo_string96:
-	.asciz	"RCU_INT_HXTALSTB"      @ string offset=1591
+	.asciz	"RCU_INT_HXTALSTB"      @ string offset=1581
 .Linfo_string97:
-	.asciz	"RCU_INT_PLLSTB"        @ string offset=1608
+	.asciz	"RCU_INT_PLLSTB"        @ string offset=1598
 .Linfo_string98:
-	.asciz	"RCU_INT_IRC28MSTB"     @ string offset=1623
+	.asciz	"RCU_INT_IRC28MSTB"     @ string offset=1613
 .Linfo_string99:
-	.asciz	"ERROR"                 @ string offset=1641
+	.asciz	"ERROR"                 @ string offset=1631
 .Linfo_string100:
-	.asciz	"SUCCESS"               @ string offset=1647
+	.asciz	"SUCCESS"               @ string offset=1637
 .Linfo_string101:
-	.asciz	"RCU_HXTAL"             @ string offset=1655
+	.asciz	"RCU_HXTAL"             @ string offset=1645
 .Linfo_string102:
-	.asciz	"RCU_LXTAL"             @ string offset=1665
+	.asciz	"RCU_LXTAL"             @ string offset=1655
 .Linfo_string103:
-	.asciz	"RCU_IRC8M"             @ string offset=1675
+	.asciz	"RCU_IRC8M"             @ string offset=1665
 .Linfo_string104:
-	.asciz	"RCU_IRC28M"            @ string offset=1685
+	.asciz	"RCU_IRC28M"            @ string offset=1675
 .Linfo_string105:
-	.asciz	"RCU_IRC40K"            @ string offset=1696
+	.asciz	"RCU_IRC40K"            @ string offset=1686
 .Linfo_string106:
-	.asciz	"RCU_PLL_CK"            @ string offset=1707
+	.asciz	"RCU_PLL_CK"            @ string offset=1697
 .Linfo_string107:
-	.asciz	"CK_SYS"                @ string offset=1718
+	.asciz	"CK_SYS"                @ string offset=1708
 .Linfo_string108:
-	.asciz	"CK_AHB"                @ string offset=1725
+	.asciz	"CK_AHB"                @ string offset=1715
 .Linfo_string109:
-	.asciz	"CK_APB1"               @ string offset=1732
+	.asciz	"CK_APB1"               @ string offset=1722
 .Linfo_string110:
-	.asciz	"CK_APB2"               @ string offset=1740
+	.asciz	"CK_APB2"               @ string offset=1730
 .Linfo_string111:
-	.asciz	"CK_ADC"                @ string offset=1748
+	.asciz	"CK_ADC"                @ string offset=1738
 .Linfo_string112:
-	.asciz	"CK_USART"              @ string offset=1755
+	.asciz	"CK_USART"              @ string offset=1745
 .Linfo_string113:
-	.asciz	"unsigned int"          @ string offset=1764
+	.asciz	"unsigned int"          @ string offset=1754
 .Linfo_string114:
-	.asciz	"uint32_t"              @ string offset=1777
+	.asciz	"uint32_t"              @ string offset=1767
 .Linfo_string115:
-	.asciz	"uint16_t"              @ string offset=1786
+	.asciz	"uint16_t"              @ string offset=1776
 .Linfo_string116:
-	.asciz	"rcu_deinit"            @ string offset=1795
+	.asciz	"rcu_deinit"            @ string offset=1785
 .Linfo_string117:
-	.asciz	"rcu_periph_clock_enable" @ string offset=1806
+	.asciz	"rcu_periph_clock_enable" @ string offset=1796
 .Linfo_string118:
-	.asciz	"rcu_periph_clock_disable" @ string offset=1830
+	.asciz	"rcu_periph_clock_disable" @ string offset=1820
 .Linfo_string119:
-	.asciz	"rcu_periph_clock_sleep_enable" @ string offset=1855
+	.asciz	"rcu_periph_clock_sleep_enable" @ string offset=1845
 .Linfo_string120:
-	.asciz	"rcu_periph_clock_sleep_disable" @ string offset=1885
+	.asciz	"rcu_periph_clock_sleep_disable" @ string offset=1875
 .Linfo_string121:
-	.asciz	"rcu_periph_reset_enable" @ string offset=1916
+	.asciz	"rcu_periph_reset_enable" @ string offset=1906
 .Linfo_string122:
-	.asciz	"rcu_periph_reset_disable" @ string offset=1940
+	.asciz	"rcu_periph_reset_disable" @ string offset=1930
 .Linfo_string123:
-	.asciz	"rcu_bkp_reset_enable"  @ string offset=1965
+	.asciz	"rcu_bkp_reset_enable"  @ string offset=1955
 .Linfo_string124:
-	.asciz	"rcu_bkp_reset_disable" @ string offset=1986
+	.asciz	"rcu_bkp_reset_disable" @ string offset=1976
 .Linfo_string125:
-	.asciz	"rcu_system_clock_source_config" @ string offset=2008
+	.asciz	"rcu_system_clock_source_config" @ string offset=1998
 .Linfo_string126:
-	.asciz	"rcu_system_clock_source_get" @ string offset=2039
+	.asciz	"rcu_system_clock_source_get" @ string offset=2029
 .Linfo_string127:
-	.asciz	"rcu_ahb_clock_config"  @ string offset=2067
+	.asciz	"rcu_ahb_clock_config"  @ string offset=2057
 .Linfo_string128:
-	.asciz	"rcu_apb1_clock_config" @ string offset=2088
+	.asciz	"rcu_apb1_clock_config" @ string offset=2078
 .Linfo_string129:
-	.asciz	"rcu_apb2_clock_config" @ string offset=2110
+	.asciz	"rcu_apb2_clock_config" @ string offset=2100
 .Linfo_string130:
-	.asciz	"rcu_adc_clock_config"  @ string offset=2132
+	.asciz	"rcu_adc_clock_config"  @ string offset=2122
 .Linfo_string131:
-	.asciz	"rcu_ckout_config"      @ string offset=2153
+	.asciz	"rcu_ckout_config"      @ string offset=2143
 .Linfo_string132:
-	.asciz	"rcu_pll_config"        @ string offset=2170
+	.asciz	"rcu_pll_config"        @ string offset=2160
 .Linfo_string133:
-	.asciz	"rcu_usart_clock_config" @ string offset=2185
+	.asciz	"rcu_usart_clock_config" @ string offset=2175
 .Linfo_string134:
-	.asciz	"rcu_rtc_clock_config"  @ string offset=2208
+	.asciz	"rcu_rtc_clock_config"  @ string offset=2198
 .Linfo_string135:
-	.asciz	"rcu_hxtal_prediv_config" @ string offset=2229
+	.asciz	"rcu_hxtal_prediv_config" @ string offset=2219
 .Linfo_string136:
-	.asciz	"rcu_lxtal_drive_capability_config" @ string offset=2253
+	.asciz	"rcu_lxtal_drive_capability_config" @ string offset=2243
 .Linfo_string137:
-	.asciz	"rcu_flag_get"          @ string offset=2287
+	.asciz	"rcu_flag_get"          @ string offset=2277
 .Linfo_string138:
-	.asciz	"FlagStatus"            @ string offset=2300
+	.asciz	"FlagStatus"            @ string offset=2290
 .Linfo_string139:
-	.asciz	"rcu_all_reset_flag_clear" @ string offset=2311
+	.asciz	"rcu_all_reset_flag_clear" @ string offset=2301
 .Linfo_string140:
-	.asciz	"rcu_interrupt_flag_get" @ string offset=2336
+	.asciz	"rcu_interrupt_flag_get" @ string offset=2326
 .Linfo_string141:
-	.asciz	"rcu_interrupt_flag_clear" @ string offset=2359
+	.asciz	"rcu_interrupt_flag_clear" @ string offset=2349
 .Linfo_string142:
-	.asciz	"rcu_interrupt_enable"  @ string offset=2384
+	.asciz	"rcu_interrupt_enable"  @ string offset=2374
 .Linfo_string143:
-	.asciz	"rcu_interrupt_disable" @ string offset=2405
+	.asciz	"rcu_interrupt_disable" @ string offset=2395
 .Linfo_string144:
-	.asciz	"rcu_osci_stab_wait"    @ string offset=2427
+	.asciz	"rcu_osci_stab_wait"    @ string offset=2417
 .Linfo_string145:
-	.asciz	"ErrStatus"             @ string offset=2446
+	.asciz	"ErrStatus"             @ string offset=2436
 .Linfo_string146:
-	.asciz	"rcu_osci_on"           @ string offset=2456
+	.asciz	"rcu_osci_on"           @ string offset=2446
 .Linfo_string147:
-	.asciz	"rcu_osci_off"          @ string offset=2468
+	.asciz	"rcu_osci_off"          @ string offset=2458
 .Linfo_string148:
-	.asciz	"rcu_osci_bypass_mode_enable" @ string offset=2481
+	.asciz	"rcu_osci_bypass_mode_enable" @ string offset=2471
 .Linfo_string149:
-	.asciz	"rcu_osci_bypass_mode_disable" @ string offset=2509
+	.asciz	"rcu_osci_bypass_mode_disable" @ string offset=2499
 .Linfo_string150:
-	.asciz	"rcu_hxtal_clock_monitor_enable" @ string offset=2538
+	.asciz	"rcu_hxtal_clock_monitor_enable" @ string offset=2528
 .Linfo_string151:
-	.asciz	"rcu_hxtal_clock_monitor_disable" @ string offset=2569
+	.asciz	"rcu_hxtal_clock_monitor_disable" @ string offset=2559
 .Linfo_string152:
-	.asciz	"rcu_irc8m_adjust_value_set" @ string offset=2601
+	.asciz	"rcu_irc8m_adjust_value_set" @ string offset=2591
 .Linfo_string153:
-	.asciz	"rcu_irc28m_adjust_value_set" @ string offset=2628
+	.asciz	"rcu_irc28m_adjust_value_set" @ string offset=2618
 .Linfo_string154:
-	.asciz	"rcu_voltage_key_unlock" @ string offset=2656
+	.asciz	"rcu_voltage_key_unlock" @ string offset=2646
 .Linfo_string155:
-	.asciz	"rcu_deepsleep_voltage_set" @ string offset=2679
+	.asciz	"rcu_deepsleep_voltage_set" @ string offset=2669
 .Linfo_string156:
-	.asciz	"rcu_clock_freq_get"    @ string offset=2705
+	.asciz	"rcu_clock_freq_get"    @ string offset=2695
 .Linfo_string157:
-	.asciz	"periph"                @ string offset=2724
+	.asciz	"periph"                @ string offset=2714
 .Linfo_string158:
-	.asciz	"rcu_periph_enum"       @ string offset=2731
+	.asciz	"rcu_periph_enum"       @ string offset=2721
 .Linfo_string159:
-	.asciz	"rcu_periph_sleep_enum" @ string offset=2747
+	.asciz	"rcu_periph_sleep_enum" @ string offset=2737
 .Linfo_string160:
-	.asciz	"periph_reset"          @ string offset=2769
+	.asciz	"periph_reset"          @ string offset=2759
 .Linfo_string161:
-	.asciz	"rcu_periph_reset_enum" @ string offset=2782
+	.asciz	"rcu_periph_reset_enum" @ string offset=2772
 .Linfo_string162:
-	.asciz	"ck_sys"                @ string offset=2804
+	.asciz	"ck_sys"                @ string offset=2794
 .Linfo_string163:
-	.asciz	"cksys_source"          @ string offset=2811
+	.asciz	"cksys_source"          @ string offset=2801
 .Linfo_string164:
-	.asciz	"ck_ahb"                @ string offset=2824
+	.asciz	"ck_ahb"                @ string offset=2814
 .Linfo_string165:
-	.asciz	"ahbpsc"                @ string offset=2831
+	.asciz	"ahbpsc"                @ string offset=2821
 .Linfo_string166:
-	.asciz	"ck_apb1"               @ string offset=2838
+	.asciz	"ck_apb1"               @ string offset=2828
 .Linfo_string167:
-	.asciz	"apb1psc"               @ string offset=2846
+	.asciz	"apb1psc"               @ string offset=2836
 .Linfo_string168:
-	.asciz	"ck_apb2"               @ string offset=2854
+	.asciz	"ck_apb2"               @ string offset=2844
 .Linfo_string169:
-	.asciz	"apb2psc"               @ string offset=2862
+	.asciz	"apb2psc"               @ string offset=2852
 .Linfo_string170:
-	.asciz	"ck_adc"                @ string offset=2870
+	.asciz	"ck_adc"                @ string offset=2860
 .Linfo_string171:
-	.asciz	"rcu_adc_clock_enum"    @ string offset=2877
+	.asciz	"rcu_adc_clock_enum"    @ string offset=2867
 .Linfo_string172:
-	.asciz	"ckout_src"             @ string offset=2896
+	.asciz	"ckout_src"             @ string offset=2886
 .Linfo_string173:
-	.asciz	"ckout_div"             @ string offset=2906
+	.asciz	"ckout_div"             @ string offset=2896
 .Linfo_string174:
-	.asciz	"ckout"                 @ string offset=2916
+	.asciz	"ckout"                 @ string offset=2906
 .Linfo_string175:
-	.asciz	"pll_src"               @ string offset=2922
+	.asciz	"pll_src"               @ string offset=2912
 .Linfo_string176:
-	.asciz	"pll_mul"               @ string offset=2930
+	.asciz	"pll_mul"               @ string offset=2920
 .Linfo_string177:
-	.asciz	"ck_usart"              @ string offset=2938
+	.asciz	"ck_usart"              @ string offset=2928
 .Linfo_string178:
-	.asciz	"rtc_clock_source"      @ string offset=2947
+	.asciz	"rtc_clock_source"      @ string offset=2937
 .Linfo_string179:
-	.asciz	"hxtal_prediv"          @ string offset=2964
+	.asciz	"hxtal_prediv"          @ string offset=2954
 .Linfo_string180:
-	.asciz	"prediv"                @ string offset=2977
+	.asciz	"prediv"                @ string offset=2967
 .Linfo_string181:
-	.asciz	"lxtal_dricap"          @ string offset=2984
+	.asciz	"lxtal_dricap"          @ string offset=2974
 .Linfo_string182:
-	.asciz	"flag"                  @ string offset=2997
+	.asciz	"flag"                  @ string offset=2987
 .Linfo_string183:
-	.asciz	"rcu_flag_enum"         @ string offset=3002
+	.asciz	"rcu_flag_enum"         @ string offset=2992
 .Linfo_string184:
-	.asciz	"int_flag"              @ string offset=3016
+	.asciz	"int_flag"              @ string offset=3006
 .Linfo_string185:
-	.asciz	"rcu_int_flag_enum"     @ string offset=3025
+	.asciz	"rcu_int_flag_enum"     @ string offset=3015
 .Linfo_string186:
-	.asciz	"int_flag_clear"        @ string offset=3043
+	.asciz	"int_flag_clear"        @ string offset=3033
 .Linfo_string187:
-	.asciz	"rcu_int_flag_clear_enum" @ string offset=3058
+	.asciz	"rcu_int_flag_clear_enum" @ string offset=3048
 .Linfo_string188:
-	.asciz	"stab_int"              @ string offset=3082
+	.asciz	"stab_int"              @ string offset=3072
 .Linfo_string189:
-	.asciz	"rcu_int_enum"          @ string offset=3091
+	.asciz	"rcu_int_enum"          @ string offset=3081
 .Linfo_string190:
-	.asciz	"osci"                  @ string offset=3104
+	.asciz	"osci"                  @ string offset=3094
 .Linfo_string191:
-	.asciz	"rcu_osci_type_enum"    @ string offset=3109
+	.asciz	"rcu_osci_type_enum"    @ string offset=3099
 .Linfo_string192:
-	.asciz	"stb_cnt"               @ string offset=3128
+	.asciz	"stb_cnt"               @ string offset=3118
 .Linfo_string193:
-	.asciz	"reval"                 @ string offset=3136
+	.asciz	"reval"                 @ string offset=3126
 .Linfo_string194:
-	.asciz	"osci_stat"             @ string offset=3142
+	.asciz	"osci_stat"             @ string offset=3132
 .Linfo_string195:
-	.asciz	"reg"                   @ string offset=3152
+	.asciz	"reg"                   @ string offset=3142
 .Linfo_string196:
-	.asciz	"irc8m_adjval"          @ string offset=3156
+	.asciz	"irc8m_adjval"          @ string offset=3146
 .Linfo_string197:
-	.asciz	"uint8_t"               @ string offset=3169
+	.asciz	"uint8_t"               @ string offset=3159
 .Linfo_string198:
-	.asciz	"adjust"                @ string offset=3177
+	.asciz	"adjust"                @ string offset=3167
 .Linfo_string199:
-	.asciz	"irc28m_adjval"         @ string offset=3184
+	.asciz	"irc28m_adjval"         @ string offset=3174
 .Linfo_string200:
-	.asciz	"dsvol"                 @ string offset=3198
+	.asciz	"dsvol"                 @ string offset=3188
 .Linfo_string201:
-	.asciz	"clock"                 @ string offset=3204
+	.asciz	"clock"                 @ string offset=3194
 .Linfo_string202:
-	.asciz	"rcu_clock_freq_enum"   @ string offset=3210
+	.asciz	"rcu_clock_freq_enum"   @ string offset=3200
 .Linfo_string203:
-	.asciz	"sws"                   @ string offset=3230
+	.asciz	"sws"                   @ string offset=3220
 .Linfo_string204:
-	.asciz	"adcps"                 @ string offset=3234
+	.asciz	"adcps"                 @ string offset=3224
 .Linfo_string205:
-	.asciz	"adcps2"                @ string offset=3240
+	.asciz	"adcps2"                @ string offset=3230
 .Linfo_string206:
-	.asciz	"ck_freq"               @ string offset=3247
+	.asciz	"ck_freq"               @ string offset=3237
 .Linfo_string207:
-	.asciz	"cksys_freq"            @ string offset=3255
+	.asciz	"cksys_freq"            @ string offset=3245
 .Linfo_string208:
-	.asciz	"ahb_freq"              @ string offset=3266
+	.asciz	"ahb_freq"              @ string offset=3256
 .Linfo_string209:
-	.asciz	"apb1_freq"             @ string offset=3275
+	.asciz	"apb1_freq"             @ string offset=3265
 .Linfo_string210:
-	.asciz	"apb2_freq"             @ string offset=3285
+	.asciz	"apb2_freq"             @ string offset=3275
 .Linfo_string211:
-	.asciz	"adc_freq"              @ string offset=3295
+	.asciz	"adc_freq"              @ string offset=3285
 .Linfo_string212:
-	.asciz	"usart_freq"            @ string offset=3304
+	.asciz	"usart_freq"            @ string offset=3294
 .Linfo_string213:
-	.asciz	"pllmf"                 @ string offset=3315
+	.asciz	"pllmf"                 @ string offset=3305
 .Linfo_string214:
-	.asciz	"pllmf4"                @ string offset=3321
+	.asciz	"pllmf4"                @ string offset=3311
 .Linfo_string215:
-	.asciz	"pllsel"                @ string offset=3328
+	.asciz	"pllsel"                @ string offset=3318
 .Linfo_string216:
-	.asciz	"idx"                   @ string offset=3335
+	.asciz	"idx"                   @ string offset=3325
 .Linfo_string217:
-	.asciz	"clk_exp"               @ string offset=3339
+	.asciz	"clk_exp"               @ string offset=3329
 .Linfo_string218:
-	.asciz	"ahb_exp"               @ string offset=3347
+	.asciz	"ahb_exp"               @ string offset=3337
 .Linfo_string219:
-	.asciz	"__ARRAY_SIZE_TYPE__"   @ string offset=3355
+	.asciz	"__ARRAY_SIZE_TYPE__"   @ string offset=3345
 .Linfo_string220:
-	.asciz	"apb1_exp"              @ string offset=3375
+	.asciz	"apb1_exp"              @ string offset=3365
 .Linfo_string221:
-	.asciz	"apb2_exp"              @ string offset=3384
+	.asciz	"apb2_exp"              @ string offset=3374
 	.section	.debug_abbrev,"",%progbits
 	.byte	1                       @ Abbreviation Code
 	.byte	17                      @ DW_TAG_compile_unit

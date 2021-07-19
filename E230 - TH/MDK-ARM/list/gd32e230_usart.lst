@@ -18,9 +18,9 @@
 	.eabi_attribute	26, 1	@ Tag_ABI_enum_size
 	.eabi_attribute	14, 0	@ Tag_ABI_PCS_R9_use
 	.file	"gd32e230_usart.c"
-	.file	1 "E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include\\gd32e230_rcu.h"
-	.file	2 "E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include\\gd32e230_usart.h"
-	.file	3 "E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" "../GD32E230_Firmware_Library/CMSIS/GD/GD32E230/Include\\gd32e230.h"
+	.file	1 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include\\gd32e230_rcu.h"
+	.file	2 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include\\gd32e230_usart.h"
+	.file	3 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/CMSIS/GD/GD32E230/Include\\gd32e230.h"
 	.file	4 "D:\\Keil_v5\\ARM\\ARMCLANG\\Bin\\..\\include" "stdint.h"
 	.section	.text.usart_deinit,"ax",%progbits
 	.hidden	usart_deinit            @ -- Begin function usart_deinit
@@ -31,7 +31,7 @@
 	.thumb_func
 usart_deinit:
 .Lfunc_begin0:
-	.file	5 "E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source/gd32e230_usart.c"
+	.file	5 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source/gd32e230_usart.c"
 	.loc	5 46 0                  @ ../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source/gd32e230_usart.c:46:0
 	.fnstart
 	.cfi_sections .debug_frame
@@ -3777,449 +3777,449 @@ __arm_cp.73_0:
 .Linfo_string1:
 	.asciz	"../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source\\gd32e230_usart.c" @ string offset=55
 .Linfo_string2:
-	.asciz	"E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" @ string offset=137
+	.asciz	"E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" @ string offset=137
 .Linfo_string3:
-	.asciz	"unsigned short"        @ string offset=189
+	.asciz	"unsigned short"        @ string offset=179
 .Linfo_string4:
-	.asciz	"RCU_GPIOARST"          @ string offset=204
+	.asciz	"RCU_GPIOARST"          @ string offset=194
 .Linfo_string5:
-	.asciz	"RCU_GPIOBRST"          @ string offset=217
+	.asciz	"RCU_GPIOBRST"          @ string offset=207
 .Linfo_string6:
-	.asciz	"RCU_GPIOCRST"          @ string offset=230
+	.asciz	"RCU_GPIOCRST"          @ string offset=220
 .Linfo_string7:
-	.asciz	"RCU_GPIOFRST"          @ string offset=243
+	.asciz	"RCU_GPIOFRST"          @ string offset=233
 .Linfo_string8:
-	.asciz	"RCU_CFGCMPRST"         @ string offset=256
+	.asciz	"RCU_CFGCMPRST"         @ string offset=246
 .Linfo_string9:
-	.asciz	"RCU_ADCRST"            @ string offset=270
+	.asciz	"RCU_ADCRST"            @ string offset=260
 .Linfo_string10:
-	.asciz	"RCU_TIMER0RST"         @ string offset=281
+	.asciz	"RCU_TIMER0RST"         @ string offset=271
 .Linfo_string11:
-	.asciz	"RCU_SPI0RST"           @ string offset=295
+	.asciz	"RCU_SPI0RST"           @ string offset=285
 .Linfo_string12:
-	.asciz	"RCU_USART0RST"         @ string offset=307
+	.asciz	"RCU_USART0RST"         @ string offset=297
 .Linfo_string13:
-	.asciz	"RCU_TIMER14RST"        @ string offset=321
+	.asciz	"RCU_TIMER14RST"        @ string offset=311
 .Linfo_string14:
-	.asciz	"RCU_TIMER15RST"        @ string offset=336
+	.asciz	"RCU_TIMER15RST"        @ string offset=326
 .Linfo_string15:
-	.asciz	"RCU_TIMER16RST"        @ string offset=351
+	.asciz	"RCU_TIMER16RST"        @ string offset=341
 .Linfo_string16:
-	.asciz	"RCU_TIMER2RST"         @ string offset=366
+	.asciz	"RCU_TIMER2RST"         @ string offset=356
 .Linfo_string17:
-	.asciz	"RCU_TIMER5RST"         @ string offset=380
+	.asciz	"RCU_TIMER5RST"         @ string offset=370
 .Linfo_string18:
-	.asciz	"RCU_TIMER13RST"        @ string offset=394
+	.asciz	"RCU_TIMER13RST"        @ string offset=384
 .Linfo_string19:
-	.asciz	"RCU_WWDGTRST"          @ string offset=409
+	.asciz	"RCU_WWDGTRST"          @ string offset=399
 .Linfo_string20:
-	.asciz	"RCU_SPI1RST"           @ string offset=422
+	.asciz	"RCU_SPI1RST"           @ string offset=412
 .Linfo_string21:
-	.asciz	"RCU_USART1RST"         @ string offset=434
+	.asciz	"RCU_USART1RST"         @ string offset=424
 .Linfo_string22:
-	.asciz	"RCU_I2C0RST"           @ string offset=448
+	.asciz	"RCU_I2C0RST"           @ string offset=438
 .Linfo_string23:
-	.asciz	"RCU_I2C1RST"           @ string offset=460
+	.asciz	"RCU_I2C1RST"           @ string offset=450
 .Linfo_string24:
-	.asciz	"RCU_PMURST"            @ string offset=472
+	.asciz	"RCU_PMURST"            @ string offset=462
 .Linfo_string25:
-	.asciz	"unsigned char"         @ string offset=483
+	.asciz	"unsigned char"         @ string offset=473
 .Linfo_string26:
-	.asciz	"CK_SYS"                @ string offset=497
+	.asciz	"CK_SYS"                @ string offset=487
 .Linfo_string27:
-	.asciz	"CK_AHB"                @ string offset=504
+	.asciz	"CK_AHB"                @ string offset=494
 .Linfo_string28:
-	.asciz	"CK_APB1"               @ string offset=511
+	.asciz	"CK_APB1"               @ string offset=501
 .Linfo_string29:
-	.asciz	"CK_APB2"               @ string offset=519
+	.asciz	"CK_APB2"               @ string offset=509
 .Linfo_string30:
-	.asciz	"CK_ADC"                @ string offset=527
+	.asciz	"CK_ADC"                @ string offset=517
 .Linfo_string31:
-	.asciz	"CK_USART"              @ string offset=534
+	.asciz	"CK_USART"              @ string offset=524
 .Linfo_string32:
-	.asciz	"USART_DINV_ENABLE"     @ string offset=543
+	.asciz	"USART_DINV_ENABLE"     @ string offset=533
 .Linfo_string33:
-	.asciz	"USART_DINV_DISABLE"    @ string offset=561
+	.asciz	"USART_DINV_DISABLE"    @ string offset=551
 .Linfo_string34:
-	.asciz	"USART_TXPIN_ENABLE"    @ string offset=580
+	.asciz	"USART_TXPIN_ENABLE"    @ string offset=570
 .Linfo_string35:
-	.asciz	"USART_TXPIN_DISABLE"   @ string offset=599
+	.asciz	"USART_TXPIN_DISABLE"   @ string offset=589
 .Linfo_string36:
-	.asciz	"USART_RXPIN_ENABLE"    @ string offset=619
+	.asciz	"USART_RXPIN_ENABLE"    @ string offset=609
 .Linfo_string37:
-	.asciz	"USART_RXPIN_DISABLE"   @ string offset=638
+	.asciz	"USART_RXPIN_DISABLE"   @ string offset=628
 .Linfo_string38:
-	.asciz	"USART_SWAP_ENABLE"     @ string offset=658
+	.asciz	"USART_SWAP_ENABLE"     @ string offset=648
 .Linfo_string39:
-	.asciz	"USART_SWAP_DISABLE"    @ string offset=676
+	.asciz	"USART_SWAP_DISABLE"    @ string offset=666
 .Linfo_string40:
-	.asciz	"RESET"                 @ string offset=695
+	.asciz	"RESET"                 @ string offset=685
 .Linfo_string41:
-	.asciz	"SET"                   @ string offset=701
+	.asciz	"SET"                   @ string offset=691
 .Linfo_string42:
-	.asciz	"USART_FLAG_REA"        @ string offset=705
+	.asciz	"USART_FLAG_REA"        @ string offset=695
 .Linfo_string43:
-	.asciz	"USART_FLAG_TEA"        @ string offset=720
+	.asciz	"USART_FLAG_TEA"        @ string offset=710
 .Linfo_string44:
-	.asciz	"USART_FLAG_WU"         @ string offset=735
+	.asciz	"USART_FLAG_WU"         @ string offset=725
 .Linfo_string45:
-	.asciz	"USART_FLAG_RWU"        @ string offset=749
+	.asciz	"USART_FLAG_RWU"        @ string offset=739
 .Linfo_string46:
-	.asciz	"USART_FLAG_SB"         @ string offset=764
+	.asciz	"USART_FLAG_SB"         @ string offset=754
 .Linfo_string47:
-	.asciz	"USART_FLAG_AM"         @ string offset=778
+	.asciz	"USART_FLAG_AM"         @ string offset=768
 .Linfo_string48:
-	.asciz	"USART_FLAG_BSY"        @ string offset=792
+	.asciz	"USART_FLAG_BSY"        @ string offset=782
 .Linfo_string49:
-	.asciz	"USART_FLAG_ABD"        @ string offset=807
+	.asciz	"USART_FLAG_ABD"        @ string offset=797
 .Linfo_string50:
-	.asciz	"USART_FLAG_ABDE"       @ string offset=822
+	.asciz	"USART_FLAG_ABDE"       @ string offset=812
 .Linfo_string51:
-	.asciz	"USART_FLAG_EB"         @ string offset=838
+	.asciz	"USART_FLAG_EB"         @ string offset=828
 .Linfo_string52:
-	.asciz	"USART_FLAG_RT"         @ string offset=852
+	.asciz	"USART_FLAG_RT"         @ string offset=842
 .Linfo_string53:
-	.asciz	"USART_FLAG_CTS"        @ string offset=866
+	.asciz	"USART_FLAG_CTS"        @ string offset=856
 .Linfo_string54:
-	.asciz	"USART_FLAG_CTSF"       @ string offset=881
+	.asciz	"USART_FLAG_CTSF"       @ string offset=871
 .Linfo_string55:
-	.asciz	"USART_FLAG_LBD"        @ string offset=897
+	.asciz	"USART_FLAG_LBD"        @ string offset=887
 .Linfo_string56:
-	.asciz	"USART_FLAG_TBE"        @ string offset=912
+	.asciz	"USART_FLAG_TBE"        @ string offset=902
 .Linfo_string57:
-	.asciz	"USART_FLAG_TC"         @ string offset=927
+	.asciz	"USART_FLAG_TC"         @ string offset=917
 .Linfo_string58:
-	.asciz	"USART_FLAG_RBNE"       @ string offset=941
+	.asciz	"USART_FLAG_RBNE"       @ string offset=931
 .Linfo_string59:
-	.asciz	"USART_FLAG_IDLE"       @ string offset=957
+	.asciz	"USART_FLAG_IDLE"       @ string offset=947
 .Linfo_string60:
-	.asciz	"USART_FLAG_ORERR"      @ string offset=973
+	.asciz	"USART_FLAG_ORERR"      @ string offset=963
 .Linfo_string61:
-	.asciz	"USART_FLAG_NERR"       @ string offset=990
+	.asciz	"USART_FLAG_NERR"       @ string offset=980
 .Linfo_string62:
-	.asciz	"USART_FLAG_FERR"       @ string offset=1006
+	.asciz	"USART_FLAG_FERR"       @ string offset=996
 .Linfo_string63:
-	.asciz	"USART_FLAG_PERR"       @ string offset=1022
+	.asciz	"USART_FLAG_PERR"       @ string offset=1012
 .Linfo_string64:
-	.asciz	"USART_FLAG_EPERR"      @ string offset=1038
+	.asciz	"USART_FLAG_EPERR"      @ string offset=1028
 .Linfo_string65:
-	.asciz	"USART_FLAG_RFFINT"     @ string offset=1055
+	.asciz	"USART_FLAG_RFFINT"     @ string offset=1045
 .Linfo_string66:
-	.asciz	"USART_FLAG_RFF"        @ string offset=1073
+	.asciz	"USART_FLAG_RFF"        @ string offset=1063
 .Linfo_string67:
-	.asciz	"USART_FLAG_RFE"        @ string offset=1088
+	.asciz	"USART_FLAG_RFE"        @ string offset=1078
 .Linfo_string68:
-	.asciz	"USART_INT_EB"          @ string offset=1103
+	.asciz	"USART_INT_EB"          @ string offset=1093
 .Linfo_string69:
-	.asciz	"USART_INT_RT"          @ string offset=1116
+	.asciz	"USART_INT_RT"          @ string offset=1106
 .Linfo_string70:
-	.asciz	"USART_INT_AM"          @ string offset=1129
+	.asciz	"USART_INT_AM"          @ string offset=1119
 .Linfo_string71:
-	.asciz	"USART_INT_PERR"        @ string offset=1142
+	.asciz	"USART_INT_PERR"        @ string offset=1132
 .Linfo_string72:
-	.asciz	"USART_INT_TBE"         @ string offset=1157
+	.asciz	"USART_INT_TBE"         @ string offset=1147
 .Linfo_string73:
-	.asciz	"USART_INT_TC"          @ string offset=1171
+	.asciz	"USART_INT_TC"          @ string offset=1161
 .Linfo_string74:
-	.asciz	"USART_INT_RBNE"        @ string offset=1184
+	.asciz	"USART_INT_RBNE"        @ string offset=1174
 .Linfo_string75:
-	.asciz	"USART_INT_IDLE"        @ string offset=1199
+	.asciz	"USART_INT_IDLE"        @ string offset=1189
 .Linfo_string76:
-	.asciz	"USART_INT_LBD"         @ string offset=1214
+	.asciz	"USART_INT_LBD"         @ string offset=1204
 .Linfo_string77:
-	.asciz	"USART_INT_WU"          @ string offset=1228
+	.asciz	"USART_INT_WU"          @ string offset=1218
 .Linfo_string78:
-	.asciz	"USART_INT_CTS"         @ string offset=1241
+	.asciz	"USART_INT_CTS"         @ string offset=1231
 .Linfo_string79:
-	.asciz	"USART_INT_ERR"         @ string offset=1255
+	.asciz	"USART_INT_ERR"         @ string offset=1245
 .Linfo_string80:
-	.asciz	"USART_INT_RFF"         @ string offset=1269
+	.asciz	"USART_INT_RFF"         @ string offset=1259
 .Linfo_string81:
-	.asciz	"unsigned int"          @ string offset=1283
+	.asciz	"unsigned int"          @ string offset=1273
 .Linfo_string82:
-	.asciz	"USART_INT_FLAG_EB"     @ string offset=1296
+	.asciz	"USART_INT_FLAG_EB"     @ string offset=1286
 .Linfo_string83:
-	.asciz	"USART_INT_FLAG_RT"     @ string offset=1314
+	.asciz	"USART_INT_FLAG_RT"     @ string offset=1304
 .Linfo_string84:
-	.asciz	"USART_INT_FLAG_AM"     @ string offset=1332
+	.asciz	"USART_INT_FLAG_AM"     @ string offset=1322
 .Linfo_string85:
-	.asciz	"USART_INT_FLAG_PERR"   @ string offset=1350
+	.asciz	"USART_INT_FLAG_PERR"   @ string offset=1340
 .Linfo_string86:
-	.asciz	"USART_INT_FLAG_TBE"    @ string offset=1370
+	.asciz	"USART_INT_FLAG_TBE"    @ string offset=1360
 .Linfo_string87:
-	.asciz	"USART_INT_FLAG_TC"     @ string offset=1389
+	.asciz	"USART_INT_FLAG_TC"     @ string offset=1379
 .Linfo_string88:
-	.asciz	"USART_INT_FLAG_RBNE"   @ string offset=1407
+	.asciz	"USART_INT_FLAG_RBNE"   @ string offset=1397
 .Linfo_string89:
-	.asciz	"USART_INT_FLAG_RBNE_ORERR" @ string offset=1427
+	.asciz	"USART_INT_FLAG_RBNE_ORERR" @ string offset=1417
 .Linfo_string90:
-	.asciz	"USART_INT_FLAG_IDLE"   @ string offset=1453
+	.asciz	"USART_INT_FLAG_IDLE"   @ string offset=1443
 .Linfo_string91:
-	.asciz	"USART_INT_FLAG_LBD"    @ string offset=1473
+	.asciz	"USART_INT_FLAG_LBD"    @ string offset=1463
 .Linfo_string92:
-	.asciz	"USART_INT_FLAG_WU"     @ string offset=1492
+	.asciz	"USART_INT_FLAG_WU"     @ string offset=1482
 .Linfo_string93:
-	.asciz	"USART_INT_FLAG_CTS"    @ string offset=1510
+	.asciz	"USART_INT_FLAG_CTS"    @ string offset=1500
 .Linfo_string94:
-	.asciz	"USART_INT_FLAG_ERR_NERR" @ string offset=1529
+	.asciz	"USART_INT_FLAG_ERR_NERR" @ string offset=1519
 .Linfo_string95:
-	.asciz	"USART_INT_FLAG_ERR_ORERR" @ string offset=1553
+	.asciz	"USART_INT_FLAG_ERR_ORERR" @ string offset=1543
 .Linfo_string96:
-	.asciz	"USART_INT_FLAG_ERR_FERR" @ string offset=1578
+	.asciz	"USART_INT_FLAG_ERR_FERR" @ string offset=1568
 .Linfo_string97:
-	.asciz	"USART_INT_FLAG_RFF"    @ string offset=1602
+	.asciz	"USART_INT_FLAG_RFF"    @ string offset=1592
 .Linfo_string98:
-	.asciz	"uint32_t"              @ string offset=1621
+	.asciz	"uint32_t"              @ string offset=1611
 .Linfo_string99:
-	.asciz	"uint16_t"              @ string offset=1630
+	.asciz	"uint16_t"              @ string offset=1620
 .Linfo_string100:
-	.asciz	"uint8_t"               @ string offset=1639
+	.asciz	"uint8_t"               @ string offset=1629
 .Linfo_string101:
-	.asciz	"usart_deinit"          @ string offset=1647
+	.asciz	"usart_deinit"          @ string offset=1637
 .Linfo_string102:
-	.asciz	"usart_baudrate_set"    @ string offset=1660
+	.asciz	"usart_baudrate_set"    @ string offset=1650
 .Linfo_string103:
-	.asciz	"usart_parity_config"   @ string offset=1679
+	.asciz	"usart_parity_config"   @ string offset=1669
 .Linfo_string104:
-	.asciz	"usart_word_length_set" @ string offset=1699
+	.asciz	"usart_word_length_set" @ string offset=1689
 .Linfo_string105:
-	.asciz	"usart_stop_bit_set"    @ string offset=1721
+	.asciz	"usart_stop_bit_set"    @ string offset=1711
 .Linfo_string106:
-	.asciz	"usart_enable"          @ string offset=1740
+	.asciz	"usart_enable"          @ string offset=1730
 .Linfo_string107:
-	.asciz	"usart_disable"         @ string offset=1753
+	.asciz	"usart_disable"         @ string offset=1743
 .Linfo_string108:
-	.asciz	"usart_transmit_config" @ string offset=1767
+	.asciz	"usart_transmit_config" @ string offset=1757
 .Linfo_string109:
-	.asciz	"usart_receive_config"  @ string offset=1789
+	.asciz	"usart_receive_config"  @ string offset=1779
 .Linfo_string110:
-	.asciz	"usart_data_first_config" @ string offset=1810
+	.asciz	"usart_data_first_config" @ string offset=1800
 .Linfo_string111:
-	.asciz	"usart_invert_config"   @ string offset=1834
+	.asciz	"usart_invert_config"   @ string offset=1824
 .Linfo_string112:
-	.asciz	"usart_overrun_enable"  @ string offset=1854
+	.asciz	"usart_overrun_enable"  @ string offset=1844
 .Linfo_string113:
-	.asciz	"usart_overrun_disable" @ string offset=1875
+	.asciz	"usart_overrun_disable" @ string offset=1865
 .Linfo_string114:
-	.asciz	"usart_oversample_config" @ string offset=1897
+	.asciz	"usart_oversample_config" @ string offset=1887
 .Linfo_string115:
-	.asciz	"usart_sample_bit_config" @ string offset=1921
+	.asciz	"usart_sample_bit_config" @ string offset=1911
 .Linfo_string116:
-	.asciz	"usart_receiver_timeout_enable" @ string offset=1945
+	.asciz	"usart_receiver_timeout_enable" @ string offset=1935
 .Linfo_string117:
-	.asciz	"usart_receiver_timeout_disable" @ string offset=1975
+	.asciz	"usart_receiver_timeout_disable" @ string offset=1965
 .Linfo_string118:
-	.asciz	"usart_receiver_timeout_threshold_config" @ string offset=2006
+	.asciz	"usart_receiver_timeout_threshold_config" @ string offset=1996
 .Linfo_string119:
-	.asciz	"usart_data_transmit"   @ string offset=2046
+	.asciz	"usart_data_transmit"   @ string offset=2036
 .Linfo_string120:
-	.asciz	"usart_data_receive"    @ string offset=2066
+	.asciz	"usart_data_receive"    @ string offset=2056
 .Linfo_string121:
-	.asciz	"usart_autobaud_detection_enable" @ string offset=2085
+	.asciz	"usart_autobaud_detection_enable" @ string offset=2075
 .Linfo_string122:
-	.asciz	"usart_autobaud_detection_disable" @ string offset=2117
+	.asciz	"usart_autobaud_detection_disable" @ string offset=2107
 .Linfo_string123:
-	.asciz	"usart_autobaud_detection_mode_config" @ string offset=2150
+	.asciz	"usart_autobaud_detection_mode_config" @ string offset=2140
 .Linfo_string124:
-	.asciz	"usart_address_config"  @ string offset=2187
+	.asciz	"usart_address_config"  @ string offset=2177
 .Linfo_string125:
-	.asciz	"usart_address_detection_mode_config" @ string offset=2208
+	.asciz	"usart_address_detection_mode_config" @ string offset=2198
 .Linfo_string126:
-	.asciz	"usart_mute_mode_enable" @ string offset=2244
+	.asciz	"usart_mute_mode_enable" @ string offset=2234
 .Linfo_string127:
-	.asciz	"usart_mute_mode_disable" @ string offset=2267
+	.asciz	"usart_mute_mode_disable" @ string offset=2257
 .Linfo_string128:
-	.asciz	"usart_mute_mode_wakeup_config" @ string offset=2291
+	.asciz	"usart_mute_mode_wakeup_config" @ string offset=2281
 .Linfo_string129:
-	.asciz	"usart_lin_mode_enable" @ string offset=2321
+	.asciz	"usart_lin_mode_enable" @ string offset=2311
 .Linfo_string130:
-	.asciz	"usart_lin_mode_disable" @ string offset=2343
+	.asciz	"usart_lin_mode_disable" @ string offset=2333
 .Linfo_string131:
-	.asciz	"usart_lin_break_detection_length_config" @ string offset=2366
+	.asciz	"usart_lin_break_detection_length_config" @ string offset=2356
 .Linfo_string132:
-	.asciz	"usart_halfduplex_enable" @ string offset=2406
+	.asciz	"usart_halfduplex_enable" @ string offset=2396
 .Linfo_string133:
-	.asciz	"usart_halfduplex_disable" @ string offset=2430
+	.asciz	"usart_halfduplex_disable" @ string offset=2420
 .Linfo_string134:
-	.asciz	"usart_clock_enable"    @ string offset=2455
+	.asciz	"usart_clock_enable"    @ string offset=2445
 .Linfo_string135:
-	.asciz	"usart_clock_disable"   @ string offset=2474
+	.asciz	"usart_clock_disable"   @ string offset=2464
 .Linfo_string136:
-	.asciz	"usart_synchronous_clock_config" @ string offset=2494
+	.asciz	"usart_synchronous_clock_config" @ string offset=2484
 .Linfo_string137:
-	.asciz	"usart_guard_time_config" @ string offset=2525
+	.asciz	"usart_guard_time_config" @ string offset=2515
 .Linfo_string138:
-	.asciz	"usart_smartcard_mode_enable" @ string offset=2549
+	.asciz	"usart_smartcard_mode_enable" @ string offset=2539
 .Linfo_string139:
-	.asciz	"usart_smartcard_mode_disable" @ string offset=2577
+	.asciz	"usart_smartcard_mode_disable" @ string offset=2567
 .Linfo_string140:
-	.asciz	"usart_smartcard_mode_nack_enable" @ string offset=2606
+	.asciz	"usart_smartcard_mode_nack_enable" @ string offset=2596
 .Linfo_string141:
-	.asciz	"usart_smartcard_mode_nack_disable" @ string offset=2639
+	.asciz	"usart_smartcard_mode_nack_disable" @ string offset=2629
 .Linfo_string142:
-	.asciz	"usart_smartcard_mode_early_nack_enable" @ string offset=2673
+	.asciz	"usart_smartcard_mode_early_nack_enable" @ string offset=2663
 .Linfo_string143:
-	.asciz	"usart_smartcard_mode_early_nack_disable" @ string offset=2712
+	.asciz	"usart_smartcard_mode_early_nack_disable" @ string offset=2702
 .Linfo_string144:
-	.asciz	"usart_smartcard_autoretry_config" @ string offset=2752
+	.asciz	"usart_smartcard_autoretry_config" @ string offset=2742
 .Linfo_string145:
-	.asciz	"usart_block_length_config" @ string offset=2785
+	.asciz	"usart_block_length_config" @ string offset=2775
 .Linfo_string146:
-	.asciz	"usart_irda_mode_enable" @ string offset=2811
+	.asciz	"usart_irda_mode_enable" @ string offset=2801
 .Linfo_string147:
-	.asciz	"usart_irda_mode_disable" @ string offset=2834
+	.asciz	"usart_irda_mode_disable" @ string offset=2824
 .Linfo_string148:
-	.asciz	"usart_prescaler_config" @ string offset=2858
+	.asciz	"usart_prescaler_config" @ string offset=2848
 .Linfo_string149:
-	.asciz	"usart_irda_lowpower_config" @ string offset=2881
+	.asciz	"usart_irda_lowpower_config" @ string offset=2871
 .Linfo_string150:
-	.asciz	"usart_hardware_flow_rts_config" @ string offset=2908
+	.asciz	"usart_hardware_flow_rts_config" @ string offset=2898
 .Linfo_string151:
-	.asciz	"usart_hardware_flow_cts_config" @ string offset=2939
+	.asciz	"usart_hardware_flow_cts_config" @ string offset=2929
 .Linfo_string152:
-	.asciz	"usart_hardware_flow_coherence_config" @ string offset=2970
+	.asciz	"usart_hardware_flow_coherence_config" @ string offset=2960
 .Linfo_string153:
-	.asciz	"usart_rs485_driver_enable" @ string offset=3007
+	.asciz	"usart_rs485_driver_enable" @ string offset=2997
 .Linfo_string154:
-	.asciz	"usart_rs485_driver_disable" @ string offset=3033
+	.asciz	"usart_rs485_driver_disable" @ string offset=3023
 .Linfo_string155:
-	.asciz	"usart_driver_assertime_config" @ string offset=3060
+	.asciz	"usart_driver_assertime_config" @ string offset=3050
 .Linfo_string156:
-	.asciz	"usart_driver_deassertime_config" @ string offset=3090
+	.asciz	"usart_driver_deassertime_config" @ string offset=3080
 .Linfo_string157:
-	.asciz	"usart_depolarity_config" @ string offset=3122
+	.asciz	"usart_depolarity_config" @ string offset=3112
 .Linfo_string158:
-	.asciz	"usart_dma_receive_config" @ string offset=3146
+	.asciz	"usart_dma_receive_config" @ string offset=3136
 .Linfo_string159:
-	.asciz	"usart_dma_transmit_config" @ string offset=3171
+	.asciz	"usart_dma_transmit_config" @ string offset=3161
 .Linfo_string160:
-	.asciz	"usart_reception_error_dma_disable" @ string offset=3197
+	.asciz	"usart_reception_error_dma_disable" @ string offset=3187
 .Linfo_string161:
-	.asciz	"usart_reception_error_dma_enable" @ string offset=3231
+	.asciz	"usart_reception_error_dma_enable" @ string offset=3221
 .Linfo_string162:
-	.asciz	"usart_wakeup_enable"   @ string offset=3264
+	.asciz	"usart_wakeup_enable"   @ string offset=3254
 .Linfo_string163:
-	.asciz	"usart_wakeup_disable"  @ string offset=3284
+	.asciz	"usart_wakeup_disable"  @ string offset=3274
 .Linfo_string164:
-	.asciz	"usart_wakeup_mode_config" @ string offset=3305
+	.asciz	"usart_wakeup_mode_config" @ string offset=3295
 .Linfo_string165:
-	.asciz	"usart_receive_fifo_enable" @ string offset=3330
+	.asciz	"usart_receive_fifo_enable" @ string offset=3320
 .Linfo_string166:
-	.asciz	"usart_receive_fifo_disable" @ string offset=3356
+	.asciz	"usart_receive_fifo_disable" @ string offset=3346
 .Linfo_string167:
-	.asciz	"usart_receive_fifo_counter_number" @ string offset=3383
+	.asciz	"usart_receive_fifo_counter_number" @ string offset=3373
 .Linfo_string168:
-	.asciz	"usart_flag_get"        @ string offset=3417
+	.asciz	"usart_flag_get"        @ string offset=3407
 .Linfo_string169:
-	.asciz	"FlagStatus"            @ string offset=3432
+	.asciz	"FlagStatus"            @ string offset=3422
 .Linfo_string170:
-	.asciz	"usart_flag_clear"      @ string offset=3443
+	.asciz	"usart_flag_clear"      @ string offset=3433
 .Linfo_string171:
-	.asciz	"usart_interrupt_enable" @ string offset=3460
+	.asciz	"usart_interrupt_enable" @ string offset=3450
 .Linfo_string172:
-	.asciz	"usart_interrupt_disable" @ string offset=3483
+	.asciz	"usart_interrupt_disable" @ string offset=3473
 .Linfo_string173:
-	.asciz	"usart_command_enable"  @ string offset=3507
+	.asciz	"usart_command_enable"  @ string offset=3497
 .Linfo_string174:
-	.asciz	"usart_interrupt_flag_get" @ string offset=3528
+	.asciz	"usart_interrupt_flag_get" @ string offset=3518
 .Linfo_string175:
-	.asciz	"usart_interrupt_flag_clear" @ string offset=3553
+	.asciz	"usart_interrupt_flag_clear" @ string offset=3543
 .Linfo_string176:
-	.asciz	"usart_periph"          @ string offset=3580
+	.asciz	"usart_periph"          @ string offset=3570
 .Linfo_string177:
-	.asciz	"baudval"               @ string offset=3593
+	.asciz	"baudval"               @ string offset=3583
 .Linfo_string178:
-	.asciz	"uclk"                  @ string offset=3601
+	.asciz	"uclk"                  @ string offset=3591
 .Linfo_string179:
-	.asciz	"intdiv"                @ string offset=3606
+	.asciz	"intdiv"                @ string offset=3596
 .Linfo_string180:
-	.asciz	"fradiv"                @ string offset=3613
+	.asciz	"fradiv"                @ string offset=3603
 .Linfo_string181:
-	.asciz	"udiv"                  @ string offset=3620
+	.asciz	"udiv"                  @ string offset=3610
 .Linfo_string182:
-	.asciz	"paritycfg"             @ string offset=3625
+	.asciz	"paritycfg"             @ string offset=3615
 .Linfo_string183:
-	.asciz	"wlen"                  @ string offset=3635
+	.asciz	"wlen"                  @ string offset=3625
 .Linfo_string184:
-	.asciz	"stblen"                @ string offset=3640
+	.asciz	"stblen"                @ string offset=3630
 .Linfo_string185:
-	.asciz	"txconfig"              @ string offset=3647
+	.asciz	"txconfig"              @ string offset=3637
 .Linfo_string186:
-	.asciz	"rxconfig"              @ string offset=3656
+	.asciz	"rxconfig"              @ string offset=3646
 .Linfo_string187:
-	.asciz	"msbf"                  @ string offset=3665
+	.asciz	"msbf"                  @ string offset=3655
 .Linfo_string188:
-	.asciz	"invertpara"            @ string offset=3670
+	.asciz	"invertpara"            @ string offset=3660
 .Linfo_string189:
-	.asciz	"usart_invert_enum"     @ string offset=3681
+	.asciz	"usart_invert_enum"     @ string offset=3671
 .Linfo_string190:
-	.asciz	"oversamp"              @ string offset=3699
+	.asciz	"oversamp"              @ string offset=3689
 .Linfo_string191:
-	.asciz	"osb"                   @ string offset=3708
+	.asciz	"osb"                   @ string offset=3698
 .Linfo_string192:
-	.asciz	"rtimeout"              @ string offset=3712
+	.asciz	"rtimeout"              @ string offset=3702
 .Linfo_string193:
-	.asciz	"data"                  @ string offset=3721
+	.asciz	"data"                  @ string offset=3711
 .Linfo_string194:
-	.asciz	"abdmod"                @ string offset=3726
+	.asciz	"abdmod"                @ string offset=3716
 .Linfo_string195:
-	.asciz	"addr"                  @ string offset=3733
+	.asciz	"addr"                  @ string offset=3723
 .Linfo_string196:
-	.asciz	"addmod"                @ string offset=3738
+	.asciz	"addmod"                @ string offset=3728
 .Linfo_string197:
-	.asciz	"wmethod"               @ string offset=3745
+	.asciz	"wmethod"               @ string offset=3735
 .Linfo_string198:
-	.asciz	"lblen"                 @ string offset=3753
+	.asciz	"lblen"                 @ string offset=3743
 .Linfo_string199:
-	.asciz	"clen"                  @ string offset=3759
+	.asciz	"clen"                  @ string offset=3749
 .Linfo_string200:
-	.asciz	"cph"                   @ string offset=3764
+	.asciz	"cph"                   @ string offset=3754
 .Linfo_string201:
-	.asciz	"cpl"                   @ string offset=3768
+	.asciz	"cpl"                   @ string offset=3758
 .Linfo_string202:
-	.asciz	"guat"                  @ string offset=3772
+	.asciz	"guat"                  @ string offset=3762
 .Linfo_string203:
-	.asciz	"scrtnum"               @ string offset=3777
+	.asciz	"scrtnum"               @ string offset=3767
 .Linfo_string204:
-	.asciz	"bl"                    @ string offset=3785
+	.asciz	"bl"                    @ string offset=3775
 .Linfo_string205:
-	.asciz	"psc"                   @ string offset=3788
+	.asciz	"psc"                   @ string offset=3778
 .Linfo_string206:
-	.asciz	"irlp"                  @ string offset=3792
+	.asciz	"irlp"                  @ string offset=3782
 .Linfo_string207:
-	.asciz	"rtsconfig"             @ string offset=3797
+	.asciz	"rtsconfig"             @ string offset=3787
 .Linfo_string208:
-	.asciz	"ctsconfig"             @ string offset=3807
+	.asciz	"ctsconfig"             @ string offset=3797
 .Linfo_string209:
-	.asciz	"hcm"                   @ string offset=3817
+	.asciz	"hcm"                   @ string offset=3807
 .Linfo_string210:
-	.asciz	"deatime"               @ string offset=3821
+	.asciz	"deatime"               @ string offset=3811
 .Linfo_string211:
-	.asciz	"dedtime"               @ string offset=3829
+	.asciz	"dedtime"               @ string offset=3819
 .Linfo_string212:
-	.asciz	"dep"                   @ string offset=3837
+	.asciz	"dep"                   @ string offset=3827
 .Linfo_string213:
-	.asciz	"dmacmd"                @ string offset=3841
+	.asciz	"dmacmd"                @ string offset=3831
 .Linfo_string214:
-	.asciz	"wum"                   @ string offset=3848
+	.asciz	"wum"                   @ string offset=3838
 .Linfo_string215:
-	.asciz	"flag"                  @ string offset=3852
+	.asciz	"flag"                  @ string offset=3842
 .Linfo_string216:
-	.asciz	"usart_flag_enum"       @ string offset=3857
+	.asciz	"usart_flag_enum"       @ string offset=3847
 .Linfo_string217:
-	.asciz	"inttype"               @ string offset=3873
+	.asciz	"inttype"               @ string offset=3863
 .Linfo_string218:
-	.asciz	"usart_interrupt_enum"  @ string offset=3881
+	.asciz	"usart_interrupt_enum"  @ string offset=3871
 .Linfo_string219:
-	.asciz	"cmdtype"               @ string offset=3902
+	.asciz	"cmdtype"               @ string offset=3892
 .Linfo_string220:
-	.asciz	"int_flag"              @ string offset=3910
+	.asciz	"int_flag"              @ string offset=3900
 .Linfo_string221:
-	.asciz	"usart_interrupt_flag_enum" @ string offset=3919
+	.asciz	"usart_interrupt_flag_enum" @ string offset=3909
 .Linfo_string222:
-	.asciz	"intenable"             @ string offset=3945
+	.asciz	"intenable"             @ string offset=3935
 .Linfo_string223:
-	.asciz	"flagstatus"            @ string offset=3955
+	.asciz	"flagstatus"            @ string offset=3945
 	.section	.debug_abbrev,"",%progbits
 	.byte	1                       @ Abbreviation Code
 	.byte	17                      @ DW_TAG_compile_unit

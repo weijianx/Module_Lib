@@ -260,15 +260,17 @@ uint8_t UARTx_TXBUFF[USART_MAX_DATALEN];//·¢ËÍÊý¾Ý»º´æ
     \param[out] none
     \retval     none
 */
-
+void Delayms(uint16_t ms)
+{
+	uint16_t i,j;
+	uint8_t k;
+	for(i=0;i<ms;i++)
+		for(j=0;j<0x0919;j++) k++;
+}
 char ch;
 void USART0_IRQHandler(void)
 {
-//	flash_read_MultiBytes(BAUDRATE, &bou, 1);
-//		if(bou1 != bou)
-//			 com_usart_init();
-			//nvic_system_reset();
-//	uint16_t i;
+
     if(RESET != usart_interrupt_flag_get(EVAL_COM, USART_INT_FLAG_RBNE)){
         /* receive data */
 		usart_interrupt_flag_clear(EVAL_COM, USART_INT_FLAG_RBNE);
@@ -289,7 +291,7 @@ void USART0_IRQHandler(void)
 		usart_interrupt_flag_clear(EVAL_COM, USART_INT_FLAG_TBE);
         /* transmit data */
         usart_data_transmit(EVAL_COM, UARTx_TXBUFF[u8SendIndex++]);
-		
+		Delayms(1);
         if(u8SendNum <= u8SendIndex){
 			gpio_bit_reset(GPIOA,GPIO_PIN_2);
             usart_interrupt_disable(EVAL_COM, USART_INT_TBE);

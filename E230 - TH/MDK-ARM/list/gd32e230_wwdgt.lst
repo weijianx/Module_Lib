@@ -18,8 +18,8 @@
 	.eabi_attribute	26, 1	@ Tag_ABI_enum_size
 	.eabi_attribute	14, 0	@ Tag_ABI_PCS_R9_use
 	.file	"gd32e230_wwdgt.c"
-	.file	1 "E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include\\gd32e230_rcu.h"
-	.file	2 "E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" "../GD32E230_Firmware_Library/CMSIS/GD/GD32E230/Include\\gd32e230.h"
+	.file	1 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include\\gd32e230_rcu.h"
+	.file	2 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/CMSIS/GD/GD32E230/Include\\gd32e230.h"
 	.file	3 "D:\\Keil_v5\\ARM\\ARMCLANG\\Bin\\..\\include" "stdint.h"
 	.section	.text.wwdgt_deinit,"ax",%progbits
 	.hidden	wwdgt_deinit            @ -- Begin function wwdgt_deinit
@@ -30,7 +30,7 @@
 	.thumb_func
 wwdgt_deinit:
 .Lfunc_begin0:
-	.file	4 "E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source/gd32e230_wwdgt.c"
+	.file	4 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source/gd32e230_wwdgt.c"
 	.loc	4 52 0                  @ ../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source/gd32e230_wwdgt.c:52:0
 	.fnstart
 	.cfi_sections .debug_frame
@@ -416,93 +416,93 @@ __arm_cp.6_0:
 .Linfo_string1:
 	.asciz	"../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source\\gd32e230_wwdgt.c" @ string offset=55
 .Linfo_string2:
-	.asciz	"E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" @ string offset=137
+	.asciz	"E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" @ string offset=137
 .Linfo_string3:
-	.asciz	"unsigned short"        @ string offset=189
+	.asciz	"unsigned short"        @ string offset=179
 .Linfo_string4:
-	.asciz	"RCU_GPIOARST"          @ string offset=204
+	.asciz	"RCU_GPIOARST"          @ string offset=194
 .Linfo_string5:
-	.asciz	"RCU_GPIOBRST"          @ string offset=217
+	.asciz	"RCU_GPIOBRST"          @ string offset=207
 .Linfo_string6:
-	.asciz	"RCU_GPIOCRST"          @ string offset=230
+	.asciz	"RCU_GPIOCRST"          @ string offset=220
 .Linfo_string7:
-	.asciz	"RCU_GPIOFRST"          @ string offset=243
+	.asciz	"RCU_GPIOFRST"          @ string offset=233
 .Linfo_string8:
-	.asciz	"RCU_CFGCMPRST"         @ string offset=256
+	.asciz	"RCU_CFGCMPRST"         @ string offset=246
 .Linfo_string9:
-	.asciz	"RCU_ADCRST"            @ string offset=270
+	.asciz	"RCU_ADCRST"            @ string offset=260
 .Linfo_string10:
-	.asciz	"RCU_TIMER0RST"         @ string offset=281
+	.asciz	"RCU_TIMER0RST"         @ string offset=271
 .Linfo_string11:
-	.asciz	"RCU_SPI0RST"           @ string offset=295
+	.asciz	"RCU_SPI0RST"           @ string offset=285
 .Linfo_string12:
-	.asciz	"RCU_USART0RST"         @ string offset=307
+	.asciz	"RCU_USART0RST"         @ string offset=297
 .Linfo_string13:
-	.asciz	"RCU_TIMER14RST"        @ string offset=321
+	.asciz	"RCU_TIMER14RST"        @ string offset=311
 .Linfo_string14:
-	.asciz	"RCU_TIMER15RST"        @ string offset=336
+	.asciz	"RCU_TIMER15RST"        @ string offset=326
 .Linfo_string15:
-	.asciz	"RCU_TIMER16RST"        @ string offset=351
+	.asciz	"RCU_TIMER16RST"        @ string offset=341
 .Linfo_string16:
-	.asciz	"RCU_TIMER2RST"         @ string offset=366
+	.asciz	"RCU_TIMER2RST"         @ string offset=356
 .Linfo_string17:
-	.asciz	"RCU_TIMER5RST"         @ string offset=380
+	.asciz	"RCU_TIMER5RST"         @ string offset=370
 .Linfo_string18:
-	.asciz	"RCU_TIMER13RST"        @ string offset=394
+	.asciz	"RCU_TIMER13RST"        @ string offset=384
 .Linfo_string19:
-	.asciz	"RCU_WWDGTRST"          @ string offset=409
+	.asciz	"RCU_WWDGTRST"          @ string offset=399
 .Linfo_string20:
-	.asciz	"RCU_SPI1RST"           @ string offset=422
+	.asciz	"RCU_SPI1RST"           @ string offset=412
 .Linfo_string21:
-	.asciz	"RCU_USART1RST"         @ string offset=434
+	.asciz	"RCU_USART1RST"         @ string offset=424
 .Linfo_string22:
-	.asciz	"RCU_I2C0RST"           @ string offset=448
+	.asciz	"RCU_I2C0RST"           @ string offset=438
 .Linfo_string23:
-	.asciz	"RCU_I2C1RST"           @ string offset=460
+	.asciz	"RCU_I2C1RST"           @ string offset=450
 .Linfo_string24:
-	.asciz	"RCU_PMURST"            @ string offset=472
+	.asciz	"RCU_PMURST"            @ string offset=462
 .Linfo_string25:
-	.asciz	"unsigned char"         @ string offset=483
+	.asciz	"unsigned char"         @ string offset=473
 .Linfo_string26:
-	.asciz	"RESET"                 @ string offset=497
+	.asciz	"RESET"                 @ string offset=487
 .Linfo_string27:
-	.asciz	"SET"                   @ string offset=503
+	.asciz	"SET"                   @ string offset=493
 .Linfo_string28:
-	.asciz	"unsigned int"          @ string offset=507
+	.asciz	"unsigned int"          @ string offset=497
 .Linfo_string29:
-	.asciz	"uint32_t"              @ string offset=520
+	.asciz	"uint32_t"              @ string offset=510
 .Linfo_string30:
-	.asciz	"wwdgt_deinit"          @ string offset=529
+	.asciz	"wwdgt_deinit"          @ string offset=519
 .Linfo_string31:
-	.asciz	"wwdgt_enable"          @ string offset=542
+	.asciz	"wwdgt_enable"          @ string offset=532
 .Linfo_string32:
-	.asciz	"wwdgt_counter_update"  @ string offset=555
+	.asciz	"wwdgt_counter_update"  @ string offset=545
 .Linfo_string33:
-	.asciz	"wwdgt_config"          @ string offset=576
+	.asciz	"wwdgt_config"          @ string offset=566
 .Linfo_string34:
-	.asciz	"wwdgt_interrupt_enable" @ string offset=589
+	.asciz	"wwdgt_interrupt_enable" @ string offset=579
 .Linfo_string35:
-	.asciz	"wwdgt_flag_get"        @ string offset=612
+	.asciz	"wwdgt_flag_get"        @ string offset=602
 .Linfo_string36:
-	.asciz	"FlagStatus"            @ string offset=627
+	.asciz	"FlagStatus"            @ string offset=617
 .Linfo_string37:
-	.asciz	"wwdgt_flag_clear"      @ string offset=638
+	.asciz	"wwdgt_flag_clear"      @ string offset=628
 .Linfo_string38:
-	.asciz	"counter_value"         @ string offset=655
+	.asciz	"counter_value"         @ string offset=645
 .Linfo_string39:
-	.asciz	"uint16_t"              @ string offset=669
+	.asciz	"uint16_t"              @ string offset=659
 .Linfo_string40:
-	.asciz	"reg"                   @ string offset=678
+	.asciz	"reg"                   @ string offset=668
 .Linfo_string41:
-	.asciz	"counter"               @ string offset=682
+	.asciz	"counter"               @ string offset=672
 .Linfo_string42:
-	.asciz	"window"                @ string offset=690
+	.asciz	"window"                @ string offset=680
 .Linfo_string43:
-	.asciz	"prescaler"             @ string offset=697
+	.asciz	"prescaler"             @ string offset=687
 .Linfo_string44:
-	.asciz	"reg_cfg"               @ string offset=707
+	.asciz	"reg_cfg"               @ string offset=697
 .Linfo_string45:
-	.asciz	"reg_ctl"               @ string offset=715
+	.asciz	"reg_ctl"               @ string offset=705
 	.section	.debug_abbrev,"",%progbits
 	.byte	1                       @ Abbreviation Code
 	.byte	17                      @ DW_TAG_compile_unit

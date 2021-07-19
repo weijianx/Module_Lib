@@ -35,4 +35,4 @@
   ..\APP\Inc\modbus_asc.h ..\APP\Inc\para.h ..\User\systick.h \
   ..\APP\Inc\modbus_ascii.h ..\APP\Inc\common.h \
   ..\APP\Inc\modbus_ascii.h ..\APP\Inc\type.h ..\APP\Inc\para.h \
-  ..\BSP\Inc\SHT3x.h
+  ..\BSP\Inc\TH_IIC.h ..\BSP\Inc\SHT3x.h

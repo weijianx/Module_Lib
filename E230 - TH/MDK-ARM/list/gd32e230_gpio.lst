@@ -18,8 +18,8 @@
 	.eabi_attribute	26, 1	@ Tag_ABI_enum_size
 	.eabi_attribute	14, 0	@ Tag_ABI_PCS_R9_use
 	.file	"gd32e230_gpio.c"
-	.file	1 "E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include\\gd32e230_rcu.h"
-	.file	2 "E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" "../GD32E230_Firmware_Library/CMSIS/GD/GD32E230/Include\\gd32e230.h"
+	.file	1 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include\\gd32e230_rcu.h"
+	.file	2 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/CMSIS/GD/GD32E230/Include\\gd32e230.h"
 	.file	3 "D:\\Keil_v5\\ARM\\ARMCLANG\\Bin\\..\\include" "stdint.h"
 	.section	.text.gpio_deinit,"ax",%progbits
 	.hidden	gpio_deinit             @ -- Begin function gpio_deinit
@@ -30,7 +30,7 @@
 	.thumb_func
 gpio_deinit:
 .Lfunc_begin0:
-	.file	4 "E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source/gd32e230_gpio.c"
+	.file	4 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source/gd32e230_gpio.c"
 	.loc	4 48 0                  @ ../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source/gd32e230_gpio.c:48:0
 	.fnstart
 	.cfi_sections .debug_frame
@@ -1160,138 +1160,138 @@ __arm_cp.14_0:
 	.cantunwind
 	.fnend
                                         @ -- End function
-	.file	5 "E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include\\gd32e230_gpio.h"
+	.file	5 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include\\gd32e230_gpio.h"
 	.section	.debug_str,"MS",%progbits,1
 .Linfo_string0:
 	.asciz	"Component: ARM Compiler 6.14 Tool: armclang [5db06c00]" @ string offset=0
 .Linfo_string1:
 	.asciz	"../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source\\gd32e230_gpio.c" @ string offset=55
 .Linfo_string2:
-	.asciz	"E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" @ string offset=136
+	.asciz	"E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" @ string offset=136
 .Linfo_string3:
-	.asciz	"unsigned short"        @ string offset=188
+	.asciz	"unsigned short"        @ string offset=178
 .Linfo_string4:
-	.asciz	"RCU_GPIOARST"          @ string offset=203
+	.asciz	"RCU_GPIOARST"          @ string offset=193
 .Linfo_string5:
-	.asciz	"RCU_GPIOBRST"          @ string offset=216
+	.asciz	"RCU_GPIOBRST"          @ string offset=206
 .Linfo_string6:
-	.asciz	"RCU_GPIOCRST"          @ string offset=229
+	.asciz	"RCU_GPIOCRST"          @ string offset=219
 .Linfo_string7:
-	.asciz	"RCU_GPIOFRST"          @ string offset=242
+	.asciz	"RCU_GPIOFRST"          @ string offset=232
 .Linfo_string8:
-	.asciz	"RCU_CFGCMPRST"         @ string offset=255
+	.asciz	"RCU_CFGCMPRST"         @ string offset=245
 .Linfo_string9:
-	.asciz	"RCU_ADCRST"            @ string offset=269
+	.asciz	"RCU_ADCRST"            @ string offset=259
 .Linfo_string10:
-	.asciz	"RCU_TIMER0RST"         @ string offset=280
+	.asciz	"RCU_TIMER0RST"         @ string offset=270
 .Linfo_string11:
-	.asciz	"RCU_SPI0RST"           @ string offset=294
+	.asciz	"RCU_SPI0RST"           @ string offset=284
 .Linfo_string12:
-	.asciz	"RCU_USART0RST"         @ string offset=306
+	.asciz	"RCU_USART0RST"         @ string offset=296
 .Linfo_string13:
-	.asciz	"RCU_TIMER14RST"        @ string offset=320
+	.asciz	"RCU_TIMER14RST"        @ string offset=310
 .Linfo_string14:
-	.asciz	"RCU_TIMER15RST"        @ string offset=335
+	.asciz	"RCU_TIMER15RST"        @ string offset=325
 .Linfo_string15:
-	.asciz	"RCU_TIMER16RST"        @ string offset=350
+	.asciz	"RCU_TIMER16RST"        @ string offset=340
 .Linfo_string16:
-	.asciz	"RCU_TIMER2RST"         @ string offset=365
+	.asciz	"RCU_TIMER2RST"         @ string offset=355
 .Linfo_string17:
-	.asciz	"RCU_TIMER5RST"         @ string offset=379
+	.asciz	"RCU_TIMER5RST"         @ string offset=369
 .Linfo_string18:
-	.asciz	"RCU_TIMER13RST"        @ string offset=393
+	.asciz	"RCU_TIMER13RST"        @ string offset=383
 .Linfo_string19:
-	.asciz	"RCU_WWDGTRST"          @ string offset=408
+	.asciz	"RCU_WWDGTRST"          @ string offset=398
 .Linfo_string20:
-	.asciz	"RCU_SPI1RST"           @ string offset=421
+	.asciz	"RCU_SPI1RST"           @ string offset=411
 .Linfo_string21:
-	.asciz	"RCU_USART1RST"         @ string offset=433
+	.asciz	"RCU_USART1RST"         @ string offset=423
 .Linfo_string22:
-	.asciz	"RCU_I2C0RST"           @ string offset=447
+	.asciz	"RCU_I2C0RST"           @ string offset=437
 .Linfo_string23:
-	.asciz	"RCU_I2C1RST"           @ string offset=459
+	.asciz	"RCU_I2C1RST"           @ string offset=449
 .Linfo_string24:
-	.asciz	"RCU_PMURST"            @ string offset=471
+	.asciz	"RCU_PMURST"            @ string offset=461
 .Linfo_string25:
-	.asciz	"unsigned char"         @ string offset=482
+	.asciz	"unsigned char"         @ string offset=472
 .Linfo_string26:
-	.asciz	"RESET"                 @ string offset=496
+	.asciz	"RESET"                 @ string offset=486
 .Linfo_string27:
-	.asciz	"SET"                   @ string offset=502
+	.asciz	"SET"                   @ string offset=492
 .Linfo_string28:
-	.asciz	"unsigned int"          @ string offset=506
+	.asciz	"unsigned int"          @ string offset=496
 .Linfo_string29:
-	.asciz	"uint32_t"              @ string offset=519
+	.asciz	"uint32_t"              @ string offset=509
 .Linfo_string30:
-	.asciz	"uint8_t"               @ string offset=528
+	.asciz	"uint8_t"               @ string offset=518
 .Linfo_string31:
-	.asciz	"uint16_t"              @ string offset=536
+	.asciz	"uint16_t"              @ string offset=526
 .Linfo_string32:
-	.asciz	"gpio_deinit"           @ string offset=545
+	.asciz	"gpio_deinit"           @ string offset=535
 .Linfo_string33:
-	.asciz	"gpio_mode_set"         @ string offset=557
+	.asciz	"gpio_mode_set"         @ string offset=547
 .Linfo_string34:
-	.asciz	"gpio_output_options_set" @ string offset=571
+	.asciz	"gpio_output_options_set" @ string offset=561
 .Linfo_string35:
-	.asciz	"gpio_bit_set"          @ string offset=595
+	.asciz	"gpio_bit_set"          @ string offset=585
 .Linfo_string36:
-	.asciz	"gpio_bit_reset"        @ string offset=608
+	.asciz	"gpio_bit_reset"        @ string offset=598
 .Linfo_string37:
-	.asciz	"gpio_bit_write"        @ string offset=623
+	.asciz	"gpio_bit_write"        @ string offset=613
 .Linfo_string38:
-	.asciz	"gpio_port_write"       @ string offset=638
+	.asciz	"gpio_port_write"       @ string offset=628
 .Linfo_string39:
-	.asciz	"gpio_input_bit_get"    @ string offset=654
+	.asciz	"gpio_input_bit_get"    @ string offset=644
 .Linfo_string40:
-	.asciz	"FlagStatus"            @ string offset=673
+	.asciz	"FlagStatus"            @ string offset=663
 .Linfo_string41:
-	.asciz	"gpio_input_port_get"   @ string offset=684
+	.asciz	"gpio_input_port_get"   @ string offset=674
 .Linfo_string42:
-	.asciz	"gpio_output_bit_get"   @ string offset=704
+	.asciz	"gpio_output_bit_get"   @ string offset=694
 .Linfo_string43:
-	.asciz	"gpio_output_port_get"  @ string offset=724
+	.asciz	"gpio_output_port_get"  @ string offset=714
 .Linfo_string44:
-	.asciz	"gpio_af_set"           @ string offset=745
+	.asciz	"gpio_af_set"           @ string offset=735
 .Linfo_string45:
-	.asciz	"gpio_pin_lock"         @ string offset=757
+	.asciz	"gpio_pin_lock"         @ string offset=747
 .Linfo_string46:
-	.asciz	"gpio_bit_toggle"       @ string offset=771
+	.asciz	"gpio_bit_toggle"       @ string offset=761
 .Linfo_string47:
-	.asciz	"gpio_port_toggle"      @ string offset=787
+	.asciz	"gpio_port_toggle"      @ string offset=777
 .Linfo_string48:
-	.asciz	"gpio_periph"           @ string offset=804
+	.asciz	"gpio_periph"           @ string offset=794
 .Linfo_string49:
-	.asciz	"mode"                  @ string offset=816
+	.asciz	"mode"                  @ string offset=806
 .Linfo_string50:
-	.asciz	"pull_up_down"          @ string offset=821
+	.asciz	"pull_up_down"          @ string offset=811
 .Linfo_string51:
-	.asciz	"pin"                   @ string offset=834
+	.asciz	"pin"                   @ string offset=824
 .Linfo_string52:
-	.asciz	"i"                     @ string offset=838
+	.asciz	"i"                     @ string offset=828
 .Linfo_string53:
-	.asciz	"ctl"                   @ string offset=840
+	.asciz	"ctl"                   @ string offset=830
 .Linfo_string54:
-	.asciz	"pupd"                  @ string offset=844
+	.asciz	"pupd"                  @ string offset=834
 .Linfo_string55:
-	.asciz	"otype"                 @ string offset=849
+	.asciz	"otype"                 @ string offset=839
 .Linfo_string56:
-	.asciz	"speed"                 @ string offset=855
+	.asciz	"speed"                 @ string offset=845
 .Linfo_string57:
-	.asciz	"ospeed"                @ string offset=861
+	.asciz	"ospeed"                @ string offset=851
 .Linfo_string58:
-	.asciz	"bit_value"             @ string offset=868
+	.asciz	"bit_value"             @ string offset=858
 .Linfo_string59:
-	.asciz	"bit_status"            @ string offset=878
+	.asciz	"bit_status"            @ string offset=868
 .Linfo_string60:
-	.asciz	"data"                  @ string offset=889
+	.asciz	"data"                  @ string offset=879
 .Linfo_string61:
-	.asciz	"alt_func_num"          @ string offset=894
+	.asciz	"alt_func_num"          @ string offset=884
 .Linfo_string62:
-	.asciz	"afrl"                  @ string offset=907
+	.asciz	"afrl"                  @ string offset=897
 .Linfo_string63:
-	.asciz	"afrh"                  @ string offset=912
+	.asciz	"afrh"                  @ string offset=902
 .Linfo_string64:
-	.asciz	"lock"                  @ string offset=917
+	.asciz	"lock"                  @ string offset=907
 	.section	.debug_abbrev,"",%progbits
 	.byte	1                       @ Abbreviation Code
 	.byte	17                      @ DW_TAG_compile_unit

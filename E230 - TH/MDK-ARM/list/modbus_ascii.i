@@ -3080,7 +3080,7 @@ extern __attribute__((nothrow)) void _membitmovehb(void * , const void * , int ,
 extern __attribute__((nothrow)) void _membitmovewl(void * , const void * , int , int , size_t ) __attribute__((__nonnull__(1,2)));
 extern __attribute__((nothrow)) void _membitmovewb(void * , const void * , int , int , size_t ) __attribute__((__nonnull__(1,2)));
 # 45 "../BSP/Inc\\flash.h" 2
-# 89 "../BSP/Inc\\flash.h"
+# 88 "../BSP/Inc\\flash.h"
 uint8_t Flash_Read_OneByte(uint32_t RWAddr);
 
 void flash_read_multi(uint32_t readAdder, uint8_t *readBuf, uint16_t readLen);
@@ -3522,11 +3522,27 @@ uint16_t MODBUS_ASCII_SendData(uint8_t *cySendBuff, uint16_t cyLen)
     cyAsciiBuff[cyAsciiLen] = 0x0D;
     cyAsciiLen++;
     cyAsciiBuff[cyAsciiLen] = 0x0A;
-    while((cyAsciiBuff[cyAsciiLen-1] != 0x0D) && (cyAsciiBuff[cyAsciiLen] != 0x0A))
-  cyAsciiLen++;
 
- cyAsciiLen+=3;
-    return (UARTx_SendData(cyAsciiBuff, cyAsciiLen) );
+
+
+
+
+ gpio_bit_set(((((uint32_t)0x48000000U) + 0x00000000U) + 0x00000000U),((uint32_t)((uint32_t)0x01U<<(2))));
+ cyAsciiLen = 0;
+ while(1)
+ {
+  printf("%c",cyAsciiBuff[cyAsciiLen]);
+  if(cyAsciiBuff[cyAsciiLen] == 0x0A)
+   break;
+
+  cyAsciiLen++;
+ }
+ fwdgt_counter_reload();
+
+
+ receive = 0;
+
+ return 0;
 }
 
 uint16_t MODBUS_ASCII_SendData1(uint8_t *cySendBuff, uint16_t cyLen)
@@ -3569,4 +3585,6 @@ uint16_t MODBUS_ASCII_SendData1(uint8_t *cySendBuff, uint16_t cyLen)
 
 
  receive = 0;
+
+ return 0;
 }

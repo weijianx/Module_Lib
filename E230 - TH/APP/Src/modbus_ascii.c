@@ -410,11 +410,27 @@ uint16_t MODBUS_ASCII_SendData(uint8_t *cySendBuff, uint16_t cyLen)
     cyAsciiBuff[cyAsciiLen] = 0x0D;
     cyAsciiLen++;
     cyAsciiBuff[cyAsciiLen] = 0x0A;
-    while((cyAsciiBuff[cyAsciiLen-1] != 0x0D) && (cyAsciiBuff[cyAsciiLen] != 0x0A))
+//    while((cyAsciiBuff[cyAsciiLen-1] != 0x0D) && (cyAsciiBuff[cyAsciiLen] != 0x0A))
+//		cyAsciiLen++;
+////	delay_2ms(10);
+//	cyAsciiLen+=3;
+//    return (UARTx_SendData(cyAsciiBuff, cyAsciiLen) );
+	gpio_bit_set(GPIOA,GPIO_PIN_2);
+	cyAsciiLen = 0;
+	while(1)
+	{
+		printf("%c",cyAsciiBuff[cyAsciiLen]);
+		if(cyAsciiBuff[cyAsciiLen] == 0x0A)
+			break;
+		
 		cyAsciiLen++;
-//	delay_2ms(10);
-	cyAsciiLen+=3;
-    return (UARTx_SendData(cyAsciiBuff, cyAsciiLen) );
+	}
+	fwdgt_counter_reload();	
+//	printf("%c",cyAsciiBuff[cyAsciiLen++]);
+//	printf("%c",cyAsciiBuff[cyAsciiLen++]);
+	receive = 0;
+	
+	return 0;
 }
 
 uint16_t MODBUS_ASCII_SendData1(uint8_t *cySendBuff, uint16_t cyLen)
@@ -457,5 +473,7 @@ uint16_t MODBUS_ASCII_SendData1(uint8_t *cySendBuff, uint16_t cyLen)
 //	printf("%c",cyAsciiBuff[cyAsciiLen++]);
 //	printf("%c",cyAsciiBuff[cyAsciiLen++]);
 	receive = 0;
+	
+	return 0;
 }
 

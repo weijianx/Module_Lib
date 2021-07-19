@@ -18,7 +18,7 @@
 	.eabi_attribute	26, 1	@ Tag_ABI_enum_size
 	.eabi_attribute	14, 0	@ Tag_ABI_PCS_R9_use
 	.file	"gd32e230_rtc.c"
-	.file	1 "E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" "../GD32E230_Firmware_Library/CMSIS/GD/GD32E230/Include\\gd32e230.h"
+	.file	1 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/CMSIS/GD/GD32E230/Include\\gd32e230.h"
 	.file	2 "D:\\Keil_v5\\ARM\\ARMCLANG\\Bin\\..\\include" "stdint.h"
 	.section	.text.rtc_deinit,"ax",%progbits
 	.hidden	rtc_deinit              @ -- Begin function rtc_deinit
@@ -29,7 +29,7 @@
 	.thumb_func
 rtc_deinit:
 .Lfunc_begin0:
-	.file	3 "E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source/gd32e230_rtc.c"
+	.file	3 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source/gd32e230_rtc.c"
 	.loc	3 46 0                  @ ../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source/gd32e230_rtc.c:46:0
 	.fnstart
 	.cfi_sections .debug_frame
@@ -2989,238 +2989,238 @@ __arm_cp.30_1:
 	.cantunwind
 	.fnend
                                         @ -- End function
-	.file	4 "E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include\\gd32e230_rtc.h"
+	.file	4 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include\\gd32e230_rtc.h"
 	.section	.debug_str,"MS",%progbits,1
 .Linfo_string0:
 	.asciz	"Component: ARM Compiler 6.14 Tool: armclang [5db06c00]" @ string offset=0
 .Linfo_string1:
 	.asciz	"../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source\\gd32e230_rtc.c" @ string offset=55
 .Linfo_string2:
-	.asciz	"E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" @ string offset=135
+	.asciz	"E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" @ string offset=135
 .Linfo_string3:
-	.asciz	"unsigned char"         @ string offset=187
+	.asciz	"unsigned char"         @ string offset=177
 .Linfo_string4:
-	.asciz	"ERROR"                 @ string offset=201
+	.asciz	"ERROR"                 @ string offset=191
 .Linfo_string5:
-	.asciz	"SUCCESS"               @ string offset=207
+	.asciz	"SUCCESS"               @ string offset=197
 .Linfo_string6:
-	.asciz	"RESET"                 @ string offset=215
+	.asciz	"RESET"                 @ string offset=205
 .Linfo_string7:
-	.asciz	"SET"                   @ string offset=221
+	.asciz	"SET"                   @ string offset=211
 .Linfo_string8:
-	.asciz	"DISABLE"               @ string offset=225
+	.asciz	"DISABLE"               @ string offset=215
 .Linfo_string9:
-	.asciz	"ENABLE"                @ string offset=233
+	.asciz	"ENABLE"                @ string offset=223
 .Linfo_string10:
-	.asciz	"unsigned int"          @ string offset=240
+	.asciz	"unsigned int"          @ string offset=230
 .Linfo_string11:
-	.asciz	"uint32_t"              @ string offset=253
+	.asciz	"uint32_t"              @ string offset=243
 .Linfo_string12:
-	.asciz	"uint8_t"               @ string offset=262
+	.asciz	"uint8_t"               @ string offset=252
 .Linfo_string13:
-	.asciz	"unsigned short"        @ string offset=270
+	.asciz	"unsigned short"        @ string offset=260
 .Linfo_string14:
-	.asciz	"uint16_t"              @ string offset=285
+	.asciz	"uint16_t"              @ string offset=275
 .Linfo_string15:
-	.asciz	"rtc_deinit"            @ string offset=294
+	.asciz	"rtc_deinit"            @ string offset=284
 .Linfo_string16:
-	.asciz	"ErrStatus"             @ string offset=305
+	.asciz	"ErrStatus"             @ string offset=295
 .Linfo_string17:
-	.asciz	"rtc_init_mode_enter"   @ string offset=315
+	.asciz	"rtc_init_mode_enter"   @ string offset=305
 .Linfo_string18:
-	.asciz	"rtc_register_sync_wait" @ string offset=335
+	.asciz	"rtc_register_sync_wait" @ string offset=325
 .Linfo_string19:
-	.asciz	"rtc_init"              @ string offset=358
+	.asciz	"rtc_init"              @ string offset=348
 .Linfo_string20:
-	.asciz	"rtc_init_mode_exit"    @ string offset=367
+	.asciz	"rtc_init_mode_exit"    @ string offset=357
 .Linfo_string21:
-	.asciz	"rtc_current_time_get"  @ string offset=386
+	.asciz	"rtc_current_time_get"  @ string offset=376
 .Linfo_string22:
-	.asciz	"rtc_subsecond_get"     @ string offset=407
+	.asciz	"rtc_subsecond_get"     @ string offset=397
 .Linfo_string23:
-	.asciz	"rtc_alarm_config"      @ string offset=425
+	.asciz	"rtc_alarm_config"      @ string offset=415
 .Linfo_string24:
-	.asciz	"rtc_alarm_subsecond_config" @ string offset=442
+	.asciz	"rtc_alarm_subsecond_config" @ string offset=432
 .Linfo_string25:
-	.asciz	"rtc_alarm_enable"      @ string offset=469
+	.asciz	"rtc_alarm_enable"      @ string offset=459
 .Linfo_string26:
-	.asciz	"rtc_alarm_disable"     @ string offset=486
+	.asciz	"rtc_alarm_disable"     @ string offset=476
 .Linfo_string27:
-	.asciz	"rtc_alarm_get"         @ string offset=504
+	.asciz	"rtc_alarm_get"         @ string offset=494
 .Linfo_string28:
-	.asciz	"rtc_alarm_subsecond_get" @ string offset=518
+	.asciz	"rtc_alarm_subsecond_get" @ string offset=508
 .Linfo_string29:
-	.asciz	"rtc_timestamp_enable"  @ string offset=542
+	.asciz	"rtc_timestamp_enable"  @ string offset=532
 .Linfo_string30:
-	.asciz	"rtc_timestamp_disable" @ string offset=563
+	.asciz	"rtc_timestamp_disable" @ string offset=553
 .Linfo_string31:
-	.asciz	"rtc_timestamp_get"     @ string offset=585
+	.asciz	"rtc_timestamp_get"     @ string offset=575
 .Linfo_string32:
-	.asciz	"rtc_timestamp_subsecond_get" @ string offset=603
+	.asciz	"rtc_timestamp_subsecond_get" @ string offset=593
 .Linfo_string33:
-	.asciz	"rtc_tamper_enable"     @ string offset=631
+	.asciz	"rtc_tamper_enable"     @ string offset=621
 .Linfo_string34:
-	.asciz	"rtc_tamper_disable"    @ string offset=649
+	.asciz	"rtc_tamper_disable"    @ string offset=639
 .Linfo_string35:
-	.asciz	"rtc_interrupt_enable"  @ string offset=668
+	.asciz	"rtc_interrupt_enable"  @ string offset=658
 .Linfo_string36:
-	.asciz	"rtc_interrupt_disable" @ string offset=689
+	.asciz	"rtc_interrupt_disable" @ string offset=679
 .Linfo_string37:
-	.asciz	"rtc_flag_get"          @ string offset=711
+	.asciz	"rtc_flag_get"          @ string offset=701
 .Linfo_string38:
-	.asciz	"FlagStatus"            @ string offset=724
+	.asciz	"FlagStatus"            @ string offset=714
 .Linfo_string39:
-	.asciz	"rtc_flag_clear"        @ string offset=735
+	.asciz	"rtc_flag_clear"        @ string offset=725
 .Linfo_string40:
-	.asciz	"rtc_alter_output_config" @ string offset=750
+	.asciz	"rtc_alter_output_config" @ string offset=740
 .Linfo_string41:
-	.asciz	"rtc_calibration_config" @ string offset=774
+	.asciz	"rtc_calibration_config" @ string offset=764
 .Linfo_string42:
-	.asciz	"rtc_hour_adjust"       @ string offset=797
+	.asciz	"rtc_hour_adjust"       @ string offset=787
 .Linfo_string43:
-	.asciz	"rtc_second_adjust"     @ string offset=813
+	.asciz	"rtc_second_adjust"     @ string offset=803
 .Linfo_string44:
-	.asciz	"rtc_bypass_shadow_enable" @ string offset=831
+	.asciz	"rtc_bypass_shadow_enable" @ string offset=821
 .Linfo_string45:
-	.asciz	"rtc_bypass_shadow_disable" @ string offset=856
+	.asciz	"rtc_bypass_shadow_disable" @ string offset=846
 .Linfo_string46:
-	.asciz	"rtc_refclock_detection_enable" @ string offset=882
+	.asciz	"rtc_refclock_detection_enable" @ string offset=872
 .Linfo_string47:
-	.asciz	"rtc_refclock_detection_disable" @ string offset=912
+	.asciz	"rtc_refclock_detection_disable" @ string offset=902
 .Linfo_string48:
-	.asciz	"error_status"          @ string offset=943
+	.asciz	"error_status"          @ string offset=933
 .Linfo_string49:
-	.asciz	"time_index"            @ string offset=956
+	.asciz	"time_index"            @ string offset=946
 .Linfo_string50:
-	.asciz	"flag_status"           @ string offset=967
+	.asciz	"flag_status"           @ string offset=957
 .Linfo_string51:
-	.asciz	"rtc_initpara_struct"   @ string offset=979
+	.asciz	"rtc_initpara_struct"   @ string offset=969
 .Linfo_string52:
-	.asciz	"rtc_year"              @ string offset=999
+	.asciz	"rtc_year"              @ string offset=989
 .Linfo_string53:
-	.asciz	"rtc_month"             @ string offset=1008
+	.asciz	"rtc_month"             @ string offset=998
 .Linfo_string54:
-	.asciz	"rtc_date"              @ string offset=1018
+	.asciz	"rtc_date"              @ string offset=1008
 .Linfo_string55:
-	.asciz	"rtc_day_of_week"       @ string offset=1027
+	.asciz	"rtc_day_of_week"       @ string offset=1017
 .Linfo_string56:
-	.asciz	"rtc_hour"              @ string offset=1043
+	.asciz	"rtc_hour"              @ string offset=1033
 .Linfo_string57:
-	.asciz	"rtc_minute"            @ string offset=1052
+	.asciz	"rtc_minute"            @ string offset=1042
 .Linfo_string58:
-	.asciz	"rtc_second"            @ string offset=1063
+	.asciz	"rtc_second"            @ string offset=1053
 .Linfo_string59:
-	.asciz	"rtc_factor_asyn"       @ string offset=1074
+	.asciz	"rtc_factor_asyn"       @ string offset=1064
 .Linfo_string60:
-	.asciz	"rtc_factor_syn"        @ string offset=1090
+	.asciz	"rtc_factor_syn"        @ string offset=1080
 .Linfo_string61:
-	.asciz	"rtc_am_pm"             @ string offset=1105
+	.asciz	"rtc_am_pm"             @ string offset=1095
 .Linfo_string62:
-	.asciz	"rtc_display_format"    @ string offset=1115
+	.asciz	"rtc_display_format"    @ string offset=1105
 .Linfo_string63:
-	.asciz	"rtc_parameter_struct"  @ string offset=1134
+	.asciz	"rtc_parameter_struct"  @ string offset=1124
 .Linfo_string64:
-	.asciz	"reg_time"              @ string offset=1155
+	.asciz	"reg_time"              @ string offset=1145
 .Linfo_string65:
-	.asciz	"reg_date"              @ string offset=1164
+	.asciz	"reg_date"              @ string offset=1154
 .Linfo_string66:
-	.asciz	"temp_tr"               @ string offset=1173
+	.asciz	"temp_tr"               @ string offset=1163
 .Linfo_string67:
-	.asciz	"temp_dr"               @ string offset=1181
+	.asciz	"temp_dr"               @ string offset=1171
 .Linfo_string68:
-	.asciz	"temp_pscr"             @ string offset=1189
+	.asciz	"temp_pscr"             @ string offset=1179
 .Linfo_string69:
-	.asciz	"temp_ctlr"             @ string offset=1199
+	.asciz	"temp_ctlr"             @ string offset=1189
 .Linfo_string70:
-	.asciz	"reg"                   @ string offset=1209
+	.asciz	"reg"                   @ string offset=1199
 .Linfo_string71:
-	.asciz	"rtc_alarm_time"        @ string offset=1213
+	.asciz	"rtc_alarm_time"        @ string offset=1203
 .Linfo_string72:
-	.asciz	"rtc_alarm_mask"        @ string offset=1228
+	.asciz	"rtc_alarm_mask"        @ string offset=1218
 .Linfo_string73:
-	.asciz	"rtc_weekday_or_date"   @ string offset=1243
+	.asciz	"rtc_weekday_or_date"   @ string offset=1233
 .Linfo_string74:
-	.asciz	"rtc_alarm_day"         @ string offset=1263
+	.asciz	"rtc_alarm_day"         @ string offset=1253
 .Linfo_string75:
-	.asciz	"rtc_alarm_hour"        @ string offset=1277
+	.asciz	"rtc_alarm_hour"        @ string offset=1267
 .Linfo_string76:
-	.asciz	"rtc_alarm_minute"      @ string offset=1292
+	.asciz	"rtc_alarm_minute"      @ string offset=1282
 .Linfo_string77:
-	.asciz	"rtc_alarm_second"      @ string offset=1309
+	.asciz	"rtc_alarm_second"      @ string offset=1299
 .Linfo_string78:
-	.asciz	"rtc_alarm_struct"      @ string offset=1326
+	.asciz	"rtc_alarm_struct"      @ string offset=1316
 .Linfo_string79:
-	.asciz	"reg_alrm0td"           @ string offset=1343
+	.asciz	"reg_alrm0td"           @ string offset=1333
 .Linfo_string80:
-	.asciz	"mask_subsecond"        @ string offset=1355
+	.asciz	"mask_subsecond"        @ string offset=1345
 .Linfo_string81:
-	.asciz	"subsecond"             @ string offset=1370
+	.asciz	"subsecond"             @ string offset=1360
 .Linfo_string82:
-	.asciz	"edge"                  @ string offset=1380
+	.asciz	"edge"                  @ string offset=1370
 .Linfo_string83:
-	.asciz	"reg_ctl"               @ string offset=1385
+	.asciz	"reg_ctl"               @ string offset=1375
 .Linfo_string84:
-	.asciz	"rtc_timestamp"         @ string offset=1393
+	.asciz	"rtc_timestamp"         @ string offset=1383
 .Linfo_string85:
-	.asciz	"rtc_timestamp_month"   @ string offset=1407
+	.asciz	"rtc_timestamp_month"   @ string offset=1397
 .Linfo_string86:
-	.asciz	"rtc_timestamp_date"    @ string offset=1427
+	.asciz	"rtc_timestamp_date"    @ string offset=1417
 .Linfo_string87:
-	.asciz	"rtc_timestamp_day"     @ string offset=1446
+	.asciz	"rtc_timestamp_day"     @ string offset=1436
 .Linfo_string88:
-	.asciz	"rtc_timestamp_hour"    @ string offset=1464
+	.asciz	"rtc_timestamp_hour"    @ string offset=1454
 .Linfo_string89:
-	.asciz	"rtc_timestamp_minute"  @ string offset=1483
+	.asciz	"rtc_timestamp_minute"  @ string offset=1473
 .Linfo_string90:
-	.asciz	"rtc_timestamp_second"  @ string offset=1504
+	.asciz	"rtc_timestamp_second"  @ string offset=1494
 .Linfo_string91:
-	.asciz	"rtc_timestamp_struct"  @ string offset=1525
+	.asciz	"rtc_timestamp_struct"  @ string offset=1515
 .Linfo_string92:
-	.asciz	"temp_tts"              @ string offset=1546
+	.asciz	"temp_tts"              @ string offset=1536
 .Linfo_string93:
-	.asciz	"temp_dts"              @ string offset=1555
+	.asciz	"temp_dts"              @ string offset=1545
 .Linfo_string94:
-	.asciz	"rtc_tamper"            @ string offset=1564
+	.asciz	"rtc_tamper"            @ string offset=1554
 .Linfo_string95:
-	.asciz	"rtc_tamper_source"     @ string offset=1575
+	.asciz	"rtc_tamper_source"     @ string offset=1565
 .Linfo_string96:
-	.asciz	"rtc_tamper_trigger"    @ string offset=1593
+	.asciz	"rtc_tamper_trigger"    @ string offset=1583
 .Linfo_string97:
-	.asciz	"rtc_tamper_filter"     @ string offset=1612
+	.asciz	"rtc_tamper_filter"     @ string offset=1602
 .Linfo_string98:
-	.asciz	"rtc_tamper_sample_frequency" @ string offset=1630
+	.asciz	"rtc_tamper_sample_frequency" @ string offset=1620
 .Linfo_string99:
-	.asciz	"rtc_tamper_precharge_enable" @ string offset=1658
+	.asciz	"rtc_tamper_precharge_enable" @ string offset=1648
 .Linfo_string100:
-	.asciz	"ControlStatus"         @ string offset=1686
+	.asciz	"ControlStatus"         @ string offset=1676
 .Linfo_string101:
-	.asciz	"rtc_tamper_precharge_time" @ string offset=1700
+	.asciz	"rtc_tamper_precharge_time" @ string offset=1690
 .Linfo_string102:
-	.asciz	"rtc_tamper_with_timestamp" @ string offset=1726
+	.asciz	"rtc_tamper_with_timestamp" @ string offset=1716
 .Linfo_string103:
-	.asciz	"rtc_tamper_struct"     @ string offset=1752
+	.asciz	"rtc_tamper_struct"     @ string offset=1742
 .Linfo_string104:
-	.asciz	"source"                @ string offset=1770
+	.asciz	"source"                @ string offset=1760
 .Linfo_string105:
-	.asciz	"interrupt"             @ string offset=1777
+	.asciz	"interrupt"             @ string offset=1767
 .Linfo_string106:
-	.asciz	"flag"                  @ string offset=1787
+	.asciz	"flag"                  @ string offset=1777
 .Linfo_string107:
-	.asciz	"flag_state"            @ string offset=1792
+	.asciz	"flag_state"            @ string offset=1782
 .Linfo_string108:
-	.asciz	"mode"                  @ string offset=1803
+	.asciz	"mode"                  @ string offset=1793
 .Linfo_string109:
-	.asciz	"window"                @ string offset=1808
+	.asciz	"window"                @ string offset=1798
 .Linfo_string110:
-	.asciz	"plus"                  @ string offset=1815
+	.asciz	"plus"                  @ string offset=1805
 .Linfo_string111:
-	.asciz	"minus"                 @ string offset=1820
+	.asciz	"minus"                 @ string offset=1810
 .Linfo_string112:
-	.asciz	"operation"             @ string offset=1826
+	.asciz	"operation"             @ string offset=1816
 .Linfo_string113:
-	.asciz	"add"                   @ string offset=1836
+	.asciz	"add"                   @ string offset=1826
 .Linfo_string114:
-	.asciz	"temp"                  @ string offset=1840
+	.asciz	"temp"                  @ string offset=1830
 	.section	.debug_abbrev,"",%progbits
 	.byte	1                       @ Abbreviation Code
 	.byte	17                      @ DW_TAG_compile_unit

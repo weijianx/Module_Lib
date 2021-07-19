@@ -18,7 +18,7 @@
 	.eabi_attribute	26, 1	@ Tag_ABI_enum_size
 	.eabi_attribute	14, 0	@ Tag_ABI_PCS_R9_use
 	.file	"gd32e230_fwdgt.c"
-	.file	1 "E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" "../GD32E230_Firmware_Library/CMSIS/GD/GD32E230/Include\\gd32e230.h"
+	.file	1 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/CMSIS/GD/GD32E230/Include\\gd32e230.h"
 	.file	2 "D:\\Keil_v5\\ARM\\ARMCLANG\\Bin\\..\\include" "stdint.h"
 	.section	.text.fwdgt_write_enable,"ax",%progbits
 	.hidden	fwdgt_write_enable      @ -- Begin function fwdgt_write_enable
@@ -29,7 +29,7 @@
 	.thumb_func
 fwdgt_write_enable:
 .Lfunc_begin0:
-	.file	3 "E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source/gd32e230_fwdgt.c"
+	.file	3 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source/gd32e230_fwdgt.c"
 	.loc	3 53 0                  @ ../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source/gd32e230_fwdgt.c:53:0
 	.fnstart
 	.cfi_sections .debug_frame
@@ -922,65 +922,65 @@ __arm_cp.8_0:
 .Linfo_string1:
 	.asciz	"../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source\\gd32e230_fwdgt.c" @ string offset=55
 .Linfo_string2:
-	.asciz	"E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" @ string offset=137
+	.asciz	"E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" @ string offset=137
 .Linfo_string3:
-	.asciz	"unsigned char"         @ string offset=189
+	.asciz	"unsigned char"         @ string offset=179
 .Linfo_string4:
-	.asciz	"ERROR"                 @ string offset=203
+	.asciz	"ERROR"                 @ string offset=193
 .Linfo_string5:
-	.asciz	"SUCCESS"               @ string offset=209
+	.asciz	"SUCCESS"               @ string offset=199
 .Linfo_string6:
-	.asciz	"RESET"                 @ string offset=217
+	.asciz	"RESET"                 @ string offset=207
 .Linfo_string7:
-	.asciz	"SET"                   @ string offset=223
+	.asciz	"SET"                   @ string offset=213
 .Linfo_string8:
-	.asciz	"unsigned short"        @ string offset=227
+	.asciz	"unsigned short"        @ string offset=217
 .Linfo_string9:
-	.asciz	"uint16_t"              @ string offset=242
+	.asciz	"uint16_t"              @ string offset=232
 .Linfo_string10:
-	.asciz	"unsigned int"          @ string offset=251
+	.asciz	"unsigned int"          @ string offset=241
 .Linfo_string11:
-	.asciz	"uint32_t"              @ string offset=264
+	.asciz	"uint32_t"              @ string offset=254
 .Linfo_string12:
-	.asciz	"fwdgt_write_enable"    @ string offset=273
+	.asciz	"fwdgt_write_enable"    @ string offset=263
 .Linfo_string13:
-	.asciz	"fwdgt_write_disable"   @ string offset=292
+	.asciz	"fwdgt_write_disable"   @ string offset=282
 .Linfo_string14:
-	.asciz	"fwdgt_enable"          @ string offset=312
+	.asciz	"fwdgt_enable"          @ string offset=302
 .Linfo_string15:
-	.asciz	"fwdgt_prescaler_value_config" @ string offset=325
+	.asciz	"fwdgt_prescaler_value_config" @ string offset=315
 .Linfo_string16:
-	.asciz	"ErrStatus"             @ string offset=354
+	.asciz	"ErrStatus"             @ string offset=344
 .Linfo_string17:
-	.asciz	"fwdgt_reload_value_config" @ string offset=364
+	.asciz	"fwdgt_reload_value_config" @ string offset=354
 .Linfo_string18:
-	.asciz	"fwdgt_window_value_config" @ string offset=390
+	.asciz	"fwdgt_window_value_config" @ string offset=380
 .Linfo_string19:
-	.asciz	"fwdgt_counter_reload"  @ string offset=416
+	.asciz	"fwdgt_counter_reload"  @ string offset=406
 .Linfo_string20:
-	.asciz	"fwdgt_config"          @ string offset=437
+	.asciz	"fwdgt_config"          @ string offset=427
 .Linfo_string21:
-	.asciz	"fwdgt_flag_get"        @ string offset=450
+	.asciz	"fwdgt_flag_get"        @ string offset=440
 .Linfo_string22:
-	.asciz	"FlagStatus"            @ string offset=465
+	.asciz	"FlagStatus"            @ string offset=455
 .Linfo_string23:
-	.asciz	"prescaler_value"       @ string offset=476
+	.asciz	"prescaler_value"       @ string offset=466
 .Linfo_string24:
-	.asciz	"timeout"               @ string offset=492
+	.asciz	"timeout"               @ string offset=482
 .Linfo_string25:
-	.asciz	"flag_status"           @ string offset=500
+	.asciz	"flag_status"           @ string offset=490
 .Linfo_string26:
-	.asciz	"reload_value"          @ string offset=512
+	.asciz	"reload_value"          @ string offset=502
 .Linfo_string27:
-	.asciz	"window_value"          @ string offset=525
+	.asciz	"window_value"          @ string offset=515
 .Linfo_string28:
-	.asciz	"time_index"            @ string offset=538
+	.asciz	"time_index"            @ string offset=528
 .Linfo_string29:
-	.asciz	"prescaler_div"         @ string offset=549
+	.asciz	"prescaler_div"         @ string offset=539
 .Linfo_string30:
-	.asciz	"uint8_t"               @ string offset=563
+	.asciz	"uint8_t"               @ string offset=553
 .Linfo_string31:
-	.asciz	"flag"                  @ string offset=571
+	.asciz	"flag"                  @ string offset=561
 	.section	.debug_abbrev,"",%progbits
 	.byte	1                       @ Abbreviation Code
 	.byte	17                      @ DW_TAG_compile_unit

@@ -18,8 +18,8 @@
 	.eabi_attribute	26, 1	@ Tag_ABI_enum_size
 	.eabi_attribute	14, 0	@ Tag_ABI_PCS_R9_use
 	.file	"gd32e230_dma.c"
-	.file	1 "E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include\\gd32e230_dma.h"
-	.file	2 "E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" "../GD32E230_Firmware_Library/CMSIS/GD/GD32E230/Include\\gd32e230.h"
+	.file	1 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Include\\gd32e230_dma.h"
+	.file	2 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/CMSIS/GD/GD32E230/Include\\gd32e230.h"
 	.file	3 "D:\\Keil_v5\\ARM\\ARMCLANG\\Bin\\..\\include" "stdint.h"
 	.section	.text.dma_deinit,"ax",%progbits
 	.hidden	dma_deinit              @ -- Begin function dma_deinit
@@ -30,7 +30,7 @@
 	.thumb_func
 dma_deinit:
 .Lfunc_begin0:
-	.file	4 "E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source/gd32e230_dma.c"
+	.file	4 "E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" "../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source/gd32e230_dma.c"
 	.loc	4 48 0                  @ ../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source/gd32e230_dma.c:48:0
 	.fnstart
 	.cfi_sections .debug_frame
@@ -1935,129 +1935,129 @@ __arm_cp.26_0:
 .Linfo_string1:
 	.asciz	"../GD32E230_Firmware_Library/GD32E230_standard_peripheral/Source\\gd32e230_dma.c" @ string offset=55
 .Linfo_string2:
-	.asciz	"E:\\project\\product\\GD32\\GD32E230\\E230 - 485\\MDK-ARM" @ string offset=135
+	.asciz	"E:\\project\\product\\GD32\\E230 - TH\\MDK-ARM" @ string offset=135
 .Linfo_string3:
-	.asciz	"unsigned char"         @ string offset=187
+	.asciz	"unsigned char"         @ string offset=177
 .Linfo_string4:
-	.asciz	"DMA_CH0"               @ string offset=201
+	.asciz	"DMA_CH0"               @ string offset=191
 .Linfo_string5:
-	.asciz	"DMA_CH1"               @ string offset=209
+	.asciz	"DMA_CH1"               @ string offset=199
 .Linfo_string6:
-	.asciz	"DMA_CH2"               @ string offset=217
+	.asciz	"DMA_CH2"               @ string offset=207
 .Linfo_string7:
-	.asciz	"DMA_CH3"               @ string offset=225
+	.asciz	"DMA_CH3"               @ string offset=215
 .Linfo_string8:
-	.asciz	"DMA_CH4"               @ string offset=233
+	.asciz	"DMA_CH4"               @ string offset=223
 .Linfo_string9:
-	.asciz	"RESET"                 @ string offset=241
+	.asciz	"RESET"                 @ string offset=231
 .Linfo_string10:
-	.asciz	"SET"                   @ string offset=247
+	.asciz	"SET"                   @ string offset=237
 .Linfo_string11:
-	.asciz	"unsigned int"          @ string offset=251
+	.asciz	"unsigned int"          @ string offset=241
 .Linfo_string12:
-	.asciz	"uint32_t"              @ string offset=264
+	.asciz	"uint32_t"              @ string offset=254
 .Linfo_string13:
-	.asciz	"uint8_t"               @ string offset=273
+	.asciz	"uint8_t"               @ string offset=263
 .Linfo_string14:
-	.asciz	"dma_deinit"            @ string offset=281
+	.asciz	"dma_deinit"            @ string offset=271
 .Linfo_string15:
-	.asciz	"dma_struct_para_init"  @ string offset=292
+	.asciz	"dma_struct_para_init"  @ string offset=282
 .Linfo_string16:
-	.asciz	"dma_init"              @ string offset=313
+	.asciz	"dma_init"              @ string offset=303
 .Linfo_string17:
-	.asciz	"dma_channel_disable"   @ string offset=322
+	.asciz	"dma_channel_disable"   @ string offset=312
 .Linfo_string18:
-	.asciz	"dma_circulation_enable" @ string offset=342
+	.asciz	"dma_circulation_enable" @ string offset=332
 .Linfo_string19:
-	.asciz	"dma_circulation_disable" @ string offset=365
+	.asciz	"dma_circulation_disable" @ string offset=355
 .Linfo_string20:
-	.asciz	"dma_memory_to_memory_enable" @ string offset=389
+	.asciz	"dma_memory_to_memory_enable" @ string offset=379
 .Linfo_string21:
-	.asciz	"dma_memory_to_memory_disable" @ string offset=417
+	.asciz	"dma_memory_to_memory_disable" @ string offset=407
 .Linfo_string22:
-	.asciz	"dma_channel_enable"    @ string offset=446
+	.asciz	"dma_channel_enable"    @ string offset=436
 .Linfo_string23:
-	.asciz	"dma_periph_address_config" @ string offset=465
+	.asciz	"dma_periph_address_config" @ string offset=455
 .Linfo_string24:
-	.asciz	"dma_memory_address_config" @ string offset=491
+	.asciz	"dma_memory_address_config" @ string offset=481
 .Linfo_string25:
-	.asciz	"dma_transfer_number_config" @ string offset=517
+	.asciz	"dma_transfer_number_config" @ string offset=507
 .Linfo_string26:
-	.asciz	"dma_transfer_number_get" @ string offset=544
+	.asciz	"dma_transfer_number_get" @ string offset=534
 .Linfo_string27:
-	.asciz	"dma_priority_config"   @ string offset=568
+	.asciz	"dma_priority_config"   @ string offset=558
 .Linfo_string28:
-	.asciz	"dma_memory_width_config" @ string offset=588
+	.asciz	"dma_memory_width_config" @ string offset=578
 .Linfo_string29:
-	.asciz	"dma_periph_width_config" @ string offset=612
+	.asciz	"dma_periph_width_config" @ string offset=602
 .Linfo_string30:
-	.asciz	"dma_memory_increase_enable" @ string offset=636
+	.asciz	"dma_memory_increase_enable" @ string offset=626
 .Linfo_string31:
-	.asciz	"dma_memory_increase_disable" @ string offset=663
+	.asciz	"dma_memory_increase_disable" @ string offset=653
 .Linfo_string32:
-	.asciz	"dma_periph_increase_enable" @ string offset=691
+	.asciz	"dma_periph_increase_enable" @ string offset=681
 .Linfo_string33:
-	.asciz	"dma_periph_increase_disable" @ string offset=718
+	.asciz	"dma_periph_increase_disable" @ string offset=708
 .Linfo_string34:
-	.asciz	"dma_transfer_direction_config" @ string offset=746
+	.asciz	"dma_transfer_direction_config" @ string offset=736
 .Linfo_string35:
-	.asciz	"dma_flag_get"          @ string offset=776
+	.asciz	"dma_flag_get"          @ string offset=766
 .Linfo_string36:
-	.asciz	"FlagStatus"            @ string offset=789
+	.asciz	"FlagStatus"            @ string offset=779
 .Linfo_string37:
-	.asciz	"dma_flag_clear"        @ string offset=800
+	.asciz	"dma_flag_clear"        @ string offset=790
 .Linfo_string38:
-	.asciz	"dma_interrupt_flag_get" @ string offset=815
+	.asciz	"dma_interrupt_flag_get" @ string offset=805
 .Linfo_string39:
-	.asciz	"dma_interrupt_flag_clear" @ string offset=838
+	.asciz	"dma_interrupt_flag_clear" @ string offset=828
 .Linfo_string40:
-	.asciz	"dma_interrupt_enable"  @ string offset=863
+	.asciz	"dma_interrupt_enable"  @ string offset=853
 .Linfo_string41:
-	.asciz	"dma_interrupt_disable" @ string offset=884
+	.asciz	"dma_interrupt_disable" @ string offset=874
 .Linfo_string42:
-	.asciz	"channelx"              @ string offset=906
+	.asciz	"channelx"              @ string offset=896
 .Linfo_string43:
-	.asciz	"dma_channel_enum"      @ string offset=915
+	.asciz	"dma_channel_enum"      @ string offset=905
 .Linfo_string44:
-	.asciz	"init_struct"           @ string offset=932
+	.asciz	"init_struct"           @ string offset=922
 .Linfo_string45:
-	.asciz	"periph_addr"           @ string offset=944
+	.asciz	"periph_addr"           @ string offset=934
 .Linfo_string46:
-	.asciz	"periph_width"          @ string offset=956
+	.asciz	"periph_width"          @ string offset=946
 .Linfo_string47:
-	.asciz	"memory_addr"           @ string offset=969
+	.asciz	"memory_addr"           @ string offset=959
 .Linfo_string48:
-	.asciz	"memory_width"          @ string offset=981
+	.asciz	"memory_width"          @ string offset=971
 .Linfo_string49:
-	.asciz	"number"                @ string offset=994
+	.asciz	"number"                @ string offset=984
 .Linfo_string50:
-	.asciz	"priority"              @ string offset=1001
+	.asciz	"priority"              @ string offset=991
 .Linfo_string51:
-	.asciz	"periph_inc"            @ string offset=1010
+	.asciz	"periph_inc"            @ string offset=1000
 .Linfo_string52:
-	.asciz	"memory_inc"            @ string offset=1021
+	.asciz	"memory_inc"            @ string offset=1011
 .Linfo_string53:
-	.asciz	"direction"             @ string offset=1032
+	.asciz	"direction"             @ string offset=1022
 .Linfo_string54:
-	.asciz	"dma_parameter_struct"  @ string offset=1042
+	.asciz	"dma_parameter_struct"  @ string offset=1032
 .Linfo_string55:
-	.asciz	"ctl"                   @ string offset=1063
+	.asciz	"ctl"                   @ string offset=1053
 .Linfo_string56:
-	.asciz	"address"               @ string offset=1067
+	.asciz	"address"               @ string offset=1057
 .Linfo_string57:
-	.asciz	"mwidth"                @ string offset=1075
+	.asciz	"mwidth"                @ string offset=1065
 .Linfo_string58:
-	.asciz	"pwidth"                @ string offset=1082
+	.asciz	"pwidth"                @ string offset=1072
 .Linfo_string59:
-	.asciz	"flag"                  @ string offset=1089
+	.asciz	"flag"                  @ string offset=1079
 .Linfo_string60:
-	.asciz	"reval"                 @ string offset=1094
+	.asciz	"reval"                 @ string offset=1084
 .Linfo_string61:
-	.asciz	"interrupt_enable"      @ string offset=1100
+	.asciz	"interrupt_enable"      @ string offset=1090
 .Linfo_string62:
-	.asciz	"interrupt_flag"        @ string offset=1117
+	.asciz	"interrupt_flag"        @ string offset=1107
 .Linfo_string63:
-	.asciz	"source"                @ string offset=1132
+	.asciz	"source"                @ string offset=1122
 	.section	.debug_abbrev,"",%progbits
 	.byte	1                       @ Abbreviation Code
 	.byte	17                      @ DW_TAG_compile_unit
